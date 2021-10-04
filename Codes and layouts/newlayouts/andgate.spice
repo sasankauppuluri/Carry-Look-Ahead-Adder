@@ -1,0 +1,72 @@
+* SPICE3 file created from nandgate.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+Vdd vdd gnd 'SUPPLY'
+vin_clk clk 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b D 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+* SPICE3 file created from andgate.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 out a_n61_61# vdd inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=360 ps=156
+M1001 out a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1002 a_n61_61# clk vdd w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1003 a_n61_61# D vdd w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 a_n61_61# clk a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1005 a_n58_n25# D gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+C0 inverter_0/w_n13_n7# a_n61_61# 0.1fF
+C1 inverter_0/w_n13_n7# vdd 0.1fF
+C2 D gnd 0.1fF
+C3 a_n58_n25# a_n61_61# 0.1fF
+C4 w_n76_50# clk 0.1fF
+C5 a_n61_61# vdd 0.6fF
+C6 inverter_0/w_n13_n7# out 0.0fF
+C7 a_n61_61# out 0.1fF
+C8 w_n42_50# D 0.1fF
+C9 a_n61_61# gnd 0.1fF
+C10 vdd out 0.2fF
+C11 a_n58_n25# gnd 0.1fF
+C12 w_n76_50# a_n61_61# 0.1fF
+C13 out gnd 0.1fF
+C14 w_n76_50# vdd 0.1fF
+C15 w_n42_50# a_n61_61# 0.1fF
+C16 w_n42_50# vdd 0.1fF
+C17 clk a_n61_61# 0.1fF
+C18 clk a_n58_n25# 0.1fF
+C19 D a_n61_61# 0.3fF
+C20 D a_n58_n25# 0.2fF
+C21 a_n58_n25# gnd 0.1fF
+C22 D gnd 1.8fF
+C23 clk gnd 0.5fF
+C24 w_n42_50# gnd 1.0fF
+C25 w_n76_50# gnd 1.0fF
+C26 gnd gnd 0.6fF
+C27 out gnd 0.2fF
+C28 vdd gnd 0.4fF
+C29 a_n61_61# gnd 0.6fF
+C30 inverter_0/w_n13_n7# gnd 0.9fF
+
+.tran 0.1n 100n
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+
+plot v(clk)
+plot v(D)
+plot v(out)
+.endc

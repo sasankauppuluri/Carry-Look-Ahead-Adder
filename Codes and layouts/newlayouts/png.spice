@@ -1,0 +1,477 @@
+* SPICE3 file created from png.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+VDD vdd gnd 'SUPPLY'
+vin_a A0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_a A0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_a1 A1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_a1 A1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a2 A2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a2 A2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a3 A3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a3 A3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+vin_b B0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b B0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_b1 B1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b1 B1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b2 B2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b2 B2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_b3 B3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b3 B3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+M1000 G3 andgate_3/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=3360 ps=1456
+M1001 G3 andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=1440 ps=768
+M1002 andgate_3/a_n61_61# A3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1003 andgate_3/a_n61_61# B3 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 andgate_3/a_n61_61# A3 andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1005 andgate_3/a_n58_n25# B3 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 xorgate_3/a_48_n7# A3 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1007 xorgate_3/a_48_n7# A3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1008 xorgate_3/a_n64_32# B3 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1009 xorgate_3/a_n64_32# B3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1010 xorgate_3/a_n56_44# xorgate_3/a_n64_32# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1011 P3 A3 xorgate_3/a_n56_44# vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1012 xorgate_3/a_56_44# B3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1013 P3 xorgate_3/a_48_n7# xorgate_3/a_56_44# vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 xorgate_3/a_n56_n20# A3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1015 P3 B3 xorgate_3/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1016 xorgate_3/a_56_n20# xorgate_3/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1017 P3 xorgate_3/a_n64_32# xorgate_3/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1018 G2 andgate_2/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1019 G2 andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1020 andgate_2/a_n61_61# A2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1021 andgate_2/a_n61_61# B2 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 andgate_2/a_n61_61# A2 andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1023 andgate_2/a_n58_n25# B2 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 xorgate_2/a_48_n7# A2 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1025 xorgate_2/a_48_n7# A2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1026 xorgate_2/a_n64_32# B2 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1027 xorgate_2/a_n64_32# B2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1028 xorgate_2/a_n56_44# xorgate_2/a_n64_32# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1029 P2 A2 xorgate_2/a_n56_44# vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1030 xorgate_2/a_56_44# B2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1031 P2 xorgate_2/a_48_n7# xorgate_2/a_56_44# vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 xorgate_2/a_n56_n20# A2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1033 P2 B2 xorgate_2/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1034 xorgate_2/a_56_n20# xorgate_2/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1035 P2 xorgate_2/a_n64_32# xorgate_2/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1036 G1 andgate_1/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 G1 andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1038 andgate_1/a_n61_61# A1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1039 andgate_1/a_n61_61# B1 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1040 andgate_1/a_n61_61# A1 andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1041 andgate_1/a_n58_n25# B1 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 xorgate_1/a_48_n7# A1 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1043 xorgate_1/a_48_n7# A1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1044 xorgate_1/a_n64_32# B1 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1045 xorgate_1/a_n64_32# B1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1046 xorgate_1/a_n56_44# xorgate_1/a_n64_32# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1047 P1 A1 xorgate_1/a_n56_44# vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1048 xorgate_1/a_56_44# B1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1049 P1 xorgate_1/a_48_n7# xorgate_1/a_56_44# vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 xorgate_1/a_n56_n20# A1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1051 P1 B1 xorgate_1/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1052 xorgate_1/a_56_n20# xorgate_1/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1053 P1 xorgate_1/a_n64_32# xorgate_1/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1054 G0 andgate_0/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1055 G0 andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1056 andgate_0/a_n61_61# A0 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1057 andgate_0/a_n61_61# B0 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 andgate_0/a_n61_61# A0 andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1059 andgate_0/a_n58_n25# B0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1060 xorgate_0/a_48_n7# A0 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1061 xorgate_0/a_48_n7# A0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1062 xorgate_0/a_n64_32# B0 vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1063 xorgate_0/a_n64_32# B0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1064 xorgate_0/a_n56_44# xorgate_0/a_n64_32# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1065 P0 A0 xorgate_0/a_n56_44# vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1066 xorgate_0/a_56_44# B0 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1067 P0 xorgate_0/a_48_n7# xorgate_0/a_56_44# vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1068 xorgate_0/a_n56_n20# A0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1069 P0 B0 xorgate_0/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1070 xorgate_0/a_56_n20# xorgate_0/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1071 P0 xorgate_0/a_n64_32# xorgate_0/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+C0 xorgate_3/a_n64_32# xorgate_3/a_n56_44# 0.4fF
+C1 vdd vdd 0.1fF
+C2 gnd xorgate_0/a_n64_32# 0.1fF
+C3 vdd xorgate_2/a_n56_44# 0.2fF
+C4 xorgate_3/a_56_n20# gnd 0.1fF
+C5 xorgate_2/a_n64_32# xorgate_2/a_56_44# 0.4fF
+C6 vdd xorgate_2/a_n56_44# 0.1fF
+C7 andgate_2/a_n58_n25# andgate_2/a_n61_61# 0.1fF
+C8 gnd andgate_3/a_n58_n25# 0.1fF
+C9 vdd P1 0.0fF
+C10 xorgate_0/a_n64_32# vdd 0.2fF
+C11 vdd vdd 0.1fF
+C12 vdd xorgate_0/a_56_44# 0.1fF
+C13 xorgate_0/a_n64_32# xorgate_0/a_56_n20# 0.1fF
+C14 andgate_3/a_n61_61# gnd 0.1fF
+C15 vdd G3 0.2fF
+C16 vdd andgate_0/a_n61_61# 0.6fF
+C17 vdd xorgate_0/a_n56_44# 0.1fF
+C18 xorgate_0/a_n64_32# P0 0.6fF
+C19 vdd vdd 0.1fF
+C20 xorgate_3/a_n56_44# P3 0.2fF
+C21 xorgate_0/a_n56_44# P0 0.2fF
+C22 vdd G1 0.2fF
+C23 gnd xorgate_0/a_48_n7# 0.2fF
+C24 vdd G2 0.2fF
+C25 vdd vdd 0.1fF
+C26 vdd vdd 0.1fF
+C27 andgate_1/a_n61_61# andgate_1/a_n58_n25# 0.1fF
+C28 vdd xorgate_1/a_56_44# 0.1fF
+C29 andgate_0/a_n61_61# vdd 0.1fF
+C30 andgate_1/a_n61_61# vdd 0.1fF
+C31 G1 vdd 0.0fF
+C32 andgate_3/a_n61_61# vdd 0.1fF
+C33 vdd xorgate_1/a_n56_44# 0.1fF
+C34 vdd xorgate_0/a_n64_32# 0.0fF
+C35 xorgate_0/a_48_n7# xorgate_0/a_56_n20# 0.0fF
+C36 xorgate_0/a_n64_32# xorgate_0/a_56_44# 0.4fF
+C37 xorgate_1/a_n56_44# P1 0.2fF
+C38 xorgate_0/a_48_n7# P0 0.2fF
+C39 andgate_2/a_n61_61# vdd 0.1fF
+C40 vdd xorgate_3/a_n56_44# 0.1fF
+C41 xorgate_3/a_n64_32# P3 0.6fF
+C42 vdd vdd 0.1fF
+C43 gnd xorgate_0/a_n56_n20# 0.1fF
+C44 andgate_0/a_n61_61# andgate_0/a_n58_n25# 0.1fF
+C45 xorgate_1/a_n64_32# vdd 0.2fF
+C46 vdd vdd 0.1fF
+C47 vdd xorgate_1/a_56_44# 0.1fF
+C48 xorgate_1/a_n64_32# xorgate_1/a_56_n20# 0.1fF
+C49 xorgate_0/a_n64_32# vdd 0.1fF
+C50 vdd vdd 0.1fF
+C51 vdd vdd 0.1fF
+C52 andgate_3/a_n61_61# vdd 0.1fF
+C53 G3 gnd 0.1fF
+C54 andgate_1/a_n61_61# vdd 0.1fF
+C55 xorgate_1/a_48_n7# xorgate_1/a_56_n20# 0.0fF
+C56 xorgate_1/a_n64_32# P1 0.6fF
+C57 gnd andgate_0/a_n61_61# 0.1fF
+C58 xorgate_2/a_48_n7# vdd 0.2fF
+C59 vdd xorgate_0/a_n56_44# 0.1fF
+C60 P0 xorgate_0/a_n56_n20# 0.1fF
+C61 xorgate_1/a_48_n7# P1 0.2fF
+C62 vdd xorgate_0/a_n64_32# 0.0fF
+C63 xorgate_3/a_n64_32# xorgate_3/a_56_44# 0.4fF
+C64 vdd xorgate_3/a_n56_44# 0.1fF
+C65 andgate_2/a_n61_61# vdd 0.1fF
+C66 xorgate_3/a_n64_32# vdd 0.2fF
+C67 gnd G1 0.3fF
+C68 vdd vdd 0.1fF
+C69 vdd xorgate_0/a_56_44# 0.2fF
+C70 vdd P2 0.0fF
+C71 vdd vdd 0.1fF
+C72 gnd G2 0.3fF
+C73 xorgate_3/a_48_n7# xorgate_3/a_n64_32# 0.0fF
+C74 gnd andgate_0/a_n58_n25# 0.1fF
+C75 xorgate_0/a_n64_32# vdd 0.2fF
+C76 andgate_0/a_n61_61# vdd 0.1fF
+C77 vdd xorgate_1/a_n64_32# 0.0fF
+C78 vdd vdd 0.1fF
+C79 vdd xorgate_1/a_n56_44# 0.1fF
+C80 xorgate_2/a_n56_44# P2 0.2fF
+C81 vdd xorgate_1/a_n56_44# 0.2fF
+C82 P3 xorgate_3/a_56_44# 0.2fF
+C83 xorgate_3/a_n56_n20# P3 0.1fF
+C84 vdd xorgate_0/a_48_n7# 0.0fF
+C85 xorgate_2/a_n64_32# vdd 0.2fF
+C86 gnd xorgate_2/a_n56_n20# 0.1fF
+C87 xorgate_3/a_56_n20# xorgate_3/a_n64_32# 0.1fF
+C88 gnd xorgate_0/a_56_n20# 0.1fF
+C89 xorgate_3/a_n64_32# vdd 0.1fF
+C90 xorgate_3/a_48_n7# P3 0.2fF
+C91 gnd P0 0.1fF
+C92 vdd xorgate_3/a_n56_44# 0.2fF
+C93 vdd andgate_1/a_n61_61# 0.6fF
+C94 vdd vdd 0.1fF
+C95 xorgate_1/a_n64_32# vdd 0.1fF
+C96 vdd vdd 0.1fF
+C97 vdd xorgate_1/a_n64_32# 0.5fF
+C98 xorgate_1/a_n64_32# xorgate_1/a_56_44# 0.4fF
+C99 vdd vdd 0.1fF
+C100 xorgate_2/a_48_n7# gnd 0.2fF
+C101 vdd vdd 0.1fF
+C102 P1 xorgate_1/a_n56_n20# 0.1fF
+C103 vdd xorgate_1/a_48_n7# 0.2fF
+C104 P0 xorgate_0/a_56_n20# 0.1fF
+C105 andgate_1/a_n61_61# vdd 0.1fF
+C106 xorgate_2/a_n64_32# vdd 0.5fF
+C107 xorgate_3/a_56_n20# P3 0.1fF
+C108 xorgate_2/a_n64_32# vdd 0.1fF
+C109 vdd P3 0.0fF
+C110 vdd vdd 0.1fF
+C111 xorgate_3/a_n64_32# vdd 0.2fF
+C112 vdd xorgate_2/a_56_44# 0.2fF
+C113 gnd P2 0.1fF
+C114 vdd vdd 0.1fF
+C115 vdd xorgate_3/a_n64_32# 0.0fF
+C116 xorgate_2/a_n64_32# xorgate_2/a_n56_44# 0.4fF
+C117 vdd xorgate_3/a_n64_32# 0.5fF
+C118 xorgate_0/a_n64_32# vdd 0.1fF
+C119 P2 xorgate_2/a_n56_n20# 0.1fF
+C120 andgate_2/a_n58_n25# gnd 0.1fF
+C121 andgate_0/a_n61_61# vdd 0.1fF
+C122 P1 xorgate_1/a_56_n20# 0.1fF
+C123 vdd xorgate_1/a_n64_32# 0.0fF
+C124 vdd xorgate_1/a_48_n7# 0.0fF
+C125 P0 xorgate_0/a_56_44# 0.2fF
+C126 andgate_1/a_n61_61# G1 0.1fF
+C127 gnd xorgate_2/a_56_n20# 0.1fF
+C128 xorgate_3/a_n64_32# vdd 0.1fF
+C129 xorgate_3/a_56_n20# xorgate_3/a_48_n7# 0.0fF
+C130 xorgate_2/a_48_n7# P2 0.2fF
+C131 gnd andgate_1/a_n61_61# 0.1fF
+C132 andgate_2/a_n61_61# vdd 0.6fF
+C133 xorgate_2/a_48_n7# vdd 0.1fF
+C134 xorgate_1/a_n64_32# vdd 0.2fF
+C135 vdd vdd 0.1fF
+C136 xorgate_2/a_n64_32# vdd 0.2fF
+C137 gnd xorgate_1/a_n64_32# 0.1fF
+C138 xorgate_0/a_48_n7# vdd 0.1fF
+C139 vdd P0 0.0fF
+C140 gnd xorgate_1/a_48_n7# 0.2fF
+C141 vdd andgate_3/a_n61_61# 0.1fF
+C142 xorgate_2/a_n64_32# gnd 0.1fF
+C143 xorgate_0/a_n64_32# xorgate_0/a_n56_44# 0.4fF
+C144 vdd P2 0.0fF
+C145 vdd xorgate_2/a_56_44# 0.1fF
+C146 vdd P3 0.0fF
+C147 vdd xorgate_3/a_56_44# 0.1fF
+C148 vdd vdd 0.1fF
+C149 xorgate_2/a_48_n7# xorgate_2/a_56_n20# 0.0fF
+C150 vdd xorgate_3/a_56_44# 0.2fF
+C151 xorgate_1/a_n64_32# vdd 0.1fF
+C152 vdd vdd 0.1fF
+C153 gnd xorgate_3/a_n64_32# 0.1fF
+C154 xorgate_3/a_48_n7# vdd 0.0fF
+C155 xorgate_1/a_48_n7# vdd 0.1fF
+C156 vdd vdd 0.1fF
+C157 vdd xorgate_3/a_48_n7# 0.2fF
+C158 andgate_3/a_n61_61# andgate_3/a_n58_n25# 0.1fF
+C159 P2 xorgate_2/a_56_n20# 0.1fF
+C160 vdd P1 0.0fF
+C161 xorgate_2/a_48_n7# vdd 0.0fF
+C162 vdd vdd 0.1fF
+C163 xorgate_0/a_48_n7# xorgate_0/a_n64_32# 0.0fF
+C164 P1 xorgate_1/a_56_44# 0.2fF
+C165 xorgate_2/a_48_n7# xorgate_2/a_n64_32# 0.0fF
+C166 vdd xorgate_3/a_56_44# 0.1fF
+C167 vdd vdd 0.1fF
+C168 andgate_2/a_n61_61# G2 0.1fF
+C169 vdd G2 0.0fF
+C170 vdd xorgate_0/a_n64_32# 0.5fF
+C171 xorgate_3/a_48_n7# vdd 0.1fF
+C172 gnd P3 0.1fF
+C173 vdd xorgate_3/a_n64_32# 0.0fF
+C174 andgate_2/a_n61_61# gnd 0.1fF
+C175 vdd xorgate_0/a_n56_44# 0.2fF
+C176 xorgate_2/a_n64_32# P2 0.6fF
+C177 xorgate_2/a_n64_32# vdd 0.1fF
+C178 gnd xorgate_1/a_n56_n20# 0.1fF
+C179 vdd xorgate_0/a_56_44# 0.1fF
+C180 vdd vdd 0.1fF
+C181 P2 xorgate_2/a_56_44# 0.2fF
+C182 vdd G3 0.0fF
+C183 andgate_3/a_n61_61# vdd 0.6fF
+C184 xorgate_1/a_n64_32# xorgate_1/a_n56_44# 0.4fF
+C185 vdd vdd 0.1fF
+C186 gnd andgate_1/a_n58_n25# 0.1fF
+C187 vdd xorgate_2/a_56_44# 0.1fF
+C188 xorgate_2/a_n64_32# xorgate_2/a_56_n20# 0.1fF
+C189 vdd xorgate_0/a_48_n7# 0.2fF
+C190 xorgate_3/a_n56_n20# gnd 0.1fF
+C191 vdd xorgate_2/a_n56_44# 0.1fF
+C192 vdd vdd 0.1fF
+C193 gnd xorgate_3/a_48_n7# 0.2fF
+C194 vdd vdd 0.1fF
+C195 gnd xorgate_1/a_56_n20# 0.1fF
+C196 vdd P0 0.0fF
+C197 xorgate_1/a_48_n7# xorgate_1/a_n64_32# 0.0fF
+C198 andgate_3/a_n61_61# G3 0.1fF
+C199 vdd xorgate_1/a_56_44# 0.2fF
+C200 gnd P1 0.1fF
+C201 vdd xorgate_2/a_n64_32# 0.0fF
+C202 vdd xorgate_2/a_n64_32# 0.0fF
+C203 andgate_2/a_n61_61# vdd 0.1fF
+C204 xorgate_0/a_56_n20# gnd 0.1fF
+C205 xorgate_0/a_n56_n20# gnd 0.3fF
+C206 xorgate_0/a_56_44# gnd 0.0fF
+C207 P0 gnd 2.6fF
+C208 xorgate_0/a_n56_44# gnd 0.1fF
+C209 vdd gnd 0.9fF
+C210 vdd gnd 1.0fF
+C211 vdd gnd 1.2fF
+C212 vdd gnd 0.9fF
+C213 xorgate_0/a_n64_32# gnd 1.4fF
+C214 vdd gnd 1.0fF
+C215 xorgate_0/a_48_n7# gnd 0.8fF
+C216 vdd gnd 1.0fF
+C217 andgate_0/a_n58_n25# gnd 0.3fF
+C218 vdd gnd 1.1fF
+C219 vdd gnd 1.1fF
+C220 andgate_0/a_n61_61# gnd 1.1fF
+C221 vdd gnd 0.9fF
+C222 xorgate_1/a_56_n20# gnd 0.1fF
+C223 xorgate_1/a_n56_n20# gnd 0.3fF
+C224 xorgate_1/a_56_44# gnd 0.0fF
+C225 P1 gnd 2.6fF
+C226 xorgate_1/a_n56_44# gnd 0.1fF
+C227 vdd gnd 0.9fF
+C228 vdd gnd 1.0fF
+C229 vdd gnd 1.2fF
+C230 vdd gnd 0.9fF
+C231 xorgate_1/a_n64_32# gnd 1.4fF
+C232 vdd gnd 1.0fF
+C233 xorgate_1/a_48_n7# gnd 0.8fF
+C234 vdd gnd 1.0fF
+C235 andgate_1/a_n58_n25# gnd 0.3fF
+C236 vdd gnd 1.1fF
+C237 vdd gnd 1.1fF
+C238 G1 gnd 0.7fF
+C239 andgate_1/a_n61_61# gnd 1.0fF
+C240 vdd gnd 0.9fF
+C241 xorgate_2/a_56_n20# gnd 0.1fF
+C242 xorgate_2/a_n56_n20# gnd 0.3fF
+C243 xorgate_2/a_56_44# gnd 0.0fF
+C244 P2 gnd 2.6fF
+C245 xorgate_2/a_n56_44# gnd 0.1fF
+C246 vdd gnd 0.9fF
+C247 vdd gnd 1.0fF
+C248 vdd gnd 1.2fF
+C249 vdd gnd 0.9fF
+C250 xorgate_2/a_n64_32# gnd 1.4fF
+C251 vdd gnd 1.0fF
+C252 xorgate_2/a_48_n7# gnd 0.8fF
+C253 vdd gnd 1.0fF
+C254 andgate_2/a_n58_n25# gnd 0.3fF
+C255 vdd gnd 1.1fF
+C256 vdd gnd 1.1fF
+C257 G2 gnd 0.7fF
+C258 andgate_2/a_n61_61# gnd 1.0fF
+C259 vdd gnd 0.9fF
+C260 xorgate_3/a_56_n20# gnd 0.1fF
+C261 xorgate_3/a_n56_n20# gnd 0.3fF
+C262 xorgate_3/a_56_44# gnd 0.0fF
+C263 P3 gnd 2.6fF
+C264 xorgate_3/a_n56_44# gnd 0.1fF
+C265 vdd gnd 0.9fF
+C266 vdd gnd 1.0fF
+C267 vdd gnd 1.2fF
+C268 vdd gnd 0.9fF
+C269 xorgate_3/a_n64_32# gnd 1.4fF
+C270 vdd gnd 1.0fF
+C271 xorgate_3/a_48_n7# gnd 0.8fF
+C272 vdd gnd 1.0fF
+C273 andgate_3/a_n58_n25# gnd 0.3fF
+C274 vdd gnd 1.1fF
+C275 vdd gnd 1.1fF
+C276 gnd gnd 23.1fF
+C277 G3 gnd 0.7fF
+C278 vdd gnd 18.1fF
+C279 andgate_3/a_n61_61# gnd 1.0fF
+C280 vdd gnd 0.9fF
+
+.tran 0.1n 100n
+
+
+
+
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+plot v(P0)
+plot v(P1)
+plot v(P2)
+plot v(P3)
+plot v(G0)
+plot v(G1)
+plot v(G2)
+plot v(G3)
+
+.endc

@@ -1,0 +1,3402 @@
+* SPICE3 file created from finaladder.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.option scale=0.09u
+.global gnd vdd
+
+VDD vdd gnd 'SUPPLY'
+*vin_a DA0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a DA0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a1 DA1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a1 DA1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a2 DA2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a2 DA2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a3 DA3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a3 DA3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+*vin_b DB0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b DB0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_b1 DB1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b1 DB1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_b2 DB2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b2 DB2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b3 DB3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b3 DB3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+
+
+vin_c0 Car0 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_clk clk 0 pulse 1.8 0 0ns 100ps 100ps 25ns 50ns
+
+M1000 Car1 clablock_0/carrygen_0/orgate_0/a_n63_n10# vdd clablock_0/carrygen_0/orgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=6000 ps=2600
+M1001 Car1 clablock_0/carrygen_0/orgate_0/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=3000 ps=1600
+M1002 clablock_0/carrygen_0/orgate_0/a_n59_77# clablock_0/m1_235_462# vdd clablock_0/carrygen_0/orgate_0/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1003 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/carrygen_0/m1_174_38# clablock_0/carrygen_0/orgate_0/a_n59_77# clablock_0/carrygen_0/orgate_0/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1004 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/carrygen_0/m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1005 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/m1_235_462# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 clablock_0/carrygen_0/m1_174_38# clablock_0/carrygen_0/andgate_0/a_n61_61# vdd clablock_0/carrygen_0/andgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1007 clablock_0/carrygen_0/m1_174_38# clablock_0/carrygen_0/andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1008 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/m1_243_273# vdd clablock_0/carrygen_0/andgate_0/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1009 clablock_0/carrygen_0/andgate_0/a_n61_61# Car0 vdd clablock_0/carrygen_0/andgate_0/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/m1_243_273# clablock_0/carrygen_0/andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1011 clablock_0/carrygen_0/andgate_0/a_n58_n25# Car0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 Car2 clablock_0/carrygen_0/orgate_2/a_n63_n10# vdd clablock_0/carrygen_0/orgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1013 Car2 clablock_0/carrygen_0/orgate_2/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1014 clablock_0/carrygen_0/orgate_2/a_n59_77# clablock_0/m1_253_953# vdd clablock_0/carrygen_0/orgate_2/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1015 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/m1_567_199# clablock_0/carrygen_0/orgate_2/a_n59_77# clablock_0/carrygen_0/orgate_2/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1016 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/m1_567_199# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1017 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/m1_253_953# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 clablock_0/carrygen_0/m1_567_199# clablock_0/carrygen_0/orgate_1/a_n63_n10# vdd clablock_0/carrygen_0/orgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1019 clablock_0/carrygen_0/m1_567_199# clablock_0/carrygen_0/orgate_1/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1020 clablock_0/carrygen_0/orgate_1/a_n59_77# clablock_0/carrygen_0/m2_438_246# vdd clablock_0/carrygen_0/orgate_1/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1021 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/m1_174_152# clablock_0/carrygen_0/orgate_1/a_n59_77# clablock_0/carrygen_0/orgate_1/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1022 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1023 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 clablock_0/carrygen_0/m2_438_246# clablock_0/carrygen_0/andgate_2/a_n61_61# vdd clablock_0/carrygen_0/andgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1025 clablock_0/carrygen_0/m2_438_246# clablock_0/carrygen_0/andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1026 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/m1_248_764# vdd clablock_0/carrygen_0/andgate_2/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1027 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/m1_174_38# vdd clablock_0/carrygen_0/andgate_2/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1029 clablock_0/carrygen_0/andgate_2/a_n58_n25# clablock_0/carrygen_0/m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 clablock_0/carrygen_0/m1_174_152# clablock_0/carrygen_0/andgate_1/a_n61_61# vdd clablock_0/carrygen_0/andgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1031 clablock_0/carrygen_0/m1_174_152# clablock_0/carrygen_0/andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1032 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/m1_248_764# vdd clablock_0/carrygen_0/andgate_1/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1033 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/m1_235_462# vdd clablock_0/carrygen_0/andgate_1/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1035 clablock_0/carrygen_0/andgate_1/a_n58_n25# clablock_0/m1_235_462# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 Car3 clablock_0/carrygen_0/orgate_5/a_n63_n10# vdd clablock_0/carrygen_0/orgate_5/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 Car3 clablock_0/carrygen_0/orgate_5/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1038 clablock_0/carrygen_0/orgate_5/a_n59_77# clablock_0/carrygen_0/m1_947_392# vdd clablock_0/carrygen_0/orgate_5/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1039 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/orgate_5/a_n59_77# clablock_0/carrygen_0/orgate_5/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1040 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/m1_567_341# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1041 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/m1_947_392# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 clablock_0/carrygen_0/m1_947_392# clablock_0/carrygen_0/orgate_4/a_n63_n10# vdd clablock_0/carrygen_0/orgate_4/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1043 clablock_0/carrygen_0/m1_947_392# clablock_0/carrygen_0/orgate_4/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1044 clablock_0/carrygen_0/orgate_4/a_n59_77# clablock_0/m1_253_1444# vdd clablock_0/carrygen_0/orgate_4/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1045 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/m1_777_387# clablock_0/carrygen_0/orgate_4/a_n59_77# clablock_0/carrygen_0/orgate_4/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1046 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1047 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/m1_253_1444# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1048 clablock_0/carrygen_0/m1_777_387# clablock_0/carrygen_0/andgate_5/a_n61_61# vdd clablock_0/carrygen_0/andgate_5/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1049 clablock_0/carrygen_0/m1_777_387# clablock_0/carrygen_0/andgate_5/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1050 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/m1_252_1255# vdd clablock_0/carrygen_0/andgate_5/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1051 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/m2_438_246# vdd clablock_0/carrygen_0/andgate_5/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/m1_252_1255# clablock_0/carrygen_0/andgate_5/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1053 clablock_0/carrygen_0/andgate_5/a_n58_n25# clablock_0/carrygen_0/m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1054 clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/orgate_3/a_n63_n10# vdd clablock_0/carrygen_0/orgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1055 clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/orgate_3/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1056 clablock_0/carrygen_0/orgate_3/a_n59_77# clablock_0/carrygen_0/m2_438_434# vdd clablock_0/carrygen_0/orgate_3/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1057 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/m1_174_337# clablock_0/carrygen_0/orgate_3/a_n59_77# clablock_0/carrygen_0/orgate_3/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1058 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1059 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1060 clablock_0/carrygen_0/m2_438_434# clablock_0/carrygen_0/andgate_4/a_n61_61# vdd clablock_0/carrygen_0/andgate_4/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1061 clablock_0/carrygen_0/m2_438_434# clablock_0/carrygen_0/andgate_4/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1062 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/m1_252_1255# vdd clablock_0/carrygen_0/andgate_4/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1063 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/m1_174_152# vdd clablock_0/carrygen_0/andgate_4/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1064 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/m1_252_1255# clablock_0/carrygen_0/andgate_4/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1065 clablock_0/carrygen_0/andgate_4/a_n58_n25# clablock_0/carrygen_0/m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 clablock_0/carrygen_0/m1_174_337# clablock_0/carrygen_0/andgate_3/a_n61_61# vdd clablock_0/carrygen_0/andgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1067 clablock_0/carrygen_0/m1_174_337# clablock_0/carrygen_0/andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1068 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/m1_252_1255# vdd clablock_0/carrygen_0/andgate_3/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1069 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/m1_253_953# vdd clablock_0/carrygen_0/andgate_3/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/m1_252_1255# clablock_0/carrygen_0/andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1071 clablock_0/carrygen_0/andgate_3/a_n58_n25# clablock_0/m1_253_953# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1072 Carout clablock_0/carrygen_0/orgate_9/a_n63_n10# vdd clablock_0/carrygen_0/orgate_9/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1073 Carout clablock_0/carrygen_0/orgate_9/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1074 clablock_0/carrygen_0/orgate_9/a_n59_77# clablock_0/m1_196_1935# vdd clablock_0/carrygen_0/orgate_9/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1075 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/m1_1315_575# clablock_0/carrygen_0/orgate_9/a_n59_77# clablock_0/carrygen_0/orgate_9/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1076 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/m1_1315_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1077 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/m1_196_1935# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 clablock_0/carrygen_0/m1_1315_575# clablock_0/carrygen_0/orgate_8/a_n63_n10# vdd clablock_0/carrygen_0/orgate_8/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1079 clablock_0/carrygen_0/m1_1315_575# clablock_0/carrygen_0/orgate_8/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1080 clablock_0/carrygen_0/orgate_8/a_n59_77# clablock_0/carrygen_0/m1_1147_580# vdd clablock_0/carrygen_0/orgate_8/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1081 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/orgate_8/a_n59_77# clablock_0/carrygen_0/orgate_8/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1082 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/m1_567_529# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1083 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/m1_1147_580# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1084 clablock_0/carrygen_0/m1_1147_580# clablock_0/carrygen_0/orgate_7/a_n63_n10# vdd clablock_0/carrygen_0/orgate_7/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1085 clablock_0/carrygen_0/m1_1147_580# clablock_0/carrygen_0/orgate_7/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1086 clablock_0/carrygen_0/orgate_7/a_n59_77# clablock_0/carrygen_0/m1_777_596# vdd clablock_0/carrygen_0/orgate_7/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1087 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/m1_981_575# clablock_0/carrygen_0/orgate_7/a_n59_77# clablock_0/carrygen_0/orgate_7/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1088 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/m1_981_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1089 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/m1_777_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1090 clablock_0/carrygen_0/m1_981_575# clablock_0/carrygen_0/andgate_9/a_n61_61# vdd clablock_0/carrygen_0/andgate_9/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1091 clablock_0/carrygen_0/m1_981_575# clablock_0/carrygen_0/andgate_9/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1092 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/m1_198_1746# vdd clablock_0/carrygen_0/andgate_9/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1093 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/m1_777_387# vdd clablock_0/carrygen_0/andgate_9/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1094 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/m1_198_1746# clablock_0/carrygen_0/andgate_9/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1095 clablock_0/carrygen_0/andgate_9/a_n58_n25# clablock_0/carrygen_0/m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1096 clablock_0/carrygen_0/m1_777_596# clablock_0/carrygen_0/andgate_8/a_n61_61# vdd clablock_0/carrygen_0/andgate_8/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1097 clablock_0/carrygen_0/m1_777_596# clablock_0/carrygen_0/andgate_8/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1098 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/m1_198_1746# vdd clablock_0/carrygen_0/andgate_8/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1099 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/m2_438_434# vdd clablock_0/carrygen_0/andgate_8/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/m1_198_1746# clablock_0/carrygen_0/andgate_8/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1101 clablock_0/carrygen_0/andgate_8/a_n58_n25# clablock_0/carrygen_0/m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1102 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/orgate_6/a_n63_n10# vdd clablock_0/carrygen_0/orgate_6/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1103 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/orgate_6/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1104 clablock_0/carrygen_0/orgate_6/a_n59_77# clablock_0/carrygen_0/m1_376_596# vdd clablock_0/carrygen_0/orgate_6/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1105 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/orgate_6/a_n59_77# clablock_0/carrygen_0/orgate_6/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1106 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/m1_174_525# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1107 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/m1_376_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1108 clablock_0/carrygen_0/m1_376_596# clablock_0/carrygen_0/andgate_7/a_n61_61# vdd clablock_0/carrygen_0/andgate_7/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1109 clablock_0/carrygen_0/m1_376_596# clablock_0/carrygen_0/andgate_7/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1110 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/m1_198_1746# vdd clablock_0/carrygen_0/andgate_7/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1111 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/m1_174_337# vdd clablock_0/carrygen_0/andgate_7/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/m1_198_1746# clablock_0/carrygen_0/andgate_7/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1113 clablock_0/carrygen_0/andgate_7/a_n58_n25# clablock_0/carrygen_0/m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/andgate_6/a_n61_61# vdd clablock_0/carrygen_0/andgate_6/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1115 clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/andgate_6/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1116 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/m1_198_1746# vdd clablock_0/carrygen_0/andgate_6/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1117 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/m1_253_1444# vdd clablock_0/carrygen_0/andgate_6/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/m1_198_1746# clablock_0/carrygen_0/andgate_6/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1119 clablock_0/carrygen_0/andgate_6/a_n58_n25# clablock_0/m1_253_1444# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 clablock_0/sumblock_0/xorgate_3/a_48_n7# Car0 vdd clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=1920 ps=832
+M1121 clablock_0/sumblock_0/xorgate_3/a_48_n7# Car0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=960 ps=512
+M1122 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/m1_243_273# vdd clablock_0/sumblock_0/xorgate_3/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1123 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/m1_243_273# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1124 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/sumblock_0/xorgate_3/a_n64_32# vdd clablock_0/sumblock_0/xorgate_3/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1125 S0 Car0 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/sumblock_0/xorgate_3/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1126 clablock_0/sumblock_0/xorgate_3/a_56_44# clablock_0/m1_243_273# vdd clablock_0/sumblock_0/xorgate_3/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1127 S0 clablock_0/sumblock_0/xorgate_3/a_48_n7# clablock_0/sumblock_0/xorgate_3/a_56_44# clablock_0/sumblock_0/xorgate_3/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 clablock_0/sumblock_0/xorgate_3/a_n56_n20# Car0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1129 S0 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1130 clablock_0/sumblock_0/xorgate_3/a_56_n20# clablock_0/sumblock_0/xorgate_3/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1131 S0 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1132 clablock_0/sumblock_0/xorgate_2/a_48_n7# clablock_0/m1_248_764# vdd clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1133 clablock_0/sumblock_0/xorgate_2/a_48_n7# clablock_0/m1_248_764# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1134 clablock_0/sumblock_0/xorgate_2/a_n64_32# Car1 vdd clablock_0/sumblock_0/xorgate_2/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1135 clablock_0/sumblock_0/xorgate_2/a_n64_32# Car1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1136 clablock_0/sumblock_0/xorgate_2/a_n56_44# clablock_0/sumblock_0/xorgate_2/a_n64_32# vdd clablock_0/sumblock_0/xorgate_2/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1137 S1 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/a_n56_44# clablock_0/sumblock_0/xorgate_2/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1138 clablock_0/sumblock_0/xorgate_2/a_56_44# Car1 vdd clablock_0/sumblock_0/xorgate_2/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1139 S1 clablock_0/sumblock_0/xorgate_2/a_48_n7# clablock_0/sumblock_0/xorgate_2/a_56_44# clablock_0/sumblock_0/xorgate_2/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1140 clablock_0/sumblock_0/xorgate_2/a_n56_n20# clablock_0/m1_248_764# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1141 S1 Car1 clablock_0/sumblock_0/xorgate_2/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1142 clablock_0/sumblock_0/xorgate_2/a_56_n20# clablock_0/sumblock_0/xorgate_2/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1143 S1 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1144 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/m1_252_1255# vdd clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1145 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/m1_252_1255# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1146 clablock_0/sumblock_0/xorgate_1/a_n64_32# Car2 vdd clablock_0/sumblock_0/xorgate_1/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1147 clablock_0/sumblock_0/xorgate_1/a_n64_32# Car2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1148 clablock_0/sumblock_0/xorgate_1/a_n56_44# clablock_0/sumblock_0/xorgate_1/a_n64_32# vdd clablock_0/sumblock_0/xorgate_1/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1149 S2 clablock_0/m1_252_1255# clablock_0/sumblock_0/xorgate_1/a_n56_44# clablock_0/sumblock_0/xorgate_1/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1150 clablock_0/sumblock_0/xorgate_1/a_56_44# Car2 vdd clablock_0/sumblock_0/xorgate_1/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1151 S2 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/sumblock_0/xorgate_1/a_56_44# clablock_0/sumblock_0/xorgate_1/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1152 clablock_0/sumblock_0/xorgate_1/a_n56_n20# clablock_0/m1_252_1255# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1153 S2 Car2 clablock_0/sumblock_0/xorgate_1/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1154 clablock_0/sumblock_0/xorgate_1/a_56_n20# clablock_0/sumblock_0/xorgate_1/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1155 S2 clablock_0/sumblock_0/xorgate_1/a_n64_32# clablock_0/sumblock_0/xorgate_1/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/m1_198_1746# vdd clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1157 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/m1_198_1746# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1158 clablock_0/sumblock_0/xorgate_0/a_n64_32# Car3 vdd clablock_0/sumblock_0/xorgate_0/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1159 clablock_0/sumblock_0/xorgate_0/a_n64_32# Car3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1160 clablock_0/sumblock_0/xorgate_0/a_n56_44# clablock_0/sumblock_0/xorgate_0/a_n64_32# vdd clablock_0/sumblock_0/xorgate_0/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1161 S3 clablock_0/m1_198_1746# clablock_0/sumblock_0/xorgate_0/a_n56_44# clablock_0/sumblock_0/xorgate_0/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1162 clablock_0/sumblock_0/xorgate_0/a_56_44# Car3 vdd clablock_0/sumblock_0/xorgate_0/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1163 S3 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/sumblock_0/xorgate_0/a_56_44# clablock_0/sumblock_0/xorgate_0/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1164 clablock_0/sumblock_0/xorgate_0/a_n56_n20# clablock_0/m1_198_1746# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1165 S3 Car3 clablock_0/sumblock_0/xorgate_0/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1166 clablock_0/sumblock_0/xorgate_0/a_56_n20# clablock_0/sumblock_0/xorgate_0/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1167 S3 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1168 clablock_0/m1_196_1935# clablock_0/png_0/andgate_3/a_n61_61# vdd clablock_0/png_0/andgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=3360 ps=1456
+M1169 clablock_0/m1_196_1935# clablock_0/png_0/andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=1440 ps=768
+M1170 clablock_0/png_0/andgate_3/a_n61_61# A3 vdd clablock_0/png_0/andgate_3/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1171 clablock_0/png_0/andgate_3/a_n61_61# B3 vdd clablock_0/png_0/andgate_3/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1172 clablock_0/png_0/andgate_3/a_n61_61# A3 clablock_0/png_0/andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1173 clablock_0/png_0/andgate_3/a_n58_n25# B3 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1174 clablock_0/png_0/xorgate_3/a_48_n7# A3 vdd clablock_0/png_0/xorgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1175 clablock_0/png_0/xorgate_3/a_48_n7# A3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1176 clablock_0/png_0/xorgate_3/a_n64_32# B3 vdd clablock_0/png_0/xorgate_3/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1177 clablock_0/png_0/xorgate_3/a_n64_32# B3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1178 clablock_0/png_0/xorgate_3/a_n56_44# clablock_0/png_0/xorgate_3/a_n64_32# vdd clablock_0/png_0/xorgate_3/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1179 clablock_0/m1_198_1746# A3 clablock_0/png_0/xorgate_3/a_n56_44# clablock_0/png_0/xorgate_3/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1180 clablock_0/png_0/xorgate_3/a_56_44# B3 vdd clablock_0/png_0/xorgate_3/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1181 clablock_0/m1_198_1746# clablock_0/png_0/xorgate_3/a_48_n7# clablock_0/png_0/xorgate_3/a_56_44# clablock_0/png_0/xorgate_3/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1182 clablock_0/png_0/xorgate_3/a_n56_n20# A3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1183 clablock_0/m1_198_1746# B3 clablock_0/png_0/xorgate_3/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1184 clablock_0/png_0/xorgate_3/a_56_n20# clablock_0/png_0/xorgate_3/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1185 clablock_0/m1_198_1746# clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1186 clablock_0/m1_253_1444# clablock_0/png_0/andgate_2/a_n61_61# vdd clablock_0/png_0/andgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1187 clablock_0/m1_253_1444# clablock_0/png_0/andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1188 clablock_0/png_0/andgate_2/a_n61_61# A2 vdd clablock_0/png_0/andgate_2/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1189 clablock_0/png_0/andgate_2/a_n61_61# B2 vdd clablock_0/png_0/andgate_2/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1190 clablock_0/png_0/andgate_2/a_n61_61# A2 clablock_0/png_0/andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1191 clablock_0/png_0/andgate_2/a_n58_n25# B2 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1192 clablock_0/png_0/xorgate_2/a_48_n7# A2 vdd clablock_0/png_0/xorgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1193 clablock_0/png_0/xorgate_2/a_48_n7# A2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1194 clablock_0/png_0/xorgate_2/a_n64_32# B2 vdd clablock_0/png_0/xorgate_2/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1195 clablock_0/png_0/xorgate_2/a_n64_32# B2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1196 clablock_0/png_0/xorgate_2/a_n56_44# clablock_0/png_0/xorgate_2/a_n64_32# vdd clablock_0/png_0/xorgate_2/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1197 clablock_0/m1_252_1255# A2 clablock_0/png_0/xorgate_2/a_n56_44# clablock_0/png_0/xorgate_2/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1198 clablock_0/png_0/xorgate_2/a_56_44# B2 vdd clablock_0/png_0/xorgate_2/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1199 clablock_0/m1_252_1255# clablock_0/png_0/xorgate_2/a_48_n7# clablock_0/png_0/xorgate_2/a_56_44# clablock_0/png_0/xorgate_2/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1200 clablock_0/png_0/xorgate_2/a_n56_n20# A2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1201 clablock_0/m1_252_1255# B2 clablock_0/png_0/xorgate_2/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1202 clablock_0/png_0/xorgate_2/a_56_n20# clablock_0/png_0/xorgate_2/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1203 clablock_0/m1_252_1255# clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1204 clablock_0/m1_253_953# clablock_0/png_0/andgate_1/a_n61_61# vdd clablock_0/png_0/andgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1205 clablock_0/m1_253_953# clablock_0/png_0/andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1206 clablock_0/png_0/andgate_1/a_n61_61# A1 vdd clablock_0/png_0/andgate_1/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1207 clablock_0/png_0/andgate_1/a_n61_61# B1 vdd clablock_0/png_0/andgate_1/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1208 clablock_0/png_0/andgate_1/a_n61_61# A1 clablock_0/png_0/andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1209 clablock_0/png_0/andgate_1/a_n58_n25# B1 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1210 clablock_0/png_0/xorgate_1/a_48_n7# A1 vdd clablock_0/png_0/xorgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1211 clablock_0/png_0/xorgate_1/a_48_n7# A1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1212 clablock_0/png_0/xorgate_1/a_n64_32# B1 vdd clablock_0/png_0/xorgate_1/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1213 clablock_0/png_0/xorgate_1/a_n64_32# B1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1214 clablock_0/png_0/xorgate_1/a_n56_44# clablock_0/png_0/xorgate_1/a_n64_32# vdd clablock_0/png_0/xorgate_1/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1215 clablock_0/m1_248_764# A1 clablock_0/png_0/xorgate_1/a_n56_44# clablock_0/png_0/xorgate_1/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1216 clablock_0/png_0/xorgate_1/a_56_44# B1 vdd clablock_0/png_0/xorgate_1/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1217 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_48_n7# clablock_0/png_0/xorgate_1/a_56_44# clablock_0/png_0/xorgate_1/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1218 clablock_0/png_0/xorgate_1/a_n56_n20# A1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1219 clablock_0/m1_248_764# B1 clablock_0/png_0/xorgate_1/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1220 clablock_0/png_0/xorgate_1/a_56_n20# clablock_0/png_0/xorgate_1/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1221 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1222 clablock_0/m1_235_462# clablock_0/png_0/andgate_0/a_n61_61# vdd clablock_0/png_0/andgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1223 clablock_0/m1_235_462# clablock_0/png_0/andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1224 clablock_0/png_0/andgate_0/a_n61_61# A0 vdd clablock_0/png_0/andgate_0/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1225 clablock_0/png_0/andgate_0/a_n61_61# B0 vdd clablock_0/png_0/andgate_0/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1226 clablock_0/png_0/andgate_0/a_n61_61# A0 clablock_0/png_0/andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1227 clablock_0/png_0/andgate_0/a_n58_n25# B0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1228 clablock_0/png_0/xorgate_0/a_48_n7# A0 vdd clablock_0/png_0/xorgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1229 clablock_0/png_0/xorgate_0/a_48_n7# A0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1230 clablock_0/png_0/xorgate_0/a_n64_32# B0 vdd clablock_0/png_0/xorgate_0/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1231 clablock_0/png_0/xorgate_0/a_n64_32# B0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1232 clablock_0/png_0/xorgate_0/a_n56_44# clablock_0/png_0/xorgate_0/a_n64_32# vdd clablock_0/png_0/xorgate_0/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1233 clablock_0/m1_243_273# A0 clablock_0/png_0/xorgate_0/a_n56_44# clablock_0/png_0/xorgate_0/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1234 clablock_0/png_0/xorgate_0/a_56_44# B0 vdd clablock_0/png_0/xorgate_0/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1235 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_48_n7# clablock_0/png_0/xorgate_0/a_56_44# clablock_0/png_0/xorgate_0/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1236 clablock_0/png_0/xorgate_0/a_n56_n20# A0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1237 clablock_0/m1_243_273# B0 clablock_0/png_0/xorgate_0/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1238 clablock_0/png_0/xorgate_0/a_56_n20# clablock_0/png_0/xorgate_0/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1239 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1240 dff_0/m1_n140_n124# dff_0/m1_n49_n87# vdd dff_0/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=12480 ps=5408
+M1241 dff_0/m1_n140_n124# DB0 vdd dff_0/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1242 dff_0/nandgate_2/a_137_45# DB0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=2880 ps=1536
+M1243 dff_0/m1_n140_n124# dff_0/m1_n49_n87# dff_0/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1244 dff_0/m1_0_n20# B0 vdd dff_0/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1245 dff_0/m1_0_n20# dff_0/m1_n49_n87# vdd dff_0/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1246 dff_0/nandgate_1/a_137_45# dff_0/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1247 dff_0/m1_0_n20# B0 dff_0/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1248 dff_0/m1_n49_n87# dff_0/m1_n123_103# vdd dff_0/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1249 dff_0/m1_n49_n87# clk vdd dff_0/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1250 dff_0/m1_n49_n87# dff_0/m1_n140_n124# vdd dff_0/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1251 dff_0/nand3_0/a_79_9# dff_0/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1252 dff_0/nand3_0/a_106_9# clk dff_0/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1253 dff_0/m1_n49_n87# dff_0/m1_n123_103# dff_0/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1254 B0 dff_0/m1_n123_103# vdd dff_0/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1255 B0 dff_0/m1_0_n20# vdd dff_0/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1256 dff_0/nandgate_0/a_137_45# dff_0/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1257 B0 dff_0/m1_n123_103# dff_0/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1258 dff_0/m1_n123_103# dff_0/m1_n114_50# vdd dff_0/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1259 dff_0/m1_n123_103# clk vdd dff_0/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1260 dff_0/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1261 dff_0/m1_n123_103# dff_0/m1_n114_50# dff_0/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1262 dff_0/m1_n114_50# dff_0/m1_n140_n124# vdd dff_0/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1263 dff_0/m1_n114_50# dff_0/m1_n123_103# vdd dff_0/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1264 dff_0/nandgate_4/a_137_45# dff_0/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1265 dff_0/m1_n114_50# dff_0/m1_n140_n124# dff_0/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1266 dff_1/m1_n140_n124# dff_1/m1_n49_n87# vdd dff_1/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1267 dff_1/m1_n140_n124# DA0 vdd dff_1/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1268 dff_1/nandgate_2/a_137_45# DA0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1269 dff_1/m1_n140_n124# dff_1/m1_n49_n87# dff_1/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1270 dff_1/m1_0_n20# A0 vdd dff_1/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1271 dff_1/m1_0_n20# dff_1/m1_n49_n87# vdd dff_1/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1272 dff_1/nandgate_1/a_137_45# dff_1/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1273 dff_1/m1_0_n20# A0 dff_1/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1274 dff_1/m1_n49_n87# dff_1/m1_n123_103# vdd dff_1/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1275 dff_1/m1_n49_n87# clk vdd dff_1/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1276 dff_1/m1_n49_n87# dff_1/m1_n140_n124# vdd dff_1/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1277 dff_1/nand3_0/a_79_9# dff_1/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1278 dff_1/nand3_0/a_106_9# clk dff_1/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1279 dff_1/m1_n49_n87# dff_1/m1_n123_103# dff_1/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1280 A0 dff_1/m1_n123_103# vdd dff_1/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1281 A0 dff_1/m1_0_n20# vdd dff_1/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1282 dff_1/nandgate_0/a_137_45# dff_1/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1283 A0 dff_1/m1_n123_103# dff_1/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1284 dff_1/m1_n123_103# dff_1/m1_n114_50# vdd dff_1/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1285 dff_1/m1_n123_103# clk vdd dff_1/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1286 dff_1/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1287 dff_1/m1_n123_103# dff_1/m1_n114_50# dff_1/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1288 dff_1/m1_n114_50# dff_1/m1_n140_n124# vdd dff_1/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1289 dff_1/m1_n114_50# dff_1/m1_n123_103# vdd dff_1/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1290 dff_1/nandgate_4/a_137_45# dff_1/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1291 dff_1/m1_n114_50# dff_1/m1_n140_n124# dff_1/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1292 dff_9/m1_n140_n124# dff_9/m1_n49_n87# vdd dff_9/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=7800 ps=3380
+M1293 dff_9/m1_n140_n124# S0 vdd dff_9/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1294 dff_9/nandgate_2/a_137_45# S0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=1800 ps=960
+M1295 dff_9/m1_n140_n124# dff_9/m1_n49_n87# dff_9/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1296 dff_9/m1_0_n20# Q0 vdd dff_9/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1297 dff_9/m1_0_n20# dff_9/m1_n49_n87# vdd dff_9/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1298 dff_9/nandgate_1/a_137_45# dff_9/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1299 dff_9/m1_0_n20# Q0 dff_9/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1300 dff_9/m1_n49_n87# dff_9/m1_n123_103# vdd dff_9/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1301 dff_9/m1_n49_n87# clk vdd dff_9/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1302 dff_9/m1_n49_n87# dff_9/m1_n140_n124# vdd dff_9/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1303 dff_9/nand3_0/a_79_9# dff_9/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1304 dff_9/nand3_0/a_106_9# clk dff_9/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1305 dff_9/m1_n49_n87# dff_9/m1_n123_103# dff_9/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1306 Q0 dff_9/m1_n123_103# vdd dff_9/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1307 Q0 dff_9/m1_0_n20# vdd dff_9/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1308 dff_9/nandgate_0/a_137_45# dff_9/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1309 Q0 dff_9/m1_n123_103# dff_9/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1310 dff_9/m1_n123_103# dff_9/m1_n114_50# vdd dff_9/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1311 dff_9/m1_n123_103# clk vdd dff_9/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1312 dff_9/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1313 dff_9/m1_n123_103# dff_9/m1_n114_50# dff_9/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1314 dff_9/m1_n114_50# dff_9/m1_n140_n124# vdd dff_9/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1315 dff_9/m1_n114_50# dff_9/m1_n123_103# vdd dff_9/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1316 dff_9/nandgate_4/a_137_45# dff_9/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1317 dff_9/m1_n114_50# dff_9/m1_n140_n124# dff_9/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1318 dff_8/m1_n140_n124# dff_8/m1_n49_n87# vdd dff_8/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1319 dff_8/m1_n140_n124# S1 vdd dff_8/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1320 dff_8/nandgate_2/a_137_45# S1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1321 dff_8/m1_n140_n124# dff_8/m1_n49_n87# dff_8/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1322 dff_8/m1_0_n20# Q1 vdd dff_8/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1323 dff_8/m1_0_n20# dff_8/m1_n49_n87# vdd dff_8/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1324 dff_8/nandgate_1/a_137_45# dff_8/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1325 dff_8/m1_0_n20# Q1 dff_8/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1326 dff_8/m1_n49_n87# dff_8/m1_n123_103# vdd dff_8/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1327 dff_8/m1_n49_n87# clk vdd dff_8/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1328 dff_8/m1_n49_n87# dff_8/m1_n140_n124# vdd dff_8/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1329 dff_8/nand3_0/a_79_9# dff_8/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1330 dff_8/nand3_0/a_106_9# clk dff_8/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1331 dff_8/m1_n49_n87# dff_8/m1_n123_103# dff_8/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1332 Q1 dff_8/m1_n123_103# vdd dff_8/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1333 Q1 dff_8/m1_0_n20# vdd dff_8/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1334 dff_8/nandgate_0/a_137_45# dff_8/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1335 Q1 dff_8/m1_n123_103# dff_8/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1336 dff_8/m1_n123_103# dff_8/m1_n114_50# vdd dff_8/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1337 dff_8/m1_n123_103# clk vdd dff_8/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1338 dff_8/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1339 dff_8/m1_n123_103# dff_8/m1_n114_50# dff_8/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1340 dff_8/m1_n114_50# dff_8/m1_n140_n124# vdd dff_8/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1341 dff_8/m1_n114_50# dff_8/m1_n123_103# vdd dff_8/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1342 dff_8/nandgate_4/a_137_45# dff_8/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1343 dff_8/m1_n114_50# dff_8/m1_n140_n124# dff_8/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1344 dff_2/m1_n140_n124# dff_2/m1_n49_n87# vdd dff_2/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1345 dff_2/m1_n140_n124# DB1 vdd dff_2/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1346 dff_2/nandgate_2/a_137_45# DB1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1347 dff_2/m1_n140_n124# dff_2/m1_n49_n87# dff_2/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1348 m1_n69_666# B1 vdd dff_2/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1349 m1_n69_666# dff_2/m1_n49_n87# vdd dff_2/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1350 dff_2/nandgate_1/a_137_45# dff_2/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1351 m1_n69_666# B1 dff_2/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1352 dff_2/m1_n49_n87# dff_2/m1_n123_103# vdd dff_2/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1353 dff_2/m1_n49_n87# clk vdd dff_2/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1354 dff_2/m1_n49_n87# dff_2/m1_n140_n124# vdd dff_2/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1355 dff_2/nand3_0/a_79_9# dff_2/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1356 dff_2/nand3_0/a_106_9# clk dff_2/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1357 dff_2/m1_n49_n87# dff_2/m1_n123_103# dff_2/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1358 B1 dff_2/m1_n123_103# vdd dff_2/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1359 B1 m1_n69_666# vdd dff_2/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1360 dff_2/nandgate_0/a_137_45# m1_n69_666# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1361 B1 dff_2/m1_n123_103# dff_2/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1362 dff_2/m1_n123_103# dff_2/m1_n114_50# vdd dff_2/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1363 dff_2/m1_n123_103# clk vdd dff_2/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1364 dff_2/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1365 dff_2/m1_n123_103# dff_2/m1_n114_50# dff_2/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1366 dff_2/m1_n114_50# dff_2/m1_n140_n124# vdd dff_2/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1367 dff_2/m1_n114_50# dff_2/m1_n123_103# vdd dff_2/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1368 dff_2/nandgate_4/a_137_45# dff_2/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1369 dff_2/m1_n114_50# dff_2/m1_n140_n124# dff_2/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1370 dff_3/m1_n140_n124# dff_3/m1_n49_n87# vdd dff_3/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1371 dff_3/m1_n140_n124# DA1 vdd dff_3/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1372 dff_3/nandgate_2/a_137_45# DA1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1373 dff_3/m1_n140_n124# dff_3/m1_n49_n87# dff_3/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1374 dff_3/m1_0_n20# A1 vdd dff_3/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1375 dff_3/m1_0_n20# dff_3/m1_n49_n87# vdd dff_3/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1376 dff_3/nandgate_1/a_137_45# dff_3/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1377 dff_3/m1_0_n20# A1 dff_3/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1378 dff_3/m1_n49_n87# dff_3/m1_n123_103# vdd dff_3/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1379 dff_3/m1_n49_n87# clk vdd dff_3/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1380 dff_3/m1_n49_n87# dff_3/m1_n140_n124# vdd dff_3/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1381 dff_3/nand3_0/a_79_9# dff_3/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1382 dff_3/nand3_0/a_106_9# clk dff_3/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1383 dff_3/m1_n49_n87# dff_3/m1_n123_103# dff_3/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1384 A1 dff_3/m1_n123_103# vdd dff_3/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1385 A1 dff_3/m1_0_n20# vdd dff_3/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1386 dff_3/nandgate_0/a_137_45# dff_3/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1387 A1 dff_3/m1_n123_103# dff_3/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1388 dff_3/m1_n123_103# dff_3/m1_n114_50# vdd dff_3/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1389 dff_3/m1_n123_103# clk vdd dff_3/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1390 dff_3/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1391 dff_3/m1_n123_103# dff_3/m1_n114_50# dff_3/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1392 dff_3/m1_n114_50# dff_3/m1_n140_n124# vdd dff_3/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1393 dff_3/m1_n114_50# dff_3/m1_n123_103# vdd dff_3/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1394 dff_3/nandgate_4/a_137_45# dff_3/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1395 dff_3/m1_n114_50# dff_3/m1_n140_n124# dff_3/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1396 dff_12/m1_n140_n124# dff_12/m1_n49_n87# vdd dff_12/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1397 dff_12/m1_n140_n124# S2 vdd dff_12/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1398 dff_12/nandgate_2/a_137_45# S2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1399 dff_12/m1_n140_n124# dff_12/m1_n49_n87# dff_12/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1400 dff_12/m1_0_n20# Q2 vdd dff_12/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1401 dff_12/m1_0_n20# dff_12/m1_n49_n87# vdd dff_12/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1402 dff_12/nandgate_1/a_137_45# dff_12/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1403 dff_12/m1_0_n20# Q2 dff_12/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1404 dff_12/m1_n49_n87# dff_12/m1_n123_103# vdd dff_12/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1405 dff_12/m1_n49_n87# clk vdd dff_12/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1406 dff_12/m1_n49_n87# dff_12/m1_n140_n124# vdd dff_12/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1407 dff_12/nand3_0/a_79_9# dff_12/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1408 dff_12/nand3_0/a_106_9# clk dff_12/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1409 dff_12/m1_n49_n87# dff_12/m1_n123_103# dff_12/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1410 Q2 dff_12/m1_n123_103# vdd dff_12/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1411 Q2 dff_12/m1_0_n20# vdd dff_12/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1412 dff_12/nandgate_0/a_137_45# dff_12/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1413 Q2 dff_12/m1_n123_103# dff_12/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1414 dff_12/m1_n123_103# dff_12/m1_n114_50# vdd dff_12/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1415 dff_12/m1_n123_103# clk vdd dff_12/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1416 dff_12/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1417 dff_12/m1_n123_103# dff_12/m1_n114_50# dff_12/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1418 dff_12/m1_n114_50# dff_12/m1_n140_n124# vdd dff_12/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1419 dff_12/m1_n114_50# dff_12/m1_n123_103# vdd dff_12/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1420 dff_12/nandgate_4/a_137_45# dff_12/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1421 dff_12/m1_n114_50# dff_12/m1_n140_n124# dff_12/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1422 dff_11/m1_n140_n124# dff_11/m1_n49_n87# vdd dff_11/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1423 dff_11/m1_n140_n124# S3 vdd dff_11/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1424 dff_11/nandgate_2/a_137_45# S3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1425 dff_11/m1_n140_n124# dff_11/m1_n49_n87# dff_11/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1426 dff_11/m1_0_n20# Q3 vdd dff_11/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1427 dff_11/m1_0_n20# dff_11/m1_n49_n87# vdd dff_11/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1428 dff_11/nandgate_1/a_137_45# dff_11/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1429 dff_11/m1_0_n20# Q3 dff_11/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1430 dff_11/m1_n49_n87# dff_11/m1_n123_103# vdd dff_11/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1431 dff_11/m1_n49_n87# clk vdd dff_11/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1432 dff_11/m1_n49_n87# dff_11/m1_n140_n124# vdd dff_11/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1433 dff_11/nand3_0/a_79_9# dff_11/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1434 dff_11/nand3_0/a_106_9# clk dff_11/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1435 dff_11/m1_n49_n87# dff_11/m1_n123_103# dff_11/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1436 Q3 dff_11/m1_n123_103# vdd dff_11/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1437 Q3 dff_11/m1_0_n20# vdd dff_11/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1438 dff_11/nandgate_0/a_137_45# dff_11/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1439 Q3 dff_11/m1_n123_103# dff_11/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1440 dff_11/m1_n123_103# dff_11/m1_n114_50# vdd dff_11/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1441 dff_11/m1_n123_103# clk vdd dff_11/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1442 dff_11/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1443 dff_11/m1_n123_103# dff_11/m1_n114_50# dff_11/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1444 dff_11/m1_n114_50# dff_11/m1_n140_n124# vdd dff_11/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1445 dff_11/m1_n114_50# dff_11/m1_n123_103# vdd dff_11/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1446 dff_11/nandgate_4/a_137_45# dff_11/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1447 dff_11/m1_n114_50# dff_11/m1_n140_n124# dff_11/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1448 dff_10/m1_n140_n124# dff_10/m1_n49_n87# vdd dff_10/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1449 dff_10/m1_n140_n124# Carout vdd dff_10/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1450 dff_10/nandgate_2/a_137_45# Carout gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1451 dff_10/m1_n140_n124# dff_10/m1_n49_n87# dff_10/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1452 dff_10/m1_0_n20# Q4 vdd dff_10/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1453 dff_10/m1_0_n20# dff_10/m1_n49_n87# vdd dff_10/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1454 dff_10/nandgate_1/a_137_45# dff_10/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1455 dff_10/m1_0_n20# Q4 dff_10/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1456 dff_10/m1_n49_n87# dff_10/m1_n123_103# vdd dff_10/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1457 dff_10/m1_n49_n87# clk vdd dff_10/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1458 dff_10/m1_n49_n87# dff_10/m1_n140_n124# vdd dff_10/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1459 dff_10/nand3_0/a_79_9# dff_10/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1460 dff_10/nand3_0/a_106_9# clk dff_10/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1461 dff_10/m1_n49_n87# dff_10/m1_n123_103# dff_10/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1462 Q4 dff_10/m1_n123_103# vdd dff_10/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1463 Q4 dff_10/m1_0_n20# vdd dff_10/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1464 dff_10/nandgate_0/a_137_45# dff_10/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1465 Q4 dff_10/m1_n123_103# dff_10/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1466 dff_10/m1_n123_103# dff_10/m1_n114_50# vdd dff_10/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1467 dff_10/m1_n123_103# clk vdd dff_10/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1468 dff_10/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1469 dff_10/m1_n123_103# dff_10/m1_n114_50# dff_10/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1470 dff_10/m1_n114_50# dff_10/m1_n140_n124# vdd dff_10/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1471 dff_10/m1_n114_50# dff_10/m1_n123_103# vdd dff_10/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1472 dff_10/nandgate_4/a_137_45# dff_10/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1473 dff_10/m1_n114_50# dff_10/m1_n140_n124# dff_10/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1474 dff_4/m1_n140_n124# dff_4/m1_n49_n87# vdd dff_4/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1475 dff_4/m1_n140_n124# DB2 vdd dff_4/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1476 dff_4/nandgate_2/a_137_45# DB2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1477 dff_4/m1_n140_n124# dff_4/m1_n49_n87# dff_4/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1478 dff_4/m1_0_n20# B2 vdd dff_4/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1479 dff_4/m1_0_n20# dff_4/m1_n49_n87# vdd dff_4/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1480 dff_4/nandgate_1/a_137_45# dff_4/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1481 dff_4/m1_0_n20# B2 dff_4/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1482 dff_4/m1_n49_n87# dff_4/m1_n123_103# vdd dff_4/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1483 dff_4/m1_n49_n87# clk vdd dff_4/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1484 dff_4/m1_n49_n87# dff_4/m1_n140_n124# vdd dff_4/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1485 dff_4/nand3_0/a_79_9# dff_4/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1486 dff_4/nand3_0/a_106_9# clk dff_4/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1487 dff_4/m1_n49_n87# dff_4/m1_n123_103# dff_4/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1488 B2 dff_4/m1_n123_103# vdd dff_4/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1489 B2 dff_4/m1_0_n20# vdd dff_4/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1490 dff_4/nandgate_0/a_137_45# dff_4/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1491 B2 dff_4/m1_n123_103# dff_4/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1492 dff_4/m1_n123_103# dff_4/m1_n114_50# vdd dff_4/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1493 dff_4/m1_n123_103# clk vdd dff_4/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1494 dff_4/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1495 dff_4/m1_n123_103# dff_4/m1_n114_50# dff_4/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1496 dff_4/m1_n114_50# dff_4/m1_n140_n124# vdd dff_4/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1497 dff_4/m1_n114_50# dff_4/m1_n123_103# vdd dff_4/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1498 dff_4/nandgate_4/a_137_45# dff_4/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1499 dff_4/m1_n114_50# dff_4/m1_n140_n124# dff_4/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1500 dff_5/m1_n140_n124# dff_5/m1_n49_n87# vdd dff_5/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1501 dff_5/m1_n140_n124# DA2 vdd dff_5/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1502 dff_5/nandgate_2/a_137_45# DA2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1503 dff_5/m1_n140_n124# dff_5/m1_n49_n87# dff_5/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1504 dff_5/m1_0_n20# A2 vdd dff_5/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1505 dff_5/m1_0_n20# dff_5/m1_n49_n87# vdd dff_5/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1506 dff_5/nandgate_1/a_137_45# dff_5/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1507 dff_5/m1_0_n20# A2 dff_5/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1508 dff_5/m1_n49_n87# dff_5/m1_n123_103# vdd dff_5/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1509 dff_5/m1_n49_n87# clk vdd dff_5/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1510 dff_5/m1_n49_n87# dff_5/m1_n140_n124# vdd dff_5/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1511 dff_5/nand3_0/a_79_9# dff_5/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1512 dff_5/nand3_0/a_106_9# clk dff_5/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1513 dff_5/m1_n49_n87# dff_5/m1_n123_103# dff_5/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1514 A2 dff_5/m1_n123_103# vdd dff_5/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1515 A2 dff_5/m1_0_n20# vdd dff_5/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1516 dff_5/nandgate_0/a_137_45# dff_5/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1517 A2 dff_5/m1_n123_103# dff_5/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1518 dff_5/m1_n123_103# dff_5/m1_n114_50# vdd dff_5/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1519 dff_5/m1_n123_103# clk vdd dff_5/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1520 dff_5/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1521 dff_5/m1_n123_103# dff_5/m1_n114_50# dff_5/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1522 dff_5/m1_n114_50# dff_5/m1_n140_n124# vdd dff_5/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1523 dff_5/m1_n114_50# dff_5/m1_n123_103# vdd dff_5/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1524 dff_5/nandgate_4/a_137_45# dff_5/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1525 dff_5/m1_n114_50# dff_5/m1_n140_n124# dff_5/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1526 dff_6/m1_n140_n124# dff_6/m1_n49_n87# vdd dff_6/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1527 dff_6/m1_n140_n124# DB3 vdd dff_6/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1528 dff_6/nandgate_2/a_137_45# DB3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1529 dff_6/m1_n140_n124# dff_6/m1_n49_n87# dff_6/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1530 dff_6/m1_0_n20# B3 vdd dff_6/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1531 dff_6/m1_0_n20# dff_6/m1_n49_n87# vdd dff_6/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1532 dff_6/nandgate_1/a_137_45# dff_6/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1533 dff_6/m1_0_n20# B3 dff_6/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1534 dff_6/m1_n49_n87# dff_6/m1_n123_103# vdd dff_6/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1535 dff_6/m1_n49_n87# clk vdd dff_6/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1536 dff_6/m1_n49_n87# dff_6/m1_n140_n124# vdd dff_6/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1537 dff_6/nand3_0/a_79_9# dff_6/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1538 dff_6/nand3_0/a_106_9# clk dff_6/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1539 dff_6/m1_n49_n87# dff_6/m1_n123_103# dff_6/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1540 B3 dff_6/m1_n123_103# vdd dff_6/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1541 B3 dff_6/m1_0_n20# vdd dff_6/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1542 dff_6/nandgate_0/a_137_45# dff_6/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1543 B3 dff_6/m1_n123_103# dff_6/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1544 dff_6/m1_n123_103# dff_6/m1_n114_50# vdd dff_6/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1545 dff_6/m1_n123_103# clk vdd dff_6/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1546 dff_6/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1547 dff_6/m1_n123_103# dff_6/m1_n114_50# dff_6/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1548 dff_6/m1_n114_50# dff_6/m1_n140_n124# vdd dff_6/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1549 dff_6/m1_n114_50# dff_6/m1_n123_103# vdd dff_6/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1550 dff_6/nandgate_4/a_137_45# dff_6/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1551 dff_6/m1_n114_50# dff_6/m1_n140_n124# dff_6/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1552 dff_7/m1_n140_n124# dff_7/m1_n49_n87# vdd dff_7/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1553 dff_7/m1_n140_n124# DA3 vdd dff_7/nandgate_2/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1554 dff_7/nandgate_2/a_137_45# DA3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1555 dff_7/m1_n140_n124# dff_7/m1_n49_n87# dff_7/nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1556 dff_7/m1_0_n20# A3 vdd dff_7/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1557 dff_7/m1_0_n20# dff_7/m1_n49_n87# vdd dff_7/nandgate_1/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1558 dff_7/nandgate_1/a_137_45# dff_7/m1_n49_n87# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1559 dff_7/m1_0_n20# A3 dff_7/nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1560 dff_7/m1_n49_n87# dff_7/m1_n123_103# vdd dff_7/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1561 dff_7/m1_n49_n87# clk vdd dff_7/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1562 dff_7/m1_n49_n87# dff_7/m1_n140_n124# vdd dff_7/nand3_0/w_64_61# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1563 dff_7/nand3_0/a_79_9# dff_7/m1_n140_n124# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1564 dff_7/nand3_0/a_106_9# clk dff_7/nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1565 dff_7/m1_n49_n87# dff_7/m1_n123_103# dff_7/nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1566 A3 dff_7/m1_n123_103# vdd dff_7/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1567 A3 dff_7/m1_0_n20# vdd dff_7/nandgate_0/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1568 dff_7/nandgate_0/a_137_45# dff_7/m1_0_n20# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1569 A3 dff_7/m1_n123_103# dff_7/nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1570 dff_7/m1_n123_103# dff_7/m1_n114_50# vdd dff_7/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1571 dff_7/m1_n123_103# clk vdd dff_7/nandgate_3/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1572 dff_7/nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1573 dff_7/m1_n123_103# dff_7/m1_n114_50# dff_7/nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1574 dff_7/m1_n114_50# dff_7/m1_n140_n124# vdd dff_7/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1575 dff_7/m1_n114_50# dff_7/m1_n123_103# vdd dff_7/nandgate_4/w_122_92# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1576 dff_7/nandgate_4/a_137_45# dff_7/m1_n123_103# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1577 dff_7/m1_n114_50# dff_7/m1_n140_n124# dff_7/nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+C0 clablock_0/carrygen_0/m1_174_152# gnd 1.0fF
+C1 clablock_0/m1_248_764# clablock_0/m1_253_1444# 0.2fF
+C2 vdd clablock_0/png_0/xorgate_1/a_56_44# 0.2fF
+C3 clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C4 dff_12/nandgate_3/a_137_45# gnd 0.2fF
+C5 S2 clk 0.4fF
+C6 dff_8/m1_0_n20# vdd 0.9fF
+C7 gnd clk 0.3fF
+C8 dff_0/m1_n114_50# clk 0.1fF
+C9 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.1fF
+C10 clablock_0/carrygen_0/orgate_0/w_n74_71# clablock_0/m1_235_462# 0.1fF
+C11 vdd dff_7/nandgate_3/w_122_92# 0.2fF
+C12 clk dff_7/m1_n140_n124# 0.6fF
+C13 dff_3/nandgate_4/w_122_92# dff_3/m1_n140_n124# 0.1fF
+C14 gnd clablock_0/m1_253_1444# 0.1fF
+C15 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/m1_777_387# 0.1fF
+C16 clablock_0/carrygen_0/m1_174_38# clablock_0/carrygen_0/m1_174_152# 0.1fF
+C17 clablock_0/m1_248_764# vdd 0.2fF
+C18 dff_10/m1_n49_n87# dff_10/m1_n140_n124# 1.2fF
+C19 dff_9/nandgate_0/a_137_45# dff_9/m1_n123_103# 0.1fF
+C20 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_48_n7# 0.2fF
+C21 vdd clablock_0/png_0/andgate_3/a_n61_61# 0.6fF
+C22 clablock_0/carrygen_0/orgate_1/w_n74_71# clablock_0/carrygen_0/m2_438_246# 0.1fF
+C23 dff_1/m1_n114_50# vdd 0.7fF
+C24 gnd clablock_0/carrygen_0/andgate_8/a_n61_61# 0.1fF
+C25 dff_7/nandgate_4/w_122_92# dff_7/m1_n114_50# 0.2fF
+C26 dff_11/m1_0_n20# Q3 0.9fF
+C27 dff_7/nandgate_2/a_137_45# dff_7/m1_n49_n87# 0.1fF
+C28 clablock_0/carrygen_0/m2_438_434# clablock_0/m1_252_1255# 0.1fF
+C29 clablock_0/carrygen_0/andgate_1/w_n42_50# vdd 0.1fF
+C30 dff_5/nandgate_0/a_137_45# gnd 0.2fF
+C31 dff_5/m1_n123_103# clk 0.8fF
+C32 Q3 dff_11/m1_n123_103# 0.5fF
+C33 dff_6/m1_n49_n87# dff_6/nand3_0/w_64_61# 0.2fF
+C34 dff_2/nandgate_4/w_122_92# dff_2/m1_n140_n124# 0.1fF
+C35 dff_2/nandgate_3/a_137_45# dff_2/m1_n123_103# 0.1fF
+C36 dff_2/m1_n140_n124# gnd 0.1fF
+C37 dff_8/nandgate_4/w_122_92# dff_8/m1_n123_103# 0.1fF
+C38 clablock_0/png_0/xorgate_2/a_48_n7# clablock_0/png_0/xorgate_2/w_75_30# 0.1fF
+C39 gnd dff_6/nandgate_4/a_137_45# 0.2fF
+C40 dff_11/m1_n123_103# dff_11/m1_n114_50# 0.9fF
+C41 dff_11/m1_n140_n124# gnd 0.1fF
+C42 dff_9/nandgate_0/w_122_92# dff_9/m1_n123_103# 0.1fF
+C43 dff_1/nandgate_1/a_137_45# dff_1/m1_0_n20# 0.1fF
+C44 dff_0/nandgate_4/w_122_92# dff_0/m1_n114_50# 0.2fF
+C45 dff_0/nandgate_3/w_122_92# clk 0.1fF
+C46 clablock_0/sumblock_0/xorgate_0/a_n56_44# S3 0.2fF
+C47 dff_7/nandgate_1/a_137_45# dff_7/m1_0_n20# 0.1fF
+C48 dff_5/m1_n49_n87# dff_5/m1_0_n20# 0.3fF
+C49 gnd clablock_0/png_0/xorgate_0/a_n64_32# 0.1fF
+C50 clablock_0/sumblock_0/xorgate_3/a_n56_n20# gnd 0.1fF
+C51 dff_8/m1_0_n20# dff_8/nandgate_1/a_137_45# 0.1fF
+C52 dff_7/m1_n49_n87# dff_7/nand3_0/a_106_9# 0.1fF
+C53 clablock_0/sumblock_0/xorgate_1/a_56_n20# gnd 0.1fF
+C54 clablock_0/carrygen_0/andgate_1/a_n58_n25# clablock_0/m1_235_462# 0.2fF
+C55 clablock_0/carrygen_0/andgate_1/inverter_0/w_n13_n7# vdd 0.1fF
+C56 clablock_0/carrygen_0/orgate_2/a_n59_77# clablock_0/carrygen_0/m1_567_199# 0.0fF
+C57 dff_7/nand3_0/w_64_61# dff_7/m1_n123_103# 0.1fF
+C58 dff_5/m1_0_n20# vdd 0.9fF
+C59 dff_4/nandgate_2/a_137_45# dff_4/m1_n140_n124# 0.1fF
+C60 dff_10/m1_n49_n87# dff_10/nandgate_1/w_122_92# 0.1fF
+C61 dff_3/nandgate_4/w_122_92# dff_3/m1_n114_50# 0.2fF
+C62 dff_6/m1_n140_n124# dff_6/m1_n114_50# 0.5fF
+C63 dff_6/m1_n123_103# vdd 1.2fF
+C64 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/w_n71_38# 0.2fF
+C65 clablock_0/carrygen_0/orgate_1/a_n59_77# clablock_0/carrygen_0/m1_174_152# 0.0fF
+C66 Q0 dff_9/nandgate_0/a_137_45# 0.1fF
+C67 clablock_0/m1_198_1746# clablock_0/png_0/xorgate_3/a_56_44# 0.2fF
+C68 clablock_0/m1_248_764# gnd 0.3fF
+C69 gnd dff_7/m1_n49_n87# 0.2fF
+C70 dff_10/m1_n123_103# clk 0.8fF
+C71 Q2 vdd 0.7fF
+C72 dff_2/m1_n114_50# dff_2/nandgate_4/a_137_45# 0.1fF
+C73 dff_1/nandgate_3/w_122_92# vdd 0.2fF
+C74 dff_1/nandgate_0/a_137_45# gnd 0.2fF
+C75 clablock_0/png_0/xorgate_0/w_75_30# clablock_0/png_0/xorgate_0/a_56_44# 0.1fF
+C76 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_n64_32# 0.6fF
+C77 vdd clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# 0.1fF
+C78 gnd clablock_0/carrygen_0/andgate_9/a_n61_61# 0.1fF
+C79 clablock_0/carrygen_0/orgate_1/w_n74_71# vdd 0.1fF
+C80 dff_2/m1_n49_n87# dff_2/m1_n140_n124# 1.2fF
+C81 vdd clablock_0/carrygen_0/andgate_6/w_n42_50# 0.1fF
+C82 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/andgate_2/w_n76_50# 0.1fF
+C83 vdd dff_12/m1_n114_50# 0.7fF
+C84 dff_9/nand3_0/a_79_9# gnd 0.2fF
+C85 vdd clablock_0/png_0/xorgate_2/a_n56_44# 0.2fF
+C86 vdd clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C87 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/andgate_5/a_n58_n25# 0.1fF
+C88 vdd clablock_0/png_0/xorgate_0/a_48_n7# 0.2fF
+C89 dff_7/m1_n140_n124# dff_7/nandgate_4/a_137_45# 0.1fF
+C90 dff_4/nandgate_1/w_122_92# dff_4/m1_0_n20# 0.2fF
+C91 dff_1/m1_n49_n87# gnd 0.2fF
+C92 dff_4/m1_n49_n87# dff_4/nandgate_2/a_137_45# 0.1fF
+C93 m1_n69_666# dff_2/m1_n123_103# 0.1fF
+C94 dff_8/m1_n49_n87# dff_8/nand3_0/w_64_61# 0.2fF
+C95 clk gnd 0.5fF
+C96 vdd clablock_0/carrygen_0/orgate_8/w_n74_71# 0.1fF
+C97 dff_11/nandgate_1/a_137_45# Q3 0.1fF
+C98 dff_11/nandgate_3/w_122_92# dff_11/m1_n123_103# 0.2fF
+C99 dff_9/nandgate_0/w_122_92# Q0 0.2fF
+C100 gnd dff_10/m1_n114_50# 0.4fF
+C101 dff_10/nandgate_2/a_137_45# dff_10/m1_n140_n124# 0.1fF
+C102 dff_1/m1_0_n20# vdd 0.9fF
+C103 clablock_0/png_0/xorgate_0/a_48_n7# clablock_0/png_0/xorgate_0/a_56_n20# 0.0fF
+C104 clablock_0/m1_196_1935# clablock_0/png_0/andgate_3/a_n61_61# 0.1fF
+C105 vdd clablock_0/sumblock_0/xorgate_1/w_n71_38# 0.1fF
+C106 vdd clablock_0/sumblock_0/xorgate_3/a_n56_44# 0.2fF
+C107 clablock_0/carrygen_0/orgate_1/inverter_0/w_n13_n7# vdd 0.1fF
+C108 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C109 dff_6/m1_n49_n87# clk 0.4fF
+C110 dff_4/nand3_0/w_64_61# clk 0.1fF
+C111 dff_4/m1_n140_n124# gnd 0.1fF
+C112 dff_2/nand3_0/w_64_61# dff_2/m1_n123_103# 0.1fF
+C113 dff_8/nandgate_3/w_122_92# clk 0.1fF
+C114 vdd clablock_0/carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.1fF
+C115 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/w_75_30# 0.1fF
+C116 clablock_0/sumblock_0/xorgate_0/w_75_30# clablock_0/sumblock_0/xorgate_0/a_56_44# 0.1fF
+C117 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/andgate_5/w_n76_50# 0.1fF
+C118 dff_1/m1_n49_n87# dff_1/nandgate_1/w_122_92# 0.1fF
+C119 dff_5/nand3_0/w_64_61# dff_5/m1_n123_103# 0.1fF
+C120 dff_3/nandgate_0/a_137_45# dff_3/m1_n123_103# 0.1fF
+C121 vdd clk 1.6fF
+C122 dff_4/nand3_0/w_64_61# dff_4/m1_n140_n124# 0.8fF
+C123 dff_2/nandgate_0/w_122_92# vdd 0.2fF
+C124 dff_2/nand3_0/a_106_9# gnd 0.1fF
+C125 dff_9/nand3_0/w_64_61# clk 0.1fF
+C126 vdd clablock_0/png_0/xorgate_3/w_n71_38# 0.1fF
+C127 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/andgate_7/a_n58_n25# 0.1fF
+C128 gnd clablock_0/carrygen_0/m1_1315_575# 0.1fF
+C129 vdd clablock_0/carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.1fF
+C130 dff_3/nandgate_4/w_122_92# vdd 0.2fF
+C131 dff_3/nandgate_3/a_137_45# gnd 0.2fF
+C132 clablock_0/carrygen_0/andgate_0/inverter_0/w_n13_n7# clablock_0/carrygen_0/m1_174_38# 0.0fF
+C133 dff_9/nandgate_4/w_122_92# vdd 0.2fF
+C134 dff_3/nandgate_0/w_122_92# dff_3/m1_0_n20# 0.1fF
+C135 dff_2/m1_n49_n87# clk 0.4fF
+C136 clablock_0/carrygen_0/orgate_4/a_n63_n10# vdd 0.0fF
+C137 dff_5/nandgate_2/a_137_45# dff_5/m1_n49_n87# 0.1fF
+C138 dff_4/m1_n49_n87# gnd 0.2fF
+C139 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/andgate_5/inverter_0/w_n13_n7# 0.1fF
+C140 clablock_0/carrygen_0/orgate_8/a_n59_77# clablock_0/carrygen_0/m1_567_529# 0.0fF
+C141 gnd clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C142 dff_11/nandgate_2/w_122_92# dff_11/m1_n140_n124# 0.2fF
+C143 dff_3/nandgate_0/w_122_92# dff_3/m1_n123_103# 0.1fF
+C144 dff_4/m1_n123_103# dff_4/m1_n114_50# 0.9fF
+C145 clablock_0/carrygen_0/orgate_5/w_n74_71# clablock_0/carrygen_0/m1_947_392# 0.1fF
+C146 dff_4/nand3_0/w_64_61# dff_4/m1_n49_n87# 0.2fF
+C147 clablock_0/sumblock_0/xorgate_1/w_n37_30# S2 0.0fF
+C148 vdd clablock_0/carrygen_0/orgate_8/a_n59_77# 0.2fF
+C149 clablock_0/carrygen_0/orgate_2/inverter_0/w_n13_n7# vdd 0.1fF
+C150 dff_11/nand3_0/w_64_61# clk 0.1fF
+C151 dff_12/nand3_0/a_106_9# gnd 0.1fF
+C152 dff_3/nand3_0/a_79_9# dff_3/nand3_0/a_106_9# 0.1fF
+C153 dff_2/m1_n49_n87# dff_2/nand3_0/a_106_9# 0.1fF
+C154 dff_8/nand3_0/a_106_9# gnd 0.1fF
+C155 dff_1/m1_n114_50# dff_1/nandgate_4/a_137_45# 0.1fF
+C156 gnd clablock_0/png_0/andgate_3/a_n58_n25# 0.1fF
+C157 clablock_0/sumblock_0/xorgate_1/a_n64_32# S2 0.6fF
+C158 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/andgate_9/w_n76_50# 0.1fF
+C159 Q1 dff_8/m1_n49_n87# 0.1fF
+C160 dff_9/nandgate_1/a_137_45# dff_9/m1_0_n20# 0.1fF
+C161 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/m1_198_1746# 0.0fF
+C162 vdd dff_11/m1_n140_n124# 1.0fF
+C163 dff_4/nandgate_3/a_137_45# dff_4/m1_n123_103# 0.1fF
+C164 dff_2/nand3_0/a_79_9# clk 0.1fF
+C165 clablock_0/sumblock_0/xorgate_1/a_56_44# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.4fF
+C166 clablock_0/carrygen_0/orgate_9/inverter_0/w_n13_n7# vdd 0.1fF
+C167 clablock_0/carrygen_0/andgate_3/a_n58_n25# gnd 0.1fF
+C168 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/orgate_5/a_n59_77# 0.2fF
+C169 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/m2_438_246# 0.1fF
+C170 gnd dff_7/nandgate_0/a_137_45# 0.2fF
+C171 dff_3/m1_0_n20# gnd 0.3fF
+C172 S0 clablock_0/sumblock_0/xorgate_3/a_56_44# 0.2fF
+C173 vdd clablock_0/carrygen_0/andgate_8/w_n42_50# 0.1fF
+C174 clablock_0/carrygen_0/andgate_1/a_n61_61# vdd 0.6fF
+C175 clablock_0/carrygen_0/m1_174_38# gnd 0.3fF
+C176 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_n56_n20# 0.1fF
+C177 clablock_0/carrygen_0/andgate_6/a_n58_n25# clablock_0/m1_198_1746# 0.1fF
+C178 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/m2_438_434# 0.3fF
+C179 clablock_0/carrygen_0/orgate_5/a_n63_n10# gnd 0.4fF
+C180 gnd dff_7/nandgate_4/a_137_45# 0.2fF
+C181 dff_4/nandgate_0/w_122_92# vdd 0.2fF
+C182 dff_4/nand3_0/a_106_9# gnd 0.1fF
+C183 dff_10/m1_n123_103# dff_10/m1_n114_50# 0.9fF
+C184 dff_3/m1_n123_103# gnd 0.7fF
+C185 dff_9/nandgate_3/w_122_92# clk 0.1fF
+C186 dff_9/m1_n140_n124# gnd 0.1fF
+C187 dff_1/nandgate_4/w_122_92# dff_1/m1_n114_50# 0.2fF
+C188 vdd clablock_0/png_0/xorgate_1/inverter_0/w_n13_n7# 0.1fF
+C189 gnd clablock_0/png_0/andgate_3/a_n61_61# 0.1fF
+C190 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.1fF
+C191 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/m1_252_1255# 0.1fF
+C192 S1 clablock_0/sumblock_0/xorgate_2/a_n56_44# 0.2fF
+C193 clablock_0/carrygen_0/andgate_4/w_n76_50# vdd 0.1fF
+C194 clablock_0/carrygen_0/orgate_8/w_n74_71# clablock_0/carrygen_0/m1_1147_580# 0.1fF
+C195 vdd clablock_0/sumblock_0/xorgate_0/a_n56_44# 0.2fF
+C196 dff_7/nand3_0/w_64_61# dff_7/m1_n49_n87# 0.2fF
+C197 dff_4/nandgate_3/w_122_92# dff_4/m1_n123_103# 0.2fF
+C198 dff_12/m1_n49_n87# dff_12/nandgate_1/w_122_92# 0.1fF
+C199 dff_2/nand3_0/a_79_9# dff_2/nand3_0/a_106_9# 0.1fF
+C200 dff_9/nandgate_2/w_122_92# vdd 0.2fF
+C201 dff_0/m1_n114_50# dff_0/nandgate_4/a_137_45# 0.1fF
+C202 vdd dff_7/m1_0_n20# 0.9fF
+C203 vdd clablock_0/carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.1fF
+C204 dff_2/nandgate_2/a_137_45# gnd 0.2fF
+C205 dff_7/nand3_0/w_64_61# clk 0.1fF
+C206 dff_11/nand3_0/w_64_61# dff_11/m1_n140_n124# 0.8fF
+C207 vdd dff_11/nandgate_1/w_122_92# 0.2fF
+C208 vdd clablock_0/m1_198_1746# 2.1fF
+C209 dff_0/nand3_0/w_64_61# clk 0.1fF
+C210 clablock_0/png_0/xorgate_3/w_n37_30# clablock_0/m1_198_1746# 0.0fF
+C211 clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# clablock_0/m1_198_1746# 0.1fF
+C212 gnd clablock_0/sumblock_0/xorgate_2/a_n56_n20# 0.1fF
+C213 S1 gnd 0.2fF
+C214 clablock_0/carrygen_0/andgate_4/inverter_0/w_n13_n7# vdd 0.1fF
+C215 dff_8/nandgate_3/a_137_45# dff_8/m1_n114_50# 0.1fF
+C216 dff_8/m1_n140_n124# dff_8/m1_n123_103# 0.2fF
+C217 S1 dff_8/m1_n140_n124# 0.3fF
+C218 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/carrygen_0/andgate_6/w_n76_50# 0.1fF
+C219 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/carrygen_0/andgate_0/w_n76_50# 0.1fF
+C220 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.0fF
+C221 dff_4/m1_0_n20# dff_4/m1_n123_103# 0.1fF
+C222 vdd dff_10/m1_n114_50# 0.7fF
+C223 clablock_0/m1_253_1444# clablock_0/png_0/andgate_2/inverter_0/w_n13_n7# 0.0fF
+C224 clablock_0/carrygen_0/orgate_6/w_n74_71# clablock_0/carrygen_0/m1_376_596# 0.1fF
+C225 dff_9/m1_n49_n87# gnd 0.2fF
+C226 dff_1/nand3_0/w_64_61# vdd 0.2fF
+C227 vdd clablock_0/png_0/xorgate_2/a_n64_32# 0.5fF
+C228 clablock_0/carrygen_0/andgate_2/a_n61_61# vdd 0.6fF
+C229 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/orgate_2/w_n65_31# 0.0fF
+C230 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/andgate_2/a_n58_n25# 0.1fF
+C231 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/w_n71_38# 0.2fF
+C232 dff_10/nandgate_3/w_122_92# dff_10/m1_n123_103# 0.2fF
+C233 dff_1/nandgate_0/a_137_45# dff_1/m1_n123_103# 0.1fF
+C234 clablock_0/m1_196_1935# clablock_0/m1_198_1746# 0.2fF
+C235 vdd clablock_0/png_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C236 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/a_56_n20# 0.1fF
+C237 clablock_0/png_0/xorgate_1/w_75_30# clablock_0/png_0/xorgate_1/a_56_44# 0.1fF
+C238 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/a_56_n20# 0.1fF
+C239 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/a_n56_44# 0.4fF
+C240 dff_11/nand3_0/a_106_9# dff_11/m1_n123_103# 0.1fF
+C241 dff_11/m1_n49_n87# clk 0.4fF
+C242 dff_3/m1_n140_n124# dff_3/m1_n114_50# 0.5fF
+C243 dff_6/m1_n140_n124# gnd 0.1fF
+C244 dff_5/nandgate_2/w_122_92# dff_5/m1_n49_n87# 0.1fF
+C245 dff_2/m1_n49_n87# dff_2/nandgate_2/a_137_45# 0.1fF
+C246 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/w_n37_30# 0.1fF
+C247 clablock_0/png_0/xorgate_2/a_48_n7# clablock_0/png_0/xorgate_2/a_n64_32# 0.0fF
+C248 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/orgate_4/w_n65_31# 0.0fF
+C249 dff_11/nandgate_4/w_122_92# dff_11/m1_n140_n124# 0.1fF
+C250 dff_11/nandgate_3/a_137_45# dff_11/m1_n123_103# 0.1fF
+C251 dff_1/m1_n49_n87# dff_1/m1_n123_103# 0.9fF
+C252 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/orgate_6/a_n59_77# 0.2fF
+C253 dff_12/nand3_0/w_64_61# vdd 0.2fF
+C254 dff_1/m1_n123_103# clk 0.8fF
+C255 gnd clablock_0/png_0/xorgate_0/a_48_n7# 0.2fF
+C256 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/a_n56_n20# 0.0fF
+C257 S1 clablock_0/m1_248_764# 0.2fF
+C258 clablock_0/carrygen_0/m1_1147_580# clablock_0/carrygen_0/orgate_8/a_n59_77# 0.2fF
+C259 clablock_0/carrygen_0/orgate_8/w_n65_31# clablock_0/carrygen_0/m1_567_529# 0.1fF
+C260 clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/orgate_3/a_n63_n10# 0.1fF
+C261 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/orgate_2/inverter_0/w_n13_n7# 0.1fF
+C262 dff_6/m1_n49_n87# dff_6/m1_n140_n124# 1.2fF
+C263 dff_5/nandgate_2/w_122_92# vdd 0.2fF
+C264 dff_0/nand3_0/a_106_9# dff_0/nand3_0/a_79_9# 0.1fF
+C265 dff_0/nandgate_1/w_122_92# vdd 0.2fF
+C266 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/m1_777_596# 0.3fF
+C267 clablock_0/carrygen_0/orgate_2/w_n74_71# clablock_0/carrygen_0/orgate_2/a_n59_77# 0.0fF
+C268 clablock_0/m1_253_953# clablock_0/png_0/andgate_1/inverter_0/w_n13_n7# 0.0fF
+C269 clablock_0/carrygen_0/andgate_1/w_n42_50# clablock_0/m1_235_462# 0.1fF
+C270 clablock_0/png_0/xorgate_1/w_n71_38# clablock_0/png_0/xorgate_1/a_n56_44# 0.1fF
+C271 clablock_0/carrygen_0/orgate_3/inverter_0/w_n13_n7# vdd 0.1fF
+C272 clablock_0/carrygen_0/andgate_5/a_n58_n25# gnd 0.1fF
+C273 dff_5/nandgate_2/a_137_45# dff_5/m1_n140_n124# 0.1fF
+C274 clablock_0/png_0/xorgate_0/inverter_1/w_n13_n7# clablock_0/png_0/xorgate_0/a_n64_32# 0.0fF
+C275 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/carrygen_0/orgate_0/w_n65_31# 0.0fF
+C276 vdd dff_10/nandgate_3/w_122_92# 0.2fF
+C277 clablock_0/carrygen_0/m2_438_434# clablock_0/m1_253_1444# 0.1fF
+C278 dff_12/nandgate_0/w_122_92# dff_12/m1_n123_103# 0.1fF
+C279 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/a_56_44# 0.4fF
+C280 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_48_n7# 0.2fF
+C281 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/w_n71_38# 0.2fF
+C282 clablock_0/carrygen_0/m1_567_199# gnd 0.1fF
+C283 gnd clablock_0/carrygen_0/andgate_7/a_n58_n25# 0.1fF
+C284 clablock_0/carrygen_0/orgate_4/w_n74_71# vdd 0.1fF
+C285 dff_7/nandgate_0/w_122_92# dff_7/m1_n123_103# 0.1fF
+C286 dff_5/m1_n123_103# dff_5/m1_n114_50# 0.9fF
+C287 dff_8/nand3_0/a_79_9# clk 0.1fF
+C288 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/andgate_5/w_n42_50# 0.1fF
+C289 dff_12/nandgate_4/w_122_92# dff_12/m1_n123_103# 0.1fF
+C290 gnd clablock_0/png_0/xorgate_3/a_56_n20# 0.1fF
+C291 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/m2_438_434# 0.3fF
+C292 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/andgate_4/a_n58_n25# 0.1fF
+C293 dff_10/m1_n49_n87# gnd 0.2fF
+C294 dff_11/m1_n49_n87# dff_11/m1_n140_n124# 1.2fF
+C295 gnd dff_10/nand3_0/a_106_9# 0.1fF
+C296 dff_8/nandgate_1/w_122_92# dff_8/m1_n49_n87# 0.1fF
+C297 dff_0/nandgate_4/a_137_45# gnd 0.2fF
+C298 dff_0/nand3_0/a_106_9# dff_0/m1_n49_n87# 0.1fF
+C299 clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.0fF
+C300 clablock_0/carrygen_0/orgate_9/w_n74_71# clablock_0/carrygen_0/orgate_9/a_n59_77# 0.0fF
+C301 clablock_0/carrygen_0/orgate_4/a_n59_77# clablock_0/m1_253_1444# 0.2fF
+C302 clablock_0/carrygen_0/m1_947_392# clablock_0/carrygen_0/orgate_4/a_n63_n10# 0.1fF
+C303 dff_3/m1_n140_n124# vdd 1.0fF
+C304 dff_0/nandgate_1/a_137_45# dff_0/m1_0_n20# 0.1fF
+C305 gnd dff_10/nandgate_3/a_137_45# 0.2fF
+C306 dff_12/nandgate_2/a_137_45# gnd 0.2fF
+C307 dff_9/m1_n140_n124# vdd 1.0fF
+C308 clablock_0/png_0/andgate_3/w_n42_50# clablock_0/png_0/andgate_3/a_n61_61# 0.1fF
+C309 clablock_0/carrygen_0/orgate_3/a_n59_77# clablock_0/carrygen_0/m2_438_434# 0.2fF
+C310 S0 clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.6fF
+C311 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/andgate_9/a_n58_n25# 0.1fF
+C312 vdd clablock_0/carrygen_0/m1_174_337# 0.4fF
+C313 clablock_0/carrygen_0/orgate_4/inverter_0/w_n13_n7# vdd 0.1fF
+C314 dff_5/nandgate_3/a_137_45# dff_5/m1_n123_103# 0.1fF
+C315 dff_12/nand3_0/a_79_9# clk 0.1fF
+C316 dff_3/nand3_0/w_64_61# clk 0.1fF
+C317 dff_8/nandgate_3/a_137_45# gnd 0.2fF
+C318 dff_9/nand3_0/w_64_61# dff_9/m1_n140_n124# 0.8fF
+C319 vdd clablock_0/png_0/xorgate_1/w_41_38# 0.1fF
+C320 dff_0/m1_0_n20# gnd 0.3fF
+C321 vdd clablock_0/png_0/andgate_0/w_n76_50# 0.1fF
+C322 gnd clablock_0/m1_198_1746# 0.1fF
+C323 dff_6/nandgate_0/w_122_92# vdd 0.2fF
+C324 dff_6/nand3_0/a_106_9# gnd 0.1fF
+C325 dff_4/m1_n140_n124# dff_4/nandgate_4/a_137_45# 0.1fF
+C326 dff_0/m1_n123_103# vdd 1.2fF
+C327 vdd clablock_0/png_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C328 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/andgate_7/w_n42_50# 0.1fF
+C329 dff_12/m1_n49_n87# dff_12/m1_n123_103# 0.9fF
+C330 vdd clablock_0/png_0/xorgate_3/a_56_44# 0.2fF
+C331 clablock_0/m1_252_1255# S2 0.2fF
+C332 dff_7/m1_n49_n87# dff_7/m1_n123_103# 0.9fF
+C333 dff_6/m1_n49_n87# dff_6/nand3_0/a_106_9# 0.1fF
+C334 dff_5/nandgate_3/w_122_92# dff_5/m1_n123_103# 0.2fF
+C335 dff_11/m1_n49_n87# dff_11/nandgate_1/w_122_92# 0.1fF
+C336 dff_8/m1_n49_n87# gnd 0.2fF
+C337 S0 dff_9/nandgate_2/w_122_92# 0.1fF
+C338 dff_0/nand3_0/a_79_9# gnd 0.2fF
+C339 S0 clablock_0/sumblock_0/xorgate_3/w_n37_30# 0.0fF
+C340 dff_6/nandgate_2/a_137_45# dff_6/m1_n140_n124# 0.1fF
+C341 dff_5/m1_n114_50# gnd 0.4fF
+C342 clablock_0/m1_243_273# clablock_0/m1_198_1746# 0.2fF
+C343 dff_4/nandgate_4/w_122_92# dff_4/m1_n140_n124# 0.1fF
+C344 dff_10/nand3_0/w_64_61# dff_10/m1_n140_n124# 0.8fF
+C345 dff_2/nandgate_0/w_122_92# m1_n69_666# 0.1fF
+C346 dff_2/nandgate_1/w_122_92# vdd 0.2fF
+C347 dff_9/m1_n49_n87# vdd 0.9fF
+C348 S1 clablock_0/sumblock_0/xorgate_2/w_75_30# 0.0fF
+C349 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/orgate_9/w_n65_31# 0.0fF
+C350 clablock_0/carrygen_0/andgate_2/inverter_0/w_n13_n7# clablock_0/carrygen_0/m2_438_246# 0.0fF
+C351 clk dff_7/m1_n123_103# 0.8fF
+C352 dff_9/nand3_0/w_64_61# dff_9/m1_n49_n87# 0.2fF
+C353 vdd clablock_0/png_0/andgate_2/a_n61_61# 0.6fF
+C354 vdd clablock_0/carrygen_0/orgate_6/a_n59_77# 0.2fF
+C355 clablock_0/carrygen_0/orgate_5/inverter_0/w_n13_n7# vdd 0.1fF
+C356 dff_3/m1_n114_50# vdd 0.7fF
+C357 dff_9/m1_n123_103# gnd 0.7fF
+C358 dff_1/m1_n140_n124# dff_1/m1_n114_50# 0.5fF
+C359 dff_10/m1_n49_n87# dff_10/m1_0_n20# 0.3fF
+C360 dff_3/m1_n49_n87# dff_3/m1_n140_n124# 1.2fF
+C361 S0 clablock_0/sumblock_0/xorgate_3/a_56_n20# 0.1fF
+C362 clablock_0/carrygen_0/andgate_4/w_n42_50# vdd 0.1fF
+C363 dff_5/nandgate_4/w_122_92# vdd 0.2fF
+C364 dff_5/nandgate_3/a_137_45# gnd 0.2fF
+C365 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_1/w_n76_50# 0.1fF
+C366 dff_6/nand3_0/a_79_9# clk 0.1fF
+C367 dff_10/m1_n49_n87# dff_10/m1_n123_103# 0.9fF
+C368 gnd dff_10/nandgate_2/a_137_45# 0.2fF
+C369 clablock_0/sumblock_0/xorgate_0/a_n56_n20# S3 0.1fF
+C370 clablock_0/carrygen_0/m1_376_596# clablock_0/carrygen_0/andgate_7/a_n61_61# 0.1fF
+C371 dff_5/nandgate_2/w_122_92# dff_5/m1_n140_n124# 0.2fF
+C372 dff_10/nand3_0/a_106_9# dff_10/m1_n123_103# 0.1fF
+C373 dff_0/m1_n49_n87# gnd 0.2fF
+C374 gnd clablock_0/carrygen_0/andgate_9/a_n58_n25# 0.1fF
+C375 clablock_0/carrygen_0/andgate_2/w_n76_50# vdd 0.1fF
+C376 dff_7/m1_n140_n124# dff_7/m1_n114_50# 0.5fF
+C377 clablock_0/png_0/andgate_3/inverter_0/w_n13_n7# clablock_0/png_0/andgate_3/a_n61_61# 0.1fF
+C378 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/m1_777_387# 0.1fF
+C379 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C380 dff_10/nandgate_4/w_122_92# dff_10/m1_n140_n124# 0.1fF
+C381 dff_10/nandgate_3/a_137_45# dff_10/m1_n123_103# 0.1fF
+C382 dff_2/nandgate_1/a_137_45# m1_n69_666# 0.1fF
+C383 dff_11/m1_0_n20# gnd 0.3fF
+C384 gnd clablock_0/png_0/xorgate_2/a_n64_32# 0.1fF
+C385 vdd dff_7/nandgate_2/w_122_92# 0.2fF
+C386 dff_2/m1_n114_50# vdd 0.7fF
+C387 dff_2/nandgate_4/w_122_92# dff_2/m1_n123_103# 0.1fF
+C388 dff_2/m1_n123_103# gnd 0.7fF
+C389 dff_8/nandgate_4/w_122_92# dff_8/m1_n114_50# 0.2fF
+C390 dff_1/nand3_0/a_79_9# gnd 0.2fF
+C391 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/a_n56_44# 0.4fF
+C392 S1 clablock_0/sumblock_0/xorgate_2/a_n56_n20# 0.1fF
+C393 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/carrygen_0/andgate_0/w_n42_50# 0.1fF
+C394 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/orgate_6/a_n63_n10# 0.1fF
+C395 dff_11/m1_n140_n124# dff_11/nandgate_4/a_137_45# 0.1fF
+C396 dff_11/m1_n123_103# gnd 0.7fF
+C397 dff_3/nand3_0/w_64_61# dff_3/m1_n123_103# 0.1fF
+C398 dff_0/m1_n140_n124# dff_0/m1_n114_50# 0.5fF
+C399 clablock_0/sumblock_0/xorgate_2/a_56_44# clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.4fF
+C400 dff_5/nandgate_1/w_122_92# dff_5/m1_0_n20# 0.2fF
+C401 clablock_0/png_0/xorgate_2/w_41_38# clablock_0/png_0/xorgate_2/a_56_44# 0.1fF
+C402 clablock_0/png_0/xorgate_2/w_75_30# clablock_0/m1_252_1255# 0.0fF
+C403 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/w_n71_38# 0.2fF
+C404 S0 clablock_0/m1_243_273# 0.2fF
+C405 vdd clablock_0/carrygen_0/m1_777_387# 0.4fF
+C406 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/m1_235_462# 0.3fF
+C407 clablock_0/carrygen_0/andgate_2/inverter_0/w_n13_n7# vdd 0.1fF
+C408 clablock_0/png_0/xorgate_3/a_48_n7# clablock_0/png_0/xorgate_3/a_n64_32# 0.0fF
+C409 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/andgate_8/w_n76_50# 0.1fF
+C410 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/m1_174_152# 0.3fF
+C411 dff_5/m1_n49_n87# vdd 0.9fF
+C412 gnd clablock_0/png_0/xorgate_0/a_n56_n20# 0.1fF
+C413 clablock_0/png_0/andgate_1/a_n61_61# clablock_0/png_0/andgate_1/w_n76_50# 0.1fF
+C414 vdd clablock_0/carrygen_0/orgate_6/a_n63_n10# 0.0fF
+C415 clablock_0/carrygen_0/orgate_7/w_n74_71# clablock_0/carrygen_0/m1_777_596# 0.1fF
+C416 gnd clablock_0/carrygen_0/m2_438_434# 0.3fF
+C417 vdd dff_10/m1_n49_n87# 0.9fF
+C418 S2 dff_12/nandgate_2/w_122_92# 0.1fF
+C419 Q0 gnd 0.2fF
+C420 dff_4/nandgate_2/w_122_92# dff_4/m1_n140_n124# 0.2fF
+C421 dff_6/m1_n123_103# dff_6/m1_n114_50# 0.9fF
+C422 dff_2/nandgate_3/w_122_92# dff_2/m1_n114_50# 0.1fF
+C423 dff_2/m1_n49_n87# dff_2/nandgate_2/w_122_92# 0.1fF
+C424 dff_8/nand3_0/w_64_61# dff_8/m1_n140_n124# 0.8fF
+C425 clablock_0/sumblock_0/xorgate_1/a_n56_44# S2 0.2fF
+C426 dff_10/nandgate_0/w_122_92# Q4 0.2fF
+C427 dff_12/nandgate_0/a_137_45# dff_12/m1_n123_103# 0.1fF
+C428 dff_1/nandgate_0/w_122_92# dff_1/m1_0_n20# 0.1fF
+C429 vdd clablock_0/png_0/xorgate_2/a_48_n7# 0.2fF
+C430 clablock_0/png_0/xorgate_1/inverter_1/w_n13_n7# clablock_0/png_0/xorgate_1/a_n64_32# 0.0fF
+C431 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/andgate_2/w_n42_50# 0.1fF
+C432 dff_7/nandgate_0/a_137_45# dff_7/m1_n123_103# 0.1fF
+C433 dff_6/nand3_0/w_64_61# clk 0.1fF
+C434 dff_2/m1_n49_n87# dff_2/m1_n123_103# 0.9fF
+C435 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_n56_n20# 0.1fF
+C436 vdd clablock_0/m1_253_953# 0.2fF
+C437 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/a_56_44# 0.4fF
+C438 vdd clablock_0/sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C439 clablock_0/carrygen_0/m2_438_246# clablock_0/m1_253_953# 0.1fF
+C440 dff_9/nand3_0/a_106_9# gnd 0.1fF
+C441 dff_3/m1_n49_n87# dff_3/nand3_0/a_106_9# 0.1fF
+C442 dff_8/nandgate_2/a_137_45# dff_8/m1_n49_n87# 0.1fF
+C443 dff_9/m1_n49_n87# dff_9/m1_0_n20# 0.3fF
+C444 clablock_0/png_0/xorgate_1/a_48_n7# clablock_0/png_0/xorgate_1/a_56_n20# 0.0fF
+C445 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/a_56_44# 0.4fF
+C446 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/w_41_38# 0.2fF
+C447 clablock_0/sumblock_0/xorgate_2/a_56_n20# clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.1fF
+C448 dff_6/nandgate_3/a_137_45# dff_6/m1_n123_103# 0.1fF
+C449 dff_4/m1_n49_n87# dff_4/nandgate_2/w_122_92# 0.1fF
+C450 dff_10/nand3_0/a_79_9# clk 0.1fF
+C451 dff_12/nandgate_0/w_122_92# dff_12/m1_0_n20# 0.1fF
+C452 dff_2/nandgate_3/w_122_92# vdd 0.2fF
+C453 dff_2/m1_n140_n124# clk 0.6fF
+C454 dff_8/nand3_0/a_106_9# dff_8/nand3_0/a_79_9# 0.1fF
+C455 S0 dff_9/m1_n140_n124# 0.3fF
+C456 clablock_0/carrygen_0/m1_1315_575# clablock_0/carrygen_0/orgate_8/a_n63_n10# 0.1fF
+C457 dff_0/nandgate_0/a_137_45# dff_0/m1_n123_103# 0.1fF
+C458 clablock_0/carrygen_0/andgate_8/a_n58_n25# clablock_0/m1_198_1746# 0.1fF
+C459 dff_10/nandgate_2/w_122_92# dff_10/m1_n140_n124# 0.2fF
+C460 S3 gnd 0.2fF
+C461 dff_8/m1_n49_n87# vdd 0.9fF
+C462 vdd clablock_0/carrygen_0/orgate_7/a_n59_77# 0.2fF
+C463 dff_5/m1_n140_n124# dff_5/nandgate_4/a_137_45# 0.1fF
+C464 dff_4/m1_n123_103# gnd 0.7fF
+C465 dff_11/nandgate_1/a_137_45# gnd 0.2fF
+C466 clablock_0/png_0/xorgate_2/a_n56_44# clablock_0/m1_252_1255# 0.2fF
+C467 dff_12/nandgate_3/a_137_45# dff_12/m1_n114_50# 0.1fF
+C468 dff_12/m1_n140_n124# dff_12/m1_n123_103# 0.2fF
+C469 dff_12/m1_n114_50# clk 0.1fF
+C470 clablock_0/sumblock_0/xorgate_3/a_56_44# clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.4fF
+C471 clablock_0/carrygen_0/m2_438_246# vdd 0.4fF
+C472 dff_6/nandgate_3/w_122_92# dff_6/m1_n123_103# 0.2fF
+C473 dff_4/nand3_0/w_64_61# dff_4/m1_n123_103# 0.1fF
+C474 dff_12/nand3_0/a_79_9# dff_12/nand3_0/a_106_9# 0.1fF
+C475 clablock_0/png_0/xorgate_0/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_0/a_n64_32# 0.0fF
+C476 clablock_0/sumblock_0/xorgate_1/a_48_n7# S2 0.2fF
+C477 gnd clablock_0/carrygen_0/orgate_8/a_n63_n10# 0.4fF
+C478 clablock_0/carrygen_0/orgate_9/w_n65_31# clablock_0/carrygen_0/orgate_9/a_n59_77# 0.0fF
+C479 clablock_0/carrygen_0/m1_947_392# clablock_0/carrygen_0/orgate_4/inverter_0/w_n13_n7# 0.0fF
+C480 clablock_0/carrygen_0/orgate_5/a_n59_77# clablock_0/carrygen_0/m1_567_341# 0.0fF
+C481 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/m1_174_152# 0.1fF
+C482 clablock_0/carrygen_0/orgate_0/a_n59_77# vdd 0.2fF
+C483 gnd dff_7/m1_n114_50# 0.4fF
+C484 dff_4/nandgate_0/w_122_92# dff_4/m1_0_n20# 0.1fF
+C485 clk dff_7/m1_n49_n87# 0.4fF
+C486 dff_9/m1_n123_103# vdd 1.2fF
+C487 clablock_0/sumblock_0/xorgate_0/w_n37_30# clablock_0/m1_198_1746# 0.1fF
+C488 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# 0.0fF
+C489 clablock_0/carrygen_0/orgate_3/w_n74_71# clablock_0/carrygen_0/orgate_3/a_n59_77# 0.0fF
+C490 clablock_0/carrygen_0/m1_567_341# gnd 2.4fF
+C491 dff_6/nandgate_1/a_137_45# dff_6/m1_0_n20# 0.1fF
+C492 dff_5/nandgate_4/w_122_92# dff_5/m1_n140_n124# 0.1fF
+C493 dff_3/m1_n49_n87# vdd 0.9fF
+C494 dff_9/nand3_0/w_64_61# dff_9/m1_n123_103# 0.1fF
+C495 S0 dff_9/m1_n49_n87# 0.1fF
+C496 dff_12/nandgate_4/a_137_45# gnd 0.2fF
+C497 dff_1/m1_n49_n87# clk 0.4fF
+C498 vdd clablock_0/m1_196_1935# 0.2fF
+C499 vdd clablock_0/m1_253_953# 0.4fF
+C500 dff_6/m1_0_n20# dff_6/m1_n123_103# 0.1fF
+C501 dff_12/m1_n49_n87# dff_12/m1_0_n20# 0.3fF
+C502 dff_9/m1_n114_50# dff_9/nandgate_4/a_137_45# 0.1fF
+C503 dff_0/nand3_0/w_64_61# dff_0/m1_n49_n87# 0.2fF
+C504 dff_0/m1_n140_n124# gnd 0.1fF
+C505 clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C506 vdd dff_7/nandgate_4/w_122_92# 0.2fF
+C507 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/sumblock_0/xorgate_0/w_75_30# 0.1fF
+C508 clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C509 vdd clablock_0/carrygen_0/m1_567_529# 0.2fF
+C510 clablock_0/carrygen_0/m1_777_596# clablock_0/carrygen_0/andgate_8/a_n61_61# 0.1fF
+C511 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/andgate_9/w_n42_50# 0.1fF
+C512 clablock_0/carrygen_0/andgate_4/w_n76_50# clablock_0/m1_252_1255# 0.1fF
+C513 dff_4/m1_n140_n124# clk 0.6fF
+C514 vdd dff_11/m1_0_n20# 0.9fF
+C515 dff_3/nandgate_2/a_137_45# dff_3/m1_n140_n124# 0.1fF
+C516 dff_6/nandgate_2/w_122_92# dff_6/m1_n140_n124# 0.2fF
+C517 clablock_0/carrygen_0/orgate_4/w_n65_31# clablock_0/carrygen_0/m1_777_387# 0.1fF
+C518 vdd dff_11/m1_n123_103# 1.2fF
+C519 gnd clablock_0/png_0/andgate_2/a_n61_61# 0.1fF
+C520 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_1/a_n58_n25# 0.1fF
+C521 dff_9/nandgate_3/a_137_45# dff_9/m1_n123_103# 0.1fF
+C522 vdd clablock_0/png_0/xorgate_3/inverter_0/w_n13_n7# 0.1fF
+C523 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/m1_567_341# 0.1fF
+C524 dff_5/m1_n49_n87# dff_5/m1_n140_n124# 1.2fF
+C525 dff_12/nandgate_2/w_122_92# vdd 0.2fF
+C526 Q0 vdd 0.7fF
+C527 clablock_0/m1_198_1746# clablock_0/m1_252_1255# 0.2fF
+C528 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_56_n20# 0.1fF
+C529 clablock_0/sumblock_0/xorgate_1/a_n56_n20# S2 0.1fF
+C530 clablock_0/sumblock_0/xorgate_1/w_41_38# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.2fF
+C531 clablock_0/sumblock_0/xorgate_1/inverter_1/w_n13_n7# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C532 gnd clablock_0/carrygen_0/m1_376_596# 0.1fF
+C533 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/orgate_3/w_n65_31# 0.0fF
+C534 clablock_0/carrygen_0/andgate_1/a_n58_n25# gnd 0.1fF
+C535 dff_5/m1_0_n20# dff_5/m1_n123_103# 0.1fF
+C536 dff_10/m1_n140_n124# dff_10/nandgate_4/a_137_45# 0.1fF
+C537 dff_3/nandgate_1/w_122_92# dff_3/m1_0_n20# 0.2fF
+C538 dff_5/m1_n140_n124# vdd 1.0fF
+C539 dff_4/m1_n49_n87# clk 0.4fF
+C540 dff_6/nandgate_1/w_122_92# vdd 0.2fF
+C541 dff_11/m1_n140_n124# clk 0.6fF
+C542 S3 dff_11/nandgate_2/w_122_92# 0.1fF
+C543 dff_9/nandgate_3/w_122_92# dff_9/m1_n123_103# 0.2fF
+C544 clablock_0/carrygen_0/m1_376_596# clablock_0/carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.0fF
+C545 clablock_0/carrygen_0/orgate_6/a_n59_77# clablock_0/carrygen_0/m1_174_525# 0.0fF
+C546 vdd clablock_0/m1_196_1935# 0.2fF
+C547 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/orgate_9/inverter_0/w_n13_n7# 0.1fF
+C548 dff_4/m1_n49_n87# dff_4/m1_n140_n124# 1.2fF
+C549 dff_3/nandgate_3/w_122_92# clk 0.1fF
+C550 dff_1/m1_n114_50# gnd 0.4fF
+C551 dff_2/nandgate_2/a_137_45# dff_2/m1_n140_n124# 0.1fF
+C552 dff_1/nand3_0/w_64_61# dff_1/m1_n140_n124# 0.8fF
+C553 clablock_0/png_0/andgate_1/a_n61_61# clablock_0/png_0/andgate_1/a_n58_n25# 0.1fF
+C554 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/m1_198_1746# 0.1fF
+C555 clablock_0/sumblock_0/xorgate_1/w_75_30# S2 0.0fF
+C556 dff_11/nand3_0/w_64_61# dff_11/m1_n123_103# 0.1fF
+C557 dff_12/m1_n49_n87# gnd 0.2fF
+C558 S2 dff_12/m1_n49_n87# 0.1fF
+C559 clablock_0/carrygen_0/andgate_4/a_n61_61# gnd 0.1fF
+C560 dff_2/nandgate_3/a_137_45# dff_2/m1_n114_50# 0.1fF
+C561 dff_8/m1_n140_n124# dff_8/m1_n114_50# 0.5fF
+C562 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/carrygen_0/andgate_6/w_n42_50# 0.1fF
+C563 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/m1_253_953# 0.3fF
+C564 S3 vdd 0.2fF
+C565 dff_5/nand3_0/w_64_61# clk 0.1fF
+C566 dff_2/nandgate_1/w_122_92# m1_n69_666# 0.2fF
+C567 dff_9/m1_0_n20# dff_9/m1_n123_103# 0.1fF
+C568 gnd clablock_0/sumblock_0/xorgate_0/a_n56_n20# 0.1fF
+C569 clablock_0/sumblock_0/xorgate_1/a_56_44# clablock_0/sumblock_0/xorgate_1/w_75_30# 0.1fF
+C570 clablock_0/png_0/andgate_3/w_n76_50# clablock_0/png_0/andgate_3/a_n61_61# 0.1fF
+C571 dff_1/nandgate_4/w_122_92# vdd 0.2fF
+C572 dff_1/nandgate_3/a_137_45# gnd 0.2fF
+C573 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/a_56_n20# 0.1fF
+C574 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/w_n37_30# 0.1fF
+C575 dff_6/nand3_0/w_64_61# dff_6/m1_n140_n124# 0.8fF
+C576 dff_6/nandgate_1/a_137_45# gnd 0.2fF
+C577 dff_11/nandgate_0/w_122_92# dff_11/m1_0_n20# 0.1fF
+C578 gnd clablock_0/png_0/xorgate_0/a_56_n20# 0.1fF
+C579 vdd clablock_0/sumblock_0/xorgate_2/w_n71_38# 0.1fF
+C580 dff_3/m1_n123_103# clk 0.8fF
+C581 dff_9/nand3_0/a_79_9# clk 0.1fF
+C582 dff_5/m1_0_n20# gnd 0.3fF
+C583 dff_11/nandgate_0/w_122_92# dff_11/m1_n123_103# 0.1fF
+C584 vdd clablock_0/png_0/xorgate_0/w_n71_38# 0.1fF
+C585 gnd clablock_0/png_0/xorgate_2/a_48_n7# 0.2fF
+C586 clablock_0/sumblock_0/xorgate_3/w_75_30# clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.1fF
+C587 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/m1_253_953# 0.3fF
+C588 dff_6/m1_n140_n124# dff_6/nandgate_4/a_137_45# 0.1fF
+C589 dff_6/m1_n123_103# gnd 0.7fF
+C590 dff_8/nand3_0/w_64_61# dff_8/m1_n123_103# 0.1fF
+C591 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/w_41_38# 0.2fF
+C592 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.1fF
+C593 dff_6/nand3_0/a_79_9# dff_6/nand3_0/a_106_9# 0.1fF
+C594 dff_11/nandgate_4/w_122_92# dff_11/m1_n123_103# 0.1fF
+C595 gnd clablock_0/m1_253_953# 0.3fF
+C596 clablock_0/png_0/andgate_2/a_n61_61# clablock_0/png_0/andgate_2/w_n76_50# 0.1fF
+C597 clablock_0/sumblock_0/xorgate_0/w_75_30# S3 0.0fF
+C598 clablock_0/sumblock_0/xorgate_2/inverter_1/w_n13_n7# clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C599 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/m1_174_525# 0.1fF
+C600 clablock_0/carrygen_0/andgate_3/a_n61_61# vdd 0.6fF
+C601 clablock_0/carrygen_0/andgate_1/inverter_0/w_n13_n7# clablock_0/carrygen_0/m1_174_152# 0.0fF
+C602 dff_10/m1_n114_50# clk 0.1fF
+C603 dff_8/nandgate_4/w_122_92# vdd 0.2fF
+C604 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/m1_252_1255# 0.6fF
+C605 clablock_0/png_0/xorgate_2/w_n71_38# clablock_0/png_0/xorgate_2/a_n56_44# 0.1fF
+C606 dff_0/nandgate_0/w_122_92# dff_0/m1_0_n20# 0.1fF
+C607 dff_6/m1_n49_n87# dff_6/m1_n123_103# 0.9fF
+C608 dff_11/nand3_0/a_79_9# dff_11/nand3_0/a_106_9# 0.1fF
+C609 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_56_n20# 0.1fF
+C610 vdd clablock_0/sumblock_0/xorgate_1/a_56_44# 0.2fF
+C611 clablock_0/carrygen_0/orgate_2/w_n65_31# clablock_0/carrygen_0/orgate_2/a_n59_77# 0.0fF
+C612 dff_3/nandgate_3/a_137_45# dff_3/m1_n123_103# 0.1fF
+C613 dff_0/nand3_0/w_64_61# dff_0/m1_n140_n124# 0.8fF
+C614 clablock_0/png_0/xorgate_1/w_n37_30# clablock_0/png_0/xorgate_1/a_n56_44# 0.1fF
+C615 clablock_0/sumblock_0/xorgate_2/a_n56_44# clablock_0/sumblock_0/xorgate_2/w_n71_38# 0.1fF
+C616 dff_6/nandgate_4/w_122_92# dff_6/m1_n140_n124# 0.1fF
+C617 dff_2/nandgate_0/a_137_45# gnd 0.2fF
+C618 vdd clablock_0/carrygen_0/m1_1147_580# 0.3fF
+C619 clablock_0/carrygen_0/orgate_2/a_n63_n10# vdd 0.0fF
+C620 dff_11/nandgate_3/w_122_92# dff_11/m1_n114_50# 0.1fF
+C621 dff_9/m1_0_n20# Q0 0.9fF
+C622 clablock_0/m1_243_273# clablock_0/m1_253_953# 0.2fF
+C623 clablock_0/carrygen_0/orgate_1/a_n63_n10# gnd 0.4fF
+C624 dff_4/m1_n49_n87# dff_4/nand3_0/a_106_9# 0.1fF
+C625 dff_12/nandgate_0/w_122_92# vdd 0.2fF
+C626 dff_2/nandgate_4/a_137_45# gnd 0.2fF
+C627 dff_1/m1_0_n20# gnd 0.3fF
+C628 dff_1/nandgate_2/a_137_45# dff_1/m1_n140_n124# 0.1fF
+C629 gnd clablock_0/png_0/andgate_0/a_n58_n25# 0.1fF
+C630 clablock_0/sumblock_0/xorgate_0/a_48_n7# clablock_0/sumblock_0/xorgate_0/a_56_n20# 0.0fF
+C631 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/w_n37_30# 0.1fF
+C632 clablock_0/carrygen_0/m1_174_337# clablock_0/m1_252_1255# 0.2fF
+C633 gnd clablock_0/carrygen_0/m1_777_596# 0.1fF
+C634 clablock_0/png_0/xorgate_1/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_1/a_n64_32# 0.0fF
+C635 dff_4/m1_n114_50# vdd 0.7fF
+C636 dff_11/m1_n49_n87# dff_11/m1_0_n20# 0.3fF
+C637 dff_12/nand3_0/w_64_61# clk 0.1fF
+C638 dff_12/nandgate_4/w_122_92# vdd 0.2fF
+C639 dff_11/m1_n49_n87# dff_11/m1_n123_103# 0.9fF
+C640 dff_3/nandgate_3/w_122_92# dff_3/m1_n123_103# 0.2fF
+C641 clk dff_6/m1_n140_n124# 0.6fF
+C642 m1_n69_666# vdd 0.9fF
+C643 dff_1/nandgate_2/w_122_92# vdd 0.2fF
+C644 clablock_0/sumblock_0/xorgate_3/a_56_44# clablock_0/sumblock_0/xorgate_3/w_41_38# 0.1fF
+C645 clablock_0/carrygen_0/andgate_6/w_n42_50# clablock_0/m1_253_1444# 0.1fF
+C646 clablock_0/carrygen_0/orgate_9/w_n65_31# clablock_0/carrygen_0/m1_1315_575# 0.1fF
+C647 clablock_0/sumblock_0/xorgate_3/a_56_n20# clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.1fF
+C648 dff_10/nandgate_3/w_122_92# clk 0.1fF
+C649 dff_10/nandgate_1/w_122_92# Q4 0.1fF
+C650 dff_1/nandgate_1/w_122_92# dff_1/m1_0_n20# 0.2fF
+C651 vdd clablock_0/png_0/andgate_2/w_n76_50# 0.1fF
+C652 clablock_0/m1_196_1935# gnd 0.1fF
+C653 clablock_0/m1_198_1746# S3 0.2fF
+C654 gnd S2 0.2fF
+C655 dff_9/nandgate_2/a_137_45# dff_9/m1_n140_n124# 0.1fF
+C656 clablock_0/carrygen_0/orgate_3/w_n65_31# clablock_0/carrygen_0/orgate_3/a_n59_77# 0.0fF
+C657 dff_5/nandgate_1/a_137_45# gnd 0.2fF
+C658 dff_12/nandgate_0/a_137_45# gnd 0.2fF
+C659 dff_2/nand3_0/w_64_61# vdd 0.2fF
+C660 dff_8/m1_n140_n124# gnd 0.1fF
+C661 Q1 dff_8/m1_n123_103# 0.5fF
+C662 dff_0/nandgate_2/a_137_45# gnd 0.2fF
+C663 dff_3/m1_0_n20# dff_3/m1_n123_103# 0.1fF
+C664 vdd clablock_0/png_0/andgate_0/w_n42_50# 0.1fF
+C665 clablock_0/png_0/xorgate_0/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_0/a_48_n7# 0.0fF
+C666 clablock_0/carrygen_0/orgate_5/w_n74_71# clablock_0/carrygen_0/orgate_5/a_n59_77# 0.0fF
+C667 clablock_0/carrygen_0/orgate_0/inverter_0/w_n13_n7# vdd 0.1fF
+C668 clablock_0/carrygen_0/orgate_0/w_n65_31# clablock_0/carrygen_0/m1_174_38# 0.1fF
+C669 gnd dff_7/nandgate_3/a_137_45# 0.2fF
+C670 dff_5/nandgate_2/a_137_45# gnd 0.2fF
+C671 dff_4/nandgate_1/a_137_45# dff_4/m1_0_n20# 0.1fF
+C672 dff_12/m1_n49_n87# vdd 0.9fF
+C673 clablock_0/m1_243_273# clablock_0/m1_196_1935# 0.2fF
+C674 clablock_0/sumblock_0/xorgate_1/a_56_n20# S2 0.1fF
+C675 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/w_41_38# 0.2fF
+C676 clablock_0/carrygen_0/m1_947_392# vdd 0.3fF
+C677 dff_4/nandgate_3/w_122_92# vdd 0.2fF
+C678 dff_4/nandgate_0/a_137_45# gnd 0.2fF
+C679 dff_2/nandgate_1/a_137_45# gnd 0.2fF
+C680 dff_9/m1_n140_n124# clk 0.6fF
+C681 dff_12/m1_n140_n124# gnd 0.1fF
+C682 S2 dff_12/m1_n140_n124# 0.3fF
+C683 dff_3/m1_n49_n87# dff_3/nandgate_2/a_137_45# 0.1fF
+C684 vdd clablock_0/m1_235_462# 0.2fF
+C685 vdd clablock_0/png_0/andgate_3/w_n42_50# 0.1fF
+C686 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.5fF
+C687 dff_4/nandgate_4/w_122_92# dff_4/m1_n123_103# 0.1fF
+C688 dff_10/nand3_0/w_64_61# dff_10/m1_n123_103# 0.1fF
+C689 S3 dff_11/m1_n49_n87# 0.1fF
+C690 dff_8/nandgate_0/w_122_92# dff_8/m1_n123_103# 0.1fF
+C691 dff_8/nandgate_2/w_122_92# dff_8/m1_n49_n87# 0.1fF
+C692 dff_9/nandgate_4/w_122_92# dff_9/m1_n140_n124# 0.1fF
+C693 dff_9/nandgate_1/w_122_92# vdd 0.2fF
+C694 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/m1_198_1746# 0.1fF
+C695 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/m1_253_1444# 0.3fF
+C696 clablock_0/carrygen_0/orgate_0/a_n59_77# clablock_0/m1_235_462# 0.2fF
+C697 dff_9/nandgate_2/a_137_45# dff_9/m1_n49_n87# 0.1fF
+C698 dff_9/m1_n114_50# gnd 0.4fF
+C699 dff_1/m1_n123_103# dff_1/m1_n114_50# 0.9fF
+C700 vdd clablock_0/carrygen_0/m1_174_525# 0.2fF
+C701 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/orgate_1/a_n59_77# 0.2fF
+C702 dff_4/m1_0_n20# vdd 0.9fF
+C703 dff_8/m1_0_n20# dff_8/m1_n49_n87# 0.3fF
+C704 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/carrygen_0/m1_174_152# 0.1fF
+C705 clablock_0/sumblock_0/xorgate_0/a_56_n20# S3 0.1fF
+C706 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/w_n37_30# 0.2fF
+C707 clablock_0/carrygen_0/andgate_2/w_n42_50# vdd 0.1fF
+C708 gnd dff_7/m1_0_n20# 0.3fF
+C709 dff_3/nand3_0/a_79_9# gnd 0.2fF
+C710 dff_9/m1_n49_n87# clk 0.4fF
+C711 dff_2/nandgate_2/w_122_92# dff_2/m1_n140_n124# 0.2fF
+C712 dff_7/m1_n123_103# dff_7/m1_n114_50# 0.9fF
+C713 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_56_44# 0.2fF
+C714 vdd clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.5fF
+C715 dff_1/nandgate_3/a_137_45# dff_1/m1_n123_103# 0.1fF
+C716 clablock_0/carrygen_0/orgate_7/a_n59_77# clablock_0/carrygen_0/m1_981_575# 0.0fF
+C717 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/orgate_3/inverter_0/w_n13_n7# 0.1fF
+C718 dff_10/nandgate_4/w_122_92# dff_10/m1_n123_103# 0.1fF
+C719 vdd dff_10/nand3_0/w_64_61# 0.2fF
+C720 dff_5/m1_n114_50# clk 0.1fF
+C721 dff_11/nandgate_0/a_137_45# dff_11/m1_n123_103# 0.1fF
+C722 dff_0/nand3_0/a_79_9# clk 0.1fF
+C723 dff_5/m1_n49_n87# dff_5/nandgate_1/w_122_92# 0.1fF
+C724 dff_10/nand3_0/a_79_9# dff_10/nand3_0/a_106_9# 0.1fF
+C725 dff_2/m1_n140_n124# dff_2/m1_n123_103# 0.2fF
+C726 dff_8/m1_n123_103# dff_8/m1_n114_50# 0.9fF
+C727 dff_1/nandgate_0/w_122_92# vdd 0.2fF
+C728 dff_1/nand3_0/a_106_9# gnd 0.1fF
+C729 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/w_n71_38# 0.2fF
+C730 dff_6/nandgate_0/w_122_92# dff_6/m1_0_n20# 0.1fF
+C731 dff_0/m1_n123_103# dff_0/m1_n114_50# 0.9fF
+C732 gnd clablock_0/png_0/xorgate_2/a_n56_n20# 0.1fF
+C733 clablock_0/png_0/andgate_2/a_n61_61# clablock_0/png_0/andgate_2/a_n58_n25# 0.1fF
+C734 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/m1_198_1746# 0.1fF
+C735 clablock_0/carrygen_0/orgate_6/w_n74_71# clablock_0/carrygen_0/orgate_6/a_n59_77# 0.0fF
+C736 vdd clablock_0/m1_235_462# 1.4fF
+C737 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/w_n37_30# 0.1fF
+C738 dff_1/m1_n140_n124# vdd 1.0fF
+C739 clablock_0/png_0/xorgate_2/w_75_30# clablock_0/png_0/xorgate_2/a_56_44# 0.1fF
+C740 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/w_41_38# 0.2fF
+C741 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/andgate_8/w_n42_50# 0.1fF
+C742 dff_5/nandgate_1/w_122_92# vdd 0.2fF
+C743 dff_1/nandgate_3/w_122_92# dff_1/m1_n123_103# 0.2fF
+C744 clablock_0/m1_243_273# gnd 0.1fF
+C745 clablock_0/png_0/andgate_1/a_n61_61# clablock_0/png_0/andgate_1/w_n42_50# 0.1fF
+C746 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/a_n56_44# 0.4fF
+C747 clablock_0/carrygen_0/m1_567_199# clablock_0/carrygen_0/orgate_1/a_n63_n10# 0.1fF
+C748 dff_10/nandgate_3/w_122_92# dff_10/m1_n114_50# 0.1fF
+C749 dff_11/nand3_0/a_79_9# gnd 0.2fF
+C750 dff_3/m1_n140_n124# dff_3/nandgate_4/a_137_45# 0.1fF
+C751 dff_8/nandgate_2/a_137_45# dff_8/m1_n140_n124# 0.1fF
+C752 dff_9/nandgate_2/w_122_92# dff_9/m1_n140_n124# 0.2fF
+C753 dff_0/nand3_0/a_106_9# dff_0/m1_n123_103# 0.1fF
+C754 vdd dff_6/m1_n114_50# 0.7fF
+C755 dff_4/m1_n49_n87# dff_4/nandgate_1/w_122_92# 0.1fF
+C756 vdd dff_10/nandgate_4/w_122_92# 0.2fF
+C757 dff_10/nandgate_1/a_137_45# Q4 0.1fF
+C758 dff_11/nandgate_3/a_137_45# dff_11/m1_n114_50# 0.1fF
+C759 vdd clablock_0/png_0/andgate_3/inverter_0/w_n13_n7# 0.1fF
+C760 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/w_41_38# 0.2fF
+C761 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C762 dff_5/m1_n49_n87# dff_5/nand3_0/a_106_9# 0.1fF
+C763 dff_12/nandgate_3/w_122_92# dff_12/m1_n123_103# 0.2fF
+C764 dff_8/m1_n140_n124# vdd 1.0fF
+C765 dff_0/m1_n49_n87# clk 0.4fF
+C766 clablock_0/png_0/xorgate_2/w_n37_30# clablock_0/png_0/xorgate_2/a_n56_44# 0.1fF
+C767 clablock_0/png_0/xorgate_2/a_48_n7# clablock_0/png_0/xorgate_2/a_56_n20# 0.0fF
+C768 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.1fF
+C769 dff_7/nandgate_3/w_122_92# dff_7/m1_n123_103# 0.2fF
+C770 dff_1/m1_0_n20# dff_1/m1_n123_103# 0.1fF
+C771 clablock_0/sumblock_0/xorgate_2/a_n64_32# gnd 0.1fF
+C772 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/orgate_7/a_n59_77# 0.2fF
+C773 dff_5/nandgate_0/w_122_92# dff_5/m1_0_n20# 0.1fF
+C774 dff_5/nandgate_3/w_122_92# clk 0.1fF
+C775 dff_10/m1_n49_n87# clk 0.4fF
+C776 dff_9/nandgate_1/w_122_92# dff_9/m1_0_n20# 0.2fF
+C777 vdd clablock_0/png_0/xorgate_0/inverter_1/w_n13_n7# 0.1fF
+C778 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/w_75_30# 0.1fF
+C779 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/m1_198_1746# 0.1fF
+C780 dff_7/nandgate_1/a_137_45# gnd 0.2fF
+C781 dff_2/m1_n123_103# clk 0.8fF
+C782 dff_1/nand3_0/a_79_9# clk 0.1fF
+C783 clablock_0/carrygen_0/m1_1315_575# clablock_0/carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.0fF
+C784 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/carrygen_0/orgate_0/a_n59_77# 0.2fF
+C785 dff_0/nandgate_3/w_122_92# dff_0/m1_n123_103# 0.2fF
+C786 vdd clablock_0/png_0/xorgate_0/a_56_44# 0.2fF
+C787 vdd clablock_0/m1_198_1746# 0.2fF
+C788 vdd clablock_0/carrygen_0/m1_981_575# 0.2fF
+C789 gnd dff_10/nandgate_4/a_137_45# 0.2fF
+C790 clablock_0/png_0/xorgate_2/a_48_n7# clablock_0/m1_252_1255# 0.2fF
+C791 dff_9/nandgate_2/w_122_92# dff_9/m1_n49_n87# 0.1fF
+C792 dff_12/m1_n140_n124# vdd 1.0fF
+C793 dff_7/m1_n49_n87# dff_7/nandgate_1/w_122_92# 0.1fF
+C794 dff_5/nand3_0/a_79_9# dff_5/nand3_0/a_106_9# 0.1fF
+C795 clablock_0/sumblock_0/xorgate_1/w_n37_30# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C796 dff_6/nandgate_3/w_122_92# vdd 0.2fF
+C797 dff_6/nandgate_0/a_137_45# gnd 0.2fF
+C798 dff_2/nand3_0/a_106_9# dff_2/m1_n123_103# 0.1fF
+C799 dff_1/nandgate_2/a_137_45# gnd 0.2fF
+C800 dff_7/nandgate_2/w_122_92# dff_7/m1_n140_n124# 0.2fF
+C801 dff_3/m1_n140_n124# gnd 0.1fF
+C802 dff_3/m1_n114_50# dff_3/nandgate_4/a_137_45# 0.1fF
+C803 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C804 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/a_48_n7# 0.0fF
+C805 vdd clablock_0/sumblock_0/xorgate_3/w_n71_38# 0.1fF
+C806 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/m2_438_434# 0.1fF
+C807 dff_9/m1_n114_50# vdd 0.7fF
+C808 dff_8/m1_n123_103# gnd 0.7fF
+C809 dff_8/m1_n49_n87# clk 0.4fF
+C810 S1 gnd 0.1fF
+C811 clablock_0/png_0/xorgate_1/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_1/a_48_n7# 0.0fF
+C812 clablock_0/carrygen_0/orgate_4/a_n63_n10# gnd 0.4fF
+C813 dff_5/nandgate_4/w_122_92# dff_5/m1_n123_103# 0.1fF
+C814 vdd dff_10/nandgate_2/w_122_92# 0.2fF
+C815 vdd clablock_0/m1_252_1255# 2.2fF
+C816 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/m1_198_1746# 0.1fF
+C817 dff_6/m1_0_n20# vdd 0.9fF
+C818 dff_12/nandgate_1/w_122_92# dff_12/m1_0_n20# 0.2fF
+C819 dff_0/m1_n114_50# vdd 0.7fF
+C820 dff_0/m1_n123_103# gnd 0.7fF
+C821 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/m1_174_337# 0.3fF
+C822 clablock_0/carrygen_0/orgate_4/w_n74_71# clablock_0/m1_253_1444# 0.1fF
+C823 clablock_0/carrygen_0/orgate_0/a_n63_n10# vdd 0.0fF
+C824 clablock_0/carrygen_0/m1_174_152# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C825 vdd dff_7/m1_n140_n124# 1.0fF
+C826 gnd clablock_0/m1_235_462# 0.3fF
+C827 clablock_0/m1_196_1935# clablock_0/png_0/andgate_3/inverter_0/w_n13_n7# 0.0fF
+C828 gnd clablock_0/m1_198_1746# 0.3fF
+C829 vdd clablock_0/carrygen_0/orgate_7/a_n63_n10# 0.0fF
+C830 clablock_0/carrygen_0/orgate_3/w_n74_71# clablock_0/carrygen_0/m2_438_434# 0.1fF
+C831 dff_3/nandgate_2/w_122_92# dff_3/m1_n140_n124# 0.2fF
+C832 dff_9/m1_n123_103# clk 0.8fF
+C833 vdd clablock_0/png_0/xorgate_1/a_n64_32# 0.5fF
+C834 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_1/a_n61_61# 0.1fF
+C835 clablock_0/carrygen_0/orgate_1/w_n74_71# clablock_0/carrygen_0/orgate_1/a_n59_77# 0.0fF
+C836 dff_4/m1_n123_103# clk 0.8fF
+C837 dff_5/nandgate_4/a_137_45# gnd 0.2fF
+C838 dff_8/nandgate_0/a_137_45# dff_8/m1_n123_103# 0.1fF
+C839 dff_9/nandgate_1/a_137_45# Q0 0.1fF
+C840 clablock_0/m1_196_1935# clablock_0/m1_252_1255# 0.2fF
+C841 dff_4/nandgate_3/a_137_45# dff_4/m1_n114_50# 0.1fF
+C842 dff_4/m1_n140_n124# dff_4/m1_n123_103# 0.2fF
+C843 dff_9/nandgate_4/w_122_92# dff_9/m1_n123_103# 0.1fF
+C844 dff_9/nandgate_3/a_137_45# dff_9/m1_n114_50# 0.1fF
+C845 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/w_n37_30# 0.0fF
+C846 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/w_41_38# 0.1fF
+C847 clablock_0/carrygen_0/m1_174_337# clablock_0/m1_253_1444# 0.1fF
+C848 clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_0/a_48_n7# 0.0fF
+C849 clablock_0/carrygen_0/andgate_1/a_n61_61# gnd 0.1fF
+C850 clk dff_7/m1_n114_50# 0.1fF
+C851 dff_5/m1_n49_n87# dff_5/m1_n123_103# 0.9fF
+C852 clablock_0/m1_243_273# clablock_0/m1_235_462# 0.2fF
+C853 gnd Q4 0.2fF
+C854 dff_3/m1_n114_50# gnd 0.4fF
+C855 dff_1/m1_n140_n124# dff_1/nandgate_4/a_137_45# 0.1fF
+C856 dff_5/m1_n123_103# vdd 1.2fF
+C857 dff_1/nandgate_1/a_137_45# gnd 0.2fF
+C858 dff_10/nandgate_0/w_122_92# dff_10/m1_0_n20# 0.1fF
+C859 clablock_0/m1_248_764# clablock_0/m1_198_1746# 0.2fF
+C860 vdd clablock_0/png_0/xorgate_1/a_n56_44# 0.2fF
+C861 dff_4/nandgate_3/w_122_92# dff_4/m1_n114_50# 0.1fF
+C862 dff_11/m1_n123_103# clk 0.8fF
+C863 dff_9/nandgate_3/w_122_92# dff_9/m1_n114_50# 0.1fF
+C864 dff_0/nandgate_3/w_122_92# vdd 0.2fF
+C865 dff_0/m1_n140_n124# clk 0.6fF
+C866 clablock_0/sumblock_0/xorgate_2/a_56_n20# clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.0fF
+C867 clablock_0/carrygen_0/andgate_7/w_n76_50# clablock_0/m1_198_1746# 0.1fF
+C868 clablock_0/carrygen_0/orgate_9/a_n63_n10# vdd 0.0fF
+C869 clablock_0/carrygen_0/orgate_3/a_n59_77# clablock_0/carrygen_0/m1_174_337# 0.0fF
+C870 dff_4/m1_n49_n87# dff_4/m1_n123_103# 0.9fF
+C871 dff_10/nandgate_0/w_122_92# dff_10/m1_n123_103# 0.1fF
+C872 dff_3/nandgate_0/w_122_92# vdd 0.2fF
+C873 dff_3/nand3_0/a_106_9# gnd 0.1fF
+C874 dff_1/nand3_0/a_106_9# dff_1/m1_n123_103# 0.1fF
+C875 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/w_n71_38# 0.2fF
+C876 clablock_0/carrygen_0/andgate_4/w_n42_50# clablock_0/carrygen_0/m1_174_152# 0.1fF
+C877 dff_10/nandgate_3/a_137_45# dff_10/m1_n114_50# 0.1fF
+C878 dff_2/m1_n49_n87# dff_2/nandgate_1/w_122_92# 0.1fF
+C879 dff_1/nandgate_4/w_122_92# dff_1/m1_n140_n124# 0.1fF
+C880 dff_1/nand3_0/w_64_61# dff_1/m1_n123_103# 0.1fF
+C881 vdd clablock_0/carrygen_0/orgate_6/w_n74_71# 0.1fF
+C882 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_2/a_n61_61# 0.1fF
+C883 dff_4/nandgate_1/a_137_45# gnd 0.2fF
+C884 Q3 gnd 0.2fF
+C885 dff_9/m1_n49_n87# dff_9/m1_n140_n124# 1.2fF
+C886 vdd clablock_0/png_0/xorgate_0/a_n56_44# 0.2fF
+C887 clablock_0/png_0/andgate_0/a_n61_61# clablock_0/png_0/andgate_0/w_n76_50# 0.1fF
+C888 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/a_56_n20# 0.1fF
+C889 S0 gnd 0.2fF
+C890 dff_2/nandgate_4/w_122_92# dff_2/m1_n114_50# 0.2fF
+C891 dff_2/m1_n114_50# gnd 0.4fF
+C892 dff_8/m1_n140_n124# dff_8/nandgate_4/a_137_45# 0.1fF
+C893 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/w_n37_30# 0.1fF
+C894 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/w_75_30# 0.1fF
+C895 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/m1_252_1255# 0.1fF
+C896 dff_11/m1_n114_50# gnd 0.4fF
+C897 gnd clablock_0/png_0/xorgate_2/a_56_n20# 0.1fF
+C898 clablock_0/sumblock_0/xorgate_0/a_n64_32# S3 0.6fF
+C899 clablock_0/sumblock_0/xorgate_0/a_56_44# S3 0.2fF
+C900 gnd clablock_0/sumblock_0/xorgate_0/a_56_n20# 0.1fF
+C901 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/m1_196_1935# 0.3fF
+C902 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/m1_777_387# 0.1fF
+C903 vdd clablock_0/png_0/xorgate_2/w_n71_38# 0.1fF
+C904 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/w_41_38# 0.2fF
+C905 clablock_0/sumblock_0/xorgate_0/w_41_38# clablock_0/sumblock_0/xorgate_0/a_56_44# 0.1fF
+C906 clablock_0/carrygen_0/andgate_2/a_n61_61# gnd 0.1fF
+C907 clablock_0/carrygen_0/andgate_0/a_n58_n25# clablock_0/m1_243_273# 0.1fF
+C908 clk dff_7/nandgate_3/w_122_92# 0.1fF
+C909 dff_6/nand3_0/w_64_61# dff_6/m1_n123_103# 0.1fF
+C910 dff_5/m1_n49_n87# gnd 0.2fF
+C911 S0 clablock_0/sumblock_0/xorgate_3/a_n56_n20# 0.1fF
+C912 dff_7/nandgate_4/w_122_92# dff_7/m1_n140_n124# 0.1fF
+C913 dff_7/nandgate_3/a_137_45# dff_7/m1_n123_103# 0.1fF
+C914 dff_9/nandgate_0/a_137_45# gnd 0.2fF
+C915 clablock_0/carrygen_0/orgate_7/w_n74_71# clablock_0/carrygen_0/orgate_7/a_n59_77# 0.0fF
+C916 clablock_0/carrygen_0/m1_567_199# clablock_0/carrygen_0/orgate_1/inverter_0/w_n13_n7# 0.0fF
+C917 vdd dff_10/nandgate_0/w_122_92# 0.2fF
+C918 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/m1_198_1746# 0.6fF
+C919 clablock_0/png_0/xorgate_3/w_n71_38# clablock_0/png_0/xorgate_3/a_n56_44# 0.1fF
+C920 dff_2/nandgate_4/w_122_92# vdd 0.2fF
+C921 dff_8/nandgate_3/w_122_92# dff_8/m1_n123_103# 0.2fF
+C922 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/w_75_30# 0.1fF
+C923 clablock_0/png_0/xorgate_2/inverter_1/w_n13_n7# clablock_0/png_0/xorgate_2/a_n64_32# 0.0fF
+C924 dff_4/nand3_0/a_106_9# dff_4/m1_n123_103# 0.1fF
+C925 dff_11/m1_n140_n124# dff_11/m1_n123_103# 0.2fF
+C926 dff_0/nandgate_4/w_122_92# dff_0/m1_n140_n124# 0.1fF
+C927 dff_0/nandgate_3/a_137_45# dff_0/m1_n123_103# 0.1fF
+C928 gnd clablock_0/m1_252_1255# 0.1fF
+C929 clablock_0/png_0/andgate_2/a_n61_61# clablock_0/png_0/andgate_2/w_n42_50# 0.1fF
+C930 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/w_n37_30# 0.0fF
+C931 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/a_56_44# 0.4fF
+C932 clablock_0/carrygen_0/m1_1147_580# clablock_0/carrygen_0/orgate_7/a_n63_n10# 0.1fF
+C933 S3 clk 0.2fF
+C934 dff_10/m1_0_n20# Q4 0.9fF
+C935 dff_8/m1_n123_103# vdd 1.2fF
+C936 dff_1/m1_n114_50# clk 0.1fF
+C937 dff_6/m1_n49_n87# vdd 0.9fF
+C938 dff_4/nand3_0/w_64_61# vdd 0.2fF
+C939 clablock_0/carrygen_0/andgate_2/a_n61_61# clablock_0/carrygen_0/m1_174_38# 0.3fF
+C940 Q4 dff_10/m1_n123_103# 0.5fF
+C941 dff_12/m1_n114_50# dff_12/nandgate_4/a_137_45# 0.1fF
+C942 clablock_0/m1_252_1255# clablock_0/png_0/xorgate_2/a_n56_n20# 0.1fF
+C943 clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.0fF
+C944 clablock_0/carrygen_0/orgate_2/w_n65_31# clablock_0/carrygen_0/m1_567_199# 0.1fF
+C945 dff_7/m1_n114_50# dff_7/nandgate_4/a_137_45# 0.1fF
+C946 dff_5/nand3_0/a_79_9# gnd 0.2fF
+C947 Q1 dff_8/nandgate_0/w_122_92# 0.2fF
+C948 dff_0/nand3_0/w_64_61# dff_0/m1_n123_103# 0.1fF
+C949 gnd clablock_0/png_0/andgate_2/a_n58_n25# 0.1fF
+C950 clablock_0/png_0/andgate_3/w_n76_50# vdd 0.1fF
+C951 S1 clablock_0/sumblock_0/xorgate_2/a_n64_32# 0.6fF
+C952 clablock_0/carrygen_0/m1_777_387# clablock_0/m1_253_1444# 0.1fF
+C953 dff_6/nandgate_4/w_122_92# dff_6/m1_n123_103# 0.1fF
+C954 dff_12/nandgate_0/w_122_92# Q2 0.2fF
+C955 dff_1/nandgate_1/w_122_92# vdd 0.2fF
+C956 clablock_0/carrygen_0/orgate_1/w_n65_31# clablock_0/carrygen_0/m1_174_152# 0.1fF
+C957 dff_6/nandgate_1/w_122_92# dff_6/m1_0_n20# 0.2fF
+C958 clablock_0/m1_243_273# clablock_0/m1_252_1255# 0.2fF
+C959 clablock_0/png_0/andgate_2/a_n61_61# clablock_0/m1_253_1444# 0.1fF
+C960 clablock_0/png_0/xorgate_3/a_n56_44# clablock_0/m1_198_1746# 0.2fF
+C961 vdd clablock_0/sumblock_0/xorgate_1/w_41_38# 0.1fF
+C962 vdd clablock_0/sumblock_0/xorgate_1/inverter_1/w_n13_n7# 0.1fF
+C963 clablock_0/carrygen_0/orgate_2/a_n59_77# clablock_0/m1_253_953# 0.2fF
+C964 dff_1/nandgate_2/w_122_92# dff_1/m1_n140_n124# 0.2fF
+C965 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/carrygen_0/andgate_6/a_n58_n25# 0.1fF
+C966 dff_12/m1_0_n20# dff_12/m1_n123_103# 0.1fF
+C967 dff_3/nandgate_2/w_122_92# vdd 0.2fF
+C968 dff_2/m1_n140_n124# dff_2/nandgate_4/a_137_45# 0.1fF
+C969 dff_7/m1_0_n20# dff_7/m1_n123_103# 0.1fF
+C970 dff_11/nandgate_1/w_122_92# dff_11/m1_0_n20# 0.2fF
+C971 dff_2/m1_n49_n87# vdd 0.9fF
+C972 clablock_0/sumblock_0/xorgate_2/a_n56_44# clablock_0/sumblock_0/xorgate_2/w_n37_30# 0.1fF
+C973 dff_12/nandgate_4/w_122_92# dff_12/m1_n114_50# 0.2fF
+C974 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_56_44# 0.2fF
+C975 clablock_0/sumblock_0/xorgate_1/w_n37_30# clablock_0/m1_252_1255# 0.1fF
+C976 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/carrygen_0/m2_438_246# 0.3fF
+C977 vdd clablock_0/png_0/xorgate_0/inverter_0/w_n13_n7# 0.1fF
+C978 clablock_0/png_0/xorgate_3/a_48_n7# clablock_0/png_0/xorgate_3/w_75_30# 0.1fF
+C979 clablock_0/sumblock_0/xorgate_1/a_n64_32# clablock_0/m1_252_1255# 0.0fF
+C980 clablock_0/carrygen_0/andgate_9/w_n76_50# clablock_0/m1_198_1746# 0.1fF
+C981 clablock_0/carrygen_0/orgate_3/a_n63_n10# vdd 0.0fF
+C982 clablock_0/carrygen_0/andgate_0/a_n61_61# vdd 0.6fF
+C983 clablock_0/carrygen_0/orgate_0/inverter_0/w_n13_n7# clablock_0/carrygen_0/orgate_0/a_n63_n10# 0.1fF
+C984 clk dff_6/m1_n123_103# 0.8fF
+C985 dff_8/nand3_0/a_106_9# dff_8/m1_n49_n87# 0.1fF
+C986 dff_0/m1_n49_n87# dff_0/m1_0_n20# 0.3fF
+C987 dff_4/nand3_0/a_79_9# gnd 0.2fF
+C988 dff_3/nandgate_1/a_137_45# gnd 0.2fF
+C989 vdd Q4 0.7fF
+C990 vdd clablock_0/png_0/andgate_2/w_n42_50# 0.1fF
+C991 vdd clablock_0/carrygen_0/orgate_7/w_n74_71# 0.1fF
+C992 clablock_0/carrygen_0/orgate_2/a_n59_77# vdd 0.2fF
+C993 gnd dff_10/m1_n140_n124# 0.1fF
+C994 S3 dff_11/m1_n140_n124# 0.3fF
+C995 dff_1/nandgate_3/w_122_92# clk 0.1fF
+C996 dff_5/nandgate_3/a_137_45# dff_5/m1_n114_50# 0.1fF
+C997 dff_5/m1_n140_n124# dff_5/m1_n123_103# 0.2fF
+C998 dff_3/m1_n49_n87# gnd 0.2fF
+C999 vdd clablock_0/png_0/andgate_0/a_n61_61# 0.6fF
+C1000 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/sumblock_0/xorgate_3/w_n71_38# 0.1fF
+C1001 vdd clablock_0/carrygen_0/andgate_6/a_n61_61# 0.6fF
+C1002 gnd clablock_0/carrygen_0/m1_174_337# 0.9fF
+C1003 vdd clablock_0/sumblock_0/xorgate_3/a_56_44# 0.2fF
+C1004 S0 clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C1005 clablock_0/carrygen_0/orgate_5/w_n65_31# clablock_0/carrygen_0/orgate_5/a_n59_77# 0.0fF
+C1006 dff_12/m1_n49_n87# Q2 0.1fF
+C1007 dff_8/nandgate_2/w_122_92# dff_8/m1_n140_n124# 0.2fF
+C1008 gnd clablock_0/png_0/xorgate_1/a_n64_32# 0.1fF
+C1009 vdd clablock_0/carrygen_0/orgate_9/a_n59_77# 0.2fF
+C1010 dff_9/nand3_0/a_79_9# dff_9/nand3_0/a_106_9# 0.1fF
+C1011 dff_1/m1_n49_n87# dff_1/m1_0_n20# 0.3fF
+C1012 vdd clablock_0/m1_253_1444# 0.2fF
+C1013 vdd clablock_0/carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.1fF
+C1014 dff_12/nandgate_1/w_122_92# vdd 0.2fF
+C1015 dff_5/nandgate_3/w_122_92# dff_5/m1_n114_50# 0.1fF
+C1016 vdd Q3 0.7fF
+C1017 dff_0/m1_n49_n87# dff_0/nandgate_2/w_122_92# 0.1fF
+C1018 vdd clablock_0/sumblock_0/xorgate_0/w_n71_38# 0.1fF
+C1019 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/inverter_1/w_n13_n7# 0.0fF
+C1020 clablock_0/carrygen_0/m1_174_152# clablock_0/m1_253_953# 0.1fF
+C1021 clablock_0/carrygen_0/andgate_9/a_n61_61# clablock_0/carrygen_0/m1_777_387# 0.3fF
+C1022 dff_3/nand3_0/w_64_61# dff_3/m1_n140_n124# 0.8fF
+C1023 S0 clablock_0/sumblock_0/xorgate_3/a_n56_44# 0.2fF
+C1024 vdd dff_11/m1_n114_50# 0.7fF
+C1025 dff_12/m1_n123_103# gnd 0.7fF
+C1026 dff_3/m1_n49_n87# dff_3/nandgate_2/w_122_92# 0.1fF
+C1027 vdd clablock_0/png_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C1028 clablock_0/carrygen_0/andgate_5/a_n61_61# vdd 0.6fF
+C1029 dff_9/m1_n140_n124# dff_9/m1_n123_103# 0.2fF
+C1030 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/w_n37_30# 0.1fF
+C1031 clablock_0/carrygen_0/andgate_7/a_n58_n25# clablock_0/m1_198_1746# 0.1fF
+C1032 clablock_0/carrygen_0/orgate_9/a_n59_77# clablock_0/m1_196_1935# 0.2fF
+C1033 clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.0fF
+C1034 clablock_0/carrygen_0/andgate_6/a_n58_n25# clablock_0/m1_253_1444# 0.2fF
+C1035 dff_7/nandgate_0/w_122_92# dff_7/m1_0_n20# 0.1fF
+C1036 dff_7/nand3_0/w_64_61# vdd 0.2fF
+C1037 dff_12/m1_n49_n87# clk 0.4fF
+C1038 dff_9/nandgate_4/a_137_45# gnd 0.2fF
+C1039 vdd clablock_0/png_0/xorgate_1/a_48_n7# 0.2fF
+C1040 vdd clablock_0/carrygen_0/andgate_7/a_n61_61# 0.6fF
+C1041 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_2/w_n76_50# 0.1fF
+C1042 dff_5/m1_n140_n124# gnd 0.1fF
+C1043 Q1 dff_8/nandgate_1/w_122_92# 0.1fF
+C1044 dff_0/nand3_0/w_64_61# vdd 0.2fF
+C1045 clablock_0/png_0/andgate_0/a_n61_61# clablock_0/png_0/andgate_0/a_n58_n25# 0.1fF
+C1046 clablock_0/carrygen_0/m1_174_152# vdd 0.4fF
+C1047 vdd clablock_0/sumblock_0/xorgate_0/a_56_44# 0.2fF
+C1048 vdd clablock_0/sumblock_0/xorgate_0/a_n64_32# 0.5fF
+C1049 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/orgate_5/w_n65_31# 0.0fF
+C1050 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/m1_235_462# 0.3fF
+C1051 dff_0/nandgate_0/a_137_45# gnd 0.2fF
+C1052 dff_1/nandgate_4/a_137_45# gnd 0.2fF
+C1053 clablock_0/sumblock_0/xorgate_1/a_n56_44# clablock_0/sumblock_0/xorgate_1/w_n37_30# 0.1fF
+C1054 dff_9/nandgate_0/w_122_92# vdd 0.2fF
+C1055 dff_7/nand3_0/a_79_9# dff_7/nand3_0/a_106_9# 0.1fF
+C1056 dff_6/m1_n49_n87# dff_6/nandgate_1/w_122_92# 0.1fF
+C1057 dff_10/m1_n140_n124# dff_10/m1_n123_103# 0.2fF
+C1058 dff_11/nandgate_2/a_137_45# gnd 0.2fF
+C1059 clablock_0/sumblock_0/xorgate_1/a_n56_44# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.4fF
+C1060 vdd clablock_0/m1_253_1444# 0.4fF
+C1061 dff_10/m1_n49_n87# dff_10/nand3_0/a_106_9# 0.1fF
+C1062 dff_9/m1_n49_n87# dff_9/m1_n123_103# 0.9fF
+C1063 clablock_0/png_0/xorgate_0/w_n71_38# clablock_0/png_0/xorgate_0/a_n56_44# 0.1fF
+C1064 vdd dff_11/nandgate_3/w_122_92# 0.2fF
+C1065 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/orgate_5/inverter_0/w_n13_n7# 0.1fF
+C1066 dff_0/m1_n140_n124# dff_0/nandgate_4/a_137_45# 0.1fF
+C1067 clablock_0/carrygen_0/orgate_6/w_n65_31# clablock_0/carrygen_0/orgate_6/a_n59_77# 0.0fF
+C1068 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/a_n56_44# 0.2fF
+C1069 vdd clablock_0/carrygen_0/andgate_8/a_n61_61# 0.6fF
+C1070 gnd clablock_0/carrygen_0/m1_777_387# 0.3fF
+C1071 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/orgate_2/a_n59_77# 0.2fF
+C1072 gnd dff_7/nand3_0/a_79_9# 0.2fF
+C1073 Q1 gnd 0.2fF
+C1074 dff_1/m1_n123_103# vdd 1.2fF
+C1075 dff_11/nandgate_0/w_122_92# Q3 0.2fF
+C1076 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/w_75_30# 0.1fF
+C1077 clablock_0/png_0/xorgate_3/inverter_1/w_n13_n7# clablock_0/png_0/xorgate_3/a_n64_32# 0.0fF
+C1078 dff_7/m1_n49_n87# dff_7/m1_0_n20# 0.3fF
+C1079 gnd clablock_0/carrygen_0/orgate_6/a_n63_n10# 0.4fF
+C1080 dff_10/nand3_0/w_64_61# clk 0.1fF
+C1081 dff_11/nand3_0/a_106_9# gnd 0.1fF
+C1082 vdd clablock_0/png_0/xorgate_0/w_41_38# 0.1fF
+C1083 clablock_0/png_0/xorgate_3/a_48_n7# clablock_0/png_0/xorgate_3/a_56_n20# 0.0fF
+C1084 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/a_56_44# 0.4fF
+C1085 vdd clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# 0.1fF
+C1086 clablock_0/carrygen_0/orgate_3/a_n59_77# vdd 0.2fF
+C1087 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/carrygen_0/andgate_1/w_n76_50# 0.1fF
+C1088 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/orgate_4/a_n59_77# 0.2fF
+C1089 dff_10/nandgate_1/w_122_92# dff_10/m1_0_n20# 0.2fF
+C1090 Q2 dff_12/nandgate_0/a_137_45# 0.1fF
+C1091 dff_2/nandgate_3/a_137_45# gnd 0.2fF
+C1092 vdd dff_10/m1_n140_n124# 1.0fF
+C1093 dff_11/nandgate_4/w_122_92# dff_11/m1_n114_50# 0.2fF
+C1094 dff_11/nandgate_3/a_137_45# gnd 0.2fF
+C1095 clablock_0/sumblock_0/xorgate_0/a_n64_32# gnd 0.1fF
+C1096 vdd clablock_0/png_0/xorgate_2/inverter_1/w_n13_n7# 0.1fF
+C1097 clablock_0/carrygen_0/m1_1147_580# clablock_0/carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.0fF
+C1098 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/m1_243_273# 0.1fF
+C1099 dff_12/nandgate_3/w_122_92# vdd 0.2fF
+C1100 dff_3/nand3_0/a_79_9# clk 0.1fF
+C1101 dff_8/nandgate_0/a_137_45# Q1 0.1fF
+C1102 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C1103 clablock_0/png_0/andgate_1/a_n61_61# clablock_0/png_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C1104 clablock_0/m1_252_1255# clablock_0/png_0/xorgate_2/a_56_n20# 0.1fF
+C1105 vdd clablock_0/png_0/xorgate_2/a_56_44# 0.2fF
+C1106 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/m1_981_575# 0.1fF
+C1107 dff_5/nandgate_0/w_122_92# vdd 0.2fF
+C1108 dff_3/nandgate_4/w_122_92# dff_3/m1_n123_103# 0.1fF
+C1109 dff_9/m1_n49_n87# Q0 0.1fF
+C1110 dff_1/m1_n49_n87# dff_1/nand3_0/a_106_9# 0.1fF
+C1111 dff_0/nandgate_0/w_122_92# dff_0/m1_n123_103# 0.1fF
+C1112 clablock_0/png_0/xorgate_3/a_48_n7# clablock_0/m1_198_1746# 0.2fF
+C1113 clablock_0/carrygen_0/andgate_8/w_n42_50# clablock_0/carrygen_0/m2_438_434# 0.1fF
+C1114 clablock_0/carrygen_0/andgate_9/a_n58_n25# clablock_0/m1_198_1746# 0.1fF
+C1115 clablock_0/carrygen_0/m1_174_337# clablock_0/carrygen_0/andgate_7/a_n58_n25# 0.2fF
+C1116 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.1fF
+C1117 dff_6/nandgate_3/a_137_45# dff_6/m1_n114_50# 0.1fF
+C1118 dff_6/m1_n140_n124# dff_6/m1_n123_103# 0.2fF
+C1119 clablock_0/png_0/xorgate_0/a_48_n7# clablock_0/png_0/xorgate_0/w_75_30# 0.1fF
+C1120 clablock_0/png_0/xorgate_2/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_2/a_n64_32# 0.0fF
+C1121 clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# clablock_0/m1_243_273# 0.0fF
+C1122 vdd clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.5fF
+C1123 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/orgate_6/w_n65_31# 0.0fF
+C1124 dff_1/nand3_0/w_64_61# dff_1/m1_n49_n87# 0.2fF
+C1125 dff_8/nand3_0/w_64_61# vdd 0.2fF
+C1126 dff_1/nand3_0/w_64_61# clk 0.1fF
+C1127 dff_0/nandgate_2/w_122_92# dff_0/m1_n140_n124# 0.2fF
+C1128 vdd clablock_0/carrygen_0/andgate_9/a_n61_61# 0.6fF
+C1129 dff_3/nandgate_2/a_137_45# gnd 0.2fF
+C1130 dff_4/m1_n114_50# gnd 0.4fF
+C1131 dff_11/m1_n49_n87# Q3 0.1fF
+C1132 dff_3/nand3_0/w_64_61# vdd 0.2fF
+C1133 dff_8/m1_n140_n124# clk 0.6fF
+C1134 dff_12/m1_n140_n124# dff_12/m1_n114_50# 0.5fF
+C1135 dff_12/m1_n123_103# vdd 1.2fF
+C1136 vdd dff_10/nandgate_1/w_122_92# 0.2fF
+C1137 dff_10/nandgate_1/a_137_45# gnd 0.2fF
+C1138 dff_10/m1_n49_n87# dff_10/nandgate_2/a_137_45# 0.1fF
+C1139 dff_9/m1_n49_n87# dff_9/nand3_0/a_106_9# 0.1fF
+C1140 clablock_0/carrygen_0/m2_438_246# gnd 0.3fF
+C1141 clablock_0/carrygen_0/andgate_0/inverter_0/w_n13_n7# vdd 0.1fF
+C1142 dff_6/nandgate_3/w_122_92# dff_6/m1_n114_50# 0.1fF
+C1143 m1_n69_666# gnd 0.3fF
+C1144 gnd clablock_0/png_0/andgate_0/a_n61_61# 0.1fF
+C1145 clablock_0/m1_248_764# clablock_0/m1_253_953# 0.2fF
+C1146 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.1fF
+C1147 dff_9/nandgate_0/w_122_92# dff_9/m1_0_n20# 0.1fF
+C1148 dff_0/m1_n49_n87# dff_0/m1_n140_n124# 1.2fF
+C1149 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/orgate_8/a_n59_77# 0.2fF
+C1150 clablock_0/carrygen_0/andgate_4/inverter_0/w_n13_n7# clablock_0/carrygen_0/m2_438_434# 0.0fF
+C1151 dff_4/nandgate_4/w_122_92# vdd 0.2fF
+C1152 dff_4/nandgate_3/a_137_45# gnd 0.2fF
+C1153 dff_8/m1_n114_50# gnd 0.4fF
+C1154 S1 clablock_0/sumblock_0/xorgate_2/w_n37_30# 0.0fF
+C1155 Q4 dff_10/nandgate_0/a_137_45# 0.1fF
+C1156 vdd clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.2fF
+C1157 dff_12/m1_n140_n124# clk 0.6fF
+C1158 gnd clablock_0/m1_253_1444# 0.3fF
+C1159 gnd clablock_0/carrygen_0/andgate_6/a_n58_n25# 0.1fF
+C1160 gnd clablock_0/m1_253_953# 0.1fF
+C1161 S1 dff_8/nandgate_2/w_122_92# 0.1fF
+C1162 clablock_0/carrygen_0/m1_174_525# clablock_0/carrygen_0/andgate_6/a_n61_61# 0.1fF
+C1163 vdd clablock_0/carrygen_0/m1_1315_575# 0.2fF
+C1164 dff_12/nand3_0/w_64_61# dff_12/m1_n49_n87# 0.2fF
+C1165 vdd clablock_0/png_0/xorgate_3/a_n64_32# 0.5fF
+C1166 clablock_0/carrygen_0/andgate_6/w_n76_50# clablock_0/m1_198_1746# 0.1fF
+C1167 clablock_0/carrygen_0/orgate_0/a_n59_77# clablock_0/carrygen_0/m1_174_38# 0.0fF
+C1168 vdd dff_7/m1_n123_103# 1.2fF
+C1169 clablock_0/sumblock_0/xorgate_3/a_n64_32# gnd 0.1fF
+C1170 clablock_0/m1_248_764# vdd 1.0fF
+C1171 gnd clablock_0/carrygen_0/m1_567_529# 4.7fF
+C1172 dff_12/m1_0_n20# gnd 0.3fF
+C1173 dff_2/m1_n49_n87# m1_n69_666# 0.3fF
+C1174 dff_9/m1_n114_50# clk 0.1fF
+C1175 vdd clablock_0/carrygen_0/andgate_7/w_n76_50# 0.1fF
+C1176 clablock_0/carrygen_0/orgate_5/a_n59_77# vdd 0.2fF
+C1177 clablock_0/m1_248_764# clablock_0/carrygen_0/andgate_2/a_n58_n25# 0.1fF
+C1178 clablock_0/carrygen_0/orgate_1/w_n65_31# clablock_0/carrygen_0/orgate_1/a_n59_77# 0.0fF
+C1179 dff_6/nandgate_2/w_122_92# vdd 0.2fF
+C1180 dff_12/nandgate_1/a_137_45# dff_12/m1_0_n20# 0.1fF
+C1181 dff_8/m1_0_n20# dff_8/m1_n123_103# 0.1fF
+C1182 dff_1/m1_n49_n87# dff_1/nandgate_2/a_137_45# 0.1fF
+C1183 clablock_0/m1_243_273# clablock_0/m1_253_1444# 0.2fF
+C1184 clablock_0/carrygen_0/andgate_3/a_n58_n25# clablock_0/m1_253_953# 0.2fF
+C1185 clablock_0/sumblock_0/xorgate_1/w_75_30# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C1186 dff_6/nand3_0/a_106_9# dff_6/m1_n123_103# 0.1fF
+C1187 dff_12/m1_n49_n87# dff_12/nand3_0/a_106_9# 0.1fF
+C1188 dff_3/m1_n49_n87# dff_3/nand3_0/w_64_61# 0.2fF
+C1189 dff_2/nand3_0/w_64_61# dff_2/m1_n49_n87# 0.2fF
+C1190 Q1 vdd 0.7fF
+C1191 dff_9/nandgate_4/w_122_92# dff_9/m1_n114_50# 0.2fF
+C1192 gnd clablock_0/png_0/xorgate_1/a_48_n7# 0.2fF
+C1193 clablock_0/carrygen_0/andgate_2/a_n58_n25# gnd 0.1fF
+C1194 dff_3/m1_n140_n124# clk 0.6fF
+C1195 clablock_0/m1_248_764# clablock_0/m1_196_1935# 0.2fF
+C1196 vdd clablock_0/png_0/xorgate_3/a_n56_44# 0.2fF
+C1197 dff_4/m1_0_n20# gnd 0.3fF
+C1198 vdd clablock_0/carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.1fF
+C1199 dff_10/nandgate_1/a_137_45# dff_10/m1_0_n20# 0.1fF
+C1200 dff_0/nandgate_0/w_122_92# vdd 0.2fF
+C1201 clablock_0/sumblock_0/xorgate_0/w_n37_30# S3 0.0fF
+C1202 gnd clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.2fF
+C1203 vdd clablock_0/m1_243_273# 0.1fF
+C1204 clablock_0/carrygen_0/orgate_1/a_n59_77# clablock_0/carrygen_0/m2_438_246# 0.2fF
+C1205 dff_0/m1_n123_103# clk 0.8fF
+C1206 clablock_0/carrygen_0/m1_174_38# vdd 0.4fF
+C1207 dff_4/nandgate_2/w_122_92# vdd 0.2fF
+C1208 Q3 dff_11/nandgate_0/a_137_45# 0.1fF
+C1209 clablock_0/png_0/xorgate_3/a_n64_32# clablock_0/png_0/xorgate_3/w_n37_30# 0.1fF
+C1210 clablock_0/carrygen_0/m1_174_38# clablock_0/carrygen_0/andgate_2/a_n58_n25# 0.2fF
+C1211 dff_8/nandgate_0/w_122_92# vdd 0.2fF
+C1212 dff_5/nand3_0/a_106_9# dff_5/m1_n123_103# 0.1fF
+C1213 dff_10/nandgate_4/w_122_92# dff_10/m1_n114_50# 0.2fF
+C1214 dff_1/nandgate_4/w_122_92# dff_1/m1_n123_103# 0.1fF
+C1215 vdd clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.5fF
+C1216 clablock_0/sumblock_0/xorgate_3/a_56_n20# gnd 0.1fF
+C1217 clablock_0/carrygen_0/orgate_5/a_n63_n10# vdd 0.0fF
+C1218 dff_11/nand3_0/a_79_9# clk 0.1fF
+C1219 clablock_0/png_0/andgate_0/a_n61_61# clablock_0/png_0/andgate_0/w_n42_50# 0.1fF
+C1220 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/carrygen_0/andgate_1/a_n58_n25# 0.1fF
+C1221 clablock_0/carrygen_0/orgate_4/w_n74_71# clablock_0/carrygen_0/orgate_4/a_n59_77# 0.0fF
+C1222 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/carrygen_0/andgate_0/a_n58_n25# 0.1fF
+C1223 dff_2/m1_n140_n124# dff_2/m1_n114_50# 0.5fF
+C1224 clablock_0/png_0/xorgate_0/w_n37_30# clablock_0/png_0/xorgate_0/a_n56_44# 0.1fF
+C1225 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/w_41_38# 0.2fF
+C1226 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.0fF
+C1227 clablock_0/carrygen_0/andgate_4/a_n58_n25# clablock_0/m1_252_1255# 0.1fF
+C1228 clablock_0/carrygen_0/andgate_3/w_n76_50# vdd 0.1fF
+C1229 clablock_0/carrygen_0/andgate_5/inverter_0/w_n13_n7# clablock_0/carrygen_0/m1_777_387# 0.0fF
+C1230 dff_11/m1_n114_50# dff_11/nandgate_4/a_137_45# 0.1fF
+C1231 S2 gnd 0.4fF
+C1232 Q0 dff_9/m1_n123_103# 0.5fF
+C1233 dff_12/nandgate_1/a_137_45# gnd 0.2fF
+C1234 dff_1/m1_n140_n124# gnd 0.1fF
+C1235 vdd dff_7/nandgate_0/w_122_92# 0.2fF
+C1236 dff_7/nandgate_4/w_122_92# dff_7/m1_n123_103# 0.1fF
+C1237 dff_6/nand3_0/w_64_61# vdd 0.2fF
+C1238 Q1 dff_8/nandgate_1/a_137_45# 0.1fF
+C1239 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.1fF
+C1240 dff_3/m1_n114_50# clk 0.1fF
+C1241 vdd clablock_0/png_0/andgate_1/w_n76_50# 0.1fF
+C1242 clablock_0/sumblock_0/xorgate_1/a_56_44# S2 0.2fF
+C1243 vdd clablock_0/carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.1fF
+C1244 clablock_0/carrygen_0/orgate_7/w_n65_31# clablock_0/carrygen_0/orgate_7/a_n59_77# 0.0fF
+C1245 clablock_0/carrygen_0/m2_438_246# clablock_0/carrygen_0/andgate_5/a_n58_n25# 0.2fF
+C1246 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/orgate_1/inverter_0/w_n13_n7# 0.1fF
+C1247 dff_11/m1_0_n20# dff_11/m1_n123_103# 0.1fF
+C1248 clablock_0/png_0/andgate_0/a_n61_61# clablock_0/m1_235_462# 0.1fF
+C1249 clablock_0/png_0/xorgate_3/w_n37_30# clablock_0/png_0/xorgate_3/a_n56_44# 0.1fF
+C1250 clablock_0/carrygen_0/andgate_8/w_n76_50# clablock_0/m1_198_1746# 0.1fF
+C1251 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/orgate_8/w_n65_31# 0.0fF
+C1252 dff_6/m1_n114_50# gnd 0.4fF
+C1253 dff_2/m1_n140_n124# vdd 1.0fF
+C1254 dff_8/nandgate_3/w_122_92# dff_8/m1_n114_50# 0.1fF
+C1255 clablock_0/m1_198_1746# clablock_0/png_0/xorgate_3/a_n56_n20# 0.1fF
+C1256 clablock_0/m1_243_273# gnd 0.4fF
+C1257 clablock_0/carrygen_0/andgate_3/a_n61_61# gnd 0.1fF
+C1258 dff_9/nand3_0/a_106_9# dff_9/m1_n123_103# 0.1fF
+C1259 dff_0/nandgate_4/w_122_92# dff_0/m1_n123_103# 0.1fF
+C1260 dff_3/nandgate_1/w_122_92# vdd 0.2fF
+C1261 dff_8/m1_n114_50# vdd 0.7fF
+C1262 dff_8/nandgate_0/a_137_45# gnd 0.2fF
+C1263 clablock_0/sumblock_0/xorgate_0/w_n71_38# clablock_0/sumblock_0/xorgate_0/a_n56_44# 0.1fF
+C1264 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/m1_252_1255# 0.1fF
+C1265 vdd clablock_0/carrygen_0/andgate_9/w_n76_50# 0.1fF
+C1266 clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/orgate_3/inverter_0/w_n13_n7# 0.0fF
+C1267 clablock_0/carrygen_0/orgate_1/a_n59_77# vdd 0.2fF
+C1268 dff_7/nandgate_2/w_122_92# dff_7/m1_n49_n87# 0.1fF
+C1269 dff_7/nandgate_3/w_122_92# dff_7/m1_n114_50# 0.1fF
+C1270 dff_9/m1_n49_n87# dff_9/nandgate_1/w_122_92# 0.1fF
+C1271 clablock_0/png_0/xorgate_1/a_48_n7# clablock_0/png_0/xorgate_1/w_75_30# 0.1fF
+C1272 clablock_0/png_0/xorgate_3/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_3/a_n64_32# 0.0fF
+C1273 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/andgate_4/w_n76_50# 0.1fF
+C1274 clablock_0/m1_248_764# gnd 0.1fF
+C1275 vdd clablock_0/png_0/andgate_1/a_n61_61# 0.6fF
+C1276 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C1277 dff_5/nand3_0/a_106_9# gnd 0.1fF
+C1278 dff_3/nandgate_3/a_137_45# dff_3/m1_n114_50# 0.1fF
+C1279 dff_3/m1_n140_n124# dff_3/m1_n123_103# 0.2fF
+C1280 clablock_0/sumblock_0/xorgate_0/a_48_n7# S3 0.2fF
+C1281 gnd clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C1282 clablock_0/sumblock_0/xorgate_3/a_n56_n20# clablock_0/m1_243_273# 0.2fF
+C1283 clablock_0/sumblock_0/xorgate_2/a_56_44# clablock_0/sumblock_0/xorgate_2/w_41_38# 0.1fF
+C1284 gnd clablock_0/carrygen_0/m1_1147_580# 0.1fF
+C1285 clablock_0/carrygen_0/orgate_2/a_n63_n10# gnd 0.4fF
+C1286 dff_6/nandgate_4/w_122_92# vdd 0.2fF
+C1287 dff_6/nandgate_3/a_137_45# gnd 0.2fF
+C1288 dff_2/m1_n114_50# clk 0.1fF
+C1289 dff_2/nandgate_0/a_137_45# dff_2/m1_n123_103# 0.1fF
+C1290 clablock_0/png_0/andgate_2/a_n61_61# clablock_0/png_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C1291 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/carrygen_0/andgate_3/a_n58_n25# 0.1fF
+C1292 dff_0/nandgate_3/w_122_92# dff_0/m1_n114_50# 0.1fF
+C1293 clablock_0/m1_235_462# clablock_0/png_0/andgate_0/inverter_0/w_n13_n7# 0.0fF
+C1294 dff_11/nandgate_2/a_137_45# dff_11/m1_n49_n87# 0.1fF
+C1295 dff_12/nand3_0/w_64_61# dff_12/m1_n140_n124# 0.8fF
+C1296 dff_12/m1_0_n20# vdd 0.9fF
+C1297 vdd clablock_0/png_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C1298 vdd clablock_0/sumblock_0/xorgate_3/w_41_38# 0.1fF
+C1299 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/sumblock_0/xorgate_3/a_n64_32# 0.4fF
+C1300 vdd clablock_0/carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.1fF
+C1301 vdd dff_7/m1_n49_n87# 0.9fF
+C1302 dff_7/nandgate_2/a_137_45# dff_7/m1_n140_n124# 0.1fF
+C1303 dff_5/m1_n49_n87# clk 0.4fF
+C1304 dff_8/m1_n123_103# clk 0.8fF
+C1305 clablock_0/carrygen_0/m1_777_387# clablock_0/carrygen_0/andgate_9/a_n58_n25# 0.2fF
+C1306 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/andgate_4/inverter_0/w_n13_n7# 0.1fF
+C1307 clablock_0/m1_248_764# clablock_0/m1_243_273# 0.2fF
+C1308 clablock_0/m1_253_953# clablock_0/png_0/andgate_1/a_n61_61# 0.1fF
+C1309 clablock_0/sumblock_0/xorgate_0/a_n64_32# clablock_0/sumblock_0/xorgate_0/a_n56_44# 0.4fF
+C1310 dff_3/nandgate_3/w_122_92# dff_3/m1_n114_50# 0.1fF
+C1311 dff_1/m1_n49_n87# vdd 0.9fF
+C1312 clablock_0/png_0/xorgate_1/a_n64_32# clablock_0/png_0/xorgate_1/a_n56_44# 0.4fF
+C1313 clablock_0/sumblock_0/xorgate_1/a_56_n20# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C1314 clablock_0/carrygen_0/andgate_8/a_n61_61# clablock_0/carrygen_0/andgate_8/a_n58_n25# 0.1fF
+C1315 dff_0/nandgate_2/a_137_45# dff_0/m1_n49_n87# 0.1fF
+C1316 clablock_0/png_0/xorgate_0/a_48_n7# clablock_0/png_0/xorgate_0/a_n64_32# 0.0fF
+C1317 clablock_0/png_0/xorgate_2/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_2/a_48_n7# 0.0fF
+C1318 clablock_0/carrygen_0/andgate_7/w_n42_50# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C1319 gnd dff_10/m1_0_n20# 0.3fF
+C1320 dff_2/nandgate_0/w_122_92# dff_2/m1_n123_103# 0.1fF
+C1321 clk vdd 2.2fF
+C1322 dff_11/nandgate_1/a_137_45# dff_11/m1_0_n20# 0.1fF
+C1323 clablock_0/png_0/xorgate_3/w_41_38# clablock_0/png_0/xorgate_3/a_56_44# 0.1fF
+C1324 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/carrygen_0/andgate_3/w_n76_50# 0.1fF
+C1325 gnd dff_10/m1_n123_103# 0.7fF
+C1326 dff_8/nandgate_1/w_122_92# vdd 0.2fF
+C1327 clablock_0/carrygen_0/m1_567_199# vdd 0.2fF
+C1328 dff_4/m1_n140_n124# vdd 1.0fF
+C1329 dff_11/m1_n49_n87# dff_11/nand3_0/a_106_9# 0.1fF
+C1330 gnd clablock_0/png_0/xorgate_3/a_n64_32# 0.1fF
+C1331 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/sumblock_0/xorgate_3/w_n37_30# 0.1fF
+C1332 S0 clablock_0/sumblock_0/xorgate_3/w_75_30# 0.0fF
+C1333 clablock_0/sumblock_0/xorgate_1/a_n56_n20# clablock_0/m1_252_1255# 0.0fF
+C1334 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.1fF
+C1335 clablock_0/carrygen_0/andgate_5/a_n61_61# clablock_0/m1_252_1255# 0.1fF
+C1336 dff_5/nand3_0/a_79_9# clk 0.1fF
+C1337 dff_12/nandgate_2/a_137_45# dff_12/m1_n49_n87# 0.1fF
+C1338 dff_3/m1_n49_n87# dff_3/nandgate_1/w_122_92# 0.1fF
+C1339 clablock_0/sumblock_0/xorgate_2/a_56_44# vdd 0.2fF
+C1340 clablock_0/sumblock_0/xorgate_3/a_56_n20# clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C1341 clablock_0/carrygen_0/andgate_5/w_n76_50# vdd 0.1fF
+C1342 clablock_0/carrygen_0/m1_947_392# clablock_0/carrygen_0/orgate_5/a_n59_77# 0.2fF
+C1343 clablock_0/carrygen_0/orgate_5/w_n65_31# clablock_0/carrygen_0/m1_567_341# 0.1fF
+C1344 dff_6/m1_0_n20# gnd 0.3fF
+C1345 dff_4/m1_n114_50# dff_4/nandgate_4/a_137_45# 0.1fF
+C1346 dff_12/nandgate_1/w_122_92# Q2 0.1fF
+C1347 dff_2/nandgate_3/w_122_92# clk 0.1fF
+C1348 dff_0/m1_n114_50# gnd 0.4fF
+C1349 gnd dff_7/m1_n140_n124# 0.1fF
+C1350 clablock_0/sumblock_0/xorgate_2/a_48_n7# clablock_0/sumblock_0/xorgate_2/w_75_30# 0.1fF
+C1351 dff_3/m1_n123_103# dff_3/m1_n114_50# 0.9fF
+C1352 dff_8/nandgate_2/a_137_45# gnd 0.2fF
+C1353 gnd clablock_0/png_0/xorgate_1/a_n56_n20# 0.1fF
+C1354 vdd clablock_0/png_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C1355 dff_6/m1_n49_n87# dff_6/m1_0_n20# 0.3fF
+C1356 clablock_0/png_0/andgate_3/a_n61_61# clablock_0/png_0/andgate_3/a_n58_n25# 0.1fF
+C1357 clablock_0/carrygen_0/m1_777_596# clablock_0/carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.0fF
+C1358 clablock_0/carrygen_0/m1_947_392# gnd 0.1fF
+C1359 dff_4/m1_n49_n87# vdd 0.9fF
+C1360 dff_0/nand3_0/a_106_9# gnd 0.1fF
+C1361 clablock_0/carrygen_0/orgate_4/a_n59_77# clablock_0/carrygen_0/m1_777_387# 0.0fF
+C1362 S2 vdd 0.4fF
+C1363 dff_3/nand3_0/a_106_9# dff_3/m1_n123_103# 0.1fF
+C1364 clablock_0/sumblock_0/xorgate_0/a_n56_n20# clablock_0/m1_198_1746# 0.0fF
+C1365 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/w_n71_38# 0.2fF
+C1366 clablock_0/carrygen_0/m1_777_596# clablock_0/m1_198_1746# 0.2fF
+C1367 clablock_0/carrygen_0/andgate_5/inverter_0/w_n13_n7# vdd 0.1fF
+C1368 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/w_75_30# 0.0fF
+C1369 vdd clablock_0/png_0/xorgate_3/a_48_n7# 0.2fF
+C1370 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/orgate_9/a_n59_77# 0.2fF
+C1371 dff_4/nandgate_4/w_122_92# dff_4/m1_n114_50# 0.2fF
+C1372 dff_9/m1_n140_n124# dff_9/m1_n114_50# 0.5fF
+C1373 dff_0/nandgate_4/w_122_92# vdd 0.2fF
+C1374 dff_4/nand3_0/a_79_9# clk 0.1fF
+C1375 dff_3/nandgate_3/w_122_92# vdd 0.2fF
+C1376 dff_3/nandgate_0/a_137_45# gnd 0.2fF
+C1377 dff_0/nandgate_1/w_122_92# dff_0/m1_0_n20# 0.2fF
+C1378 clablock_0/m1_253_1444# clablock_0/m1_252_1255# 0.2fF
+C1379 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/a_48_n7# 0.1fF
+C1380 dff_5/nand3_0/w_64_61# dff_5/m1_n49_n87# 0.2fF
+C1381 dff_10/m1_n114_50# dff_10/nandgate_4/a_137_45# 0.1fF
+C1382 dff_10/m1_n49_n87# dff_10/nand3_0/w_64_61# 0.2fF
+C1383 dff_3/nandgate_4/a_137_45# gnd 0.2fF
+C1384 dff_3/m1_n49_n87# clk 0.4fF
+C1385 gnd clablock_0/carrygen_0/m1_174_525# 0.8fF
+C1386 dff_5/m1_n123_103# gnd 0.7fF
+C1387 clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C1388 clablock_0/carrygen_0/andgate_3/w_n42_50# clablock_0/m1_253_953# 0.1fF
+C1389 S1 clablock_0/sumblock_0/xorgate_2/a_48_n7# 0.2fF
+C1390 clablock_0/sumblock_0/xorgate_3/a_n56_44# clablock_0/m1_243_273# 0.1fF
+C1391 clablock_0/carrygen_0/orgate_5/a_n63_n10# clablock_0/carrygen_0/m1_947_392# 0.3fF
+C1392 dff_7/nandgate_2/a_137_45# gnd 0.2fF
+C1393 dff_5/nand3_0/w_64_61# vdd 0.2fF
+C1394 dff_11/m1_n114_50# clk 0.1fF
+C1395 dff_4/nandgate_2/a_137_45# gnd 0.2fF
+C1396 dff_10/m1_0_n20# dff_10/m1_n123_103# 0.1fF
+C1397 dff_3/m1_0_n20# vdd 0.9fF
+C1398 dff_1/nandgate_0/w_122_92# dff_1/m1_n123_103# 0.1fF
+C1399 vdd clablock_0/png_0/xorgate_3/w_41_38# 0.1fF
+C1400 vdd clablock_0/m1_252_1255# 0.2fF
+C1401 dff_3/m1_n123_103# vdd 1.2fF
+C1402 dff_9/nandgate_3/a_137_45# gnd 0.2fF
+C1403 dff_1/nandgate_3/a_137_45# dff_1/m1_n114_50# 0.1fF
+C1404 dff_1/m1_n140_n124# dff_1/m1_n123_103# 0.2fF
+C1405 clablock_0/carrygen_0/m1_981_575# clablock_0/carrygen_0/andgate_9/a_n61_61# 0.1fF
+C1406 clablock_0/carrygen_0/andgate_3/inverter_0/w_n13_n7# clablock_0/carrygen_0/m1_174_337# 0.0fF
+C1407 clablock_0/sumblock_0/xorgate_1/w_n71_38# clablock_0/sumblock_0/xorgate_1/a_n64_32# 0.2fF
+C1408 dff_1/nand3_0/a_79_9# dff_1/nand3_0/a_106_9# 0.1fF
+C1409 dff_8/m1_n114_50# dff_8/nandgate_4/a_137_45# 0.1fF
+C1410 clablock_0/carrygen_0/m1_376_596# clablock_0/carrygen_0/orgate_6/a_n59_77# 0.2fF
+C1411 clablock_0/carrygen_0/orgate_6/w_n65_31# clablock_0/carrygen_0/m1_174_525# 0.1fF
+C1412 clablock_0/carrygen_0/andgate_3/w_n42_50# vdd 0.1fF
+C1413 gnd clablock_0/m1_235_462# 0.1fF
+C1414 dff_4/nandgate_0/a_137_45# dff_4/m1_n123_103# 0.1fF
+C1415 gnd dff_7/nand3_0/a_106_9# 0.1fF
+C1416 dff_8/nandgate_1/a_137_45# gnd 0.2fF
+C1417 vdd clablock_0/png_0/xorgate_2/w_41_38# 0.1fF
+C1418 clablock_0/carrygen_0/orgate_2/a_n63_n10# clablock_0/carrygen_0/m1_567_199# 0.1fF
+C1419 dff_7/nandgate_3/a_137_45# dff_7/m1_n114_50# 0.1fF
+C1420 dff_0/nandgate_1/a_137_45# gnd 0.2fF
+C1421 clablock_0/carrygen_0/andgate_2/w_n42_50# clablock_0/carrygen_0/m1_174_38# 0.1fF
+C1422 dff_7/nandgate_1/w_122_92# dff_7/m1_0_n20# 0.2fF
+C1423 dff_1/nandgate_3/w_122_92# dff_1/m1_n114_50# 0.1fF
+C1424 vdd clablock_0/sumblock_0/xorgate_0/a_48_n7# 0.2fF
+C1425 gnd clablock_0/carrygen_0/andgate_8/a_n58_n25# 0.1fF
+C1426 clablock_0/carrygen_0/andgate_1/w_n76_50# vdd 0.1fF
+C1427 clablock_0/sumblock_0/xorgate_2/a_56_n20# gnd 0.1fF
+C1428 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/carrygen_0/andgate_1/w_n42_50# 0.1fF
+C1429 dff_5/m1_n140_n124# clk 0.6fF
+C1430 vdd dff_10/m1_0_n20# 0.9fF
+C1431 dff_0/m1_0_n20# dff_0/m1_n123_103# 0.1fF
+C1432 dff_0/nandgate_1/w_122_92# dff_0/m1_n49_n87# 0.1fF
+C1433 dff_0/nandgate_2/a_137_45# dff_0/m1_n140_n124# 0.1fF
+C1434 clablock_0/carrygen_0/m1_567_529# clablock_0/carrygen_0/m2_438_434# 0.1fF
+C1435 dff_0/nandgate_3/a_137_45# dff_0/m1_n114_50# 0.1fF
+C1436 gnd clablock_0/png_0/andgate_1/a_n61_61# 0.1fF
+C1437 vdd clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C1438 dff_4/nandgate_0/w_122_92# dff_4/m1_n123_103# 0.1fF
+C1439 vdd dff_10/m1_n123_103# 1.2fF
+C1440 dff_11/m1_n140_n124# dff_11/m1_n114_50# 0.5fF
+C1441 dff_11/nandgate_3/w_122_92# clk 0.1fF
+C1442 dff_12/nandgate_2/w_122_92# dff_12/m1_n49_n87# 0.1fF
+C1443 dff_12/nandgate_3/w_122_92# dff_12/m1_n114_50# 0.1fF
+C1444 clablock_0/png_0/xorgate_2/w_n37_30# clablock_0/m1_252_1255# 0.0fF
+C1445 clablock_0/carrygen_0/m1_174_38# clablock_0/m1_235_462# 0.1fF
+C1446 dff_6/m1_n49_n87# gnd 0.2fF
+C1447 dff_3/nandgate_1/a_137_45# dff_3/m1_0_n20# 0.1fF
+C1448 dff_8/m1_0_n20# Q1 0.9fF
+C1449 clablock_0/carrygen_0/andgate_4/a_n61_61# clablock_0/carrygen_0/andgate_4/w_n42_50# 0.1fF
+C1450 vdd dff_11/nandgate_2/w_122_92# 0.2fF
+C1451 dff_9/m1_0_n20# gnd 0.3fF
+C1452 gnd clablock_0/m1_252_1255# 0.3fF
+C1453 vdd clablock_0/carrygen_0/m2_438_434# 0.4fF
+C1454 clablock_0/carrygen_0/andgate_5/w_n42_50# clablock_0/carrygen_0/m2_438_246# 0.1fF
+C1455 clablock_0/carrygen_0/andgate_1/a_n61_61# clablock_0/carrygen_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C1456 dff_7/nand3_0/w_64_61# dff_7/m1_n140_n124# 0.8fF
+C1457 dff_4/nand3_0/a_79_9# dff_4/nand3_0/a_106_9# 0.1fF
+C1458 dff_3/m1_n49_n87# dff_3/m1_0_n20# 0.3fF
+C1459 dff_9/nandgate_1/w_122_92# Q0 0.1fF
+C1460 clablock_0/carrygen_0/m1_174_152# clablock_0/carrygen_0/andgate_4/a_n58_n25# 0.2fF
+C1461 dff_8/nand3_0/a_106_9# dff_8/m1_n123_103# 0.1fF
+C1462 dff_8/m1_n49_n87# dff_8/m1_n140_n124# 1.2fF
+C1463 clablock_0/carrygen_0/andgate_0/a_n58_n25# gnd 0.1fF
+C1464 clablock_0/carrygen_0/orgate_0/w_n74_71# clablock_0/carrygen_0/orgate_0/a_n59_77# 0.0fF
+C1465 dff_6/m1_n140_n124# vdd 1.0fF
+C1466 clablock_0/carrygen_0/orgate_6/a_n63_n10# clablock_0/carrygen_0/m1_376_596# 0.3fF
+C1467 dff_12/nandgate_2/a_137_45# dff_12/m1_n140_n124# 0.1fF
+C1468 dff_3/m1_n49_n87# dff_3/m1_n123_103# 0.9fF
+C1469 clk dff_7/nand3_0/a_79_9# 0.1fF
+C1470 dff_10/m1_n140_n124# clk 0.6fF
+C1471 Q2 dff_12/m1_n123_103# 0.5fF
+C1472 dff_8/nandgate_3/w_122_92# vdd 0.2fF
+C1473 clablock_0/png_0/xorgate_0/w_41_38# clablock_0/png_0/xorgate_0/a_56_44# 0.1fF
+C1474 clablock_0/carrygen_0/m1_567_341# clablock_0/carrygen_0/m2_438_246# 0.1fF
+C1475 gnd clablock_0/carrygen_0/m1_981_575# 0.1fF
+C1476 clablock_0/carrygen_0/orgate_8/w_n74_71# clablock_0/carrygen_0/orgate_8/a_n59_77# 0.0fF
+C1477 dff_5/m1_n114_50# dff_5/nandgate_4/a_137_45# 0.1fF
+C1478 dff_11/nandgate_1/w_122_92# Q3 0.1fF
+C1479 dff_12/nandgate_3/w_122_92# clk 0.1fF
+C1480 dff_2/m1_n49_n87# gnd 0.2fF
+C1481 clablock_0/png_0/xorgate_1/a_48_n7# clablock_0/png_0/xorgate_1/a_n64_32# 0.0fF
+C1482 clablock_0/png_0/xorgate_3/inverter_0/w_n13_n7# clablock_0/png_0/xorgate_3/a_48_n7# 0.0fF
+C1483 vdd clablock_0/carrygen_0/andgate_6/w_n76_50# 0.1fF
+C1484 clablock_0/carrygen_0/orgate_4/a_n59_77# vdd 0.2fF
+C1485 dff_12/m1_n123_103# dff_12/m1_n114_50# 0.9fF
+C1486 clablock_0/m1_252_1255# clablock_0/png_0/xorgate_2/a_56_44# 0.2fF
+C1487 dff_10/m1_n49_n87# dff_10/nandgate_2/w_122_92# 0.1fF
+C1488 dff_11/m1_n49_n87# gnd 0.2fF
+C1489 dff_8/m1_0_n20# dff_8/nandgate_0/w_122_92# 0.1fF
+C1490 dff_9/nand3_0/w_64_61# vdd 0.2fF
+C1491 gnd clablock_0/sumblock_0/xorgate_0/a_48_n7# 0.2fF
+C1492 clablock_0/sumblock_0/xorgate_3/a_56_44# clablock_0/sumblock_0/xorgate_3/w_75_30# 0.1fF
+C1493 clablock_0/carrygen_0/andgate_0/w_n76_50# vdd 0.1fF
+C1494 clablock_0/m1_248_764# clablock_0/m1_252_1255# 0.2fF
+C1495 clablock_0/png_0/xorgate_3/w_75_30# clablock_0/m1_198_1746# 0.0fF
+C1496 clablock_0/sumblock_0/xorgate_1/a_n56_44# vdd 0.2fF
+C1497 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/carrygen_0/andgate_3/w_n42_50# 0.1fF
+C1498 clablock_0/carrygen_0/orgate_2/w_n74_71# clablock_0/m1_253_953# 0.1fF
+C1499 dff_0/m1_n49_n87# dff_0/m1_n123_103# 0.9fF
+C1500 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/m1_567_529# 0.1fF
+C1501 dff_5/nandgate_4/w_122_92# dff_5/m1_n114_50# 0.2fF
+C1502 dff_2/nand3_0/w_64_61# dff_2/m1_n140_n124# 0.8fF
+C1503 dff_8/nandgate_4/a_137_45# gnd 0.2fF
+C1504 dff_8/nand3_0/w_64_61# clk 0.1fF
+C1505 S0 gnd 0.3fF
+C1506 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/sumblock_0/xorgate_1/w_75_30# 0.1fF
+C1507 clablock_0/carrygen_0/andgate_9/w_n42_50# clablock_0/carrygen_0/m1_777_387# 0.1fF
+C1508 dff_12/nandgate_3/a_137_45# dff_12/m1_n123_103# 0.1fF
+C1509 clablock_0/carrygen_0/andgate_5/w_n42_50# vdd 0.1fF
+C1510 dff_5/nand3_0/w_64_61# dff_5/m1_n140_n124# 0.8fF
+C1511 dff_12/m1_n123_103# clk 0.8fF
+C1512 vdd clablock_0/carrygen_0/orgate_8/a_n63_n10# 0.0fF
+C1513 clablock_0/carrygen_0/orgate_0/w_n74_71# vdd 0.1fF
+C1514 clablock_0/carrygen_0/orgate_0/a_n63_n10# gnd 0.4fF
+C1515 dff_2/nand3_0/a_79_9# gnd 0.2fF
+C1516 dff_5/nandgate_1/a_137_45# dff_5/m1_0_n20# 0.1fF
+C1517 dff_11/nand3_0/w_64_61# vdd 0.2fF
+C1518 clablock_0/sumblock_0/xorgate_2/a_56_44# clablock_0/sumblock_0/xorgate_2/w_75_30# 0.1fF
+C1519 gnd clablock_0/carrygen_0/orgate_7/a_n63_n10# 0.4fF
+C1520 clablock_0/carrygen_0/orgate_2/w_n74_71# vdd 0.1fF
+C1521 dff_4/m1_n114_50# clk 0.1fF
+C1522 dff_8/nand3_0/a_79_9# gnd 0.2fF
+C1523 vdd clablock_0/png_0/xorgate_1/w_n71_38# 0.1fF
+C1524 gnd clablock_0/png_0/xorgate_3/a_48_n7# 0.2fF
+C1525 vdd clablock_0/sumblock_0/xorgate_0/w_41_38# 0.1fF
+C1526 vdd clablock_0/carrygen_0/andgate_7/w_n42_50# 0.1fF
+C1527 clablock_0/carrygen_0/m1_567_341# vdd 0.2fF
+C1528 dff_6/nandgate_2/a_137_45# gnd 0.2fF
+C1529 dff_0/m1_0_n20# vdd 0.9fF
+C1530 clablock_0/sumblock_0/xorgate_2/inverter_1/w_n13_n7# vdd 0.1fF
+C1531 clablock_0/m1_248_764# clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C1532 dff_1/m1_n49_n87# dff_1/nandgate_2/w_122_92# 0.1fF
+C1533 clablock_0/carrygen_0/andgate_3/a_n58_n25# clablock_0/m1_252_1255# 0.1fF
+C1534 dff_9/m1_n123_103# dff_9/m1_n114_50# 0.9fF
+C1535 vdd clablock_0/sumblock_0/xorgate_1/a_48_n7# 0.2fF
+C1536 clablock_0/carrygen_0/andgate_6/a_n61_61# clablock_0/m1_253_1444# 0.3fF
+C1537 vdd clablock_0/carrygen_0/orgate_9/w_n74_71# 0.1fF
+C1538 clablock_0/carrygen_0/orgate_9/a_n63_n10# clablock_0/carrygen_0/m1_1315_575# 0.1fF
+C1539 dff_4/m1_n140_n124# dff_4/m1_n114_50# 0.5fF
+C1540 dff_0/nandgate_3/a_137_45# gnd 0.2fF
+C1541 dff_6/m1_n49_n87# dff_6/nandgate_2/a_137_45# 0.1fF
+C1542 dff_4/nandgate_1/w_122_92# vdd 0.2fF
+C1543 clablock_0/carrygen_0/orgate_0/a_n63_n10# clablock_0/carrygen_0/m1_174_38# 0.1fF
+C1544 gnd dff_10/nandgate_0/a_137_45# 0.2fF
+C1545 dff_9/nandgate_3/w_122_92# vdd 0.2fF
+C1546 vdd dff_11/nandgate_0/w_122_92# 0.2fF
+C1547 dff_12/nand3_0/a_79_9# gnd 0.2fF
+C1548 dff_2/nand3_0/w_64_61# clk 0.1fF
+C1549 clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# clablock_0/m1_252_1255# 0.1fF
+C1550 clablock_0/carrygen_0/orgate_3/a_n63_n10# clablock_0/carrygen_0/orgate_3/a_n59_77# 0.2fF
+C1551 dff_5/m1_n114_50# vdd 0.7fF
+C1552 vdd dff_11/nandgate_4/w_122_92# 0.2fF
+C1553 clablock_0/carrygen_0/andgate_3/w_n76_50# clablock_0/m1_252_1255# 0.1fF
+C1554 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_n64_32# 0.6fF
+C1555 gnd clablock_0/png_0/andgate_1/a_n58_n25# 0.1fF
+C1556 clablock_0/carrygen_0/orgate_9/w_n74_71# clablock_0/m1_196_1935# 0.1fF
+C1557 clablock_0/carrygen_0/orgate_9/a_n63_n10# gnd 0.4fF
+C1558 dff_0/nandgate_2/w_122_92# vdd 0.2fF
+C1559 S1 clablock_0/sumblock_0/xorgate_2/a_56_44# 0.2fF
+C1560 vdd clablock_0/carrygen_0/andgate_8/w_n76_50# 0.1fF
+C1561 dff_12/nandgate_2/w_122_92# dff_12/m1_n140_n124# 0.2fF
+C1562 dff_9/m1_0_n20# vdd 0.9fF
+C1563 vdd clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# 0.1fF
+C1564 dff_5/nandgate_0/w_122_92# dff_5/m1_n123_103# 0.1fF
+C1565 dff_4/nandgate_3/w_122_92# clk 0.1fF
+C1566 dff_10/m1_n140_n124# dff_10/m1_n114_50# 0.5fF
+C1567 dff_11/nandgate_2/w_122_92# dff_11/m1_n49_n87# 0.1fF
+C1568 gnd S3 0.0fF
+C1569 vdd clablock_0/carrygen_0/m1_376_596# 0.3fF
+C1570 clablock_0/carrygen_0/m1_981_575# clablock_0/carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.0fF
+C1571 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/orgate_1/w_n65_31# 0.0fF
+C1572 dff_11/nandgate_0/a_137_45# gnd 0.2fF
+C1573 dff_8/m1_0_n20# dff_8/nandgate_1/w_122_92# 0.2fF
+C1574 dff_2/m1_n123_103# dff_2/m1_n114_50# 0.9fF
+C1575 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/w_75_30# 0.1fF
+C1576 clablock_0/carrygen_0/orgate_4/w_n65_31# clablock_0/carrygen_0/orgate_4/a_n59_77# 0.0fF
+C1577 gnd dff_11/nandgate_4/a_137_45# 0.2fF
+C1578 dff_1/m1_n123_103# gnd 0.7fF
+C1579 dff_0/m1_n49_n87# vdd 0.9fF
+C1580 clablock_0/sumblock_0/xorgate_1/a_48_n7# gnd 0.2fF
+C1581 clablock_0/carrygen_0/orgate_3/w_n65_31# clablock_0/carrygen_0/m1_174_337# 0.1fF
+C1582 dff_7/m1_n140_n124# dff_7/m1_n123_103# 0.2fF
+C1583 dff_2/nandgate_2/w_122_92# vdd 0.2fF
+C1584 clablock_0/m1_248_764# clablock_0/png_0/xorgate_1/a_n56_44# 0.2fF
+C1585 vdd dff_11/m1_n49_n87# 0.9fF
+C1586 dff_11/nandgate_2/a_137_45# dff_11/m1_n140_n124# 0.1fF
+C1587 vdd clablock_0/png_0/andgate_1/w_n42_50# 0.1fF
+C1588 clablock_0/carrygen_0/m1_777_596# clablock_0/carrygen_0/orgate_7/a_n59_77# 0.2fF
+C1589 clablock_0/carrygen_0/orgate_7/w_n65_31# clablock_0/carrygen_0/m1_981_575# 0.1fF
+C1590 clablock_0/carrygen_0/andgate_4/a_n61_61# vdd 0.6fF
+C1591 dff_5/nandgate_3/w_122_92# vdd 0.2fF
+C1592 clablock_0/png_0/andgate_0/a_n61_61# clablock_0/png_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C1593 dff_8/nandgate_4/w_122_92# dff_8/m1_n140_n124# 0.1fF
+C1594 dff_8/nandgate_3/a_137_45# dff_8/m1_n123_103# 0.1fF
+C1595 clablock_0/sumblock_0/xorgate_2/a_56_n20# S1 0.1fF
+C1596 clablock_0/carrygen_0/orgate_8/a_n63_n10# clablock_0/carrygen_0/m1_1147_580# 0.3fF
+C1597 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/carrygen_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C1598 dff_6/m1_n114_50# dff_6/nandgate_4/a_137_45# 0.1fF
+C1599 dff_2/m1_n123_103# vdd 1.2fF
+C1600 dff_0/m1_n140_n124# dff_0/m1_n123_103# 0.2fF
+C1601 clablock_0/m1_198_1746# clablock_0/png_0/xorgate_3/a_56_n20# 0.1fF
+C1602 clablock_0/carrygen_0/andgate_3/inverter_0/w_n13_n7# vdd 0.1fF
+C1603 clablock_0/carrygen_0/andgate_4/a_n58_n25# gnd 0.1fF
+C1604 clablock_0/carrygen_0/orgate_1/a_n63_n10# clablock_0/carrygen_0/m2_438_246# 0.3fF
+C1605 dff_8/m1_0_n20# gnd 0.3fF
+C1606 clablock_0/m1_243_273# clablock_0/png_0/xorgate_0/w_75_30# 0.0fF
+C1607 clablock_0/sumblock_0/xorgate_0/w_n37_30# clablock_0/sumblock_0/xorgate_0/a_n56_44# 0.1fF
+C1608 clablock_0/sumblock_0/xorgate_1/a_48_n7# clablock_0/sumblock_0/xorgate_1/a_56_n20# 0.0fF
+C1609 vdd clablock_0/sumblock_0/xorgate_2/w_41_38# 0.1fF
+C1610 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/w_75_30# 0.1fF
+C1611 vdd clablock_0/carrygen_0/andgate_9/w_n42_50# 0.1fF
+C1612 clablock_0/carrygen_0/andgate_0/w_n76_50# clablock_0/m1_243_273# 0.1fF
+C1613 dff_10/nandgate_0/a_137_45# dff_10/m1_n123_103# 0.1fF
+C1614 clablock_0/sumblock_0/xorgate_1/w_41_38# clablock_0/sumblock_0/xorgate_1/a_56_44# 0.1fF
+C1615 clablock_0/sumblock_0/xorgate_3/a_n64_32# clablock_0/sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.0fF
+C1616 clablock_0/carrygen_0/andgate_5/a_n58_n25# clablock_0/m1_252_1255# 0.1fF
+C1617 vdd clablock_0/sumblock_0/xorgate_0/inverter_1/w_n13_n7# 0.1fF
+C1618 clablock_0/carrygen_0/orgate_3/w_n74_71# vdd 0.1fF
+C1619 vdd clablock_0/png_0/xorgate_0/a_n64_32# 0.5fF
+C1620 clablock_0/png_0/xorgate_1/w_41_38# clablock_0/png_0/xorgate_1/a_56_44# 0.1fF
+C1621 dff_12/m1_0_n20# Q2 0.9fF
+C1622 dff_2/nandgate_3/w_122_92# dff_2/m1_n123_103# 0.2fF
+C1623 dff_8/m1_n49_n87# dff_8/m1_n123_103# 0.9fF
+C1624 S1 dff_8/m1_n49_n87# 0.1fF
+C1625 clablock_0/carrygen_0/orgate_0/w_n65_31# clablock_0/carrygen_0/orgate_0/a_n59_77# 0.0fF
+C1626 dff_6/nandgate_4/w_122_92# dff_6/m1_n114_50# 0.2fF
+C1627 dff_10/m1_n49_n87# Q4 0.1fF
+C1628 dff_1/m1_n49_n87# dff_1/m1_n140_n124# 1.2fF
+C1629 vdd dff_7/nandgate_1/w_122_92# 0.2fF
+C1630 dff_4/m1_n49_n87# dff_4/m1_0_n20# 0.3fF
+C1631 dff_11/nand3_0/w_64_61# dff_11/m1_n49_n87# 0.2fF
+C1632 dff_12/nand3_0/w_64_61# dff_12/m1_n123_103# 0.1fF
+C1633 dff_1/m1_n140_n124# clk 0.6fF
+C1634 clablock_0/png_0/xorgate_0/a_n64_32# clablock_0/png_0/xorgate_0/a_56_n20# 0.1fF
+C1635 clablock_0/png_0/xorgate_2/a_n64_32# clablock_0/png_0/xorgate_2/a_n56_44# 0.4fF
+C1636 clablock_0/carrygen_0/orgate_8/w_n65_31# clablock_0/carrygen_0/orgate_8/a_n59_77# 0.0fF
+C1637 dff_4/nandgate_4/a_137_45# gnd 0.2fF
+C1638 dff_8/m1_n114_50# clk 0.1fF
+C1639 dff_12/m1_n140_n124# dff_12/nandgate_4/a_137_45# 0.1fF
+C1640 clablock_0/sumblock_0/xorgate_1/a_n56_n20# gnd 0.1fF
+C1641 clablock_0/carrygen_0/orgate_7/a_n63_n10# clablock_0/carrygen_0/orgate_7/w_n65_31# 0.0fF
+C1642 clablock_0/carrygen_0/andgate_5/w_n76_50# clablock_0/m1_252_1255# 0.1fF
+C1643 clablock_0/carrygen_0/orgate_3/a_n63_n10# gnd 0.4fF
+C1644 clablock_0/carrygen_0/orgate_9/a_n59_77# clablock_0/carrygen_0/m1_1315_575# 0.0fF
+C1645 clablock_0/carrygen_0/orgate_4/a_n63_n10# clablock_0/carrygen_0/orgate_4/inverter_0/w_n13_n7# 0.1fF
+C1646 clablock_0/carrygen_0/andgate_0/w_n42_50# vdd 0.1fF
+C1647 clablock_0/carrygen_0/andgate_0/a_n61_61# gnd 0.1fF
+C1648 clk dff_6/m1_n114_50# 0.1fF
+C1649 clablock_0/png_0/xorgate_3/w_75_30# clablock_0/png_0/xorgate_3/a_56_44# 0.1fF
+C1650 dff_12/nand3_0/a_106_9# dff_12/m1_n123_103# 0.1fF
+C1651 clablock_0/sumblock_0/xorgate_1/a_n56_44# clablock_0/sumblock_0/xorgate_1/w_n71_38# 0.1fF
+C1652 vdd clablock_0/carrygen_0/m1_777_596# 0.5fF
+C1653 clablock_0/carrygen_0/orgate_1/a_n63_n10# vdd 0.0fF
+C1654 dff_7/nand3_0/a_106_9# dff_7/m1_n123_103# 0.1fF
+C1655 dff_5/m1_n140_n124# dff_5/m1_n114_50# 0.5fF
+C1656 dff_4/m1_n123_103# vdd 1.2fF
+C1657 gnd clablock_0/carrygen_0/andgate_6/a_n61_61# 0.1fF
+C1658 dff_12/nandgate_4/w_122_92# dff_12/m1_n140_n124# 0.1fF
+C1659 gnd clablock_0/png_0/xorgate_3/a_n56_n20# 0.1fF
+C1660 gnd dff_10/nand3_0/a_79_9# 0.2fF
+C1661 dff_6/nandgate_0/a_137_45# dff_6/m1_n123_103# 0.1fF
+C1662 vdd dff_7/m1_n114_50# 0.7fF
+C1663 gnd dff_7/m1_n123_103# 0.7fF
+C1664 clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# clablock_0/sumblock_0/xorgate_1/a_48_n7# 0.0fF
+C1665 clablock_0/carrygen_0/andgate_0/a_n61_61# clablock_0/carrygen_0/m1_174_38# 0.1fF
+C1666 clablock_0/carrygen_0/m2_438_434# clablock_0/carrygen_0/andgate_8/a_n58_n25# 0.2fF
+C1667 clablock_0/carrygen_0/andgate_3/a_n61_61# clablock_0/carrygen_0/andgate_3/inverter_0/w_n13_n7# 0.1fF
+C1668 dff_9/nandgate_1/a_137_45# gnd 0.2fF
+C1669 gnd clablock_0/png_0/xorgate_1/a_56_n20# 0.1fF
+C1670 vdd clablock_0/sumblock_0/xorgate_2/a_n56_44# 0.2fF
+C1671 Q2 gnd 0.2fF
+C1672 dff_12/nandgate_1/a_137_45# Q2 0.1fF
+C1673 clablock_0/carrygen_0/andgate_5/a_n61_61# gnd 0.1fF
+C1674 dff_12/m1_n114_50# gnd 0.4fF
+C1675 dff_9/m1_n140_n124# dff_9/nandgate_4/a_137_45# 0.1fF
+C1676 dff_9/nandgate_2/a_137_45# gnd 0.2fF
+C1677 dff_0/m1_n140_n124# vdd 1.0fF
+C1678 clablock_0/m1_248_764# clablock_0/carrygen_0/m1_174_152# 0.2fF
+C1679 clablock_0/carrygen_0/andgate_7/a_n61_61# clablock_0/carrygen_0/andgate_7/w_n76_50# 0.1fF
+C1680 dff_6/nandgate_3/w_122_92# clk 0.1fF
+C1681 dff_6/nandgate_0/w_122_92# dff_6/m1_n123_103# 0.1fF
+C1682 dff_6/nand3_0/a_79_9# gnd 0.2fF
+C1683 dff_6/m1_n49_n87# dff_6/nandgate_2/w_122_92# 0.1fF
+C1684 dff_12/m1_n49_n87# dff_12/m1_n140_n124# 1.2fF
+C1685 dff_8/nandgate_2/w_122_92# vdd 0.2fF
+C1686 clablock_0/m1_243_273# clablock_0/sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C1687 dff_7/m1_n49_n87# dff_7/m1_n140_n124# 1.2fF
+C1688 dff_5/nandgate_0/a_137_45# dff_5/m1_n123_103# 0.1fF
+C1689 vdd clablock_0/png_0/xorgate_1/inverter_1/w_n13_n7# 0.1fF
+C1690 clablock_0/sumblock_0/xorgate_2/a_n64_32# clablock_0/sumblock_0/xorgate_2/w_n37_30# 0.1fF
+C1691 gnd clablock_0/carrygen_0/andgate_7/a_n61_61# 0.1fF
+C1692 clablock_0/carrygen_0/orgate_5/w_n74_71# vdd 0.1fF
+C1693 dff_7/nandgate_4/a_137_45# gnd 0.1fF
+C1694 dff_7/m1_n114_50# gnd 2.7fF
+C1695 dff_7/m1_n123_103# gnd 6.0fF
+C1696 dff_7/m1_n140_n124# gnd 6.3fF
+C1697 dff_7/nandgate_4/w_122_92# gnd 2.3fF
+C1698 dff_7/nandgate_3/a_137_45# gnd 0.1fF
+C1699 dff_7/nandgate_3/w_122_92# gnd 2.3fF
+C1700 dff_7/nandgate_0/a_137_45# gnd 0.2fF
+C1701 dff_7/m1_0_n20# gnd 3.3fF
+C1702 dff_7/nandgate_0/w_122_92# gnd 2.5fF
+C1703 dff_7/nand3_0/a_106_9# gnd 0.0fF
+C1704 dff_7/nand3_0/a_79_9# gnd 0.1fF
+C1705 dff_7/nand3_0/w_64_61# gnd 3.0fF
+C1706 dff_7/nandgate_1/a_137_45# gnd 0.1fF
+C1707 dff_7/m1_n49_n87# gnd 3.9fF
+C1708 dff_7/nandgate_1/w_122_92# gnd 2.4fF
+C1709 dff_7/nandgate_2/a_137_45# gnd 0.1fF
+C1710 dff_7/nandgate_2/w_122_92# gnd 2.4fF
+C1711 dff_6/nandgate_4/a_137_45# gnd 0.1fF
+C1712 gnd gnd 35.1fF
+C1713 dff_6/m1_n114_50# gnd 2.7fF
+C1714 vdd gnd 73.2fF
+C1715 dff_6/m1_n123_103# gnd 6.0fF
+C1716 dff_6/m1_n140_n124# gnd 6.3fF
+C1717 dff_6/nandgate_4/w_122_92# gnd 2.3fF
+C1718 dff_6/nandgate_3/a_137_45# gnd 0.1fF
+C1719 clk gnd 89.5fF
+C1720 dff_6/nandgate_3/w_122_92# gnd 2.3fF
+C1721 dff_6/nandgate_0/a_137_45# gnd 0.2fF
+C1722 dff_6/m1_0_n20# gnd 3.3fF
+C1723 dff_6/nandgate_0/w_122_92# gnd 2.5fF
+C1724 dff_6/nand3_0/a_106_9# gnd 0.0fF
+C1725 dff_6/nand3_0/a_79_9# gnd 0.1fF
+C1726 dff_6/nand3_0/w_64_61# gnd 3.0fF
+C1727 dff_6/nandgate_1/a_137_45# gnd 0.1fF
+C1728 dff_6/m1_n49_n87# gnd 3.9fF
+C1729 dff_6/nandgate_1/w_122_92# gnd 2.4fF
+C1730 dff_6/nandgate_2/a_137_45# gnd 0.1fF
+C1731 dff_6/nandgate_2/w_122_92# gnd 2.4fF
+C1732 dff_5/nandgate_4/a_137_45# gnd 0.1fF
+C1733 dff_5/m1_n114_50# gnd 2.7fF
+C1734 dff_5/m1_n123_103# gnd 6.0fF
+C1735 dff_5/m1_n140_n124# gnd 6.3fF
+C1736 dff_5/nandgate_4/w_122_92# gnd 2.3fF
+C1737 dff_5/nandgate_3/a_137_45# gnd 0.1fF
+C1738 dff_5/nandgate_3/w_122_92# gnd 2.3fF
+C1739 dff_5/nandgate_0/a_137_45# gnd 0.2fF
+C1740 dff_5/m1_0_n20# gnd 3.3fF
+C1741 dff_5/nandgate_0/w_122_92# gnd 2.5fF
+C1742 dff_5/nand3_0/a_106_9# gnd 0.0fF
+C1743 dff_5/nand3_0/a_79_9# gnd 0.1fF
+C1744 dff_5/nand3_0/w_64_61# gnd 3.0fF
+C1745 dff_5/nandgate_1/a_137_45# gnd 0.1fF
+C1746 dff_5/m1_n49_n87# gnd 3.9fF
+C1747 dff_5/nandgate_1/w_122_92# gnd 2.4fF
+C1748 dff_5/nandgate_2/a_137_45# gnd 0.1fF
+C1749 dff_5/nandgate_2/w_122_92# gnd 2.4fF
+C1750 dff_4/nandgate_4/a_137_45# gnd 0.1fF
+C1751 dff_4/m1_n114_50# gnd 2.7fF
+C1752 dff_4/m1_n123_103# gnd 6.0fF
+C1753 dff_4/m1_n140_n124# gnd 6.3fF
+C1754 dff_4/nandgate_4/w_122_92# gnd 2.3fF
+C1755 dff_4/nandgate_3/a_137_45# gnd 0.1fF
+C1756 dff_4/nandgate_3/w_122_92# gnd 2.3fF
+C1757 dff_4/nandgate_0/a_137_45# gnd 0.2fF
+C1758 dff_4/m1_0_n20# gnd 3.3fF
+C1759 dff_4/nandgate_0/w_122_92# gnd 2.5fF
+C1760 dff_4/nand3_0/a_106_9# gnd 0.0fF
+C1761 dff_4/nand3_0/a_79_9# gnd 0.1fF
+C1762 dff_4/nand3_0/w_64_61# gnd 3.0fF
+C1763 dff_4/nandgate_1/a_137_45# gnd 0.1fF
+C1764 dff_4/m1_n49_n87# gnd 3.9fF
+C1765 dff_4/nandgate_1/w_122_92# gnd 2.4fF
+C1766 dff_4/nandgate_2/a_137_45# gnd 0.1fF
+C1767 dff_4/nandgate_2/w_122_92# gnd 2.4fF
+C1768 dff_10/nandgate_4/a_137_45# gnd 0.1fF
+C1769 dff_10/m1_n114_50# gnd 2.7fF
+C1770 dff_10/m1_n123_103# gnd 5.5fF
+C1771 dff_10/m1_n140_n124# gnd 6.3fF
+C1772 dff_10/nandgate_4/w_122_92# gnd 2.3fF
+C1773 dff_10/nandgate_3/a_137_45# gnd 0.1fF
+C1774 dff_10/nandgate_3/w_122_92# gnd 2.3fF
+C1775 dff_10/nandgate_0/a_137_45# gnd 0.1fF
+C1776 Q4 gnd 3.1fF
+C1777 dff_10/m1_0_n20# gnd 2.4fF
+C1778 dff_10/nandgate_0/w_122_92# gnd 2.3fF
+C1779 dff_10/nand3_0/a_106_9# gnd 0.0fF
+C1780 dff_10/nand3_0/a_79_9# gnd 0.1fF
+C1781 dff_10/nand3_0/w_64_61# gnd 3.0fF
+C1782 dff_10/nandgate_1/a_137_45# gnd 0.1fF
+C1783 dff_10/m1_n49_n87# gnd 3.8fF
+C1784 dff_10/nandgate_1/w_122_92# gnd 2.3fF
+C1785 dff_10/nandgate_2/a_137_45# gnd 0.1fF
+C1786 dff_10/nandgate_2/w_122_92# gnd 2.4fF
+C1787 dff_11/nandgate_4/a_137_45# gnd 0.1fF
+C1788 gnd gnd 20.7fF
+C1789 dff_11/m1_n114_50# gnd 2.7fF
+C1790 dff_11/m1_n123_103# gnd 5.5fF
+C1791 dff_11/m1_n140_n124# gnd 6.0fF
+C1792 dff_11/nandgate_4/w_122_92# gnd 2.3fF
+C1793 dff_11/nandgate_3/a_137_45# gnd 0.1fF
+C1794 dff_11/nandgate_3/w_122_92# gnd 2.3fF
+C1795 dff_11/nandgate_0/a_137_45# gnd 0.1fF
+C1796 Q3 gnd 3.1fF
+C1797 dff_11/m1_0_n20# gnd 2.4fF
+C1798 dff_11/nandgate_0/w_122_92# gnd 2.3fF
+C1799 dff_11/nand3_0/a_106_9# gnd 0.0fF
+C1800 dff_11/nand3_0/a_79_9# gnd 0.1fF
+C1801 dff_11/nand3_0/w_64_61# gnd 3.0fF
+C1802 dff_11/nandgate_1/a_137_45# gnd 0.1fF
+C1803 dff_11/m1_n49_n87# gnd 3.6fF
+C1804 dff_11/nandgate_1/w_122_92# gnd 2.3fF
+C1805 dff_11/nandgate_2/a_137_45# gnd 0.1fF
+C1806 S3 gnd 4.7fF
+C1807 dff_11/nandgate_2/w_122_92# gnd 2.3fF
+C1808 dff_12/nandgate_4/a_137_45# gnd 0.1fF
+C1809 dff_12/m1_n114_50# gnd 2.7fF
+C1810 vdd gnd 40.1fF
+C1811 dff_12/m1_n123_103# gnd 5.5fF
+C1812 dff_12/m1_n140_n124# gnd 6.0fF
+C1813 dff_12/nandgate_4/w_122_92# gnd 2.3fF
+C1814 dff_12/nandgate_3/a_137_45# gnd 0.1fF
+C1815 dff_12/nandgate_3/w_122_92# gnd 2.3fF
+C1816 dff_12/nandgate_0/a_137_45# gnd 0.1fF
+C1817 Q2 gnd 3.1fF
+C1818 dff_12/m1_0_n20# gnd 2.4fF
+C1819 dff_12/nandgate_0/w_122_92# gnd 2.3fF
+C1820 dff_12/nand3_0/a_106_9# gnd 0.0fF
+C1821 dff_12/nand3_0/a_79_9# gnd 0.1fF
+C1822 dff_12/nand3_0/w_64_61# gnd 3.0fF
+C1823 dff_12/nandgate_1/a_137_45# gnd 0.1fF
+C1824 dff_12/m1_n49_n87# gnd 3.6fF
+C1825 dff_12/nandgate_1/w_122_92# gnd 2.3fF
+C1826 dff_12/nandgate_2/a_137_45# gnd 0.1fF
+C1827 S2 gnd 5.4fF
+C1828 dff_12/nandgate_2/w_122_92# gnd 2.3fF
+C1829 dff_3/nandgate_4/a_137_45# gnd 0.1fF
+C1830 dff_3/m1_n114_50# gnd 2.7fF
+C1831 dff_3/m1_n123_103# gnd 6.0fF
+C1832 dff_3/m1_n140_n124# gnd 6.3fF
+C1833 dff_3/nandgate_4/w_122_92# gnd 2.3fF
+C1834 dff_3/nandgate_3/a_137_45# gnd 0.1fF
+C1835 dff_3/nandgate_3/w_122_92# gnd 2.3fF
+C1836 dff_3/nandgate_0/a_137_45# gnd 0.2fF
+C1837 dff_3/m1_0_n20# gnd 3.3fF
+C1838 dff_3/nandgate_0/w_122_92# gnd 2.5fF
+C1839 dff_3/nand3_0/a_106_9# gnd 0.0fF
+C1840 dff_3/nand3_0/a_79_9# gnd 0.1fF
+C1841 dff_3/nand3_0/w_64_61# gnd 3.0fF
+C1842 dff_3/nandgate_1/a_137_45# gnd 0.1fF
+C1843 dff_3/m1_n49_n87# gnd 3.9fF
+C1844 dff_3/nandgate_1/w_122_92# gnd 2.4fF
+C1845 dff_3/nandgate_2/a_137_45# gnd 0.1fF
+C1846 dff_3/nandgate_2/w_122_92# gnd 2.4fF
+C1847 dff_2/nandgate_4/a_137_45# gnd 0.1fF
+C1848 dff_2/m1_n114_50# gnd 2.7fF
+C1849 dff_2/m1_n123_103# gnd 6.0fF
+C1850 dff_2/m1_n140_n124# gnd 6.3fF
+C1851 dff_2/nandgate_4/w_122_92# gnd 2.3fF
+C1852 dff_2/nandgate_3/a_137_45# gnd 0.1fF
+C1853 dff_2/nandgate_3/w_122_92# gnd 2.3fF
+C1854 dff_2/nandgate_0/a_137_45# gnd 0.2fF
+C1855 m1_n69_666# gnd 3.3fF
+C1856 dff_2/nandgate_0/w_122_92# gnd 2.5fF
+C1857 dff_2/nand3_0/a_106_9# gnd 0.0fF
+C1858 dff_2/nand3_0/a_79_9# gnd 0.1fF
+C1859 dff_2/nand3_0/w_64_61# gnd 3.0fF
+C1860 dff_2/nandgate_1/a_137_45# gnd 0.1fF
+C1861 dff_2/m1_n49_n87# gnd 3.9fF
+C1862 dff_2/nandgate_1/w_122_92# gnd 2.4fF
+C1863 dff_2/nandgate_2/a_137_45# gnd 0.1fF
+C1864 dff_2/nandgate_2/w_122_92# gnd 2.4fF
+C1865 dff_8/nandgate_4/a_137_45# gnd 0.1fF
+C1866 dff_8/m1_n114_50# gnd 2.7fF
+C1867 dff_8/m1_n123_103# gnd 5.5fF
+C1868 dff_8/m1_n140_n124# gnd 6.0fF
+C1869 dff_8/nandgate_4/w_122_92# gnd 2.3fF
+C1870 dff_8/nandgate_3/a_137_45# gnd 0.1fF
+C1871 dff_8/nandgate_3/w_122_92# gnd 2.3fF
+C1872 dff_8/nandgate_0/a_137_45# gnd 0.1fF
+C1873 Q1 gnd 3.1fF
+C1874 dff_8/m1_0_n20# gnd 2.4fF
+C1875 dff_8/nandgate_0/w_122_92# gnd 2.3fF
+C1876 dff_8/nand3_0/a_106_9# gnd 0.0fF
+C1877 dff_8/nand3_0/a_79_9# gnd 0.1fF
+C1878 dff_8/nand3_0/w_64_61# gnd 3.0fF
+C1879 dff_8/nandgate_1/a_137_45# gnd 0.1fF
+C1880 dff_8/m1_n49_n87# gnd 3.6fF
+C1881 dff_8/nandgate_1/w_122_92# gnd 2.3fF
+C1882 dff_8/nandgate_2/a_137_45# gnd 0.1fF
+C1883 dff_8/nandgate_2/w_122_92# gnd 2.3fF
+C1884 dff_9/nandgate_4/a_137_45# gnd 0.1fF
+C1885 dff_9/m1_n114_50# gnd 2.7fF
+C1886 dff_9/m1_n123_103# gnd 5.5fF
+C1887 dff_9/m1_n140_n124# gnd 6.0fF
+C1888 dff_9/nandgate_4/w_122_92# gnd 2.3fF
+C1889 dff_9/nandgate_3/a_137_45# gnd 0.1fF
+C1890 dff_9/nandgate_3/w_122_92# gnd 2.3fF
+C1891 dff_9/nandgate_0/a_137_45# gnd 0.1fF
+C1892 Q0 gnd 3.1fF
+C1893 dff_9/m1_0_n20# gnd 2.4fF
+C1894 dff_9/nandgate_0/w_122_92# gnd 2.3fF
+C1895 dff_9/nand3_0/a_106_9# gnd 0.0fF
+C1896 dff_9/nand3_0/a_79_9# gnd 0.1fF
+C1897 dff_9/nand3_0/w_64_61# gnd 3.0fF
+C1898 dff_9/nandgate_1/a_137_45# gnd 0.1fF
+C1899 dff_9/m1_n49_n87# gnd 3.6fF
+C1900 dff_9/nandgate_1/w_122_92# gnd 2.3fF
+C1901 dff_9/nandgate_2/a_137_45# gnd 0.1fF
+C1902 S0 gnd 4.7fF
+C1903 dff_9/nandgate_2/w_122_92# gnd 2.3fF
+C1904 dff_1/nandgate_4/a_137_45# gnd 0.1fF
+C1905 dff_1/m1_n114_50# gnd 2.7fF
+C1906 dff_1/m1_n123_103# gnd 6.0fF
+C1907 dff_1/m1_n140_n124# gnd 6.3fF
+C1908 dff_1/nandgate_4/w_122_92# gnd 2.3fF
+C1909 dff_1/nandgate_3/a_137_45# gnd 0.1fF
+C1910 dff_1/nandgate_3/w_122_92# gnd 2.3fF
+C1911 dff_1/nandgate_0/a_137_45# gnd 0.2fF
+C1912 dff_1/m1_0_n20# gnd 3.3fF
+C1913 dff_1/nandgate_0/w_122_92# gnd 2.5fF
+C1914 dff_1/nand3_0/a_106_9# gnd 0.0fF
+C1915 dff_1/nand3_0/a_79_9# gnd 0.1fF
+C1916 dff_1/nand3_0/w_64_61# gnd 3.0fF
+C1917 dff_1/nandgate_1/a_137_45# gnd 0.1fF
+C1918 dff_1/m1_n49_n87# gnd 3.9fF
+C1919 dff_1/nandgate_1/w_122_92# gnd 2.4fF
+C1920 dff_1/nandgate_2/a_137_45# gnd 0.1fF
+C1921 dff_1/nandgate_2/w_122_92# gnd 2.4fF
+C1922 dff_0/nandgate_4/a_137_45# gnd 0.1fF
+C1923 dff_0/m1_n114_50# gnd 2.7fF
+C1924 dff_0/m1_n123_103# gnd 6.0fF
+C1925 dff_0/m1_n140_n124# gnd 6.3fF
+C1926 dff_0/nandgate_4/w_122_92# gnd 2.3fF
+C1927 dff_0/nandgate_3/a_137_45# gnd 0.1fF
+C1928 dff_0/nandgate_3/w_122_92# gnd 2.3fF
+C1929 dff_0/nandgate_0/a_137_45# gnd 0.2fF
+C1930 dff_0/m1_0_n20# gnd 3.3fF
+C1931 dff_0/nandgate_0/w_122_92# gnd 2.5fF
+C1932 dff_0/nand3_0/a_106_9# gnd 0.0fF
+C1933 dff_0/nand3_0/a_79_9# gnd 0.1fF
+C1934 dff_0/nand3_0/w_64_61# gnd 3.0fF
+C1935 dff_0/nandgate_1/a_137_45# gnd 0.1fF
+C1936 dff_0/m1_n49_n87# gnd 3.9fF
+C1937 dff_0/nandgate_1/w_122_92# gnd 2.4fF
+C1938 dff_0/nandgate_2/a_137_45# gnd 0.1fF
+C1939 dff_0/nandgate_2/w_122_92# gnd 2.4fF
+C1940 clablock_0/png_0/xorgate_0/a_56_n20# gnd 0.1fF
+C1941 clablock_0/png_0/xorgate_0/a_n56_n20# gnd 0.3fF
+C1942 clablock_0/png_0/xorgate_0/a_56_44# gnd 0.0fF
+C1943 clablock_0/png_0/xorgate_0/a_n56_44# gnd 0.1fF
+C1944 clablock_0/png_0/xorgate_0/w_75_30# gnd 0.9fF
+C1945 clablock_0/png_0/xorgate_0/w_41_38# gnd 1.0fF
+C1946 clablock_0/png_0/xorgate_0/w_n37_30# gnd 1.2fF
+C1947 clablock_0/png_0/xorgate_0/w_n71_38# gnd 0.9fF
+C1948 clablock_0/png_0/xorgate_0/a_n64_32# gnd 1.4fF
+C1949 clablock_0/png_0/xorgate_0/inverter_1/w_n13_n7# gnd 1.0fF
+C1950 clablock_0/png_0/xorgate_0/a_48_n7# gnd 0.8fF
+C1951 clablock_0/png_0/xorgate_0/inverter_0/w_n13_n7# gnd 1.0fF
+C1952 clablock_0/png_0/andgate_0/a_n58_n25# gnd 0.3fF
+C1953 clablock_0/png_0/andgate_0/w_n42_50# gnd 1.1fF
+C1954 clablock_0/png_0/andgate_0/w_n76_50# gnd 1.1fF
+C1955 clablock_0/m1_235_462# gnd 7.0fF
+C1956 clablock_0/png_0/andgate_0/a_n61_61# gnd 1.0fF
+C1957 clablock_0/png_0/andgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C1958 clablock_0/png_0/xorgate_1/a_56_n20# gnd 0.1fF
+C1959 clablock_0/png_0/xorgate_1/a_n56_n20# gnd 0.3fF
+C1960 clablock_0/png_0/xorgate_1/a_56_44# gnd 0.0fF
+C1961 clablock_0/png_0/xorgate_1/a_n56_44# gnd 0.1fF
+C1962 clablock_0/png_0/xorgate_1/w_75_30# gnd 0.9fF
+C1963 clablock_0/png_0/xorgate_1/w_41_38# gnd 1.0fF
+C1964 clablock_0/png_0/xorgate_1/w_n37_30# gnd 1.2fF
+C1965 clablock_0/png_0/xorgate_1/w_n71_38# gnd 0.9fF
+C1966 clablock_0/png_0/xorgate_1/a_n64_32# gnd 1.4fF
+C1967 clablock_0/png_0/xorgate_1/inverter_1/w_n13_n7# gnd 1.0fF
+C1968 clablock_0/png_0/xorgate_1/a_48_n7# gnd 0.8fF
+C1969 clablock_0/png_0/xorgate_1/inverter_0/w_n13_n7# gnd 1.0fF
+C1970 clablock_0/png_0/andgate_1/a_n58_n25# gnd 0.3fF
+C1971 clablock_0/png_0/andgate_1/w_n42_50# gnd 1.1fF
+C1972 clablock_0/png_0/andgate_1/w_n76_50# gnd 1.1fF
+C1973 clablock_0/m1_253_953# gnd 8.9fF
+C1974 clablock_0/png_0/andgate_1/a_n61_61# gnd 1.0fF
+C1975 clablock_0/png_0/andgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C1976 clablock_0/png_0/xorgate_2/a_56_n20# gnd 0.1fF
+C1977 clablock_0/png_0/xorgate_2/a_n56_n20# gnd 0.3fF
+C1978 clablock_0/png_0/xorgate_2/a_56_44# gnd 0.0fF
+C1979 clablock_0/m1_252_1255# gnd 17.2fF
+C1980 clablock_0/png_0/xorgate_2/a_n56_44# gnd 0.1fF
+C1981 clablock_0/png_0/xorgate_2/w_75_30# gnd 0.9fF
+C1982 clablock_0/png_0/xorgate_2/w_41_38# gnd 1.0fF
+C1983 clablock_0/png_0/xorgate_2/w_n37_30# gnd 1.2fF
+C1984 clablock_0/png_0/xorgate_2/w_n71_38# gnd 0.9fF
+C1985 clablock_0/png_0/xorgate_2/a_n64_32# gnd 1.4fF
+C1986 clablock_0/png_0/xorgate_2/inverter_1/w_n13_n7# gnd 1.0fF
+C1987 clablock_0/png_0/xorgate_2/a_48_n7# gnd 0.8fF
+C1988 clablock_0/png_0/xorgate_2/inverter_0/w_n13_n7# gnd 1.0fF
+C1989 clablock_0/png_0/andgate_2/a_n58_n25# gnd 0.3fF
+C1990 clablock_0/png_0/andgate_2/w_n42_50# gnd 1.1fF
+C1991 clablock_0/png_0/andgate_2/w_n76_50# gnd 1.1fF
+C1992 clablock_0/m1_253_1444# gnd 13.5fF
+C1993 clablock_0/png_0/andgate_2/a_n61_61# gnd 1.0fF
+C1994 clablock_0/png_0/andgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C1995 clablock_0/png_0/xorgate_3/a_56_n20# gnd 0.1fF
+C1996 clablock_0/png_0/xorgate_3/a_n56_n20# gnd 0.3fF
+C1997 clablock_0/png_0/xorgate_3/a_56_44# gnd 0.0fF
+C1998 clablock_0/m1_198_1746# gnd 19.9fF
+C1999 clablock_0/png_0/xorgate_3/a_n56_44# gnd 0.1fF
+C2000 clablock_0/png_0/xorgate_3/w_75_30# gnd 0.9fF
+C2001 clablock_0/png_0/xorgate_3/w_41_38# gnd 1.0fF
+C2002 clablock_0/png_0/xorgate_3/w_n37_30# gnd 1.2fF
+C2003 clablock_0/png_0/xorgate_3/w_n71_38# gnd 0.9fF
+C2004 clablock_0/png_0/xorgate_3/a_n64_32# gnd 1.4fF
+C2005 clablock_0/png_0/xorgate_3/inverter_1/w_n13_n7# gnd 1.0fF
+C2006 clablock_0/png_0/xorgate_3/a_48_n7# gnd 0.8fF
+C2007 clablock_0/png_0/xorgate_3/inverter_0/w_n13_n7# gnd 1.0fF
+C2008 clablock_0/png_0/andgate_3/a_n58_n25# gnd 0.3fF
+C2009 clablock_0/png_0/andgate_3/w_n42_50# gnd 1.1fF
+C2010 clablock_0/png_0/andgate_3/w_n76_50# gnd 1.1fF
+C2011 gnd gnd 22.6fF
+C2012 clablock_0/m1_196_1935# gnd 15.4fF
+C2013 vdd gnd 17.8fF
+C2014 clablock_0/png_0/andgate_3/a_n61_61# gnd 1.0fF
+C2015 clablock_0/png_0/andgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C2016 clablock_0/sumblock_0/xorgate_0/a_56_n20# gnd 0.1fF
+C2017 clablock_0/sumblock_0/xorgate_0/a_n56_n20# gnd 0.3fF
+C2018 clablock_0/sumblock_0/xorgate_0/a_56_44# gnd 0.0fF
+C2019 clablock_0/sumblock_0/xorgate_0/a_n56_44# gnd 0.1fF
+C2020 clablock_0/sumblock_0/xorgate_0/w_75_30# gnd 0.9fF
+C2021 clablock_0/sumblock_0/xorgate_0/w_41_38# gnd 1.0fF
+C2022 clablock_0/sumblock_0/xorgate_0/w_n37_30# gnd 1.1fF
+C2023 clablock_0/sumblock_0/xorgate_0/w_n71_38# gnd 0.9fF
+C2024 clablock_0/sumblock_0/xorgate_0/a_n64_32# gnd 1.4fF
+C2025 clablock_0/sumblock_0/xorgate_0/inverter_1/w_n13_n7# gnd 1.0fF
+C2026 gnd gnd 14.4fF
+C2027 clablock_0/sumblock_0/xorgate_0/a_48_n7# gnd 0.8fF
+C2028 vdd gnd 9.1fF
+C2029 clablock_0/sumblock_0/xorgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C2030 clablock_0/sumblock_0/xorgate_1/a_56_n20# gnd 0.1fF
+C2031 clablock_0/sumblock_0/xorgate_1/a_n56_n20# gnd 0.3fF
+C2032 clablock_0/sumblock_0/xorgate_1/a_56_44# gnd 0.0fF
+C2033 clablock_0/sumblock_0/xorgate_1/a_n56_44# gnd 0.1fF
+C2034 clablock_0/sumblock_0/xorgate_1/w_75_30# gnd 0.9fF
+C2035 clablock_0/sumblock_0/xorgate_1/w_41_38# gnd 1.0fF
+C2036 clablock_0/sumblock_0/xorgate_1/w_n37_30# gnd 1.1fF
+C2037 clablock_0/sumblock_0/xorgate_1/w_n71_38# gnd 0.9fF
+C2038 clablock_0/sumblock_0/xorgate_1/a_n64_32# gnd 1.4fF
+C2039 clablock_0/sumblock_0/xorgate_1/inverter_1/w_n13_n7# gnd 1.0fF
+C2040 clablock_0/sumblock_0/xorgate_1/a_48_n7# gnd 0.8fF
+C2041 clablock_0/sumblock_0/xorgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C2042 clablock_0/sumblock_0/xorgate_2/a_56_n20# gnd 0.1fF
+C2043 clablock_0/sumblock_0/xorgate_2/a_n56_n20# gnd 0.3fF
+C2044 clablock_0/sumblock_0/xorgate_2/a_56_44# gnd 0.0fF
+C2045 S1 gnd 4.3fF
+C2046 clablock_0/sumblock_0/xorgate_2/a_n56_44# gnd 0.1fF
+C2047 clablock_0/sumblock_0/xorgate_2/w_75_30# gnd 0.9fF
+C2048 clablock_0/sumblock_0/xorgate_2/w_41_38# gnd 1.0fF
+C2049 clablock_0/sumblock_0/xorgate_2/w_n37_30# gnd 1.1fF
+C2050 clablock_0/sumblock_0/xorgate_2/w_n71_38# gnd 0.9fF
+C2051 clablock_0/sumblock_0/xorgate_2/a_n64_32# gnd 1.4fF
+C2052 clablock_0/sumblock_0/xorgate_2/inverter_1/w_n13_n7# gnd 1.0fF
+C2053 clablock_0/sumblock_0/xorgate_2/a_48_n7# gnd 0.8fF
+C2054 clablock_0/m1_248_764# gnd 16.7fF
+C2055 clablock_0/sumblock_0/xorgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C2056 clablock_0/sumblock_0/xorgate_3/a_56_n20# gnd 0.1fF
+C2057 clablock_0/sumblock_0/xorgate_3/a_n56_n20# gnd 0.1fF
+C2058 clablock_0/sumblock_0/xorgate_3/a_56_44# gnd 0.0fF
+C2059 clablock_0/sumblock_0/xorgate_3/a_n56_44# gnd 0.0fF
+C2060 clablock_0/sumblock_0/xorgate_3/w_75_30# gnd 0.9fF
+C2061 clablock_0/sumblock_0/xorgate_3/w_41_38# gnd 0.9fF
+C2062 clablock_0/sumblock_0/xorgate_3/w_n37_30# gnd 1.0fF
+C2063 clablock_0/sumblock_0/xorgate_3/w_n71_38# gnd 0.9fF
+C2064 clablock_0/sumblock_0/xorgate_3/a_n64_32# gnd 1.0fF
+C2065 clablock_0/m1_243_273# gnd 18.0fF
+C2066 clablock_0/sumblock_0/xorgate_3/inverter_1/w_n13_n7# gnd 0.9fF
+C2067 clablock_0/sumblock_0/xorgate_3/a_48_n7# gnd 0.7fF
+C2068 clablock_0/sumblock_0/xorgate_3/inverter_0/w_n13_n7# gnd 1.0fF
+C2069 clablock_0/carrygen_0/andgate_6/a_n58_n25# gnd 0.1fF
+C2070 clablock_0/carrygen_0/andgate_6/w_n42_50# gnd 1.0fF
+C2071 clablock_0/carrygen_0/andgate_6/w_n76_50# gnd 1.0fF
+C2072 clablock_0/carrygen_0/andgate_6/a_n61_61# gnd 0.6fF
+C2073 clablock_0/carrygen_0/andgate_6/inverter_0/w_n13_n7# gnd 0.9fF
+C2074 clablock_0/carrygen_0/andgate_7/a_n58_n25# gnd 0.1fF
+C2075 clablock_0/carrygen_0/m1_174_337# gnd 5.6fF
+C2076 clablock_0/carrygen_0/andgate_7/w_n42_50# gnd 1.0fF
+C2077 clablock_0/carrygen_0/andgate_7/w_n76_50# gnd 1.0fF
+C2078 clablock_0/carrygen_0/andgate_7/a_n61_61# gnd 0.6fF
+C2079 clablock_0/carrygen_0/andgate_7/inverter_0/w_n13_n7# gnd 0.9fF
+C2080 clablock_0/carrygen_0/m1_174_525# gnd 1.8fF
+C2081 clablock_0/carrygen_0/orgate_6/a_n59_77# gnd 0.0fF
+C2082 clablock_0/carrygen_0/m1_376_596# gnd 2.1fF
+C2083 clablock_0/carrygen_0/orgate_6/w_n65_31# gnd 0.9fF
+C2084 clablock_0/carrygen_0/orgate_6/w_n74_71# gnd 0.9fF
+C2085 clablock_0/carrygen_0/orgate_6/a_n63_n10# gnd 0.6fF
+C2086 clablock_0/carrygen_0/orgate_6/inverter_0/w_n13_n7# gnd 0.9fF
+C2087 clablock_0/carrygen_0/andgate_8/a_n58_n25# gnd 0.1fF
+C2088 clablock_0/carrygen_0/m2_438_434# gnd 7.1fF
+C2089 clablock_0/carrygen_0/andgate_8/w_n42_50# gnd 1.0fF
+C2090 clablock_0/carrygen_0/andgate_8/w_n76_50# gnd 1.0fF
+C2091 clablock_0/carrygen_0/andgate_8/a_n61_61# gnd 0.6fF
+C2092 clablock_0/carrygen_0/andgate_8/inverter_0/w_n13_n7# gnd 0.9fF
+C2093 clablock_0/carrygen_0/andgate_9/a_n58_n25# gnd 0.1fF
+C2094 clablock_0/carrygen_0/m1_777_387# gnd 4.9fF
+C2095 clablock_0/carrygen_0/andgate_9/w_n42_50# gnd 1.0fF
+C2096 clablock_0/carrygen_0/andgate_9/w_n76_50# gnd 1.0fF
+C2097 clablock_0/carrygen_0/andgate_9/a_n61_61# gnd 0.6fF
+C2098 clablock_0/carrygen_0/andgate_9/inverter_0/w_n13_n7# gnd 0.9fF
+C2099 clablock_0/carrygen_0/m1_981_575# gnd 0.8fF
+C2100 clablock_0/carrygen_0/orgate_7/a_n59_77# gnd 0.0fF
+C2101 clablock_0/carrygen_0/m1_777_596# gnd 6.1fF
+C2102 clablock_0/carrygen_0/orgate_7/w_n65_31# gnd 0.9fF
+C2103 clablock_0/carrygen_0/orgate_7/w_n74_71# gnd 0.9fF
+C2104 clablock_0/carrygen_0/orgate_7/a_n63_n10# gnd 0.6fF
+C2105 clablock_0/carrygen_0/orgate_7/inverter_0/w_n13_n7# gnd 0.9fF
+C2106 clablock_0/carrygen_0/m1_567_529# gnd 1.7fF
+C2107 clablock_0/carrygen_0/orgate_8/a_n59_77# gnd 0.0fF
+C2108 clablock_0/carrygen_0/m1_1147_580# gnd 2.1fF
+C2109 clablock_0/carrygen_0/orgate_8/w_n65_31# gnd 0.9fF
+C2110 clablock_0/carrygen_0/orgate_8/w_n74_71# gnd 0.9fF
+C2111 clablock_0/carrygen_0/orgate_8/a_n63_n10# gnd 0.6fF
+C2112 clablock_0/carrygen_0/orgate_8/inverter_0/w_n13_n7# gnd 0.9fF
+C2113 clablock_0/carrygen_0/m1_1315_575# gnd 0.7fF
+C2114 clablock_0/carrygen_0/orgate_9/a_n59_77# gnd 0.0fF
+C2115 clablock_0/carrygen_0/orgate_9/w_n65_31# gnd 0.9fF
+C2116 clablock_0/carrygen_0/orgate_9/w_n74_71# gnd 0.9fF
+C2117 gnd gnd 45.8fF
+C2118 vdd gnd 31.0fF
+C2119 clablock_0/carrygen_0/orgate_9/a_n63_n10# gnd 0.7fF
+C2120 clablock_0/carrygen_0/orgate_9/inverter_0/w_n13_n7# gnd 0.9fF
+C2121 clablock_0/carrygen_0/andgate_3/a_n58_n25# gnd 0.1fF
+C2122 clablock_0/carrygen_0/andgate_3/w_n42_50# gnd 1.0fF
+C2123 clablock_0/carrygen_0/andgate_3/w_n76_50# gnd 1.0fF
+C2124 clablock_0/carrygen_0/andgate_3/a_n61_61# gnd 0.6fF
+C2125 clablock_0/carrygen_0/andgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C2126 clablock_0/carrygen_0/andgate_4/a_n58_n25# gnd 0.1fF
+C2127 clablock_0/carrygen_0/m1_174_152# gnd 5.6fF
+C2128 clablock_0/carrygen_0/andgate_4/w_n42_50# gnd 1.0fF
+C2129 clablock_0/carrygen_0/andgate_4/w_n76_50# gnd 1.0fF
+C2130 clablock_0/carrygen_0/andgate_4/a_n61_61# gnd 0.6fF
+C2131 clablock_0/carrygen_0/andgate_4/inverter_0/w_n13_n7# gnd 0.9fF
+C2132 clablock_0/carrygen_0/orgate_3/a_n59_77# gnd 0.0fF
+C2133 clablock_0/carrygen_0/orgate_3/w_n65_31# gnd 0.9fF
+C2134 clablock_0/carrygen_0/orgate_3/w_n74_71# gnd 0.9fF
+C2135 clablock_0/carrygen_0/orgate_3/a_n63_n10# gnd 0.6fF
+C2136 clablock_0/carrygen_0/orgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C2137 clablock_0/carrygen_0/andgate_5/a_n58_n25# gnd 0.1fF
+C2138 clablock_0/carrygen_0/m2_438_246# gnd 5.8fF
+C2139 clablock_0/carrygen_0/andgate_5/w_n42_50# gnd 1.0fF
+C2140 clablock_0/carrygen_0/andgate_5/w_n76_50# gnd 1.0fF
+C2141 clablock_0/carrygen_0/andgate_5/a_n61_61# gnd 0.6fF
+C2142 clablock_0/carrygen_0/andgate_5/inverter_0/w_n13_n7# gnd 0.9fF
+C2143 clablock_0/carrygen_0/orgate_4/a_n59_77# gnd 0.0fF
+C2144 clablock_0/carrygen_0/orgate_4/w_n65_31# gnd 0.9fF
+C2145 clablock_0/carrygen_0/orgate_4/w_n74_71# gnd 0.9fF
+C2146 clablock_0/carrygen_0/orgate_4/a_n63_n10# gnd 0.6fF
+C2147 clablock_0/carrygen_0/orgate_4/inverter_0/w_n13_n7# gnd 0.9fF
+C2148 clablock_0/carrygen_0/m1_567_341# gnd 1.7fF
+C2149 clablock_0/carrygen_0/orgate_5/a_n59_77# gnd 0.0fF
+C2150 clablock_0/carrygen_0/m1_947_392# gnd 2.1fF
+C2151 clablock_0/carrygen_0/orgate_5/w_n65_31# gnd 0.9fF
+C2152 clablock_0/carrygen_0/orgate_5/w_n74_71# gnd 0.9fF
+C2153 clablock_0/carrygen_0/orgate_5/a_n63_n10# gnd 0.7fF
+C2154 clablock_0/carrygen_0/orgate_5/inverter_0/w_n13_n7# gnd 0.9fF
+C2155 clablock_0/carrygen_0/andgate_1/a_n58_n25# gnd 0.1fF
+C2156 clablock_0/carrygen_0/andgate_1/w_n42_50# gnd 1.0fF
+C2157 clablock_0/carrygen_0/andgate_1/w_n76_50# gnd 1.0fF
+C2158 clablock_0/carrygen_0/andgate_1/a_n61_61# gnd 0.6fF
+C2159 clablock_0/carrygen_0/andgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C2160 clablock_0/carrygen_0/andgate_2/a_n58_n25# gnd 0.1fF
+C2161 clablock_0/carrygen_0/m1_174_38# gnd 4.2fF
+C2162 clablock_0/carrygen_0/andgate_2/w_n42_50# gnd 1.0fF
+C2163 clablock_0/carrygen_0/andgate_2/w_n76_50# gnd 1.0fF
+C2164 clablock_0/carrygen_0/andgate_2/a_n61_61# gnd 0.6fF
+C2165 clablock_0/carrygen_0/andgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C2166 clablock_0/carrygen_0/orgate_1/a_n59_77# gnd 0.0fF
+C2167 clablock_0/carrygen_0/orgate_1/w_n65_31# gnd 0.9fF
+C2168 clablock_0/carrygen_0/orgate_1/w_n74_71# gnd 0.9fF
+C2169 clablock_0/carrygen_0/orgate_1/a_n63_n10# gnd 0.6fF
+C2170 clablock_0/carrygen_0/orgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C2171 clablock_0/carrygen_0/m1_567_199# gnd 0.7fF
+C2172 clablock_0/carrygen_0/orgate_2/a_n59_77# gnd 0.0fF
+C2173 clablock_0/carrygen_0/orgate_2/w_n65_31# gnd 0.9fF
+C2174 clablock_0/carrygen_0/orgate_2/w_n74_71# gnd 0.9fF
+C2175 clablock_0/carrygen_0/orgate_2/a_n63_n10# gnd 0.7fF
+C2176 clablock_0/carrygen_0/orgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C2177 clablock_0/carrygen_0/andgate_0/a_n58_n25# gnd 0.3fF
+C2178 clablock_0/carrygen_0/andgate_0/w_n42_50# gnd 1.1fF
+C2179 clablock_0/carrygen_0/andgate_0/w_n76_50# gnd 1.0fF
+C2180 clablock_0/carrygen_0/andgate_0/a_n61_61# gnd 0.9fF
+C2181 clablock_0/carrygen_0/andgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C2182 clablock_0/carrygen_0/orgate_0/a_n59_77# gnd 0.0fF
+C2183 clablock_0/carrygen_0/orgate_0/w_n65_31# gnd 0.9fF
+C2184 clablock_0/carrygen_0/orgate_0/w_n74_71# gnd 0.9fF
+C2185 clablock_0/carrygen_0/orgate_0/a_n63_n10# gnd 0.7fF
+C2186 clablock_0/carrygen_0/orgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+
+.tran 0.1n 100n
+
+
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+plot v(A0)
+plot v(A1)
+plot v(A2)
+plot v(A3)
+
+plot v(B0)
+plot v(B1)
+plot v(B2)
+plot v(B3)
+
+plot v(Q0)
+plot v(Q1)
+plot v(Q2)
+plot v(Q3)
+plot v(Q4)
+
+.endc

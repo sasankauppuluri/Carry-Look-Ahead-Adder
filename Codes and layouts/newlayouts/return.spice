@@ -1,0 +1,338 @@
+* SPICE3 file created from return.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 xorgate_3/a_48_n7# Car0 m1_36_n304# xorgate_3/inverter_0/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=1920 ps=832
+M1001 xorgate_3/a_48_n7# Car0 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=1140 ps=608
+M1002 S0 P0 m1_36_n304# xorgate_3/inverter_1/w_n13_n7# pfet w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1003 S0 P0 S0 Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 xorgate_3/a_n56_44# S0 m1_36_n304# xorgate_3/w_n71_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1005 S0 Car0 xorgate_3/a_n56_44# xorgate_3/w_n37_30# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 xorgate_3/a_56_44# P0 m1_36_n304# xorgate_3/w_41_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1007 S0 xorgate_3/a_48_n7# xorgate_3/a_56_44# xorgate_3/w_75_30# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 xorgate_3/a_n56_n20# Car0 S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1009 S0 P0 xorgate_3/a_n56_n20# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 xorgate_3/a_56_n20# xorgate_3/a_48_n7# S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1011 S0 S0 xorgate_3/a_56_n20# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 xorgate_2/a_48_n7# Car1 m1_36_n304# xorgate_2/inverter_0/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1013 xorgate_2/a_48_n7# Car1 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1014 xorgate_2/a_n64_32# P1 m1_36_n304# xorgate_2/inverter_1/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1015 xorgate_2/a_n64_32# P1 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1016 xorgate_2/a_n56_44# xorgate_2/a_n64_32# m1_36_n304# xorgate_2/w_n71_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1017 S1 Car1 xorgate_2/a_n56_44# xorgate_2/w_n37_30# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1018 xorgate_2/a_56_44# P1 m1_36_n304# xorgate_2/w_41_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1019 S1 xorgate_2/a_48_n7# xorgate_2/a_56_44# xorgate_2/w_75_30# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 xorgate_2/a_n56_n20# Car1 S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1021 S1 P1 xorgate_2/a_n56_n20# Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1022 xorgate_2/a_56_n20# xorgate_2/a_48_n7# S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1023 S1 xorgate_2/a_n64_32# xorgate_2/a_56_n20# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 xorgate_1/a_48_n7# Car2 m1_36_n304# xorgate_1/inverter_0/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1025 xorgate_1/a_48_n7# Car2 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1026 xorgate_1/a_n64_32# P2 m1_36_n304# xorgate_1/inverter_1/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1027 xorgate_1/a_n64_32# P2 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1028 xorgate_1/a_n56_44# xorgate_1/a_n64_32# m1_36_n304# xorgate_1/w_n71_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1029 S2 Car2 xorgate_1/a_n56_44# xorgate_1/w_n37_30# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1030 xorgate_1/a_56_44# P2 m1_36_n304# xorgate_1/w_41_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1031 S2 xorgate_1/a_48_n7# xorgate_1/a_56_44# xorgate_1/w_75_30# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 xorgate_1/a_n56_n20# Car2 S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1033 S2 P2 xorgate_1/a_n56_n20# Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1034 xorgate_1/a_56_n20# xorgate_1/a_48_n7# S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1035 S2 xorgate_1/a_n64_32# xorgate_1/a_56_n20# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 xorgate_0/a_48_n7# Car3 m1_36_n304# xorgate_0/inverter_0/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 xorgate_0/a_48_n7# Car3 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1038 xorgate_0/a_n64_32# P3 m1_36_n304# xorgate_0/inverter_1/w_n13_n7# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1039 xorgate_0/a_n64_32# P3 S0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1040 xorgate_0/a_n56_44# xorgate_0/a_n64_32# m1_36_n304# xorgate_0/w_n71_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1041 S3 Car3 xorgate_0/a_n56_44# xorgate_0/w_n37_30# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1042 xorgate_0/a_56_44# P3 m1_36_n304# xorgate_0/w_41_38# pfet w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1043 S3 xorgate_0/a_48_n7# xorgate_0/a_56_44# xorgate_0/w_75_30# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1044 xorgate_0/a_n56_n20# Car3 S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1045 S3 P3 xorgate_0/a_n56_n20# Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1046 xorgate_0/a_56_n20# xorgate_0/a_48_n7# S0 Gnd nfet w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1047 S3 xorgate_0/a_n64_32# xorgate_0/a_56_n20# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 xorgate_1/a_48_n7# xorgate_1/a_56_n20# 0.0fF
+C1 xorgate_1/a_n56_44# S2 0.2fF
+C2 xorgate_2/a_n64_32# xorgate_2/a_56_n20# 0.1fF
+C3 S3 xorgate_0/a_56_44# 0.2fF
+C4 S0 S3 0.0fF
+C5 S1 xorgate_2/a_56_44# 0.2fF
+C6 xorgate_1/w_n37_30# S2 0.0fF
+C7 xorgate_1/a_48_n7# S2 0.2fF
+C8 xorgate_0/a_n64_32# xorgate_0/a_56_n20# 0.1fF
+C9 xorgate_0/w_75_30# xorgate_0/a_56_44# 0.1fF
+C10 xorgate_1/a_48_n7# xorgate_1/w_75_30# 0.1fF
+C11 xorgate_1/a_n64_32# xorgate_1/w_41_38# 0.2fF
+C12 xorgate_0/w_n71_38# xorgate_0/a_n56_44# 0.1fF
+C13 xorgate_2/a_n64_32# xorgate_2/inverter_1/w_n13_n7# 0.0fF
+C14 P2 S2 0.2fF
+C15 xorgate_2/a_n64_32# P1 0.5fF
+C16 xorgate_3/w_75_30# xorgate_3/a_56_44# 0.1fF
+C17 xorgate_2/a_n64_32# m1_36_n304# 0.5fF
+C18 xorgate_3/inverter_1/w_n13_n7# P0 0.1fF
+C19 S0 xorgate_2/a_n64_32# 0.1fF
+C20 xorgate_3/inverter_1/w_n13_n7# m1_36_n304# 0.1fF
+C21 xorgate_1/a_56_44# m1_36_n304# 0.2fF
+C22 xorgate_2/w_75_30# xorgate_2/a_48_n7# 0.1fF
+C23 S0 xorgate_3/inverter_1/w_n13_n7# 0.0fF
+C24 S0 xorgate_0/a_56_n20# 0.1fF
+C25 xorgate_1/a_n64_32# xorgate_1/a_56_n20# 0.1fF
+C26 xorgate_2/w_n71_38# xorgate_2/a_n64_32# 0.2fF
+C27 xorgate_1/a_n64_32# S2 0.6fF
+C28 P3 xorgate_0/w_n37_30# 0.2fF
+C29 m1_36_n304# xorgate_0/a_n64_32# 0.5fF
+C30 xorgate_1/a_n64_32# xorgate_1/w_75_30# 0.1fF
+C31 xorgate_1/inverter_0/w_n13_n7# m1_36_n304# 0.1fF
+C32 xorgate_0/w_n37_30# xorgate_0/a_n56_44# 0.1fF
+C33 xorgate_0/a_n64_32# xorgate_0/a_56_44# 0.4fF
+C34 S0 xorgate_0/a_n64_32# 0.1fF
+C35 S0 xorgate_2/a_56_n20# 0.1fF
+C36 xorgate_2/inverter_1/w_n13_n7# P1 0.1fF
+C37 xorgate_2/inverter_1/w_n13_n7# m1_36_n304# 0.1fF
+C38 xorgate_0/inverter_0/w_n13_n7# xorgate_0/a_n64_32# 0.0fF
+C39 P0 m1_36_n304# 0.1fF
+C40 P1 m1_36_n304# 0.2fF
+C41 xorgate_2/w_75_30# xorgate_2/a_n64_32# 0.1fF
+C42 S0 P0 1.0fF
+C43 m1_36_n304# xorgate_0/a_56_44# 0.2fF
+C44 S0 P1 0.4fF
+C45 S0 m1_36_n304# 0.5fF
+C46 xorgate_2/w_n37_30# xorgate_2/a_n64_32# 0.1fF
+C47 P3 xorgate_0/a_n56_44# 0.1fF
+C48 xorgate_0/inverter_0/w_n13_n7# m1_36_n304# 0.1fF
+C49 xorgate_2/w_n71_38# m1_36_n304# 0.1fF
+C50 xorgate_2/a_n64_32# xorgate_2/a_n56_44# 0.4fF
+C51 xorgate_0/inverter_1/w_n13_n7# xorgate_0/a_n64_32# 0.0fF
+C52 xorgate_2/inverter_0/w_n13_n7# xorgate_2/a_48_n7# 0.0fF
+C53 P0 xorgate_3/a_n56_44# 0.1fF
+C54 xorgate_3/a_n56_44# m1_36_n304# 0.2fF
+C55 S0 xorgate_3/a_n56_44# 0.6fF
+C56 xorgate_3/inverter_0/w_n13_n7# xorgate_3/a_48_n7# 0.0fF
+C57 S2 xorgate_1/a_n56_n20# 0.1fF
+C58 xorgate_0/inverter_1/w_n13_n7# m1_36_n304# 0.1fF
+C59 xorgate_2/w_41_38# xorgate_2/a_n64_32# 0.2fF
+C60 xorgate_1/w_n71_38# m1_36_n304# 0.1fF
+C61 P3 xorgate_0/w_41_38# 0.1fF
+C62 xorgate_2/w_n37_30# P1 0.2fF
+C63 xorgate_2/a_48_n7# S1 0.2fF
+C64 xorgate_2/inverter_0/w_n13_n7# xorgate_2/a_n64_32# 0.0fF
+C65 xorgate_2/a_n56_44# P1 0.1fF
+C66 xorgate_2/a_n56_44# m1_36_n304# 0.2fF
+C67 xorgate_1/inverter_0/w_n13_n7# xorgate_1/a_48_n7# 0.0fF
+C68 xorgate_3/a_56_44# m1_36_n304# 0.2fF
+C69 S2 xorgate_1/a_56_n20# 0.1fF
+C70 P3 xorgate_0/a_n56_n20# 0.2fF
+C71 xorgate_2/a_n56_n20# P1 0.2fF
+C72 S0 xorgate_3/a_56_44# 0.6fF
+C73 xorgate_1/a_n56_44# m1_36_n304# 0.2fF
+C74 xorgate_1/inverter_0/w_n13_n7# P2 0.0fF
+C75 xorgate_2/w_n71_38# xorgate_2/a_n56_44# 0.1fF
+C76 xorgate_1/a_n64_32# xorgate_1/a_56_44# 0.4fF
+C77 xorgate_1/a_48_n7# m1_36_n304# 0.2fF
+C78 S0 xorgate_2/a_n56_n20# 0.1fF
+C79 xorgate_0/a_48_n7# P3 0.1fF
+C80 xorgate_1/w_75_30# S2 0.0fF
+C81 xorgate_2/w_41_38# P1 0.1fF
+C82 xorgate_1/a_48_n7# S0 0.2fF
+C83 xorgate_2/w_41_38# m1_36_n304# 0.1fF
+C84 xorgate_2/a_n64_32# S1 0.6fF
+C85 xorgate_0/w_n37_30# S3 0.0fF
+C86 P2 m1_36_n304# 0.2fF
+C87 xorgate_1/inverter_0/w_n13_n7# xorgate_1/a_n64_32# 0.0fF
+C88 xorgate_0/a_n64_32# xorgate_0/w_n71_38# 0.2fF
+C89 S0 P2 0.4fF
+C90 xorgate_2/inverter_0/w_n13_n7# P1 0.0fF
+C91 xorgate_2/inverter_0/w_n13_n7# m1_36_n304# 0.1fF
+C92 xorgate_2/w_n37_30# xorgate_2/a_n56_44# 0.1fF
+C93 S1 xorgate_2/a_56_n20# 0.1fF
+C94 P3 S3 0.2fF
+C95 xorgate_1/a_n64_32# m1_36_n304# 0.5fF
+C96 xorgate_0/a_n56_44# S3 0.2fF
+C97 m1_36_n304# xorgate_0/w_n71_38# 0.1fF
+C98 xorgate_1/w_n71_38# xorgate_1/a_n56_44# 0.1fF
+C99 xorgate_1/a_n64_32# S0 0.1fF
+C100 xorgate_2/a_n64_32# xorgate_2/a_56_44# 0.4fF
+C101 S1 P1 0.2fF
+C102 xorgate_0/a_n64_32# xorgate_0/w_n37_30# 0.1fF
+C103 xorgate_3/a_48_n7# xorgate_3/w_75_30# 0.1fF
+C104 S0 S1 0.2fF
+C105 xorgate_3/a_48_n7# xorgate_3/a_56_n20# 0.0fF
+C106 xorgate_3/w_n71_38# m1_36_n304# 0.1fF
+C107 xorgate_3/inverter_0/w_n13_n7# P0 0.0fF
+C108 S0 xorgate_3/w_n71_38# 0.2fF
+C109 xorgate_3/inverter_0/w_n13_n7# m1_36_n304# 0.1fF
+C110 S0 xorgate_3/inverter_0/w_n13_n7# 0.0fF
+C111 xorgate_1/w_41_38# xorgate_1/a_56_44# 0.1fF
+C112 xorgate_1/inverter_1/w_n13_n7# m1_36_n304# 0.1fF
+C113 xorgate_1/w_n37_30# xorgate_1/a_n56_44# 0.1fF
+C114 P3 xorgate_0/a_n64_32# 0.5fF
+C115 xorgate_1/a_n64_32# xorgate_1/w_n71_38# 0.2fF
+C116 xorgate_0/a_n64_32# xorgate_0/a_n56_44# 0.4fF
+C117 xorgate_3/w_n71_38# xorgate_3/a_n56_44# 0.1fF
+C118 xorgate_2/a_56_44# m1_36_n304# 0.2fF
+C119 P0 xorgate_3/w_n37_30# 0.2fF
+C120 P2 xorgate_1/a_n56_44# 0.1fF
+C121 P2 xorgate_1/w_n37_30# 0.2fF
+C122 xorgate_1/a_48_n7# P2 0.1fF
+C123 xorgate_2/w_75_30# S1 0.0fF
+C124 S0 xorgate_3/w_n37_30# 0.2fF
+C125 P3 m1_36_n304# 0.2fF
+C126 S0 xorgate_1/a_n56_n20# 0.1fF
+C127 S2 xorgate_1/a_56_44# 0.2fF
+C128 xorgate_2/w_n37_30# S1 0.0fF
+C129 S3 xorgate_0/a_n56_n20# 0.1fF
+C130 m1_36_n304# xorgate_0/a_n56_44# 0.2fF
+C131 S0 P3 0.4fF
+C132 xorgate_1/w_41_38# m1_36_n304# 0.1fF
+C133 xorgate_1/w_75_30# xorgate_1/a_56_44# 0.1fF
+C134 xorgate_0/a_48_n7# S3 0.2fF
+C135 xorgate_1/a_n64_32# xorgate_1/a_n56_44# 0.4fF
+C136 xorgate_2/a_n56_44# S1 0.2fF
+C137 xorgate_0/a_48_n7# xorgate_0/w_75_30# 0.1fF
+C138 xorgate_0/inverter_0/w_n13_n7# P3 0.0fF
+C139 xorgate_1/a_n64_32# xorgate_1/w_n37_30# 0.1fF
+C140 xorgate_1/a_48_n7# xorgate_1/a_n64_32# 0.0fF
+C141 xorgate_3/w_n37_30# xorgate_3/a_n56_44# 0.1fF
+C142 xorgate_0/a_n64_32# xorgate_0/w_41_38# 0.2fF
+C143 P0 xorgate_3/w_41_38# 0.1fF
+C144 xorgate_2/a_n56_n20# S1 0.1fF
+C145 P0 xorgate_3/a_n56_n20# 0.2fF
+C146 xorgate_3/w_41_38# m1_36_n304# 0.1fF
+C147 xorgate_1/a_n64_32# P2 0.5fF
+C148 xorgate_2/w_75_30# xorgate_2/a_56_44# 0.1fF
+C149 S0 xorgate_3/w_41_38# 0.2fF
+C150 S0 xorgate_3/a_n56_n20# 0.2fF
+C151 S0 xorgate_1/a_56_n20# 0.1fF
+C152 xorgate_0/a_48_n7# xorgate_0/a_56_n20# 0.0fF
+C153 xorgate_0/inverter_1/w_n13_n7# P3 0.1fF
+C154 S0 S2 0.2fF
+C155 m1_36_n304# xorgate_0/w_41_38# 0.1fF
+C156 xorgate_0/w_75_30# S3 0.0fF
+C157 xorgate_0/w_41_38# xorgate_0/a_56_44# 0.1fF
+C158 xorgate_2/a_48_n7# xorgate_2/a_n64_32# 0.0fF
+C159 xorgate_0/a_48_n7# xorgate_0/a_n64_32# 0.0fF
+C160 xorgate_3/a_48_n7# P0 0.1fF
+C161 xorgate_1/inverter_1/w_n13_n7# P2 0.1fF
+C162 S0 xorgate_3/w_75_30# 0.2fF
+C163 xorgate_3/a_48_n7# m1_36_n304# 0.2fF
+C164 S0 xorgate_3/a_56_n20# 0.3fF
+C165 xorgate_2/w_41_38# xorgate_2/a_56_44# 0.1fF
+C166 S0 xorgate_3/a_48_n7# 0.4fF
+C167 S3 xorgate_0/a_56_n20# 0.1fF
+C168 S0 xorgate_0/a_n56_n20# 0.1fF
+C169 xorgate_0/a_48_n7# m1_36_n304# 0.2fF
+C170 xorgate_2/a_48_n7# xorgate_2/a_56_n20# 0.0fF
+C171 S0 xorgate_0/a_48_n7# 0.2fF
+C172 xorgate_1/a_n64_32# xorgate_1/inverter_1/w_n13_n7# 0.0fF
+C173 xorgate_0/a_n64_32# S3 0.6fF
+C174 P2 xorgate_1/a_n56_n20# 0.2fF
+C175 xorgate_0/inverter_0/w_n13_n7# xorgate_0/a_48_n7# 0.0fF
+C176 xorgate_0/a_n64_32# xorgate_0/w_75_30# 0.1fF
+C177 xorgate_2/a_48_n7# P1 0.1fF
+C178 xorgate_3/w_41_38# xorgate_3/a_56_44# 0.1fF
+C179 xorgate_2/a_48_n7# m1_36_n304# 0.2fF
+C180 P2 xorgate_1/w_41_38# 0.1fF
+C181 S0 xorgate_2/a_48_n7# 0.2fF
+C182 xorgate_0/a_56_n20# gnd! 0.1fF
+C183 xorgate_0/a_n56_n20# gnd! 0.1fF
+C184 xorgate_0/a_56_44# gnd! 0.0fF
+C185 S3 gnd! 2.0fF
+C186 xorgate_0/a_n56_44# gnd! 0.0fF
+C187 xorgate_0/w_75_30# gnd! 0.9fF
+C188 xorgate_0/w_41_38# gnd! 0.9fF
+C189 xorgate_0/w_n37_30# gnd! 1.0fF
+C190 xorgate_0/w_n71_38# gnd! 0.9fF
+C191 xorgate_0/a_n64_32# gnd! 1.0fF
+C192 P3 gnd! 2.8fF
+C193 xorgate_0/inverter_1/w_n13_n7# gnd! 0.9fF
+C194 S0 gnd! 17.5fF
+C195 xorgate_0/a_48_n7# gnd! 0.7fF
+C196 m1_36_n304# gnd! 9.0fF
+C197 xorgate_0/inverter_0/w_n13_n7# gnd! 1.0fF
+C198 xorgate_1/a_56_n20# gnd! 0.1fF
+C199 xorgate_1/a_n56_n20# gnd! 0.1fF
+C200 xorgate_1/a_56_44# gnd! 0.0fF
+C201 S2 gnd! 2.0fF
+C202 xorgate_1/a_n56_44# gnd! 0.0fF
+C203 xorgate_1/w_75_30# gnd! 0.9fF
+C204 xorgate_1/w_41_38# gnd! 0.9fF
+C205 xorgate_1/w_n37_30# gnd! 1.0fF
+C206 xorgate_1/w_n71_38# gnd! 0.9fF
+C207 xorgate_1/a_n64_32# gnd! 1.0fF
+C208 P2 gnd! 2.8fF
+C209 xorgate_1/inverter_1/w_n13_n7# gnd! 0.9fF
+C210 xorgate_1/a_48_n7# gnd! 0.7fF
+C211 xorgate_1/inverter_0/w_n13_n7# gnd! 1.0fF
+C212 xorgate_2/a_56_n20# gnd! 0.1fF
+C213 xorgate_2/a_n56_n20# gnd! 0.1fF
+C214 xorgate_2/a_56_44# gnd! 0.0fF
+C215 S1 gnd! 2.0fF
+C216 xorgate_2/a_n56_44# gnd! 0.0fF
+C217 xorgate_2/w_75_30# gnd! 0.9fF
+C218 xorgate_2/w_41_38# gnd! 0.9fF
+C219 xorgate_2/w_n37_30# gnd! 1.0fF
+C220 xorgate_2/w_n71_38# gnd! 0.9fF
+C221 xorgate_2/a_n64_32# gnd! 1.0fF
+C222 P1 gnd! 2.8fF
+C223 xorgate_2/inverter_1/w_n13_n7# gnd! 0.9fF
+C224 xorgate_2/a_48_n7# gnd! 0.7fF
+C225 xorgate_2/inverter_0/w_n13_n7# gnd! 1.0fF
+C226 xorgate_3/a_56_n20# gnd! 0.1fF
+C227 xorgate_3/a_n56_n20# gnd! 0.1fF
+C228 xorgate_3/a_56_44# gnd! 0.0fF
+C229 xorgate_3/a_n56_44# gnd! 0.0fF
+C230 xorgate_3/w_75_30# gnd! 0.9fF
+C231 xorgate_3/w_41_38# gnd! 0.9fF
+C232 xorgate_3/w_n37_30# gnd! 1.0fF
+C233 xorgate_3/w_n71_38# gnd! 0.9fF
+C234 P0 gnd! 2.8fF
+C235 xorgate_3/inverter_1/w_n13_n7# gnd! 0.9fF
+C236 xorgate_3/a_48_n7# gnd! 0.7fF
+C237 xorgate_3/inverter_0/w_n13_n7# gnd! 1.0fF

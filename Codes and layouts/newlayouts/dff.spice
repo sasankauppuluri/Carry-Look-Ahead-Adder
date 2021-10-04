@@ -1,0 +1,180 @@
+* SPICE3 file created from nandgate.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+Vdd vdd gnd 'SUPPLY'
+vclk clk 0 pulse 0 1.8 0ns 100ps 100ps 4.9ns 10ns
+Vin_d D gnd pwl (0 0v 9.85ns 0v 9.85ns 1.8v 100ns 1.8v)
+
+M1000 R1 R vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=1560 ps=676
+M1001 R1 D vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 nandgate_2/a_137_45# D gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=360 ps=192
+M1003 R1 R nandgate_2/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+M1004 Qbar Q vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1005 Qbar R vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 nandgate_1/a_137_45# R gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1007 Qbar Q nandgate_1/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+M1008 R S vdd vdd CMOSP w=20 l=2
++  ad=360 pd=156 as=0 ps=0
+M1009 R clk vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 R R1 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 nand3_0/a_79_9# R1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1012 nand3_0/a_106_9# clk nand3_0/a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1013 R S nand3_0/a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+M1014 Q S vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1015 Q Qbar vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 nandgate_0/a_137_45# Qbar gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1017 Q S nandgate_0/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+M1018 S S1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1019 S clk vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 nandgate_3/a_137_45# clk gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1021 S S1 nandgate_3/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+M1022 S1 R1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1023 S1 S vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 nandgate_4/a_137_45# S gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1025 S1 R1 nandgate_4/a_137_45# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+C0 vdd S1 0.2fF
+C1 nandgate_3/a_137_45# gnd 0.2fF
+C2 R1 vdd 1.0fF
+C3 S Q 0.5fF
+C4 R Qbar 0.3fF
+C5 vdd Q 0.1fF
+C6 R1 S1 0.5fF
+C7 S vdd 1.2fF
+C8 vdd Q 0.7fF
+C9 gnd Qbar 0.3fF
+C10 vdd vdd 0.2fF
+C11 R1 R 1.2fF
+C12 nandgate_2/a_137_45# R 0.1fF
+C13 S S1 0.9fF
+C14 R1 gnd 0.1fF
+C15 S nandgate_0/a_137_45# 0.1fF
+C16 Q nandgate_0/a_137_45# 0.1fF
+C17 vdd clk 0.1fF
+C18 S R 0.9fF
+C19 gnd nandgate_2/a_137_45# 0.2fF
+C20 R Q 0.1fF
+C21 R1 vdd 0.2fF
+C22 vdd R 0.1fF
+C23 vdd S1 0.7fF
+C24 R1 nandgate_4/a_137_45# 0.1fF
+C25 S gnd 0.7fF
+C26 S vdd 0.2fF
+C27 gnd Q 0.2fF
+C28 vdd R 0.9fF
+C29 vdd vdd 0.2fF
+C30 R1 clk 0.6fF
+C31 vdd Qbar 0.1fF
+C32 nandgate_1/a_137_45# Qbar 0.1fF
+C33 vdd vdd 0.2fF
+C34 S1 gnd 0.4fF
+C35 S1 vdd 0.1fF
+C36 gnd nandgate_0/a_137_45# 0.2fF
+C37 S clk 0.8fF
+C38 S nand3_0/a_106_9# 0.1fF
+C39 gnd R 0.2fF
+C40 vdd R 0.1fF
+C41 S1 nandgate_4/a_137_45# 0.1fF
+C42 vdd clk 0.3fF
+C43 S vdd 0.1fF
+C44 vdd Q 0.2fF
+C45 R1 vdd 0.8fF
+C46 nandgate_1/a_137_45# Q 0.1fF
+C47 gnd nandgate_4/a_137_45# 0.2fF
+C48 S1 clk 0.1fF
+C49 vdd R1 0.1fF
+C50 nandgate_3/a_137_45# S 0.1fF
+C51 vdd vdd 0.2fF
+C52 gnd nand3_0/a_79_9# 0.2fF
+C53 S vdd 0.1fF
+C54 R clk 0.4fF
+C55 R nand3_0/a_106_9# 0.1fF
+C56 gnd clk 0.1fF
+C57 vdd S 0.1fF
+C58 vdd clk 0.1fF
+C59 S Qbar 0.1fF
+C60 gnd nand3_0/a_106_9# 0.1fF
+C61 Qbar Q 0.9fF
+C62 vdd vdd 0.2fF
+C63 R1 nandgate_2/a_137_45# 0.1fF
+C64 vdd Qbar 0.2fF
+C65 vdd vdd 0.2fF
+C66 nandgate_3/a_137_45# S1 0.1fF
+C67 R1 S 0.2fF
+C68 vdd Qbar 0.9fF
+C69 nand3_0/a_79_9# clk 0.1fF
+C70 gnd nandgate_1/a_137_45# 0.2fF
+C71 nand3_0/a_79_9# nand3_0/a_106_9# 0.1fF
+C72 R vdd 0.2fF
+C73 nandgate_4/a_137_45# gnd 0.1fF
+C74 gnd gnd 3.8fF
+C75 S1 gnd 2.7fF
+C76 vdd gnd 7.0fF
+C77 S gnd 5.5fF
+C78 R1 gnd 6.1fF
+C79 vdd gnd 2.3fF
+C80 nandgate_3/a_137_45# gnd 0.1fF
+C81 clk gnd 3.0fF
+C82 vdd gnd 2.3fF
+C83 nandgate_0/a_137_45# gnd 0.1fF
+C84 Q gnd 3.1fF
+C85 Qbar gnd 2.4fF
+C86 vdd gnd 2.3fF
+C87 nand3_0/a_106_9# gnd 0.0fF
+C88 nand3_0/a_79_9# gnd 0.1fF
+C89 vdd gnd 3.0fF
+C90 nandgate_1/a_137_45# gnd 0.1fF
+C91 R gnd 3.8fF
+C92 vdd gnd 2.3fF
+C93 nandgate_2/a_137_45# gnd 0.1fF
+C94 vdd gnd 2.4fF
+
+.tran 0.1n 100n
+
+.measure tran tcq
++TRIG v(clk) val = 'SUPPLY/2' RISE = 2
++TARG v(Q) val = 'SUPPLY/2' RISE = 1
+.control
+
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+
+plot v(clk) v(D)+2 v(Q)+4
+.endc

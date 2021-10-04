@@ -1,0 +1,113 @@
+magic
+tech scmos
+timestamp 1619529728
+<< metal1 >>
+rect -151 204 -102 210
+rect -121 160 -117 165
+rect -67 139 -31 144
+rect -123 107 -119 139
+rect -48 110 83 115
+rect -123 103 -13 107
+rect -151 94 -102 100
+rect -18 55 -13 103
+rect -18 50 17 55
+rect -18 34 -13 50
+rect -65 29 -20 34
+rect 88 29 93 34
+rect 98 29 128 34
+rect -176 24 -112 29
+rect -176 -89 -170 24
+rect 0 -15 6 29
+rect 77 0 83 5
+rect 0 -20 98 -15
+rect -151 -29 -102 -23
+rect -29 -29 29 -23
+rect -49 -87 -13 -82
+rect -214 -94 -115 -89
+rect -20 -94 -13 -87
+rect 93 -89 98 -20
+rect 88 -94 122 -89
+rect -20 -99 10 -94
+rect -121 -119 -116 -99
+rect -134 -124 -116 -119
+rect 22 -123 27 -118
+rect 75 -123 83 -118
+rect -121 -141 -116 -124
+rect -31 -128 27 -123
+rect -121 -145 -21 -141
+rect -151 -155 -102 -149
+rect -26 -215 -21 -145
+rect -65 -220 -11 -215
+rect -214 -225 -110 -220
+rect 22 -244 27 -128
+rect -45 -250 27 -244
+<< m2contact >>
+rect -158 204 -151 210
+rect -127 160 -121 165
+rect -31 139 -25 144
+rect -158 94 -151 100
+rect -50 94 -44 100
+rect 15 94 21 100
+rect -114 50 -108 55
+rect -20 29 -13 34
+rect 93 29 98 34
+rect -158 -29 -151 -23
+rect -121 -73 -114 -68
+rect 7 -73 13 -68
+rect -140 -124 -134 -119
+rect -158 -155 -151 -149
+rect -118 -199 -112 -194
+<< metal2 >>
+rect -158 100 -151 204
+rect -158 -23 -151 94
+rect -158 -149 -151 -29
+rect -140 160 -127 165
+rect -140 -119 -134 160
+rect -31 112 -25 139
+rect -114 108 -25 112
+rect -114 55 -108 108
+rect -44 94 15 100
+rect -20 -12 -13 29
+rect 94 -5 98 29
+rect -121 -19 -13 -12
+rect 7 -9 98 -5
+rect -121 -68 -114 -19
+rect 7 -68 13 -9
+rect 11 -133 18 -94
+rect -118 -138 18 -133
+rect -118 -194 -112 -138
+<< m123contact >>
+rect 83 110 90 115
+rect -50 0 -43 5
+rect 15 0 22 5
+rect 83 0 90 5
+rect 83 -123 90 -118
+<< metal3 >>
+rect 83 5 90 110
+rect -43 0 15 5
+rect 83 -118 90 0
+use nandgate  nandgate_4
+timestamp 1619515098
+transform 1 0 -230 0 1 76
+box 107 34 197 134
+use nandgate  nandgate_3
+timestamp 1619515098
+transform 1 0 -228 0 1 -34
+box 107 34 197 134
+use nandgate  nandgate_0
+timestamp 1619515098
+transform 1 0 -107 0 1 -34
+box 107 34 197 134
+use nand3  nand3_0
+timestamp 1619516506
+transform 1 0 -174 0 1 -126
+box 53 -2 152 103
+use nandgate  nandgate_1
+timestamp 1619515098
+transform 1 0 -107 0 1 -157
+box 107 34 197 134
+use nandgate  nandgate_2
+timestamp 1619515098
+transform 1 0 -228 0 1 -283
+box 107 34 197 134
+<< end >>

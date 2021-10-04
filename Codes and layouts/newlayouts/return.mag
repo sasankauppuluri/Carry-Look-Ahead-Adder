@@ -1,0 +1,72 @@
+magic
+tech scmos
+timestamp 1619201686
+<< metal1 >>
+rect 0 85 35 90
+rect 238 63 307 69
+rect 0 46 66 51
+rect 0 -57 35 -52
+rect 238 -79 307 -73
+rect 0 -96 66 -91
+rect 0 -199 35 -194
+rect 238 -221 307 -215
+rect 0 -238 66 -233
+rect 0 -341 35 -336
+rect 238 -363 307 -357
+rect 0 -380 66 -375
+<< m2contact >>
+rect 36 122 43 128
+rect 205 0 211 5
+rect 36 -20 43 -14
+rect 205 -142 211 -137
+rect 36 -162 43 -156
+rect 205 -284 211 -279
+rect 36 -304 43 -298
+rect 205 -426 211 -421
+<< metal2 >>
+rect 12 122 36 128
+rect 12 -14 20 122
+rect 211 0 275 5
+rect 12 -20 36 -14
+rect 12 -156 20 -20
+rect 267 -137 275 0
+rect 211 -142 275 -137
+rect 12 -162 36 -156
+rect 12 -298 20 -162
+rect 267 -279 275 -142
+rect 211 -284 275 -279
+rect 12 -304 36 -298
+rect 267 -357 275 -284
+rect 238 -363 307 -357
+rect 267 -421 275 -363
+rect 211 -426 275 -421
+use xorgate  xorgate_0
+timestamp 1618846832
+transform 1 0 142 0 1 53
+box -142 -53 138 75
+use xorgate  xorgate_1
+timestamp 1618846832
+transform 1 0 142 0 1 -89
+box -142 -53 138 75
+use xorgate  xorgate_2
+timestamp 1618846832
+transform 1 0 142 0 1 -231
+box -142 -53 138 75
+use xorgate  xorgate_3
+timestamp 1618846832
+transform 1 0 142 0 1 -373
+box -142 -53 138 75
+<< labels >>
+rlabel metal1 238 63 307 69 1 S3
+rlabel metal1 238 -79 307 -73 1 S2
+rlabel metal1 238 -221 307 -215 1 S1
+rlabel metal2 238 -363 307 -357 1 S0
+rlabel metal1 0 -380 66 -375 1 Car0
+rlabel metal1 0 -238 66 -233 1 Car1
+rlabel metal1 0 -96 66 -91 1 Car2
+rlabel metal1 0 46 66 51 1 Car3
+rlabel metal1 0 85 35 90 1 P3
+rlabel metal1 0 -57 35 -52 1 P2
+rlabel metal1 0 -199 35 -194 1 P1
+rlabel metal1 0 -341 35 -336 1 P0
+<< end >>

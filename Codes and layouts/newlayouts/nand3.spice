@@ -1,0 +1,68 @@
+* SPICE3 file created from nandgate.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+Vdd vdd gnd 'SUPPLY'
+vin_a A 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b B 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_c C 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+M1000 out A vdd vdd CMOSP w=20 l=2
++  ad=360 pd=156 as=360 ps=156
+M1001 out B vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 out C vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 a_79_9# C gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=60 ps=32
+M1004 a_106_9# B a_79_9# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1005 out A a_106_9# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+
+C0 A out 0.9fF
+C1 a_106_9# out 0.1fF
+C2 B out 0.4fF
+C3 a_106_9# gnd 0.1fF
+C4 C out 0.5fF
+C5 a_106_9# a_79_9# 0.1fF
+C6 B a_79_9# 0.1fF
+C7 C gnd 0.1fF
+C8 vdd out 0.8fF
+C9 out gnd 0.0fF
+C10 vdd A 0.1fF
+C11 vdd B 0.1fF
+C12 a_106_9# A 0.1fF
+C13 gnd a_79_9# 0.2fF
+C14 A B 0.5fF
+C15 vdd C 0.8fF
+C16 A C 0.1fF
+C17 vdd vdd 0.2fF
+C18 vdd out 0.2fF
+C19 B C 0.3fF
+C20 a_106_9# gnd 0.0fF
+C21 a_79_9# gnd 0.1fF
+C22 gnd gnd 0.3fF
+C23 out gnd 0.5fF
+C24 vdd gnd 0.2fF
+C25 C gnd 0.8fF
+C26 B gnd 0.7fF
+C27 A gnd 0.6fF
+C28 vdd gnd 3.0fF
+
+.tran 0.1n 100n
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+
+plot v(A)
+plot v(B)
+plot v(C)
+plot v(out)
+.endc

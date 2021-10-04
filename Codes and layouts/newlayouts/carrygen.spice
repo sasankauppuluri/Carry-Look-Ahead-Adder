@@ -1,0 +1,813 @@
+* SPICE3 file created from cla.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+VDD vdd gnd 'SUPPLY'
+vin_a car0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_a car0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_a1 P0 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_a1 P0 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a2 P1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a2 P1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a3 P2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a3 P2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+*vin_a4 P3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_a4 P3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+*vin_b G0 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b G0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b1 G1 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b1 G1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b2 G2 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b2 G2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b3 G3 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+*vin_b3 G3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+M1000 Car1 orgate_0/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=6000 ps=2600
+M1001 Car1 orgate_0/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=3000 ps=1600
+M1002 orgate_0/a_n59_77# G0 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1003 orgate_0/a_n63_n10# m1_174_38# orgate_0/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1004 orgate_0/a_n63_n10# m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1005 orgate_0/a_n63_n10# G0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1006 m1_174_38# andgate_0/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1007 m1_174_38# andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1008 andgate_0/a_n61_61# P0 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1009 andgate_0/a_n61_61# car0 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 andgate_0/a_n61_61# P0 andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1011 andgate_0/a_n58_n25# car0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1012 Car2 orgate_2/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1013 Car2 orgate_2/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1014 orgate_2/a_n59_77# G1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1015 orgate_2/a_n63_n10# m1_567_199# orgate_2/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1016 orgate_2/a_n63_n10# m1_567_199# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1017 orgate_2/a_n63_n10# G1 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1018 m1_567_199# orgate_1/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1019 m1_567_199# orgate_1/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1020 orgate_1/a_n59_77# m2_438_246# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1021 orgate_1/a_n63_n10# m1_174_152# orgate_1/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1022 orgate_1/a_n63_n10# m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1023 orgate_1/a_n63_n10# m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1024 m2_438_246# andgate_2/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1025 m2_438_246# andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1026 andgate_2/a_n61_61# P1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1027 andgate_2/a_n61_61# m1_174_38# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 andgate_2/a_n61_61# P1 andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1029 andgate_2/a_n58_n25# m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1030 m1_174_152# andgate_1/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1031 m1_174_152# andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1032 andgate_1/a_n61_61# P1 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1033 andgate_1/a_n61_61# G0 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 andgate_1/a_n61_61# P1 andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1035 andgate_1/a_n58_n25# G0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1036 Car3 orgate_5/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 Car3 orgate_5/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1038 orgate_5/a_n59_77# m1_947_392# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1039 orgate_5/a_n63_n10# m1_567_341# orgate_5/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1040 orgate_5/a_n63_n10# m1_567_341# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1041 orgate_5/a_n63_n10# m1_947_392# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1042 m1_947_392# orgate_4/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1043 m1_947_392# orgate_4/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1044 orgate_4/a_n59_77# G2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1045 orgate_4/a_n63_n10# m1_777_387# orgate_4/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1046 orgate_4/a_n63_n10# m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1047 orgate_4/a_n63_n10# G2 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1048 m1_777_387# andgate_5/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1049 m1_777_387# andgate_5/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1050 andgate_5/a_n61_61# P2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1051 andgate_5/a_n61_61# m2_438_246# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 andgate_5/a_n61_61# P2 andgate_5/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1053 andgate_5/a_n58_n25# m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1054 m1_567_341# orgate_3/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1055 m1_567_341# orgate_3/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1056 orgate_3/a_n59_77# m2_438_434# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1057 orgate_3/a_n63_n10# m1_174_337# orgate_3/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1058 orgate_3/a_n63_n10# m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1059 orgate_3/a_n63_n10# m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1060 m2_438_434# andgate_4/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1061 m2_438_434# andgate_4/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1062 andgate_4/a_n61_61# P2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1063 andgate_4/a_n61_61# m1_174_152# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1064 andgate_4/a_n61_61# P2 andgate_4/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1065 andgate_4/a_n58_n25# m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1066 m1_174_337# andgate_3/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1067 m1_174_337# andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1068 andgate_3/a_n61_61# P2 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1069 andgate_3/a_n61_61# G1 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 andgate_3/a_n61_61# P2 andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1071 andgate_3/a_n58_n25# G1 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1072 Car4 orgate_9/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1073 Car4 orgate_9/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1074 orgate_9/a_n59_77# G3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1075 orgate_9/a_n63_n10# m1_1315_575# orgate_9/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1076 orgate_9/a_n63_n10# m1_1315_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1077 orgate_9/a_n63_n10# G3 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1078 m1_1315_575# orgate_8/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1079 m1_1315_575# orgate_8/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1080 orgate_8/a_n59_77# m1_1147_580# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1081 orgate_8/a_n63_n10# m1_567_529# orgate_8/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1082 orgate_8/a_n63_n10# m1_567_529# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1083 orgate_8/a_n63_n10# m1_1147_580# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1084 m1_1147_580# orgate_7/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1085 m1_1147_580# orgate_7/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1086 orgate_7/a_n59_77# m1_777_596# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1087 orgate_7/a_n63_n10# m1_981_575# orgate_7/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1088 orgate_7/a_n63_n10# m1_981_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1089 orgate_7/a_n63_n10# m1_777_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1090 m1_981_575# andgate_9/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1091 m1_981_575# andgate_9/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1092 andgate_9/a_n61_61# P3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1093 andgate_9/a_n61_61# m1_777_387# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1094 andgate_9/a_n61_61# P3 andgate_9/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1095 andgate_9/a_n58_n25# m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1096 m1_777_596# andgate_8/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1097 m1_777_596# andgate_8/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1098 andgate_8/a_n61_61# P3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1099 andgate_8/a_n61_61# m2_438_434# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 andgate_8/a_n61_61# P3 andgate_8/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1101 andgate_8/a_n58_n25# m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1102 m1_567_529# orgate_6/a_n63_n10# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1103 m1_567_529# orgate_6/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1104 orgate_6/a_n59_77# m1_376_596# vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1105 orgate_6/a_n63_n10# m1_174_525# orgate_6/a_n59_77# vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1106 orgate_6/a_n63_n10# m1_174_525# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1107 orgate_6/a_n63_n10# m1_376_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1108 m1_376_596# andgate_7/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1109 m1_376_596# andgate_7/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1110 andgate_7/a_n61_61# P3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1111 andgate_7/a_n61_61# m1_174_337# vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 andgate_7/a_n61_61# P3 andgate_7/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1113 andgate_7/a_n58_n25# m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1114 m1_174_525# andgate_6/a_n61_61# vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1115 m1_174_525# andgate_6/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1116 andgate_6/a_n61_61# P3 vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1117 andgate_6/a_n61_61# G2 vdd vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 andgate_6/a_n61_61# P3 andgate_6/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1119 andgate_6/a_n58_n25# G2 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+
+C0 vdd orgate_0/a_n63_n10# 0.1fF
+C1 m1_174_38# vdd 0.4fF
+C2 m1_777_596# andgate_8/a_n61_61# 0.1fF
+C3 andgate_9/a_n61_61# vdd 0.1fF
+C4 m1_1147_580# orgate_7/a_n63_n10# 0.1fF
+C5 andgate_5/a_n61_61# vdd 0.1fF
+C6 orgate_5/a_n63_n10# m1_567_341# 0.1fF
+C7 orgate_7/a_n63_n10# m1_981_575# 0.1fF
+C8 vdd m2_438_434# 0.1fF
+C9 gnd m1_376_596# 0.1fF
+C10 vdd vdd 0.1fF
+C11 andgate_1/a_n58_n25# gnd 0.1fF
+C12 andgate_1/a_n61_61# vdd 0.1fF
+C13 andgate_0/a_n61_61# gnd 0.1fF
+C14 vdd vdd 0.1fF
+C15 andgate_8/a_n61_61# andgate_8/a_n58_n25# 0.1fF
+C16 orgate_1/a_n59_77# vdd 0.0fF
+C17 andgate_6/a_n61_61# vdd 0.1fF
+C18 vdd m2_438_434# 0.0fF
+C19 vdd vdd 0.1fF
+C20 gnd andgate_6/a_n58_n25# 0.1fF
+C21 andgate_8/a_n61_61# vdd 0.1fF
+C22 andgate_4/a_n61_61# m1_174_152# 0.3fF
+C23 orgate_1/a_n59_77# orgate_1/a_n63_n10# 0.2fF
+C24 vdd m1_777_596# 0.1fF
+C25 vdd vdd 0.1fF
+C26 gnd m1_567_529# 4.7fF
+C27 vdd vdd 0.1fF
+C28 orgate_1/a_n63_n10# vdd 0.1fF
+C29 andgate_5/a_n61_61# vdd 0.6fF
+C30 gnd m1_777_596# 0.1fF
+C31 andgate_1/a_n61_61# vdd 0.1fF
+C32 orgate_0/a_n63_n10# vdd 0.0fF
+C33 m2_438_246# vdd 0.4fF
+C34 P2 m2_438_434# 0.1fF
+C35 gnd orgate_8/a_n63_n10# 0.4fF
+C36 vdd orgate_9/a_n59_77# 0.0fF
+C37 P1 andgate_1/a_n61_61# 0.1fF
+C38 vdd m1_174_337# 0.4fF
+C39 vdd m1_777_387# 0.0fF
+C40 vdd m1_174_152# 0.0fF
+C41 m1_174_525# m1_174_337# 0.1fF
+C42 vdd orgate_5/a_n59_77# 0.0fF
+C43 gnd andgate_8/a_n58_n25# 0.1fF
+C44 andgate_3/a_n61_61# gnd 0.1fF
+C45 vdd m1_777_387# 0.1fF
+C46 m1_1147_580# vdd 0.0fF
+C47 orgate_8/a_n59_77# m1_567_529# 0.0fF
+C48 P1 m1_174_152# 0.2fF
+C49 orgate_9/a_n63_n10# vdd 0.0fF
+C50 orgate_1/a_n59_77# vdd 0.0fF
+C51 andgate_2/a_n61_61# P1 0.1fF
+C52 vdd orgate_6/a_n59_77# 0.2fF
+C53 P3 andgate_6/a_n61_61# 0.1fF
+C54 orgate_6/a_n63_n10# m1_376_596# 0.3fF
+C55 vdd vdd 0.1fF
+C56 m1_376_596# vdd 0.0fF
+C57 orgate_6/a_n59_77# m1_174_525# 0.0fF
+C58 orgate_9/a_n63_n10# vdd 0.1fF
+C59 andgate_3/a_n61_61# vdd 0.1fF
+C60 andgate_4/a_n61_61# gnd 0.1fF
+C61 orgate_8/a_n63_n10# orgate_8/a_n59_77# 0.2fF
+C62 vdd m1_777_387# 0.4fF
+C63 andgate_8/a_n61_61# vdd 0.1fF
+C64 P3 andgate_7/a_n61_61# 0.1fF
+C65 orgate_0/a_n63_n10# vdd 0.0fF
+C66 andgate_6/a_n61_61# vdd 0.1fF
+C67 m1_567_529# orgate_6/a_n63_n10# 0.1fF
+C68 vdd vdd 0.1fF
+C69 m1_1315_575# orgate_8/a_n63_n10# 0.1fF
+C70 vdd orgate_7/a_n59_77# 0.2fF
+C71 P3 andgate_8/a_n61_61# 0.1fF
+C72 vdd m1_174_337# 0.0fF
+C73 vdd orgate_3/a_n59_77# 0.0fF
+C74 orgate_4/a_n63_n10# gnd 0.4fF
+C75 vdd vdd 0.1fF
+C76 vdd P1 0.1fF
+C77 andgate_9/a_n61_61# P3 0.1fF
+C78 m1_947_392# vdd 0.3fF
+C79 car0 gnd 0.1fF
+C80 m1_174_38# m1_174_152# 0.1fF
+C81 m1_174_152# andgate_4/a_n58_n25# 0.2fF
+C82 andgate_2/a_n61_61# m1_174_38# 0.3fF
+C83 vdd m1_174_525# 0.2fF
+C84 orgate_3/a_n63_n10# vdd 0.0fF
+C85 andgate_3/a_n61_61# andgate_3/a_n58_n25# 0.1fF
+C86 vdd orgate_8/a_n59_77# 0.0fF
+C87 orgate_0/a_n59_77# m1_174_38# 0.0fF
+C88 andgate_0/a_n61_61# vdd 0.1fF
+C89 orgate_7/a_n59_77# m1_981_575# 0.0fF
+C90 orgate_3/a_n63_n10# vdd 0.1fF
+C91 gnd orgate_7/a_n63_n10# 0.4fF
+C92 andgate_8/a_n61_61# vdd 0.1fF
+C93 vdd orgate_0/a_n59_77# 0.0fF
+C94 vdd m1_1147_580# 0.3fF
+C95 m1_1315_575# vdd 0.0fF
+C96 vdd m1_981_575# 0.2fF
+C97 vdd m1_1315_575# 0.1fF
+C98 P1 andgate_2/a_n58_n25# 0.1fF
+C99 andgate_7/a_n61_61# m1_174_337# 0.3fF
+C100 vdd orgate_5/a_n59_77# 0.0fF
+C101 m1_174_152# m1_174_337# 0.1fF
+C102 andgate_2/a_n61_61# m2_438_246# 0.1fF
+C103 m1_174_38# gnd 0.3fF
+C104 vdd vdd 0.1fF
+C105 andgate_4/a_n58_n25# gnd 0.1fF
+C106 vdd vdd 0.1fF
+C107 P2 vdd 0.1fF
+C108 vdd m2_438_434# 0.4fF
+C109 andgate_0/a_n61_61# vdd 0.1fF
+C110 P3 andgate_7/a_n58_n25# 0.1fF
+C111 orgate_5/a_n63_n10# vdd 0.0fF
+C112 orgate_7/a_n63_n10# vdd 0.0fF
+C113 orgate_3/a_n59_77# m1_174_337# 0.0fF
+C114 vdd m1_174_152# 0.1fF
+C115 andgate_0/a_n61_61# P0 0.1fF
+C116 P3 vdd 0.1fF
+C117 andgate_3/a_n61_61# vdd 0.1fF
+C118 orgate_8/a_n63_n10# m1_567_529# 0.1fF
+C119 vdd orgate_6/a_n59_77# 0.0fF
+C120 orgate_5/a_n63_n10# vdd 0.1fF
+C121 andgate_0/a_n61_61# vdd 0.1fF
+C122 orgate_4/a_n63_n10# orgate_4/a_n59_77# 0.2fF
+C123 orgate_3/a_n63_n10# m1_174_337# 0.1fF
+C124 andgate_5/a_n61_61# gnd 0.1fF
+C125 vdd orgate_0/a_n59_77# 0.0fF
+C126 vdd P2 0.1fF
+C127 P1 vdd 0.1fF
+C128 P3 andgate_9/a_n58_n25# 0.1fF
+C129 orgate_0/a_n63_n10# orgate_0/a_n59_77# 0.2fF
+C130 m2_438_246# gnd 0.3fF
+C131 m1_174_38# andgate_2/a_n58_n25# 0.2fF
+C132 vdd andgate_6/a_n61_61# 0.6fF
+C133 vdd P3 0.1fF
+C134 gnd m1_174_337# 0.9fF
+C135 orgate_2/a_n59_77# vdd 0.2fF
+C136 P2 andgate_3/a_n58_n25# 0.1fF
+C137 m1_174_525# andgate_6/a_n61_61# 0.1fF
+C138 vdd orgate_9/a_n59_77# 0.2fF
+C139 vdd m2_438_246# 0.0fF
+C140 andgate_1/a_n61_61# vdd 0.6fF
+C141 P0 vdd 0.1fF
+C142 andgate_9/a_n61_61# m1_777_387# 0.3fF
+C143 orgate_2/a_n63_n10# vdd 0.0fF
+C144 vdd car0 0.1fF
+C145 vdd andgate_7/a_n61_61# 0.6fF
+C146 m1_174_152# vdd 0.4fF
+C147 vdd orgate_8/a_n59_77# 0.0fF
+C148 P1 andgate_1/a_n58_n25# 0.1fF
+C149 orgate_9/a_n63_n10# vdd 0.0fF
+C150 andgate_2/a_n61_61# vdd 0.6fF
+C151 andgate_0/a_n61_61# car0 0.3fF
+C152 vdd vdd 0.1fF
+C153 vdd orgate_4/a_n59_77# 0.0fF
+C154 orgate_0/a_n59_77# vdd 0.2fF
+C155 vdd orgate_6/a_n59_77# 0.0fF
+C156 vdd andgate_8/a_n61_61# 0.6fF
+C157 andgate_5/a_n61_61# vdd 0.1fF
+C158 gnd m1_777_387# 0.3fF
+C159 vdd orgate_7/a_n59_77# 0.0fF
+C160 P2 andgate_5/a_n58_n25# 0.1fF
+C161 orgate_3/a_n59_77# vdd 0.2fF
+C162 orgate_0/a_n63_n10# gnd 0.4fF
+C163 m1_567_341# vdd 0.0fF
+C164 orgate_2/a_n59_77# vdd 0.0fF
+C165 orgate_1/a_n63_n10# m2_438_246# 0.3fF
+C166 m1_174_337# andgate_7/a_n58_n25# 0.2fF
+C167 orgate_8/a_n63_n10# vdd 0.1fF
+C168 vdd andgate_9/a_n61_61# 0.6fF
+C169 orgate_2/a_n63_n10# vdd 0.0fF
+C170 orgate_3/a_n63_n10# vdd 0.0fF
+C171 vdd vdd 0.1fF
+C172 P3 andgate_6/a_n58_n25# 0.1fF
+C173 m1_567_199# vdd 0.2fF
+C174 m1_947_392# orgate_5/a_n59_77# 0.2fF
+C175 vdd m1_567_341# 0.1fF
+C176 vdd m1_174_38# 0.1fF
+C177 vdd orgate_2/a_n63_n10# 0.1fF
+C178 m1_947_392# gnd 0.1fF
+C179 orgate_5/a_n59_77# vdd 0.2fF
+C180 P3 vdd 0.1fF
+C181 andgate_0/a_n58_n25# gnd 0.1fF
+C182 vdd vdd 0.1fF
+C183 m1_777_596# P3 0.2fF
+C184 gnd m1_174_525# 0.8fF
+C185 orgate_6/a_n63_n10# orgate_6/a_n59_77# 0.2fF
+C186 andgate_0/a_n61_61# m1_174_38# 0.1fF
+C187 orgate_5/a_n63_n10# m1_947_392# 0.3fF
+C188 orgate_7/a_n63_n10# m1_777_596# 0.3fF
+C189 andgate_5/a_n61_61# andgate_5/a_n58_n25# 0.1fF
+C190 vdd vdd 0.1fF
+C191 vdd m2_438_246# 0.1fF
+C192 m1_981_575# andgate_9/a_n61_61# 0.1fF
+C193 orgate_5/a_n63_n10# vdd 0.0fF
+C194 vdd m1_174_525# 0.1fF
+C195 vdd vdd 0.1fF
+C196 P3 andgate_8/a_n58_n25# 0.1fF
+C197 andgate_8/a_n61_61# m2_438_434# 0.3fF
+C198 orgate_1/a_n59_77# m2_438_246# 0.2fF
+C199 vdd orgate_7/a_n59_77# 0.0fF
+C200 m2_438_246# andgate_5/a_n58_n25# 0.2fF
+C201 orgate_3/a_n59_77# m2_438_434# 0.2fF
+C202 m1_567_199# vdd 0.1fF
+C203 P3 vdd 0.1fF
+C204 andgate_4/a_n61_61# vdd 0.1fF
+C205 gnd m1_1147_580# 0.1fF
+C206 vdd orgate_8/a_n59_77# 0.2fF
+C207 m1_567_341# m2_438_246# 0.1fF
+C208 gnd m1_981_575# 0.1fF
+C209 m1_777_387# andgate_9/a_n58_n25# 0.2fF
+C210 andgate_4/a_n61_61# vdd 0.1fF
+C211 vdd m1_174_337# 0.1fF
+C212 orgate_3/a_n63_n10# m2_438_434# 0.3fF
+C213 orgate_2/a_n63_n10# orgate_2/a_n59_77# 0.2fF
+C214 P2 andgate_3/a_n61_61# 0.1fF
+C215 orgate_1/a_n63_n10# vdd 0.0fF
+C216 vdd vdd 0.1fF
+C217 vdd m1_1315_575# 0.2fF
+C218 orgate_6/a_n63_n10# vdd 0.1fF
+C219 vdd vdd 0.1fF
+C220 m1_777_596# vdd 0.0fF
+C221 orgate_4/a_n59_77# m1_777_387# 0.0fF
+C222 vdd vdd 0.1fF
+C223 andgate_1/a_n61_61# m1_174_152# 0.1fF
+C224 orgate_9/a_n63_n10# orgate_9/a_n59_77# 0.2fF
+C225 vdd orgate_6/a_n63_n10# 0.0fF
+C226 gnd m2_438_434# 0.3fF
+C227 vdd vdd 0.1fF
+C228 P2 andgate_4/a_n61_61# 0.1fF
+C229 orgate_6/a_n63_n10# m1_174_525# 0.1fF
+C230 m1_1147_580# orgate_8/a_n59_77# 0.2fF
+C231 vdd m1_567_529# 0.1fF
+C232 vdd m1_174_38# 0.0fF
+C233 vdd orgate_4/a_n59_77# 0.0fF
+C234 m1_376_596# orgate_6/a_n59_77# 0.2fF
+C235 andgate_5/a_n61_61# vdd 0.1fF
+C236 andgate_4/a_n61_61# andgate_4/a_n58_n25# 0.1fF
+C237 vdd m1_981_575# 0.1fF
+C238 orgate_8/a_n63_n10# vdd 0.0fF
+C239 vdd vdd 0.1fF
+C240 vdd m2_438_246# 0.1fF
+C241 vdd vdd 0.1fF
+C242 vdd vdd 0.1fF
+C243 orgate_4/a_n59_77# vdd 0.2fF
+C244 orgate_2/a_n59_77# m1_567_199# 0.0fF
+C245 orgate_1/a_n59_77# vdd 0.2fF
+C246 orgate_4/a_n63_n10# vdd 0.1fF
+C247 vdd vdd 0.1fF
+C248 gnd andgate_6/a_n61_61# 0.1fF
+C249 vdd m1_777_387# 0.1fF
+C250 orgate_2/a_n63_n10# m1_567_199# 0.1fF
+C251 vdd vdd 0.1fF
+C252 m1_567_529# m1_777_387# 0.1fF
+C253 andgate_3/a_n61_61# m1_174_337# 0.1fF
+C254 andgate_1/a_n61_61# gnd 0.1fF
+C255 vdd vdd 0.1fF
+C256 P2 vdd 0.1fF
+C257 m1_567_341# vdd 0.2fF
+C258 orgate_2/a_n63_n10# gnd 0.4fF
+C259 vdd vdd 0.1fF
+C260 vdd vdd 0.1fF
+C261 gnd andgate_7/a_n61_61# 0.1fF
+C262 orgate_3/a_n63_n10# orgate_3/a_n59_77# 0.2fF
+C263 m1_174_152# gnd 1.0fF
+C264 vdd vdd 0.1fF
+C265 orgate_9/a_n63_n10# gnd 0.4fF
+C266 andgate_2/a_n61_61# gnd 0.1fF
+C267 vdd m1_376_596# 0.3fF
+C268 m1_981_575# vdd 0.0fF
+C269 andgate_2/a_n61_61# vdd 0.1fF
+C270 andgate_0/a_n61_61# andgate_0/a_n58_n25# 0.1fF
+C271 andgate_0/a_n61_61# vdd 0.6fF
+C272 vdd vdd 0.1fF
+C273 gnd andgate_8/a_n61_61# 0.1fF
+C274 m1_777_596# orgate_7/a_n59_77# 0.2fF
+C275 andgate_2/a_n61_61# vdd 0.1fF
+C276 m1_567_529# vdd 0.0fF
+C277 vdd vdd 0.1fF
+C278 andgate_4/a_n61_61# vdd 0.1fF
+C279 vdd vdd 0.1fF
+C280 vdd m1_567_529# 0.2fF
+C281 gnd andgate_9/a_n61_61# 0.1fF
+C282 vdd vdd 0.1fF
+C283 orgate_3/a_n63_n10# gnd 0.4fF
+C284 orgate_9/a_n59_77# m1_1315_575# 0.0fF
+C285 vdd m1_777_596# 0.5fF
+C286 vdd m1_174_152# 0.1fF
+C287 P2 andgate_4/a_n58_n25# 0.1fF
+C288 vdd orgate_2/a_n59_77# 0.0fF
+C289 m1_567_199# gnd 0.1fF
+C290 vdd vdd 0.1fF
+C291 andgate_7/a_n61_61# andgate_7/a_n58_n25# 0.1fF
+C292 vdd orgate_8/a_n63_n10# 0.0fF
+C293 orgate_1/a_n63_n10# m1_174_152# 0.1fF
+C294 orgate_7/a_n63_n10# vdd 0.1fF
+C295 vdd vdd 0.1fF
+C296 andgate_7/a_n61_61# vdd 0.1fF
+C297 orgate_9/a_n63_n10# m1_1315_575# 0.1fF
+C298 vdd m1_947_392# 0.1fF
+C299 vdd vdd 0.1fF
+C300 andgate_2/a_n61_61# andgate_2/a_n58_n25# 0.1fF
+C301 P0 andgate_0/a_n58_n25# 0.1fF
+C302 andgate_3/a_n61_61# vdd 0.6fF
+C303 andgate_7/a_n61_61# vdd 0.1fF
+C304 orgate_5/a_n63_n10# orgate_5/a_n59_77# 0.2fF
+C305 vdd vdd 0.1fF
+C306 orgate_5/a_n63_n10# gnd 0.4fF
+C307 orgate_4/a_n63_n10# m1_777_387# 0.1fF
+C308 vdd vdd 0.1fF
+C309 vdd m1_174_337# 0.1fF
+C310 andgate_5/a_n61_61# P2 0.1fF
+C311 vdd vdd 0.1fF
+C312 andgate_4/a_n61_61# vdd 0.6fF
+C313 orgate_8/a_n63_n10# m1_1147_580# 0.3fF
+C314 vdd m2_438_434# 0.1fF
+C315 orgate_4/a_n63_n10# vdd 0.0fF
+C316 m1_567_529# m2_438_434# 0.1fF
+C317 P2 m1_174_337# 0.2fF
+C318 vdd vdd 0.1fF
+C319 andgate_1/a_n61_61# vdd 0.1fF
+C320 m1_567_199# orgate_1/a_n63_n10# 0.1fF
+C321 vdd vdd 0.1fF
+C322 orgate_1/a_n59_77# m1_174_152# 0.0fF
+C323 gnd andgate_7/a_n58_n25# 0.1fF
+C324 orgate_1/a_n63_n10# gnd 0.4fF
+C325 gnd m1_1315_575# 0.1fF
+C326 vdd vdd 0.1fF
+C327 vdd orgate_9/a_n59_77# 0.0fF
+C328 m1_947_392# orgate_4/a_n63_n10# 0.1fF
+C329 vdd vdd 0.1fF
+C330 andgate_2/a_n58_n25# gnd 0.1fF
+C331 andgate_9/a_n61_61# andgate_9/a_n58_n25# 0.1fF
+C332 orgate_4/a_n63_n10# vdd 0.0fF
+C333 andgate_7/a_n61_61# vdd 0.1fF
+C334 gnd orgate_6/a_n63_n10# 0.4fF
+C335 P1 vdd 1.0fF
+C336 m2_438_434# andgate_8/a_n58_n25# 0.2fF
+C337 andgate_3/a_n61_61# vdd 0.1fF
+C338 andgate_9/a_n61_61# vdd 0.1fF
+C339 car0 andgate_0/a_n58_n25# 0.2fF
+C340 andgate_1/a_n61_61# andgate_1/a_n58_n25# 0.1fF
+C341 vdd vdd 0.1fF
+C342 andgate_3/a_n58_n25# gnd 0.1fF
+C343 vdd vdd 0.1fF
+C344 orgate_7/a_n63_n10# orgate_7/a_n59_77# 0.2fF
+C345 andgate_9/a_n61_61# vdd 0.1fF
+C346 andgate_2/a_n61_61# vdd 0.1fF
+C347 orgate_6/a_n63_n10# vdd 0.0fF
+C348 vdd vdd 0.1fF
+C349 andgate_6/a_n61_61# andgate_6/a_n58_n25# 0.1fF
+C350 vdd m1_1147_580# 0.1fF
+C351 vdd m1_174_38# 0.1fF
+C352 m1_376_596# andgate_7/a_n61_61# 0.1fF
+C353 gnd andgate_9/a_n58_n25# 0.1fF
+C354 andgate_5/a_n61_61# m2_438_246# 0.3fF
+C355 vdd vdd 0.1fF
+C356 andgate_6/a_n61_61# vdd 0.1fF
+C357 andgate_4/a_n61_61# m2_438_434# 0.1fF
+C358 orgate_0/a_n63_n10# m1_174_38# 0.1fF
+C359 vdd m1_376_596# 0.1fF
+C360 vdd P3 2.1fF
+C361 vdd orgate_1/a_n63_n10# 0.0fF
+C362 vdd orgate_7/a_n63_n10# 0.0fF
+C363 m1_567_341# orgate_3/a_n63_n10# 0.1fF
+C364 m1_567_199# vdd 0.0fF
+C365 vdd vdd 0.1fF
+C366 andgate_5/a_n58_n25# gnd 0.1fF
+C367 vdd vdd 0.1fF
+C368 vdd vdd 0.1fF
+C369 P2 vdd 2.2fF
+C370 m1_174_525# vdd 0.0fF
+C371 m1_947_392# vdd 0.0fF
+C372 orgate_5/a_n59_77# m1_567_341# 0.0fF
+C373 vdd orgate_3/a_n59_77# 0.0fF
+C374 m1_567_341# gnd 2.4fF
+C375 vdd vdd 0.1fF
+C376 andgate_5/a_n61_61# m1_777_387# 0.1fF
+C377 andgate_6/a_n58_n25# gnd 0.3fF
+C378 vdd gnd 1.1fF
+C379 vdd gnd 1.0fF
+C380 andgate_6/a_n61_61# gnd 0.9fF
+C381 vdd gnd 0.9fF
+C382 andgate_7/a_n58_n25# gnd 0.1fF
+C383 m1_174_337# gnd 5.7fF
+C384 vdd gnd 1.0fF
+C385 vdd gnd 1.0fF
+C386 andgate_7/a_n61_61# gnd 0.6fF
+C387 vdd gnd 0.9fF
+C388 m1_174_525# gnd 2.0fF
+C389 orgate_6/a_n59_77# gnd 0.0fF
+C390 vdd gnd 0.9fF
+C391 vdd gnd 0.9fF
+C392 orgate_6/a_n63_n10# gnd 0.6fF
+C393 vdd gnd 0.9fF
+C394 andgate_8/a_n58_n25# gnd 0.1fF
+C395 m2_438_434# gnd 7.3fF
+C396 vdd gnd 1.0fF
+C397 vdd gnd 1.0fF
+C398 andgate_8/a_n61_61# gnd 0.6fF
+C399 vdd gnd 0.9fF
+C400 andgate_9/a_n58_n25# gnd 0.1fF
+C401 m1_777_387# gnd 5.0fF
+C402 vdd gnd 1.0fF
+C403 vdd gnd 1.0fF
+C404 andgate_9/a_n61_61# gnd 0.6fF
+C405 vdd gnd 0.9fF
+C406 m1_981_575# gnd 2.3fF
+C407 orgate_7/a_n59_77# gnd 0.0fF
+C408 m1_777_596# gnd 6.1fF
+C409 vdd gnd 0.9fF
+C410 vdd gnd 0.9fF
+C411 orgate_7/a_n63_n10# gnd 0.6fF
+C412 vdd gnd 0.9fF
+C413 m1_567_529# gnd 1.7fF
+C414 orgate_8/a_n59_77# gnd 0.0fF
+C415 vdd gnd 0.9fF
+C416 vdd gnd 0.9fF
+C417 orgate_8/a_n63_n10# gnd 0.6fF
+C418 vdd gnd 0.9fF
+C419 m1_1315_575# gnd 0.7fF
+C420 orgate_9/a_n59_77# gnd 0.2fF
+C421 vdd gnd 0.9fF
+C422 vdd gnd 1.0fF
+C423 gnd gnd 46.8fF
+C424 orgate_9/a_n63_n10# gnd 1.0fF
+C425 vdd gnd 0.9fF
+C426 andgate_3/a_n58_n25# gnd 0.3fF
+C427 vdd gnd 1.1fF
+C428 vdd gnd 1.0fF
+C429 andgate_3/a_n61_61# gnd 0.9fF
+C430 vdd gnd 0.9fF
+C431 andgate_4/a_n58_n25# gnd 0.1fF
+C432 m1_174_152# gnd 5.8fF
+C433 vdd gnd 1.0fF
+C434 vdd gnd 1.0fF
+C435 andgate_4/a_n61_61# gnd 0.6fF
+C436 vdd gnd 0.9fF
+C437 orgate_3/a_n59_77# gnd 0.0fF
+C438 vdd gnd 0.9fF
+C439 vdd gnd 0.9fF
+C440 orgate_3/a_n63_n10# gnd 0.6fF
+C441 vdd gnd 0.9fF
+C442 andgate_5/a_n58_n25# gnd 0.1fF
+C443 m2_438_246# gnd 5.9fF
+C444 P2 gnd 4.5fF
+C445 vdd gnd 1.0fF
+C446 vdd gnd 1.0fF
+C447 andgate_5/a_n61_61# gnd 0.6fF
+C448 vdd gnd 0.9fF
+C449 orgate_4/a_n59_77# gnd 0.2fF
+C450 vdd gnd 0.9fF
+C451 vdd gnd 1.0fF
+C452 orgate_4/a_n63_n10# gnd 1.0fF
+C453 vdd gnd 0.9fF
+C454 m1_567_341# gnd 1.7fF
+C455 orgate_5/a_n59_77# gnd 0.0fF
+C456 m1_947_392# gnd 2.1fF
+C457 vdd gnd 0.9fF
+C458 vdd gnd 0.9fF
+C459 orgate_5/a_n63_n10# gnd 0.7fF
+C460 vdd gnd 0.9fF
+C461 andgate_1/a_n58_n25# gnd 0.3fF
+C462 vdd gnd 1.1fF
+C463 vdd gnd 1.0fF
+C464 andgate_1/a_n61_61# gnd 0.9fF
+C465 vdd gnd 0.9fF
+C466 andgate_2/a_n58_n25# gnd 0.1fF
+C467 m1_174_38# gnd 4.4fF
+C468 P1 gnd 2.1fF
+C469 vdd gnd 1.0fF
+C470 vdd gnd 1.0fF
+C471 andgate_2/a_n61_61# gnd 0.6fF
+C472 vdd gnd 0.9fF
+C473 orgate_1/a_n59_77# gnd 0.0fF
+C474 vdd gnd 0.9fF
+C475 vdd gnd 0.9fF
+C476 orgate_1/a_n63_n10# gnd 0.6fF
+C477 vdd gnd 0.9fF
+C478 m1_567_199# gnd 0.7fF
+C479 orgate_2/a_n59_77# gnd 0.2fF
+C480 vdd gnd 0.9fF
+C481 vdd gnd 1.0fF
+C482 orgate_2/a_n63_n10# gnd 1.0fF
+C483 vdd gnd 0.9fF
+C484 andgate_0/a_n58_n25# gnd 0.1fF
+C485 car0 gnd 1.9fF
+C486 P0 gnd 0.7fF
+C487 vdd gnd 1.0fF
+C488 vdd gnd 1.0fF
+C489 andgate_0/a_n61_61# gnd 0.6fF
+C490 vdd gnd 0.9fF
+C491 orgate_0/a_n59_77# gnd 0.2fF
+C492 vdd gnd 0.9fF
+C493 vdd gnd 1.0fF
+C494 orgate_0/a_n63_n10# gnd 1.0fF
+C495 vdd gnd 0.9fF
+
+
+.tran 0.1n 100n
+
+
+
+
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+plot v(P0)
+plot v(P1)
+plot v(P2)
+plot v(P3)
+plot v(car0)
+plot v(G0)
+plot v(G1)
+plot v(G2)
+plot v(G3)
+plot v(Car1)
+plot v(Car2)
+plot v(Car3)
+plot v(Car4)
+
+.endc

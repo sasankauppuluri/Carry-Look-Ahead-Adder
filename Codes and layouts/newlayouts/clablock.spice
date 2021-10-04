@@ -1,0 +1,1607 @@
+* SPICE3 file created from clablock.ext - technology: scmos
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+VDD vdd gnd 'SUPPLY'
+
+vin_a A0 0 pulse  1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_a A0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_a1 A1 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_a1 A1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_a2 A2 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_a2 A2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_a3 A3 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_a3 A3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+vin_b B0 0 pulse  1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_b B0 0 pulse  0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b1 B1 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_b1 B1 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b2 B2 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_b2 B2 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+vin_b3 B3 0 pulse 1.8 0 0ns 100ps 100ps 50ns 100ns
+*vin_b3 B3 0 pulse 0 1.8 0ns 100ps 100ps 100ns 200ns
+
+
+vin_c0 Car0 0 pulse 1.8 0 0ns 100ps 100ps 100ns 200ns
+
+
+
+M1000 Car1 carrygen_0/orgate_0/a_n63_n10# vdd carrygen_0/orgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=6000 ps=2600
+M1001 Car1 carrygen_0/orgate_0/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=3000 ps=1600
+M1002 carrygen_0/orgate_0/a_n59_77# m1_235_462# vdd carrygen_0/orgate_0/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1003 carrygen_0/orgate_0/a_n63_n10# carrygen_0/m1_174_38# carrygen_0/orgate_0/a_n59_77# carrygen_0/orgate_0/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1004 carrygen_0/orgate_0/a_n63_n10# carrygen_0/m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1005 carrygen_0/orgate_0/a_n63_n10# m1_235_462# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 carrygen_0/m1_174_38# carrygen_0/andgate_0/a_n61_61# vdd carrygen_0/andgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1007 carrygen_0/m1_174_38# carrygen_0/andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1008 carrygen_0/andgate_0/a_n61_61# m1_243_273# vdd carrygen_0/andgate_0/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1009 carrygen_0/andgate_0/a_n61_61# Car0 vdd carrygen_0/andgate_0/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 carrygen_0/andgate_0/a_n61_61# m1_243_273# carrygen_0/andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1011 carrygen_0/andgate_0/a_n58_n25# Car0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 Car2 carrygen_0/orgate_2/a_n63_n10# vdd carrygen_0/orgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1013 Car2 carrygen_0/orgate_2/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1014 carrygen_0/orgate_2/a_n59_77# m1_253_953# vdd carrygen_0/orgate_2/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1015 carrygen_0/orgate_2/a_n63_n10# carrygen_0/m1_567_199# carrygen_0/orgate_2/a_n59_77# carrygen_0/orgate_2/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1016 carrygen_0/orgate_2/a_n63_n10# carrygen_0/m1_567_199# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1017 carrygen_0/orgate_2/a_n63_n10# m1_253_953# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 carrygen_0/m1_567_199# carrygen_0/orgate_1/a_n63_n10# vdd carrygen_0/orgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1019 carrygen_0/m1_567_199# carrygen_0/orgate_1/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1020 carrygen_0/orgate_1/a_n59_77# carrygen_0/m2_438_246# vdd carrygen_0/orgate_1/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1021 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m1_174_152# carrygen_0/orgate_1/a_n59_77# carrygen_0/orgate_1/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1022 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1023 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 carrygen_0/m2_438_246# carrygen_0/andgate_2/a_n61_61# vdd carrygen_0/andgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1025 carrygen_0/m2_438_246# carrygen_0/andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1026 carrygen_0/andgate_2/a_n61_61# m1_248_764# vdd carrygen_0/andgate_2/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1027 carrygen_0/andgate_2/a_n61_61# carrygen_0/m1_174_38# vdd carrygen_0/andgate_2/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 carrygen_0/andgate_2/a_n61_61# m1_248_764# carrygen_0/andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1029 carrygen_0/andgate_2/a_n58_n25# carrygen_0/m1_174_38# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 carrygen_0/m1_174_152# carrygen_0/andgate_1/a_n61_61# vdd carrygen_0/andgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1031 carrygen_0/m1_174_152# carrygen_0/andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1032 carrygen_0/andgate_1/a_n61_61# m1_248_764# vdd carrygen_0/andgate_1/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1033 carrygen_0/andgate_1/a_n61_61# m1_235_462# vdd carrygen_0/andgate_1/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 carrygen_0/andgate_1/a_n61_61# m1_248_764# carrygen_0/andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1035 carrygen_0/andgate_1/a_n58_n25# m1_235_462# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 Car3 carrygen_0/orgate_5/a_n63_n10# vdd carrygen_0/orgate_5/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 Car3 carrygen_0/orgate_5/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1038 carrygen_0/orgate_5/a_n59_77# carrygen_0/m1_947_392# vdd carrygen_0/orgate_5/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1039 carrygen_0/orgate_5/a_n63_n10# carrygen_0/m1_567_341# carrygen_0/orgate_5/a_n59_77# carrygen_0/orgate_5/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1040 carrygen_0/orgate_5/a_n63_n10# carrygen_0/m1_567_341# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1041 carrygen_0/orgate_5/a_n63_n10# carrygen_0/m1_947_392# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 carrygen_0/m1_947_392# carrygen_0/orgate_4/a_n63_n10# vdd carrygen_0/orgate_4/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1043 carrygen_0/m1_947_392# carrygen_0/orgate_4/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1044 carrygen_0/orgate_4/a_n59_77# m1_253_1444# vdd carrygen_0/orgate_4/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1045 carrygen_0/orgate_4/a_n63_n10# carrygen_0/m1_777_387# carrygen_0/orgate_4/a_n59_77# carrygen_0/orgate_4/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1046 carrygen_0/orgate_4/a_n63_n10# carrygen_0/m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1047 carrygen_0/orgate_4/a_n63_n10# m1_253_1444# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1048 carrygen_0/m1_777_387# carrygen_0/andgate_5/a_n61_61# vdd carrygen_0/andgate_5/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1049 carrygen_0/m1_777_387# carrygen_0/andgate_5/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1050 carrygen_0/andgate_5/a_n61_61# m1_252_1255# vdd carrygen_0/andgate_5/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1051 carrygen_0/andgate_5/a_n61_61# carrygen_0/m2_438_246# vdd carrygen_0/andgate_5/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 carrygen_0/andgate_5/a_n61_61# m1_252_1255# carrygen_0/andgate_5/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1053 carrygen_0/andgate_5/a_n58_n25# carrygen_0/m2_438_246# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1054 carrygen_0/m1_567_341# carrygen_0/orgate_3/a_n63_n10# vdd carrygen_0/orgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1055 carrygen_0/m1_567_341# carrygen_0/orgate_3/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1056 carrygen_0/orgate_3/a_n59_77# carrygen_0/m2_438_434# vdd carrygen_0/orgate_3/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1057 carrygen_0/orgate_3/a_n63_n10# carrygen_0/m1_174_337# carrygen_0/orgate_3/a_n59_77# carrygen_0/orgate_3/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1058 carrygen_0/orgate_3/a_n63_n10# carrygen_0/m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1059 carrygen_0/orgate_3/a_n63_n10# carrygen_0/m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1060 carrygen_0/m2_438_434# carrygen_0/andgate_4/a_n61_61# vdd carrygen_0/andgate_4/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1061 carrygen_0/m2_438_434# carrygen_0/andgate_4/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1062 carrygen_0/andgate_4/a_n61_61# m1_252_1255# vdd carrygen_0/andgate_4/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1063 carrygen_0/andgate_4/a_n61_61# carrygen_0/m1_174_152# vdd carrygen_0/andgate_4/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1064 carrygen_0/andgate_4/a_n61_61# m1_252_1255# carrygen_0/andgate_4/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1065 carrygen_0/andgate_4/a_n58_n25# carrygen_0/m1_174_152# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 carrygen_0/m1_174_337# carrygen_0/andgate_3/a_n61_61# vdd carrygen_0/andgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1067 carrygen_0/m1_174_337# carrygen_0/andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1068 carrygen_0/andgate_3/a_n61_61# m1_252_1255# vdd carrygen_0/andgate_3/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1069 carrygen_0/andgate_3/a_n61_61# m1_253_953# vdd carrygen_0/andgate_3/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 carrygen_0/andgate_3/a_n61_61# m1_252_1255# carrygen_0/andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1071 carrygen_0/andgate_3/a_n58_n25# m1_253_953# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1072 Carout carrygen_0/orgate_9/a_n63_n10# vdd carrygen_0/orgate_9/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1073 Carout carrygen_0/orgate_9/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1074 carrygen_0/orgate_9/a_n59_77# m1_196_1935# vdd carrygen_0/orgate_9/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1075 carrygen_0/orgate_9/a_n63_n10# carrygen_0/m1_1315_575# carrygen_0/orgate_9/a_n59_77# carrygen_0/orgate_9/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1076 carrygen_0/orgate_9/a_n63_n10# carrygen_0/m1_1315_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1077 carrygen_0/orgate_9/a_n63_n10# m1_196_1935# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 carrygen_0/m1_1315_575# carrygen_0/orgate_8/a_n63_n10# vdd carrygen_0/orgate_8/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1079 carrygen_0/m1_1315_575# carrygen_0/orgate_8/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1080 carrygen_0/orgate_8/a_n59_77# carrygen_0/m1_1147_580# vdd carrygen_0/orgate_8/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1081 carrygen_0/orgate_8/a_n63_n10# carrygen_0/m1_567_529# carrygen_0/orgate_8/a_n59_77# carrygen_0/orgate_8/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1082 carrygen_0/orgate_8/a_n63_n10# carrygen_0/m1_567_529# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1083 carrygen_0/orgate_8/a_n63_n10# carrygen_0/m1_1147_580# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1084 carrygen_0/m1_1147_580# carrygen_0/orgate_7/a_n63_n10# vdd carrygen_0/orgate_7/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1085 carrygen_0/m1_1147_580# carrygen_0/orgate_7/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1086 carrygen_0/orgate_7/a_n59_77# carrygen_0/m1_777_596# vdd carrygen_0/orgate_7/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1087 carrygen_0/orgate_7/a_n63_n10# carrygen_0/m1_981_575# carrygen_0/orgate_7/a_n59_77# carrygen_0/orgate_7/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1088 carrygen_0/orgate_7/a_n63_n10# carrygen_0/m1_981_575# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1089 carrygen_0/orgate_7/a_n63_n10# carrygen_0/m1_777_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1090 carrygen_0/m1_981_575# carrygen_0/andgate_9/a_n61_61# vdd carrygen_0/andgate_9/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1091 carrygen_0/m1_981_575# carrygen_0/andgate_9/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1092 carrygen_0/andgate_9/a_n61_61# m1_198_1746# vdd carrygen_0/andgate_9/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1093 carrygen_0/andgate_9/a_n61_61# carrygen_0/m1_777_387# vdd carrygen_0/andgate_9/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1094 carrygen_0/andgate_9/a_n61_61# m1_198_1746# carrygen_0/andgate_9/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1095 carrygen_0/andgate_9/a_n58_n25# carrygen_0/m1_777_387# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1096 carrygen_0/m1_777_596# carrygen_0/andgate_8/a_n61_61# vdd carrygen_0/andgate_8/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1097 carrygen_0/m1_777_596# carrygen_0/andgate_8/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1098 carrygen_0/andgate_8/a_n61_61# m1_198_1746# vdd carrygen_0/andgate_8/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1099 carrygen_0/andgate_8/a_n61_61# carrygen_0/m2_438_434# vdd carrygen_0/andgate_8/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 carrygen_0/andgate_8/a_n61_61# m1_198_1746# carrygen_0/andgate_8/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1101 carrygen_0/andgate_8/a_n58_n25# carrygen_0/m2_438_434# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1102 carrygen_0/m1_567_529# carrygen_0/orgate_6/a_n63_n10# vdd carrygen_0/orgate_6/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1103 carrygen_0/m1_567_529# carrygen_0/orgate_6/a_n63_n10# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1104 carrygen_0/orgate_6/a_n59_77# carrygen_0/m1_376_596# vdd carrygen_0/orgate_6/w_n74_71# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1105 carrygen_0/orgate_6/a_n63_n10# carrygen_0/m1_174_525# carrygen_0/orgate_6/a_n59_77# carrygen_0/orgate_6/w_n65_31# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1106 carrygen_0/orgate_6/a_n63_n10# carrygen_0/m1_174_525# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1107 carrygen_0/orgate_6/a_n63_n10# carrygen_0/m1_376_596# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1108 carrygen_0/m1_376_596# carrygen_0/andgate_7/a_n61_61# vdd carrygen_0/andgate_7/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1109 carrygen_0/m1_376_596# carrygen_0/andgate_7/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1110 carrygen_0/andgate_7/a_n61_61# m1_198_1746# vdd carrygen_0/andgate_7/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1111 carrygen_0/andgate_7/a_n61_61# carrygen_0/m1_174_337# vdd carrygen_0/andgate_7/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 carrygen_0/andgate_7/a_n61_61# m1_198_1746# carrygen_0/andgate_7/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1113 carrygen_0/andgate_7/a_n58_n25# carrygen_0/m1_174_337# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 carrygen_0/m1_174_525# carrygen_0/andgate_6/a_n61_61# vdd carrygen_0/andgate_6/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1115 carrygen_0/m1_174_525# carrygen_0/andgate_6/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1116 carrygen_0/andgate_6/a_n61_61# m1_198_1746# vdd carrygen_0/andgate_6/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1117 carrygen_0/andgate_6/a_n61_61# m1_253_1444# vdd carrygen_0/andgate_6/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 carrygen_0/andgate_6/a_n61_61# m1_198_1746# carrygen_0/andgate_6/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1119 carrygen_0/andgate_6/a_n58_n25# m1_253_1444# gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 sumblock_0/xorgate_3/a_48_n7# Car0 vdd sumblock_0/xorgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=1920 ps=832
+M1121 sumblock_0/xorgate_3/a_48_n7# Car0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=960 ps=512
+M1122 sumblock_0/xorgate_3/a_n64_32# m1_243_273# vdd sumblock_0/xorgate_3/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1123 sumblock_0/xorgate_3/a_n64_32# m1_243_273# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1124 sumblock_0/xorgate_3/a_n56_44# sumblock_0/xorgate_3/a_n64_32# vdd sumblock_0/xorgate_3/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1125 S0 Car0 sumblock_0/xorgate_3/a_n56_44# sumblock_0/xorgate_3/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1126 sumblock_0/xorgate_3/a_56_44# m1_243_273# vdd sumblock_0/xorgate_3/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1127 S0 sumblock_0/xorgate_3/a_48_n7# sumblock_0/xorgate_3/a_56_44# sumblock_0/xorgate_3/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 sumblock_0/xorgate_3/a_n56_n20# Car0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1129 S0 m1_243_273# sumblock_0/xorgate_3/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1130 sumblock_0/xorgate_3/a_56_n20# sumblock_0/xorgate_3/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1131 S0 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1132 sumblock_0/xorgate_2/a_48_n7# m1_248_764# vdd sumblock_0/xorgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1133 sumblock_0/xorgate_2/a_48_n7# m1_248_764# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1134 sumblock_0/xorgate_2/a_n64_32# Car1 vdd sumblock_0/xorgate_2/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1135 sumblock_0/xorgate_2/a_n64_32# Car1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1136 sumblock_0/xorgate_2/a_n56_44# sumblock_0/xorgate_2/a_n64_32# vdd sumblock_0/xorgate_2/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1137 S1 m1_248_764# sumblock_0/xorgate_2/a_n56_44# sumblock_0/xorgate_2/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1138 sumblock_0/xorgate_2/a_56_44# Car1 vdd sumblock_0/xorgate_2/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1139 S1 sumblock_0/xorgate_2/a_48_n7# sumblock_0/xorgate_2/a_56_44# sumblock_0/xorgate_2/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1140 sumblock_0/xorgate_2/a_n56_n20# m1_248_764# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1141 S1 Car1 sumblock_0/xorgate_2/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1142 sumblock_0/xorgate_2/a_56_n20# sumblock_0/xorgate_2/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1143 S1 sumblock_0/xorgate_2/a_n64_32# sumblock_0/xorgate_2/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1144 sumblock_0/xorgate_1/a_48_n7# m1_252_1255# vdd sumblock_0/xorgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1145 sumblock_0/xorgate_1/a_48_n7# m1_252_1255# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1146 sumblock_0/xorgate_1/a_n64_32# Car2 vdd sumblock_0/xorgate_1/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1147 sumblock_0/xorgate_1/a_n64_32# Car2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1148 sumblock_0/xorgate_1/a_n56_44# sumblock_0/xorgate_1/a_n64_32# vdd sumblock_0/xorgate_1/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1149 S2 m1_252_1255# sumblock_0/xorgate_1/a_n56_44# sumblock_0/xorgate_1/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1150 sumblock_0/xorgate_1/a_56_44# Car2 vdd sumblock_0/xorgate_1/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1151 S2 sumblock_0/xorgate_1/a_48_n7# sumblock_0/xorgate_1/a_56_44# sumblock_0/xorgate_1/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1152 sumblock_0/xorgate_1/a_n56_n20# m1_252_1255# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1153 S2 Car2 sumblock_0/xorgate_1/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1154 sumblock_0/xorgate_1/a_56_n20# sumblock_0/xorgate_1/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1155 S2 sumblock_0/xorgate_1/a_n64_32# sumblock_0/xorgate_1/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 sumblock_0/xorgate_0/a_48_n7# m1_198_1746# vdd sumblock_0/xorgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1157 sumblock_0/xorgate_0/a_48_n7# m1_198_1746# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1158 sumblock_0/xorgate_0/a_n64_32# Car3 vdd sumblock_0/xorgate_0/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1159 sumblock_0/xorgate_0/a_n64_32# Car3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1160 sumblock_0/xorgate_0/a_n56_44# sumblock_0/xorgate_0/a_n64_32# vdd sumblock_0/xorgate_0/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1161 S3 m1_198_1746# sumblock_0/xorgate_0/a_n56_44# sumblock_0/xorgate_0/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1162 sumblock_0/xorgate_0/a_56_44# Car3 vdd sumblock_0/xorgate_0/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1163 S3 sumblock_0/xorgate_0/a_48_n7# sumblock_0/xorgate_0/a_56_44# sumblock_0/xorgate_0/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1164 sumblock_0/xorgate_0/a_n56_n20# m1_198_1746# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1165 S3 Car3 sumblock_0/xorgate_0/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1166 sumblock_0/xorgate_0/a_56_n20# sumblock_0/xorgate_0/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1167 S3 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+M1168 m1_196_1935# png_0/andgate_3/a_n61_61# vdd png_0/andgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=3360 ps=1456
+M1169 m1_196_1935# png_0/andgate_3/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=1440 ps=768
+M1170 png_0/andgate_3/a_n61_61# A3 vdd png_0/andgate_3/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1171 png_0/andgate_3/a_n61_61# B3 vdd png_0/andgate_3/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1172 png_0/andgate_3/a_n61_61# A3 png_0/andgate_3/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1173 png_0/andgate_3/a_n58_n25# B3 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1174 png_0/xorgate_3/a_48_n7# A3 vdd png_0/xorgate_3/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1175 png_0/xorgate_3/a_48_n7# A3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1176 png_0/xorgate_3/a_n64_32# B3 vdd png_0/xorgate_3/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1177 png_0/xorgate_3/a_n64_32# B3 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1178 png_0/xorgate_3/a_n56_44# png_0/xorgate_3/a_n64_32# vdd png_0/xorgate_3/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1179 m1_198_1746# A3 png_0/xorgate_3/a_n56_44# png_0/xorgate_3/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1180 png_0/xorgate_3/a_56_44# B3 vdd png_0/xorgate_3/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1181 m1_198_1746# png_0/xorgate_3/a_48_n7# png_0/xorgate_3/a_56_44# png_0/xorgate_3/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1182 png_0/xorgate_3/a_n56_n20# A3 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1183 m1_198_1746# B3 png_0/xorgate_3/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1184 png_0/xorgate_3/a_56_n20# png_0/xorgate_3/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1185 m1_198_1746# png_0/xorgate_3/a_n64_32# png_0/xorgate_3/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1186 m1_253_1444# png_0/andgate_2/a_n61_61# vdd png_0/andgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1187 m1_253_1444# png_0/andgate_2/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1188 png_0/andgate_2/a_n61_61# A2 vdd png_0/andgate_2/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1189 png_0/andgate_2/a_n61_61# B2 vdd png_0/andgate_2/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1190 png_0/andgate_2/a_n61_61# A2 png_0/andgate_2/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1191 png_0/andgate_2/a_n58_n25# B2 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1192 png_0/xorgate_2/a_48_n7# A2 vdd png_0/xorgate_2/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1193 png_0/xorgate_2/a_48_n7# A2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1194 png_0/xorgate_2/a_n64_32# B2 vdd png_0/xorgate_2/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1195 png_0/xorgate_2/a_n64_32# B2 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1196 png_0/xorgate_2/a_n56_44# png_0/xorgate_2/a_n64_32# vdd png_0/xorgate_2/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1197 m1_252_1255# A2 png_0/xorgate_2/a_n56_44# png_0/xorgate_2/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1198 png_0/xorgate_2/a_56_44# B2 vdd png_0/xorgate_2/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1199 m1_252_1255# png_0/xorgate_2/a_48_n7# png_0/xorgate_2/a_56_44# png_0/xorgate_2/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1200 png_0/xorgate_2/a_n56_n20# A2 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1201 m1_252_1255# B2 png_0/xorgate_2/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1202 png_0/xorgate_2/a_56_n20# png_0/xorgate_2/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1203 m1_252_1255# png_0/xorgate_2/a_n64_32# png_0/xorgate_2/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1204 m1_253_953# png_0/andgate_1/a_n61_61# vdd png_0/andgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1205 m1_253_953# png_0/andgate_1/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1206 png_0/andgate_1/a_n61_61# A1 vdd png_0/andgate_1/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1207 png_0/andgate_1/a_n61_61# B1 vdd png_0/andgate_1/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1208 png_0/andgate_1/a_n61_61# A1 png_0/andgate_1/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1209 png_0/andgate_1/a_n58_n25# B1 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1210 png_0/xorgate_1/a_48_n7# A1 vdd png_0/xorgate_1/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1211 png_0/xorgate_1/a_48_n7# A1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1212 png_0/xorgate_1/a_n64_32# B1 vdd png_0/xorgate_1/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1213 png_0/xorgate_1/a_n64_32# B1 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1214 png_0/xorgate_1/a_n56_44# png_0/xorgate_1/a_n64_32# vdd png_0/xorgate_1/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1215 m1_248_764# A1 png_0/xorgate_1/a_n56_44# png_0/xorgate_1/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1216 png_0/xorgate_1/a_56_44# B1 vdd png_0/xorgate_1/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1217 m1_248_764# png_0/xorgate_1/a_48_n7# png_0/xorgate_1/a_56_44# png_0/xorgate_1/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1218 png_0/xorgate_1/a_n56_n20# A1 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1219 m1_248_764# B1 png_0/xorgate_1/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1220 png_0/xorgate_1/a_56_n20# png_0/xorgate_1/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1221 m1_248_764# png_0/xorgate_1/a_n64_32# png_0/xorgate_1/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1222 m1_235_462# png_0/andgate_0/a_n61_61# vdd png_0/andgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1223 m1_235_462# png_0/andgate_0/a_n61_61# gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1224 png_0/andgate_0/a_n61_61# A0 vdd png_0/andgate_0/w_n76_50# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1225 png_0/andgate_0/a_n61_61# B0 vdd png_0/andgate_0/w_n42_50# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1226 png_0/andgate_0/a_n61_61# A0 png_0/andgate_0/a_n58_n25# gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=120 ps=64
+M1227 png_0/andgate_0/a_n58_n25# B0 gnd gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1228 png_0/xorgate_0/a_48_n7# A0 vdd png_0/xorgate_0/inverter_0/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1229 png_0/xorgate_0/a_48_n7# A0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1230 png_0/xorgate_0/a_n64_32# B0 vdd png_0/xorgate_0/inverter_1/w_n13_n7# CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1231 png_0/xorgate_0/a_n64_32# B0 gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1232 png_0/xorgate_0/a_n56_44# png_0/xorgate_0/a_n64_32# vdd png_0/xorgate_0/w_n71_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1233 m1_243_273# A0 png_0/xorgate_0/a_n56_44# png_0/xorgate_0/w_n37_30# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1234 png_0/xorgate_0/a_56_44# B0 vdd png_0/xorgate_0/w_41_38# CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M1235 m1_243_273# png_0/xorgate_0/a_48_n7# png_0/xorgate_0/a_56_44# png_0/xorgate_0/w_75_30# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1236 png_0/xorgate_0/a_n56_n20# A0 gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1237 m1_243_273# B0 png_0/xorgate_0/a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1238 png_0/xorgate_0/a_56_n20# png_0/xorgate_0/a_48_n7# gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M1239 m1_243_273# png_0/xorgate_0/a_n64_32# png_0/xorgate_0/a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 sumblock_0/xorgate_0/w_n37_30# m1_198_1746# 0.1fF
+C1 vdd png_0/xorgate_2/inverter_1/w_n13_n7# 0.1fF
+C2 png_0/xorgate_1/a_48_n7# png_0/xorgate_1/w_75_30# 0.1fF
+C3 gnd m1_198_1746# 0.1fF
+C4 sumblock_0/xorgate_1/a_56_n20# sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C5 carrygen_0/andgate_5/inverter_0/w_n13_n7# vdd 0.1fF
+C6 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/inverter_1/w_n13_n7# 0.0fF
+C7 carrygen_0/m1_1315_575# carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.0fF
+C8 carrygen_0/orgate_1/w_n65_31# carrygen_0/m1_174_152# 0.1fF
+C9 vdd carrygen_0/m1_981_575# 0.2fF
+C10 gnd carrygen_0/andgate_9/a_n61_61# 0.1fF
+C11 carrygen_0/andgate_2/a_n61_61# carrygen_0/andgate_2/w_n76_50# 0.1fF
+C12 sumblock_0/xorgate_0/a_n64_32# gnd 0.1fF
+C13 sumblock_0/xorgate_3/a_n56_44# m1_243_273# 0.1fF
+C14 png_0/xorgate_2/inverter_0/w_n13_n7# png_0/xorgate_2/a_48_n7# 0.0fF
+C15 carrygen_0/orgate_9/w_n65_31# carrygen_0/m1_1315_575# 0.1fF
+C16 carrygen_0/orgate_4/a_n63_n10# carrygen_0/orgate_4/inverter_0/w_n13_n7# 0.1fF
+C17 carrygen_0/orgate_0/inverter_0/w_n13_n7# carrygen_0/orgate_0/a_n63_n10# 0.1fF
+C18 vdd sumblock_0/xorgate_2/a_n64_32# 0.5fF
+C19 sumblock_0/xorgate_3/a_n56_n20# gnd 0.1fF
+C20 carrygen_0/andgate_4/a_n61_61# m1_252_1255# 0.1fF
+C21 vdd m1_198_1746# 0.2fF
+C22 sumblock_0/xorgate_3/a_n56_n20# m1_243_273# 0.2fF
+C23 m1_248_764# png_0/xorgate_1/a_48_n7# 0.2fF
+C24 carrygen_0/andgate_3/w_n42_50# vdd 0.1fF
+C25 sumblock_0/xorgate_2/w_75_30# sumblock_0/xorgate_2/a_n64_32# 0.1fF
+C26 m1_243_273# png_0/xorgate_0/a_56_44# 0.2fF
+C27 sumblock_0/xorgate_0/a_n56_44# S3 0.2fF
+C28 carrygen_0/andgate_7/a_n61_61# carrygen_0/andgate_7/a_n58_n25# 0.1fF
+C29 carrygen_0/orgate_5/w_n65_31# carrygen_0/orgate_5/a_n59_77# 0.0fF
+C30 carrygen_0/orgate_0/a_n63_n10# vdd 0.0fF
+C31 carrygen_0/m1_174_152# carrygen_0/m1_174_337# 0.1fF
+C32 sumblock_0/xorgate_0/inverter_0/w_n13_n7# m1_198_1746# 0.1fF
+C33 carrygen_0/m2_438_434# m1_253_1444# 0.1fF
+C34 carrygen_0/orgate_6/a_n63_n10# carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.1fF
+C35 sumblock_0/xorgate_1/w_75_30# sumblock_0/xorgate_1/a_56_44# 0.1fF
+C36 sumblock_0/xorgate_2/w_n71_38# sumblock_0/xorgate_2/a_n64_32# 0.2fF
+C37 carrygen_0/andgate_3/inverter_0/w_n13_n7# vdd 0.1fF
+C38 gnd m1_235_462# 0.1fF
+C39 png_0/xorgate_2/w_75_30# m1_252_1255# 0.0fF
+C40 png_0/xorgate_2/w_41_38# png_0/xorgate_2/a_56_44# 0.1fF
+C41 sumblock_0/xorgate_0/w_n37_30# S3 0.0fF
+C42 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/w_n71_38# 0.2fF
+C43 vdd sumblock_0/xorgate_2/w_41_38# 0.1fF
+C44 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/w_75_30# 0.1fF
+C45 carrygen_0/andgate_0/w_n76_50# m1_243_273# 0.1fF
+C46 vdd png_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C47 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/a_56_n20# 0.1fF
+C48 sumblock_0/xorgate_1/a_48_n7# m1_252_1255# 0.1fF
+C49 vdd carrygen_0/m2_438_434# 0.4fF
+C50 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/a_n56_44# 0.4fF
+C51 carrygen_0/andgate_9/a_n61_61# carrygen_0/andgate_9/w_n76_50# 0.1fF
+C52 carrygen_0/andgate_7/a_n61_61# carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.1fF
+C53 carrygen_0/orgate_5/a_n63_n10# carrygen_0/m1_947_392# 0.3fF
+C54 carrygen_0/andgate_2/a_n61_61# carrygen_0/m2_438_246# 0.1fF
+C55 png_0/andgate_1/a_n61_61# png_0/andgate_1/w_n42_50# 0.1fF
+C56 vdd png_0/xorgate_2/a_n56_44# 0.2fF
+C57 carrygen_0/orgate_3/a_n59_77# carrygen_0/m1_174_337# 0.0fF
+C58 png_0/xorgate_1/w_n37_30# png_0/xorgate_1/a_n56_44# 0.1fF
+C59 png_0/xorgate_1/a_48_n7# png_0/xorgate_1/a_56_n20# 0.0fF
+C60 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/a_56_44# 0.4fF
+C61 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/w_n37_30# 0.1fF
+C62 carrygen_0/andgate_4/w_n42_50# carrygen_0/m1_174_152# 0.1fF
+C63 vdd carrygen_0/orgate_6/w_n74_71# 0.1fF
+C64 carrygen_0/orgate_5/a_n63_n10# vdd 0.0fF
+C65 carrygen_0/orgate_4/a_n63_n10# carrygen_0/m1_777_387# 0.1fF
+C66 m1_243_273# png_0/xorgate_0/a_48_n7# 0.2fF
+C67 m1_248_764# sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C68 m1_248_764# m1_198_1746# 0.2fF
+C69 carrygen_0/orgate_6/w_n65_31# carrygen_0/orgate_6/a_n59_77# 0.0fF
+C70 carrygen_0/andgate_8/a_n61_61# carrygen_0/m2_438_434# 0.3fF
+C71 carrygen_0/andgate_5/w_n42_50# vdd 0.1fF
+C72 carrygen_0/m1_567_199# carrygen_0/orgate_1/inverter_0/w_n13_n7# 0.0fF
+C73 png_0/andgate_3/w_n76_50# vdd 0.1fF
+C74 vdd sumblock_0/xorgate_2/a_n56_44# 0.2fF
+C75 carrygen_0/orgate_2/w_n74_71# vdd 0.1fF
+C76 carrygen_0/andgate_3/a_n61_61# m1_252_1255# 0.1fF
+C77 carrygen_0/orgate_3/a_n63_n10# carrygen_0/m1_174_337# 0.1fF
+C78 sumblock_0/xorgate_2/a_48_n7# sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C79 carrygen_0/andgate_2/a_n61_61# carrygen_0/andgate_2/a_n58_n25# 0.1fF
+C80 m1_248_764# carrygen_0/m1_174_152# 0.2fF
+C81 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/w_n71_38# 0.2fF
+C82 sumblock_0/xorgate_0/a_48_n7# sumblock_0/xorgate_0/w_75_30# 0.1fF
+C83 carrygen_0/orgate_8/a_n63_n10# carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.1fF
+C84 carrygen_0/orgate_4/a_n63_n10# carrygen_0/orgate_4/w_n65_31# 0.0fF
+C85 vdd png_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C86 png_0/xorgate_1/a_48_n7# png_0/xorgate_1/a_n64_32# 0.0fF
+C87 sumblock_0/xorgate_2/a_n56_44# sumblock_0/xorgate_2/w_n71_38# 0.1fF
+C88 vdd sumblock_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C89 S0 sumblock_0/xorgate_3/w_n37_30# 0.0fF
+C90 carrygen_0/andgate_6/a_n61_61# m1_198_1746# 0.1fF
+C91 carrygen_0/orgate_2/w_n65_31# carrygen_0/orgate_2/a_n59_77# 0.0fF
+C92 carrygen_0/m2_438_246# gnd 0.3fF
+C93 carrygen_0/andgate_0/a_n61_61# vdd 0.6fF
+C94 gnd m1_252_1255# 0.3fF
+C95 m1_243_273# m1_252_1255# 0.2fF
+C96 carrygen_0/orgate_2/a_n59_77# m1_253_953# 0.2fF
+C97 gnd png_0/xorgate_3/a_n64_32# 0.1fF
+C98 gnd carrygen_0/m1_174_337# 0.9fF
+C99 carrygen_0/andgate_2/a_n61_61# carrygen_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C100 sumblock_0/xorgate_1/a_n56_44# sumblock_0/xorgate_1/w_n37_30# 0.1fF
+C101 carrygen_0/orgate_4/a_n63_n10# m1_253_1444# 0.3fF
+C102 sumblock_0/xorgate_1/w_n37_30# m1_252_1255# 0.1fF
+C103 vdd png_0/xorgate_3/a_n64_32# 0.5fF
+C104 vdd carrygen_0/orgate_9/a_n59_77# 0.2fF
+C105 carrygen_0/m1_947_392# carrygen_0/orgate_4/a_n63_n10# 0.1fF
+C106 sumblock_0/xorgate_0/a_48_n7# m1_198_1746# 0.1fF
+C107 S0 sumblock_0/xorgate_3/a_56_44# 0.2fF
+C108 vdd m1_198_1746# 2.1fF
+C109 carrygen_0/andgate_1/w_n42_50# vdd 0.1fF
+C110 m1_248_764# carrygen_0/andgate_2/a_n61_61# 0.1fF
+C111 vdd png_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C112 gnd png_0/xorgate_3/a_48_n7# 0.2fF
+C113 sumblock_0/xorgate_1/a_48_n7# gnd 0.2fF
+C114 carrygen_0/andgate_9/a_n61_61# carrygen_0/andgate_9/a_n58_n25# 0.1fF
+C115 carrygen_0/orgate_4/a_n63_n10# vdd 0.0fF
+C116 carrygen_0/orgate_1/w_n65_31# carrygen_0/orgate_1/a_n59_77# 0.0fF
+C117 sumblock_0/xorgate_2/w_n37_30# sumblock_0/xorgate_2/a_n64_32# 0.1fF
+C118 vdd png_0/xorgate_3/a_48_n7# 0.2fF
+C119 gnd sumblock_0/xorgate_0/a_n56_n20# 0.1fF
+C120 carrygen_0/andgate_7/a_n61_61# carrygen_0/andgate_7/w_n42_50# 0.1fF
+C121 carrygen_0/orgate_9/a_n59_77# m1_196_1935# 0.2fF
+C122 m1_196_1935# m1_198_1746# 0.2fF
+C123 gnd png_0/xorgate_0/a_56_n20# 0.1fF
+C124 vdd carrygen_0/orgate_6/a_n63_n10# 0.0fF
+C125 carrygen_0/andgate_1/inverter_0/w_n13_n7# vdd 0.1fF
+C126 carrygen_0/andgate_2/a_n58_n25# gnd 0.1fF
+C127 carrygen_0/orgate_2/a_n59_77# carrygen_0/m1_567_199# 0.0fF
+C128 sumblock_0/xorgate_3/a_56_n20# sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C129 gnd m1_253_953# 0.3fF
+C130 sumblock_0/xorgate_1/inverter_0/w_n13_n7# sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C131 carrygen_0/orgate_6/a_n63_n10# carrygen_0/m1_174_525# 0.1fF
+C132 carrygen_0/m1_174_152# vdd 0.4fF
+C133 png_0/xorgate_2/a_n64_32# m1_252_1255# 0.6fF
+C134 png_0/xorgate_2/w_n71_38# png_0/xorgate_2/a_n56_44# 0.1fF
+C135 vdd sumblock_0/xorgate_1/inverter_0/w_n13_n7# 0.1fF
+C136 m1_248_764# sumblock_0/xorgate_2/a_n56_n20# 0.0fF
+C137 sumblock_0/xorgate_3/a_n64_32# gnd 0.1fF
+C138 carrygen_0/m1_174_38# m1_235_462# 0.1fF
+C139 carrygen_0/orgate_8/w_n65_31# carrygen_0/orgate_8/a_n59_77# 0.0fF
+C140 m1_243_273# sumblock_0/xorgate_3/a_n64_32# 0.5fF
+C141 gnd png_0/andgate_1/a_n58_n25# 0.1fF
+C142 carrygen_0/orgate_9/a_n63_n10# vdd 0.0fF
+C143 carrygen_0/orgate_1/a_n59_77# carrygen_0/m2_438_246# 0.2fF
+C144 vdd m1_253_953# 0.2fF
+C145 carrygen_0/m2_438_246# m1_253_953# 0.1fF
+C146 carrygen_0/orgate_7/a_n63_n10# carrygen_0/m1_777_596# 0.3fF
+C147 m1_248_764# sumblock_0/xorgate_2/inverter_0/w_n13_n7# 0.1fF
+C148 sumblock_0/xorgate_2/inverter_1/w_n13_n7# vdd 0.1fF
+C149 carrygen_0/andgate_8/a_n61_61# m1_198_1746# 0.1fF
+C150 gnd png_0/andgate_3/a_n61_61# 0.1fF
+C151 carrygen_0/andgate_9/a_n61_61# carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.1fF
+C152 sumblock_0/xorgate_1/w_n71_38# sumblock_0/xorgate_1/a_n64_32# 0.2fF
+C153 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/w_75_30# 0.1fF
+C154 vdd sumblock_0/xorgate_1/w_n71_38# 0.1fF
+C155 carrygen_0/orgate_4/w_n74_71# carrygen_0/orgate_4/a_n59_77# 0.0fF
+C156 carrygen_0/andgate_0/a_n61_61# carrygen_0/andgate_0/a_n58_n25# 0.1fF
+C157 vdd png_0/andgate_3/a_n61_61# 0.6fF
+C158 carrygen_0/m1_376_596# carrygen_0/andgate_7/a_n61_61# 0.1fF
+C159 carrygen_0/orgate_9/a_n63_n10# m1_196_1935# 0.3fF
+C160 vdd png_0/xorgate_2/w_41_38# 0.1fF
+C161 sumblock_0/xorgate_1/a_56_n20# S2 0.1fF
+C162 sumblock_0/xorgate_2/a_56_44# sumblock_0/xorgate_2/a_n64_32# 0.4fF
+C163 carrygen_0/andgate_5/a_n61_61# carrygen_0/m2_438_246# 0.3fF
+C164 gnd carrygen_0/m1_777_387# 0.3fF
+C165 carrygen_0/andgate_4/a_n61_61# carrygen_0/andgate_4/a_n58_n25# 0.1fF
+C166 vdd png_0/andgate_1/w_n76_50# 0.1fF
+C167 carrygen_0/orgate_7/w_n65_31# carrygen_0/orgate_7/a_n59_77# 0.0fF
+C168 carrygen_0/m2_438_246# carrygen_0/andgate_5/a_n58_n25# 0.2fF
+C169 carrygen_0/orgate_3/a_n59_77# vdd 0.2fF
+C170 sumblock_0/xorgate_0/a_48_n7# S3 0.2fF
+C171 sumblock_0/xorgate_2/inverter_0/w_n13_n7# sumblock_0/xorgate_2/a_48_n7# 0.0fF
+C172 vdd sumblock_0/xorgate_3/inverter_0/w_n13_n7# 0.1fF
+C173 carrygen_0/andgate_4/a_n58_n25# m1_252_1255# 0.1fF
+C174 vdd png_0/andgate_3/inverter_0/w_n13_n7# 0.1fF
+C175 gnd png_0/xorgate_0/a_n64_32# 0.1fF
+C176 carrygen_0/m1_567_341# carrygen_0/orgate_3/inverter_0/w_n13_n7# 0.0fF
+C177 carrygen_0/andgate_2/a_n61_61# vdd 0.6fF
+C178 png_0/xorgate_3/inverter_0/w_n13_n7# png_0/xorgate_3/a_n64_32# 0.0fF
+C179 carrygen_0/andgate_4/a_n61_61# carrygen_0/andgate_4/w_n76_50# 0.1fF
+C180 vdd png_0/xorgate_0/a_n64_32# 0.5fF
+C181 vdd png_0/xorgate_3/a_56_44# 0.2fF
+C182 sumblock_0/xorgate_2/a_56_n20# sumblock_0/xorgate_2/a_n64_32# 0.1fF
+C183 sumblock_0/xorgate_2/a_56_44# sumblock_0/xorgate_2/w_41_38# 0.1fF
+C184 carrygen_0/m1_174_337# carrygen_0/andgate_7/a_n58_n25# 0.2fF
+C185 gnd carrygen_0/m1_1147_580# 0.1fF
+C186 carrygen_0/orgate_2/a_n63_n10# gnd 0.4fF
+C187 carrygen_0/andgate_4/w_n76_50# m1_252_1255# 0.1fF
+C188 carrygen_0/andgate_4/a_n61_61# carrygen_0/andgate_4/inverter_0/w_n13_n7# 0.1fF
+C189 carrygen_0/andgate_2/a_n61_61# carrygen_0/andgate_2/w_n42_50# 0.1fF
+C190 png_0/xorgate_3/inverter_0/w_n13_n7# png_0/xorgate_3/a_48_n7# 0.0fF
+C191 sumblock_0/xorgate_2/a_n56_44# sumblock_0/xorgate_2/w_n37_30# 0.1fF
+C192 sumblock_0/xorgate_3/a_n56_44# sumblock_0/xorgate_3/w_n37_30# 0.1fF
+C193 S1 sumblock_0/xorgate_2/w_75_30# 0.0fF
+C194 m1_243_273# gnd 0.4fF
+C195 carrygen_0/orgate_3/a_n63_n10# vdd 0.0fF
+C196 png_0/xorgate_0/inverter_1/w_n13_n7# png_0/xorgate_0/a_n64_32# 0.0fF
+C197 carrygen_0/andgate_0/inverter_0/w_n13_n7# vdd 0.1fF
+C198 sumblock_0/xorgate_1/w_41_38# sumblock_0/xorgate_1/a_n64_32# 0.2fF
+C199 vdd sumblock_0/xorgate_1/w_41_38# 0.1fF
+C200 sumblock_0/xorgate_3/a_n56_44# sumblock_0/xorgate_3/w_n71_38# 0.1fF
+C201 gnd carrygen_0/andgate_6/a_n61_61# 0.1fF
+C202 carrygen_0/orgate_0/w_n74_71# m1_235_462# 0.1fF
+C203 m1_252_1255# png_0/xorgate_2/a_56_44# 0.2fF
+C204 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/a_n56_44# 0.4fF
+C205 carrygen_0/m1_947_392# carrygen_0/orgate_5/a_n59_77# 0.2fF
+C206 carrygen_0/orgate_5/w_n65_31# carrygen_0/m1_567_341# 0.1fF
+C207 gnd m1_253_1444# 0.1fF
+C208 carrygen_0/orgate_0/a_n59_77# carrygen_0/m1_174_38# 0.0fF
+C209 m1_248_764# m1_253_953# 0.2fF
+C210 png_0/xorgate_3/w_75_30# m1_198_1746# 0.0fF
+C211 vdd carrygen_0/andgate_7/w_n76_50# 0.1fF
+C212 carrygen_0/m1_777_596# carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.0fF
+C213 carrygen_0/m1_947_392# gnd 0.1fF
+C214 carrygen_0/orgate_5/a_n59_77# vdd 0.2fF
+C215 vdd png_0/xorgate_1/w_n71_38# 0.1fF
+C216 carrygen_0/andgate_5/a_n61_61# carrygen_0/m1_777_387# 0.1fF
+C217 png_0/xorgate_2/w_75_30# png_0/xorgate_2/a_56_44# 0.1fF
+C218 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/w_n37_30# 0.1fF
+C219 carrygen_0/andgate_5/a_n61_61# carrygen_0/andgate_5/w_n76_50# 0.1fF
+C220 carrygen_0/orgate_2/a_n63_n10# carrygen_0/orgate_2/w_n65_31# 0.0fF
+C221 gnd sumblock_0/xorgate_0/a_56_n20# 0.1fF
+C222 carrygen_0/orgate_2/a_n63_n10# m1_253_953# 0.3fF
+C223 gnd carrygen_0/m1_174_525# 0.8fF
+C224 carrygen_0/andgate_9/a_n61_61# carrygen_0/andgate_9/w_n42_50# 0.1fF
+C225 m1_253_1444# png_0/andgate_2/inverter_0/w_n13_n7# 0.0fF
+C226 S1 m1_248_764# 0.2fF
+C227 carrygen_0/m1_1147_580# carrygen_0/orgate_8/a_n59_77# 0.2fF
+C228 carrygen_0/andgate_1/a_n61_61# m1_235_462# 0.3fF
+C229 carrygen_0/orgate_2/a_n63_n10# carrygen_0/orgate_2/inverter_0/w_n13_n7# 0.1fF
+C230 carrygen_0/andgate_1/a_n58_n25# m1_235_462# 0.2fF
+C231 carrygen_0/m1_174_38# carrygen_0/andgate_2/a_n58_n25# 0.2fF
+C232 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/w_41_38# 0.2fF
+C233 S0 sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C234 vdd png_0/xorgate_0/a_56_44# 0.2fF
+C235 png_0/xorgate_2/a_48_n7# m1_252_1255# 0.2fF
+C236 vdd sumblock_0/xorgate_3/a_n56_44# 0.2fF
+C237 vdd sumblock_0/xorgate_0/a_56_44# 0.2fF
+C238 vdd sumblock_0/xorgate_0/a_n64_32# 0.5fF
+C239 carrygen_0/m1_376_596# carrygen_0/orgate_6/a_n59_77# 0.2fF
+C240 carrygen_0/orgate_6/w_n65_31# carrygen_0/m1_174_525# 0.1fF
+C241 gnd carrygen_0/andgate_8/a_n61_61# 0.1fF
+C242 carrygen_0/orgate_2/a_n63_n10# carrygen_0/m1_567_199# 0.1fF
+C243 S1 sumblock_0/xorgate_2/a_48_n7# 0.2fF
+C244 sumblock_0/xorgate_3/inverter_0/w_n13_n7# sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C245 vdd png_0/andgate_1/w_n42_50# 0.1fF
+C246 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/a_n56_44# 0.4fF
+C247 png_0/xorgate_2/a_48_n7# png_0/xorgate_2/w_75_30# 0.1fF
+C248 carrygen_0/orgate_8/a_n63_n10# carrygen_0/orgate_8/w_n65_31# 0.0fF
+C249 carrygen_0/orgate_3/a_n59_77# carrygen_0/m2_438_434# 0.2fF
+C250 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/inverter_0/w_n13_n7# 0.0fF
+C251 vdd carrygen_0/andgate_9/w_n76_50# 0.1fF
+C252 carrygen_0/orgate_1/a_n59_77# vdd 0.2fF
+C253 vdd m1_253_953# 0.4fF
+C254 gnd png_0/andgate_2/a_n61_61# 0.1fF
+C255 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/w_n37_30# 0.1fF
+C256 vdd png_0/andgate_2/a_n61_61# 0.6fF
+C257 vdd carrygen_0/orgate_8/a_n59_77# 0.2fF
+C258 carrygen_0/orgate_2/inverter_0/w_n13_n7# vdd 0.1fF
+C259 carrygen_0/andgate_0/a_n58_n25# gnd 0.1fF
+C260 carrygen_0/orgate_0/w_n74_71# carrygen_0/orgate_0/a_n59_77# 0.0fF
+C261 gnd png_0/xorgate_0/a_48_n7# 0.2fF
+C262 carrygen_0/m1_567_341# carrygen_0/m2_438_246# 0.1fF
+C263 gnd carrygen_0/m1_981_575# 0.1fF
+C264 sumblock_0/xorgate_1/w_75_30# sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C265 carrygen_0/m1_777_387# carrygen_0/andgate_9/a_n58_n25# 0.2fF
+C266 carrygen_0/andgate_5/a_n61_61# vdd 0.6fF
+C267 vdd png_0/xorgate_0/a_48_n7# 0.2fF
+C268 sumblock_0/xorgate_3/a_56_44# sumblock_0/xorgate_3/w_75_30# 0.1fF
+C269 carrygen_0/andgate_7/w_n42_50# carrygen_0/m1_174_337# 0.1fF
+C270 carrygen_0/orgate_3/a_n63_n10# carrygen_0/m2_438_434# 0.3fF
+C271 m1_196_1935# png_0/andgate_3/a_n61_61# 0.1fF
+C272 carrygen_0/m1_567_199# vdd 0.2fF
+C273 S1 sumblock_0/xorgate_2/w_n37_30# 0.0fF
+C274 gnd png_0/xorgate_3/a_n56_n20# 0.1fF
+C275 png_0/xorgate_0/inverter_0/w_n13_n7# png_0/xorgate_0/a_n64_32# 0.0fF
+C276 vdd carrygen_0/m1_1315_575# 0.2fF
+C277 carrygen_0/orgate_0/a_n63_n10# gnd 0.4fF
+C278 png_0/xorgate_3/w_41_38# png_0/xorgate_3/a_56_44# 0.1fF
+C279 m1_235_462# png_0/andgate_0/inverter_0/w_n13_n7# 0.0fF
+C280 m1_196_1935# png_0/andgate_3/inverter_0/w_n13_n7# 0.0fF
+C281 png_0/andgate_2/a_n61_61# png_0/andgate_2/w_n76_50# 0.1fF
+C282 sumblock_0/xorgate_2/w_41_38# sumblock_0/xorgate_2/a_n64_32# 0.2fF
+C283 carrygen_0/orgate_4/a_n59_77# carrygen_0/m1_777_387# 0.0fF
+C284 sumblock_0/xorgate_0/w_75_30# S3 0.0fF
+C285 sumblock_0/xorgate_1/a_n56_n20# m1_252_1255# 0.0fF
+C286 carrygen_0/orgate_9/a_n63_n10# carrygen_0/orgate_9/a_n59_77# 0.2fF
+C287 carrygen_0/orgate_7/w_n74_71# carrygen_0/m1_777_596# 0.1fF
+C288 gnd carrygen_0/m2_438_434# 0.3fF
+C289 carrygen_0/orgate_1/a_n63_n10# carrygen_0/orgate_1/inverter_0/w_n13_n7# 0.1fF
+C290 png_0/xorgate_3/w_n71_38# png_0/xorgate_3/a_n56_44# 0.1fF
+C291 vdd png_0/xorgate_1/inverter_1/w_n13_n7# 0.1fF
+C292 gnd png_0/andgate_3/a_n58_n25# 0.1fF
+C293 vdd carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.1fF
+C294 gnd m1_252_1255# 0.1fF
+C295 png_0/xorgate_2/w_n37_30# png_0/xorgate_2/a_n56_44# 0.1fF
+C296 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/a_56_44# 0.4fF
+C297 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/w_n37_30# 0.1fF
+C298 carrygen_0/orgate_8/w_n65_31# carrygen_0/m1_567_529# 0.1fF
+C299 carrygen_0/andgate_5/a_n61_61# carrygen_0/andgate_5/inverter_0/w_n13_n7# 0.1fF
+C300 carrygen_0/andgate_1/inverter_0/w_n13_n7# carrygen_0/m1_174_152# 0.0fF
+C301 carrygen_0/orgate_5/a_n63_n10# carrygen_0/orgate_5/a_n59_77# 0.2fF
+C302 m1_252_1255# png_0/xorgate_2/a_n56_n20# 0.1fF
+C303 S1 sumblock_0/xorgate_2/a_56_44# 0.2fF
+C304 carrygen_0/m1_174_38# vdd 0.4fF
+C305 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/w_75_30# 0.1fF
+C306 carrygen_0/orgate_5/a_n63_n10# gnd 0.4fF
+C307 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/w_n71_38# 0.2fF
+C308 carrygen_0/m1_174_337# m1_252_1255# 0.2fF
+C309 carrygen_0/orgate_4/w_n65_31# carrygen_0/orgate_4/a_n59_77# 0.0fF
+C310 S3 m1_198_1746# 0.2fF
+C311 carrygen_0/andgate_3/w_n76_50# m1_252_1255# 0.1fF
+C312 carrygen_0/andgate_3/w_n42_50# m1_253_953# 0.1fF
+C313 sumblock_0/xorgate_1/a_n56_44# sumblock_0/xorgate_1/a_n64_32# 0.4fF
+C314 png_0/xorgate_3/a_48_n7# png_0/xorgate_3/w_75_30# 0.1fF
+C315 sumblock_0/xorgate_1/a_n56_44# vdd 0.2fF
+C316 sumblock_0/xorgate_1/a_n64_32# m1_252_1255# 0.0fF
+C317 sumblock_0/xorgate_3/a_56_44# sumblock_0/xorgate_3/a_n64_32# 0.4fF
+C318 carrygen_0/andgate_2/w_n42_50# carrygen_0/m1_174_38# 0.1fF
+C319 m1_243_273# m1_235_462# 0.2fF
+C320 vdd m1_252_1255# 0.2fF
+C321 carrygen_0/m1_777_596# carrygen_0/orgate_7/a_n59_77# 0.2fF
+C322 carrygen_0/orgate_7/w_n65_31# carrygen_0/m1_981_575# 0.1fF
+C323 sumblock_0/xorgate_2/a_n56_44# sumblock_0/xorgate_2/a_n64_32# 0.4fF
+C324 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/a_48_n7# 0.0fF
+C325 sumblock_0/xorgate_2/a_56_n20# S1 0.1fF
+C326 carrygen_0/andgate_6/a_n61_61# carrygen_0/andgate_6/w_n76_50# 0.1fF
+C327 carrygen_0/orgate_8/a_n63_n10# carrygen_0/m1_1147_580# 0.3fF
+C328 carrygen_0/andgate_0/a_n61_61# carrygen_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C329 carrygen_0/m1_567_529# carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.0fF
+C330 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/w_n71_38# 0.2fF
+C331 carrygen_0/andgate_4/a_n61_61# carrygen_0/andgate_4/w_n42_50# 0.1fF
+C332 carrygen_0/orgate_4/a_n59_77# m1_253_1444# 0.2fF
+C333 sumblock_0/xorgate_1/a_48_n7# sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C334 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/w_41_38# 0.2fF
+C335 png_0/xorgate_2/a_48_n7# png_0/xorgate_2/a_n64_32# 0.0fF
+C336 vdd sumblock_0/xorgate_1/a_48_n7# 0.2fF
+C337 carrygen_0/orgate_0/w_n65_31# carrygen_0/orgate_0/a_n59_77# 0.0fF
+C338 m1_248_764# carrygen_0/andgate_1/a_n61_61# 0.1fF
+C339 vdd carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.1fF
+C340 vdd png_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C341 vdd png_0/andgate_3/w_n42_50# 0.1fF
+C342 sumblock_0/xorgate_2/inverter_0/w_n13_n7# sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C343 vdd carrygen_0/andgate_6/w_n76_50# 0.1fF
+C344 carrygen_0/orgate_4/a_n59_77# vdd 0.2fF
+C345 m1_248_764# carrygen_0/andgate_1/a_n58_n25# 0.1fF
+C346 m1_248_764# png_0/xorgate_1/w_n37_30# 0.0fF
+C347 m1_243_273# sumblock_0/xorgate_3/w_n37_30# 0.2fF
+C348 carrygen_0/andgate_0/w_n76_50# vdd 0.1fF
+C349 carrygen_0/andgate_0/a_n61_61# gnd 0.1fF
+C350 m1_253_1444# png_0/andgate_2/a_n61_61# 0.1fF
+C351 vdd sumblock_0/xorgate_3/a_n64_32# 0.5fF
+C352 vdd png_0/xorgate_1/a_n56_44# 0.2fF
+C353 carrygen_0/andgate_9/w_n42_50# carrygen_0/m1_777_387# 0.1fF
+C354 png_0/andgate_2/a_n61_61# png_0/andgate_2/a_n58_n25# 0.1fF
+C355 carrygen_0/andgate_7/w_n76_50# m1_198_1746# 0.1fF
+C356 carrygen_0/andgate_5/w_n76_50# m1_252_1255# 0.1fF
+C357 gnd png_0/xorgate_3/a_56_n20# 0.1fF
+C358 vdd png_0/xorgate_3/w_n71_38# 0.1fF
+C359 vdd carrygen_0/orgate_8/a_n63_n10# 0.0fF
+C360 carrygen_0/orgate_0/w_n74_71# vdd 0.1fF
+C361 carrygen_0/orgate_1/a_n63_n10# carrygen_0/orgate_1/w_n65_31# 0.0fF
+C362 sumblock_0/xorgate_1/a_n56_n20# gnd 0.1fF
+C363 carrygen_0/m1_567_529# carrygen_0/m1_777_387# 0.1fF
+C364 carrygen_0/andgate_3/a_n61_61# carrygen_0/m1_174_337# 0.1fF
+C365 m1_248_764# m1_252_1255# 0.2fF
+C366 png_0/xorgate_3/w_75_30# png_0/xorgate_3/a_56_44# 0.1fF
+C367 carrygen_0/andgate_3/a_n61_61# carrygen_0/andgate_3/w_n76_50# 0.1fF
+C368 carrygen_0/orgate_2/w_n74_71# m1_253_953# 0.1fF
+C369 vdd carrygen_0/andgate_7/w_n42_50# 0.1fF
+C370 carrygen_0/m1_567_341# vdd 0.2fF
+C371 carrygen_0/orgate_4/a_n63_n10# gnd 0.4fF
+C372 sumblock_0/xorgate_0/w_41_38# sumblock_0/xorgate_0/a_56_44# 0.1fF
+C373 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/w_41_38# 0.2fF
+C374 carrygen_0/orgate_7/a_n63_n10# carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.1fF
+C375 carrygen_0/andgate_5/a_n61_61# carrygen_0/andgate_5/w_n42_50# 0.1fF
+C376 vdd png_0/andgate_0/w_n76_50# 0.1fF
+C377 png_0/xorgate_0/inverter_0/w_n13_n7# png_0/xorgate_0/a_48_n7# 0.0fF
+C378 vdd carrygen_0/orgate_9/w_n74_71# 0.1fF
+C379 carrygen_0/orgate_0/a_n63_n10# carrygen_0/m1_174_38# 0.1fF
+C380 m1_243_273# gnd 0.1fF
+C381 gnd carrygen_0/orgate_6/a_n63_n10# 0.4fF
+C382 png_0/xorgate_3/a_n64_32# m1_198_1746# 0.6fF
+C383 sumblock_0/xorgate_3/w_75_30# sumblock_0/xorgate_3/a_48_n7# 0.1fF
+C384 carrygen_0/andgate_1/a_n61_61# carrygen_0/andgate_1/w_n76_50# 0.1fF
+C385 carrygen_0/orgate_3/a_n63_n10# carrygen_0/orgate_3/a_n59_77# 0.2fF
+C386 carrygen_0/m1_174_152# gnd 1.0fF
+C387 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m2_438_246# 0.3fF
+C388 sumblock_0/xorgate_0/w_n71_38# sumblock_0/xorgate_0/a_n56_44# 0.1fF
+C389 sumblock_0/xorgate_1/a_56_44# sumblock_0/xorgate_1/a_n64_32# 0.4fF
+C390 carrygen_0/orgate_9/w_n74_71# m1_196_1935# 0.1fF
+C391 carrygen_0/orgate_9/a_n63_n10# gnd 0.4fF
+C392 vdd sumblock_0/xorgate_1/a_56_44# 0.2fF
+C393 carrygen_0/andgate_1/a_n61_61# vdd 0.6fF
+C394 vdd sumblock_0/xorgate_0/inverter_1/w_n13_n7# 0.1fF
+C395 sumblock_0/xorgate_2/inverter_1/w_n13_n7# sumblock_0/xorgate_2/a_n64_32# 0.0fF
+C396 vdd carrygen_0/andgate_8/w_n76_50# 0.1fF
+C397 carrygen_0/orgate_7/a_n63_n10# carrygen_0/orgate_7/a_n59_77# 0.2fF
+C398 png_0/xorgate_3/a_48_n7# m1_198_1746# 0.2fF
+C399 vdd carrygen_0/m1_376_596# 0.3fF
+C400 carrygen_0/m1_981_575# carrygen_0/andgate_9/inverter_0/w_n13_n7# 0.0fF
+C401 gnd png_0/andgate_1/a_n61_61# 0.1fF
+C402 gnd sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C403 carrygen_0/orgate_6/a_n63_n10# carrygen_0/orgate_6/w_n65_31# 0.0fF
+C404 png_0/xorgate_0/w_41_38# png_0/xorgate_0/a_56_44# 0.1fF
+C405 carrygen_0/andgate_6/a_n61_61# carrygen_0/andgate_6/a_n58_n25# 0.1fF
+C406 vdd m1_243_273# 0.1fF
+C407 carrygen_0/orgate_1/w_n74_71# carrygen_0/m2_438_246# 0.1fF
+C408 vdd png_0/andgate_1/a_n61_61# 0.6fF
+C409 sumblock_0/xorgate_1/w_n37_30# sumblock_0/xorgate_1/a_n64_32# 0.1fF
+C410 carrygen_0/andgate_9/w_n76_50# m1_198_1746# 0.1fF
+C411 m1_253_1444# m1_252_1255# 0.2fF
+C412 carrygen_0/andgate_6/a_n58_n25# m1_253_1444# 0.2fF
+C413 gnd png_0/xorgate_2/a_n64_32# 0.1fF
+C414 carrygen_0/andgate_4/a_n61_61# vdd 0.6fF
+C415 sumblock_0/xorgate_1/w_75_30# S2 0.0fF
+C416 vdd carrygen_0/andgate_9/w_n42_50# 0.1fF
+C417 carrygen_0/andgate_2/a_n61_61# gnd 0.1fF
+C418 vdd png_0/xorgate_2/a_n64_32# 0.5fF
+C419 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/w_n37_30# 0.1fF
+C420 vdd m1_252_1255# 2.2fF
+C421 carrygen_0/andgate_8/a_n61_61# carrygen_0/andgate_8/w_n76_50# 0.1fF
+C422 m1_248_764# png_0/xorgate_1/a_n56_44# 0.2fF
+C423 carrygen_0/orgate_3/w_n74_71# vdd 0.1fF
+C424 S1 sumblock_0/xorgate_2/a_n64_32# 0.6fF
+C425 vdd carrygen_0/m1_567_529# 0.2fF
+C426 carrygen_0/orgate_1/a_n59_77# carrygen_0/m1_174_152# 0.0fF
+C427 vdd sumblock_0/xorgate_0/w_n71_38# 0.1fF
+C428 carrygen_0/m1_174_152# m1_253_953# 0.1fF
+C429 m1_196_1935# m1_252_1255# 0.2fF
+C430 png_0/xorgate_1/inverter_1/w_n13_n7# png_0/xorgate_1/a_n64_32# 0.0fF
+C431 sumblock_0/xorgate_3/a_56_n20# S0 0.1fF
+C432 carrygen_0/andgate_7/a_n58_n25# m1_198_1746# 0.1fF
+C433 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/a_48_n7# 0.0fF
+C434 carrygen_0/orgate_3/a_n63_n10# gnd 0.4fF
+C435 carrygen_0/orgate_9/a_n59_77# carrygen_0/m1_1315_575# 0.0fF
+C436 carrygen_0/andgate_0/w_n42_50# vdd 0.1fF
+C437 m1_198_1746# png_0/xorgate_3/a_56_44# 0.2fF
+C438 vdd carrygen_0/m1_777_596# 0.5fF
+C439 gnd png_0/andgate_0/a_n58_n25# 0.1fF
+C440 m1_248_764# gnd 0.3fF
+C441 m1_248_764# m1_243_273# 0.2fF
+C442 m1_253_953# png_0/andgate_1/inverter_0/w_n13_n7# 0.0fF
+C443 carrygen_0/andgate_0/a_n61_61# carrygen_0/m1_174_38# 0.1fF
+C444 vdd png_0/xorgate_1/w_41_38# 0.1fF
+C445 png_0/andgate_2/a_n61_61# png_0/andgate_2/w_n42_50# 0.1fF
+C446 m1_243_273# png_0/xorgate_0/a_n56_44# 0.2fF
+C447 sumblock_0/xorgate_0/w_75_30# sumblock_0/xorgate_0/a_56_44# 0.1fF
+C448 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/w_75_30# 0.1fF
+C449 vdd png_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C450 carrygen_0/andgate_7/a_n61_61# carrygen_0/m1_174_337# 0.3fF
+C451 carrygen_0/orgate_9/a_n63_n10# carrygen_0/m1_1315_575# 0.1fF
+C452 carrygen_0/orgate_5/w_n74_71# carrygen_0/m1_947_392# 0.1fF
+C453 sumblock_0/xorgate_2/a_48_n7# gnd 0.2fF
+C454 png_0/xorgate_3/w_n37_30# png_0/xorgate_3/a_n56_44# 0.1fF
+C455 carrygen_0/m1_777_596# carrygen_0/andgate_8/a_n61_61# 0.1fF
+C456 carrygen_0/orgate_5/w_n74_71# vdd 0.1fF
+C457 carrygen_0/andgate_3/a_n61_61# vdd 0.6fF
+C458 m1_243_273# png_0/xorgate_0/w_n37_30# 0.0fF
+C459 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/w_41_38# 0.2fF
+C460 carrygen_0/m1_1147_580# carrygen_0/orgate_7/a_n63_n10# 0.1fF
+C461 sumblock_0/xorgate_1/a_n56_44# S2 0.2fF
+C462 carrygen_0/andgate_3/a_n58_n25# gnd 0.1fF
+C463 carrygen_0/orgate_5/a_n63_n10# carrygen_0/m1_567_341# 0.1fF
+C464 vdd png_0/xorgate_2/a_56_44# 0.2fF
+C465 S2 m1_252_1255# 0.2fF
+C466 m1_252_1255# png_0/xorgate_2/a_56_n20# 0.1fF
+C467 gnd sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C468 carrygen_0/andgate_9/a_n58_n25# m1_198_1746# 0.1fF
+C469 m1_243_273# sumblock_0/xorgate_3/a_48_n7# 0.1fF
+C470 vdd png_0/xorgate_1/inverter_0/w_n13_n7# 0.1fF
+C471 S1 sumblock_0/xorgate_2/a_n56_44# 0.2fF
+C472 carrygen_0/m1_174_38# carrygen_0/m1_174_152# 0.1fF
+C473 carrygen_0/orgate_8/w_n74_71# carrygen_0/m1_1147_580# 0.1fF
+C474 m1_243_273# m1_253_1444# 0.2fF
+C475 sumblock_0/xorgate_0/a_n64_32# m1_198_1746# 0.0fF
+C476 png_0/andgate_3/w_n76_50# png_0/andgate_3/a_n61_61# 0.1fF
+C477 carrygen_0/orgate_3/w_n65_31# carrygen_0/m1_174_337# 0.1fF
+C478 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/a_n56_44# 0.4fF
+C479 carrygen_0/andgate_8/a_n61_61# carrygen_0/andgate_8/a_n58_n25# 0.1fF
+C480 S2 sumblock_0/xorgate_1/a_48_n7# 0.2fF
+C481 gnd sumblock_0/xorgate_0/a_48_n7# 0.2fF
+C482 carrygen_0/andgate_0/a_n61_61# carrygen_0/andgate_0/w_n76_50# 0.1fF
+C483 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/w_n71_38# 0.2fF
+C484 S1 sumblock_0/xorgate_2/a_n56_n20# 0.1fF
+C485 carrygen_0/andgate_6/a_n61_61# carrygen_0/andgate_6/w_n42_50# 0.1fF
+C486 carrygen_0/andgate_4/a_n61_61# carrygen_0/m2_438_434# 0.1fF
+C487 carrygen_0/orgate_1/a_n63_n10# vdd 0.0fF
+C488 carrygen_0/orgate_6/w_n74_71# carrygen_0/m1_376_596# 0.1fF
+C489 png_0/xorgate_3/a_48_n7# png_0/xorgate_3/a_n64_32# 0.0fF
+C490 gnd m1_253_953# 0.1fF
+C491 carrygen_0/m2_438_434# m1_252_1255# 0.1fF
+C492 carrygen_0/andgate_6/w_n76_50# m1_198_1746# 0.1fF
+C493 carrygen_0/andgate_6/w_n42_50# m1_253_1444# 0.1fF
+C494 vdd png_0/xorgate_0/w_n71_38# 0.1fF
+C495 gnd png_0/xorgate_2/a_48_n7# 0.2fF
+C496 m1_243_273# m1_196_1935# 0.2fF
+C497 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/w_75_30# 0.1fF
+C498 gnd png_0/xorgate_1/a_n56_n20# 0.1fF
+C499 carrygen_0/andgate_6/a_n61_61# carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.1fF
+C500 vdd carrygen_0/orgate_7/a_n63_n10# 0.0fF
+C501 carrygen_0/orgate_3/w_n74_71# carrygen_0/m2_438_434# 0.1fF
+C502 carrygen_0/orgate_4/a_n63_n10# carrygen_0/orgate_4/a_n59_77# 0.2fF
+C503 carrygen_0/m1_567_529# carrygen_0/m2_438_434# 0.1fF
+C504 vdd png_0/xorgate_2/a_48_n7# 0.2fF
+C505 carrygen_0/orgate_1/w_n74_71# vdd 0.1fF
+C506 vdd carrygen_0/andgate_6/w_n42_50# 0.1fF
+C507 carrygen_0/andgate_3/a_n58_n25# m1_253_953# 0.2fF
+C508 carrygen_0/andgate_5/a_n61_61# gnd 0.1fF
+C509 carrygen_0/andgate_2/a_n61_61# carrygen_0/m1_174_38# 0.3fF
+C510 m1_243_273# sumblock_0/xorgate_3/w_41_38# 0.1fF
+C511 sumblock_0/xorgate_3/a_n64_32# sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.0fF
+C512 carrygen_0/andgate_5/a_n58_n25# gnd 0.1fF
+C513 carrygen_0/orgate_0/a_n63_n10# carrygen_0/orgate_0/w_n65_31# 0.0fF
+C514 gnd m1_235_462# 0.3fF
+C515 vdd png_0/xorgate_3/a_n56_44# 0.2fF
+C516 vdd carrygen_0/orgate_8/w_n74_71# 0.1fF
+C517 sumblock_0/xorgate_0/a_48_n7# sumblock_0/xorgate_0/a_56_n20# 0.0fF
+C518 carrygen_0/m1_567_199# gnd 0.1fF
+C519 vdd m1_235_462# 0.2fF
+C520 vdd carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.1fF
+C521 gnd carrygen_0/andgate_7/a_n58_n25# 0.1fF
+C522 carrygen_0/orgate_0/a_n59_77# m1_235_462# 0.2fF
+C523 S3 sumblock_0/xorgate_0/a_56_44# 0.2fF
+C524 sumblock_0/xorgate_0/a_n64_32# S3 0.6fF
+C525 carrygen_0/m1_174_525# carrygen_0/andgate_6/inverter_0/w_n13_n7# 0.0fF
+C526 vdd carrygen_0/orgate_8/inverter_0/w_n13_n7# 0.1fF
+C527 gnd carrygen_0/m1_1315_575# 0.1fF
+C528 carrygen_0/orgate_9/w_n74_71# carrygen_0/orgate_9/a_n59_77# 0.0fF
+C529 carrygen_0/andgate_0/inverter_0/w_n13_n7# carrygen_0/m1_174_38# 0.0fF
+C530 carrygen_0/andgate_3/a_n61_61# carrygen_0/andgate_3/w_n42_50# 0.1fF
+C531 carrygen_0/andgate_0/a_n58_n25# m1_243_273# 0.1fF
+C532 vdd png_0/andgate_0/w_n42_50# 0.1fF
+C533 sumblock_0/xorgate_1/a_56_44# S2 0.2fF
+C534 carrygen_0/orgate_7/w_n74_71# carrygen_0/orgate_7/a_n59_77# 0.0fF
+C535 png_0/andgate_0/a_n61_61# png_0/andgate_0/inverter_0/w_n13_n7# 0.1fF
+C536 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/a_56_44# 0.4fF
+C537 carrygen_0/andgate_8/w_n76_50# m1_198_1746# 0.1fF
+C538 carrygen_0/m2_438_434# carrygen_0/andgate_8/a_n58_n25# 0.2fF
+C539 carrygen_0/andgate_3/a_n61_61# carrygen_0/andgate_3/inverter_0/w_n13_n7# 0.1fF
+C540 carrygen_0/andgate_1/a_n61_61# carrygen_0/andgate_1/w_n42_50# 0.1fF
+C541 S2 gnd 0.2fF
+C542 carrygen_0/andgate_9/a_n61_61# carrygen_0/m1_777_387# 0.3fF
+C543 m1_198_1746# png_0/xorgate_3/a_n56_n20# 0.1fF
+C544 sumblock_0/xorgate_2/a_56_n20# gnd 0.1fF
+C545 png_0/xorgate_2/w_n37_30# m1_252_1255# 0.0fF
+C546 sumblock_0/xorgate_0/w_n37_30# sumblock_0/xorgate_0/a_n56_44# 0.1fF
+C547 carrygen_0/orgate_9/inverter_0/w_n13_n7# vdd 0.1fF
+C548 sumblock_0/xorgate_1/w_n37_30# S2 0.0fF
+C549 vdd carrygen_0/andgate_8/w_n42_50# 0.1fF
+C550 carrygen_0/orgate_7/a_n63_n10# carrygen_0/m1_981_575# 0.1fF
+C551 carrygen_0/orgate_2/w_n65_31# carrygen_0/m1_567_199# 0.1fF
+C552 carrygen_0/m1_174_38# gnd 0.3fF
+C553 carrygen_0/andgate_1/a_n61_61# carrygen_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C554 m1_243_273# sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C555 vdd carrygen_0/andgate_7/a_n61_61# 0.6fF
+C556 carrygen_0/orgate_6/a_n63_n10# carrygen_0/m1_376_596# 0.3fF
+C557 carrygen_0/andgate_4/w_n76_50# vdd 0.1fF
+C558 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/a_56_n20# 0.1fF
+C559 png_0/xorgate_0/w_75_30# png_0/xorgate_0/a_56_44# 0.1fF
+C560 carrygen_0/andgate_1/a_n61_61# carrygen_0/m1_174_152# 0.1fF
+C561 sumblock_0/xorgate_1/a_56_n20# sumblock_0/xorgate_1/a_48_n7# 0.0fF
+C562 vdd carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.1fF
+C563 gnd carrygen_0/andgate_9/a_n58_n25# 0.1fF
+C564 carrygen_0/andgate_5/a_n61_61# carrygen_0/andgate_5/a_n58_n25# 0.1fF
+C565 m1_198_1746# m1_252_1255# 0.2fF
+C566 m1_248_764# png_0/xorgate_1/a_n56_n20# 0.1fF
+C567 carrygen_0/andgate_6/a_n58_n25# m1_198_1746# 0.1fF
+C568 png_0/andgate_3/inverter_0/w_n13_n7# png_0/andgate_3/a_n61_61# 0.1fF
+C569 png_0/andgate_0/a_n61_61# png_0/andgate_0/w_n76_50# 0.1fF
+C570 carrygen_0/andgate_4/inverter_0/w_n13_n7# vdd 0.1fF
+C571 carrygen_0/andgate_0/a_n61_61# carrygen_0/andgate_0/w_n42_50# 0.1fF
+C572 png_0/xorgate_0/w_n71_38# png_0/xorgate_0/a_n56_44# 0.1fF
+C573 vdd sumblock_0/xorgate_3/w_n71_38# 0.1fF
+C574 vdd sumblock_0/xorgate_0/a_n56_44# 0.2fF
+C575 gnd png_0/xorgate_2/a_n56_n20# 0.1fF
+C576 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/a_56_n20# 0.1fF
+C577 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/w_41_38# 0.2fF
+C578 vdd sumblock_0/xorgate_3/a_56_44# 0.2fF
+C579 carrygen_0/andgate_8/a_n61_61# carrygen_0/andgate_8/w_n42_50# 0.1fF
+C580 carrygen_0/andgate_4/a_n61_61# carrygen_0/m1_174_152# 0.3fF
+C581 carrygen_0/m1_567_529# carrygen_0/orgate_6/a_n63_n10# 0.1fF
+C582 carrygen_0/m1_567_341# carrygen_0/orgate_3/a_n63_n10# 0.1fF
+C583 sumblock_0/xorgate_0/a_n56_n20# m1_198_1746# 0.0fF
+C584 carrygen_0/m1_777_596# m1_198_1746# 0.2fF
+C585 carrygen_0/andgate_8/a_n61_61# carrygen_0/andgate_8/inverter_0/w_n13_n7# 0.1fF
+C586 carrygen_0/orgate_4/w_n74_71# m1_253_1444# 0.1fF
+C587 vdd png_0/xorgate_0/inverter_1/w_n13_n7# 0.1fF
+C588 carrygen_0/orgate_3/inverter_0/w_n13_n7# vdd 0.1fF
+C589 png_0/xorgate_0/a_48_n7# png_0/xorgate_0/w_75_30# 0.1fF
+C590 m1_248_764# carrygen_0/andgate_2/w_n76_50# 0.1fF
+C591 vdd carrygen_0/andgate_9/a_n61_61# 0.6fF
+C592 carrygen_0/orgate_1/inverter_0/w_n13_n7# vdd 0.1fF
+C593 png_0/xorgate_1/inverter_0/w_n13_n7# png_0/xorgate_1/a_n64_32# 0.0fF
+C594 carrygen_0/orgate_4/w_n74_71# vdd 0.1fF
+C595 sumblock_0/xorgate_3/a_n56_44# S0 0.2fF
+C596 m1_243_273# png_0/xorgate_0/a_n56_n20# 0.1fF
+C597 gnd carrygen_0/orgate_8/a_n63_n10# 0.4fF
+C598 carrygen_0/orgate_5/a_n59_77# carrygen_0/m1_567_341# 0.0fF
+C599 vdd sumblock_0/xorgate_1/a_n64_32# 0.5fF
+C600 sumblock_0/xorgate_3/a_n56_n20# S0 0.1fF
+C601 carrygen_0/andgate_8/a_n58_n25# m1_198_1746# 0.1fF
+C602 vdd png_0/andgate_2/w_n76_50# 0.1fF
+C603 carrygen_0/orgate_3/w_n74_71# carrygen_0/orgate_3/a_n59_77# 0.0fF
+C604 carrygen_0/m1_567_341# gnd 2.4fF
+C605 carrygen_0/orgate_2/a_n63_n10# carrygen_0/orgate_2/a_n59_77# 0.2fF
+C606 png_0/xorgate_2/a_n56_44# m1_252_1255# 0.2fF
+C607 sumblock_0/xorgate_1/a_56_n20# gnd 0.1fF
+C608 vdd sumblock_0/xorgate_0/inverter_0/w_n13_n7# 0.1fF
+C609 png_0/andgate_2/a_n61_61# png_0/andgate_2/inverter_0/w_n13_n7# 0.1fF
+C610 m1_198_1746# png_0/xorgate_3/a_56_n20# 0.1fF
+C611 vdd m1_235_462# 1.4fF
+C612 vdd sumblock_0/xorgate_2/w_n71_38# 0.1fF
+C613 sumblock_0/xorgate_3/a_56_n20# sumblock_0/xorgate_3/a_n64_32# 0.1fF
+C614 carrygen_0/m1_1147_580# carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.0fF
+C615 carrygen_0/andgate_0/a_n61_61# m1_243_273# 0.1fF
+C616 carrygen_0/andgate_2/inverter_0/w_n13_n7# carrygen_0/m2_438_246# 0.0fF
+C617 vdd png_0/xorgate_3/inverter_0/w_n13_n7# 0.1fF
+C618 m1_248_764# gnd 0.1fF
+C619 S3 sumblock_0/xorgate_0/a_n56_n20# 0.1fF
+C620 carrygen_0/andgate_1/a_n61_61# gnd 0.1fF
+C621 png_0/xorgate_1/w_41_38# png_0/xorgate_1/a_56_44# 0.1fF
+C622 carrygen_0/andgate_8/w_n42_50# carrygen_0/m2_438_434# 0.1fF
+C623 gnd carrygen_0/m1_376_596# 0.1fF
+C624 vdd carrygen_0/orgate_6/a_n59_77# 0.2fF
+C625 carrygen_0/orgate_5/inverter_0/w_n13_n7# vdd 0.1fF
+C626 carrygen_0/andgate_1/a_n58_n25# gnd 0.1fF
+C627 png_0/andgate_0/a_n61_61# png_0/andgate_0/a_n58_n25# 0.1fF
+C628 gnd sumblock_0/xorgate_2/a_n64_32# 0.1fF
+C629 gnd m1_198_1746# 0.3fF
+C630 m1_243_273# m1_198_1746# 0.2fF
+C631 carrygen_0/orgate_6/a_n59_77# carrygen_0/m1_174_525# 0.0fF
+C632 carrygen_0/andgate_2/w_n76_50# vdd 0.1fF
+C633 carrygen_0/andgate_9/a_n61_61# carrygen_0/m1_981_575# 0.1fF
+C634 vdd png_0/xorgate_0/a_n56_44# 0.2fF
+C635 carrygen_0/andgate_4/a_n61_61# gnd 0.1fF
+C636 vdd carrygen_0/orgate_7/w_n74_71# 0.1fF
+C637 carrygen_0/orgate_8/a_n63_n10# carrygen_0/orgate_8/a_n59_77# 0.2fF
+C638 carrygen_0/andgate_4/inverter_0/w_n13_n7# carrygen_0/m2_438_434# 0.0fF
+C639 carrygen_0/orgate_2/a_n59_77# vdd 0.2fF
+C640 png_0/xorgate_0/a_48_n7# png_0/xorgate_0/a_56_n20# 0.0fF
+C641 png_0/xorgate_0/a_n64_32# png_0/xorgate_0/a_56_44# 0.4fF
+C642 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/w_n37_30# 0.1fF
+C643 m1_248_764# vdd 0.2fF
+C644 vdd png_0/xorgate_2/w_n71_38# 0.1fF
+C645 gnd carrygen_0/andgate_6/a_n58_n25# 0.1fF
+C646 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m1_174_152# 0.1fF
+C647 gnd carrygen_0/m1_567_529# 4.7fF
+C648 vdd carrygen_0/orgate_7/inverter_0/w_n13_n7# 0.1fF
+C649 gnd png_0/xorgate_1/a_56_n20# 0.1fF
+C650 png_0/xorgate_2/inverter_1/w_n13_n7# png_0/xorgate_2/a_n64_32# 0.0fF
+C651 m1_248_764# carrygen_0/andgate_2/a_n58_n25# 0.1fF
+C652 png_0/xorgate_2/a_48_n7# png_0/xorgate_2/a_56_n20# 0.0fF
+C653 gnd m1_253_1444# 0.3fF
+C654 sumblock_0/xorgate_3/a_56_n20# gnd 0.1fF
+C655 carrygen_0/andgate_3/a_n58_n25# m1_252_1255# 0.1fF
+C656 m1_248_764# png_0/xorgate_1/w_75_30# 0.0fF
+C657 vdd sumblock_0/xorgate_2/a_48_n7# 0.2fF
+C658 S0 sumblock_0/xorgate_3/w_75_30# 0.0fF
+C659 gnd png_0/andgate_2/a_n58_n25# 0.1fF
+C660 vdd m1_253_1444# 0.2fF
+C661 carrygen_0/m1_1315_575# carrygen_0/orgate_8/a_n63_n10# 0.1fF
+C662 sumblock_0/xorgate_1/inverter_0/w_n13_n7# m1_252_1255# 0.1fF
+C663 sumblock_0/xorgate_2/a_48_n7# sumblock_0/xorgate_2/w_75_30# 0.1fF
+C664 gnd carrygen_0/m1_777_596# 0.1fF
+C665 vdd carrygen_0/orgate_7/a_n59_77# 0.2fF
+C666 gnd S3 0.0fF
+C667 carrygen_0/m1_174_337# m1_253_1444# 0.1fF
+C668 sumblock_0/xorgate_0/a_n64_32# sumblock_0/xorgate_0/a_56_44# 0.4fF
+C669 vdd sumblock_0/xorgate_3/a_48_n7# 0.2fF
+C670 vdd png_0/xorgate_0/inverter_0/w_n13_n7# 0.1fF
+C671 carrygen_0/m2_438_246# vdd 0.4fF
+C672 vdd png_0/xorgate_3/w_41_38# 0.1fF
+C673 sumblock_0/xorgate_1/a_n56_44# sumblock_0/xorgate_1/w_n71_38# 0.1fF
+C674 sumblock_0/xorgate_3/a_56_44# sumblock_0/xorgate_3/w_41_38# 0.1fF
+C675 carrygen_0/orgate_9/w_n65_31# carrygen_0/orgate_9/a_n59_77# 0.0fF
+C676 carrygen_0/m1_947_392# carrygen_0/orgate_4/inverter_0/w_n13_n7# 0.0fF
+C677 carrygen_0/orgate_0/a_n59_77# vdd 0.2fF
+C678 png_0/xorgate_0/a_48_n7# png_0/xorgate_0/a_n64_32# 0.0fF
+C679 m1_196_1935# gnd 0.1fF
+C680 png_0/xorgate_1/inverter_0/w_n13_n7# png_0/xorgate_1/a_48_n7# 0.0fF
+C681 sumblock_0/xorgate_1/inverter_0/w_n13_n7# sumblock_0/xorgate_1/a_48_n7# 0.0fF
+C682 vdd carrygen_0/m1_174_337# 0.4fF
+C683 carrygen_0/orgate_4/inverter_0/w_n13_n7# vdd 0.1fF
+C684 carrygen_0/andgate_3/w_n76_50# vdd 0.1fF
+C685 carrygen_0/orgate_0/a_n63_n10# m1_235_462# 0.3fF
+C686 png_0/andgate_1/a_n61_61# png_0/andgate_1/inverter_0/w_n13_n7# 0.1fF
+C687 vdd m1_196_1935# 0.2fF
+C688 gnd png_0/xorgate_1/a_n64_32# 0.1fF
+C689 carrygen_0/m1_174_525# carrygen_0/m1_174_337# 0.1fF
+C690 carrygen_0/orgate_5/w_n74_71# carrygen_0/orgate_5/a_n59_77# 0.0fF
+C691 vdd sumblock_0/xorgate_0/a_48_n7# 0.2fF
+C692 vdd carrygen_0/orgate_6/inverter_0/w_n13_n7# 0.1fF
+C693 gnd carrygen_0/andgate_8/a_n58_n25# 0.1fF
+C694 vdd png_0/xorgate_1/a_n64_32# 0.5fF
+C695 png_0/andgate_3/a_n61_61# png_0/andgate_3/a_n58_n25# 0.1fF
+C696 gnd sumblock_0/xorgate_2/a_n56_n20# 0.1fF
+C697 carrygen_0/andgate_7/a_n61_61# m1_198_1746# 0.1fF
+C698 carrygen_0/andgate_3/a_n61_61# gnd 0.1fF
+C699 carrygen_0/orgate_4/w_n65_31# carrygen_0/m1_777_387# 0.1fF
+C700 m1_243_273# png_0/xorgate_0/w_75_30# 0.0fF
+C701 carrygen_0/orgate_8/a_n59_77# carrygen_0/m1_567_529# 0.0fF
+C702 carrygen_0/andgate_5/a_n61_61# m1_252_1255# 0.1fF
+C703 carrygen_0/orgate_9/a_n63_n10# carrygen_0/orgate_9/w_n65_31# 0.0fF
+C704 S3 sumblock_0/xorgate_0/a_56_n20# 0.1fF
+C705 sumblock_0/xorgate_0/inverter_0/w_n13_n7# sumblock_0/xorgate_0/a_48_n7# 0.0fF
+C706 carrygen_0/andgate_5/a_n58_n25# m1_252_1255# 0.1fF
+C707 png_0/andgate_0/a_n61_61# m1_235_462# 0.1fF
+C708 m1_248_764# sumblock_0/xorgate_2/a_48_n7# 0.1fF
+C709 carrygen_0/m1_174_152# carrygen_0/andgate_4/a_n58_n25# 0.2fF
+C710 carrygen_0/andgate_3/a_n61_61# carrygen_0/andgate_3/a_n58_n25# 0.1fF
+C711 carrygen_0/andgate_4/w_n42_50# vdd 0.1fF
+C712 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/a_n56_44# 0.4fF
+C713 vdd sumblock_0/xorgate_3/w_41_38# 0.1fF
+C714 S0 sumblock_0/xorgate_3/a_n64_32# 0.6fF
+C715 carrygen_0/m1_376_596# carrygen_0/andgate_7/inverter_0/w_n13_n7# 0.0fF
+C716 carrygen_0/orgate_9/a_n63_n10# carrygen_0/orgate_9/inverter_0/w_n13_n7# 0.1fF
+C717 carrygen_0/orgate_5/a_n63_n10# carrygen_0/orgate_5/w_n65_31# 0.0fF
+C718 sumblock_0/xorgate_1/a_n56_n20# S2 0.1fF
+C719 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/w_n71_38# 0.2fF
+C720 carrygen_0/m1_777_387# m1_253_1444# 0.1fF
+C721 m1_248_764# png_0/xorgate_1/a_56_n20# 0.1fF
+C722 carrygen_0/orgate_7/a_n59_77# carrygen_0/m1_981_575# 0.0fF
+C723 png_0/andgate_0/a_n61_61# png_0/andgate_0/w_n42_50# 0.1fF
+C724 png_0/xorgate_3/a_n64_32# png_0/xorgate_3/a_56_n20# 0.1fF
+C725 png_0/xorgate_0/w_n37_30# png_0/xorgate_0/a_n56_44# 0.1fF
+C726 sumblock_0/xorgate_3/inverter_0/w_n13_n7# sumblock_0/xorgate_3/a_n64_32# 0.0fF
+C727 carrygen_0/orgate_1/a_n63_n10# gnd 0.4fF
+C728 m1_248_764# m1_253_1444# 0.2fF
+C729 m1_248_764# carrygen_0/andgate_1/w_n76_50# 0.1fF
+C730 gnd png_0/xorgate_2/a_56_n20# 0.1fF
+C731 carrygen_0/orgate_6/w_n74_71# carrygen_0/orgate_6/a_n59_77# 0.0fF
+C732 carrygen_0/orgate_5/a_n63_n10# carrygen_0/orgate_5/inverter_0/w_n13_n7# 0.1fF
+C733 vdd carrygen_0/m1_777_387# 0.4fF
+C734 carrygen_0/andgate_2/inverter_0/w_n13_n7# vdd 0.1fF
+C735 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/w_75_30# 0.1fF
+C736 sumblock_0/xorgate_2/a_56_44# vdd 0.2fF
+C737 carrygen_0/andgate_5/w_n76_50# vdd 0.1fF
+C738 vdd png_0/xorgate_0/w_41_38# 0.1fF
+C739 png_0/xorgate_3/a_48_n7# png_0/xorgate_3/a_56_n20# 0.0fF
+C740 png_0/andgate_3/w_n42_50# png_0/andgate_3/a_n61_61# 0.1fF
+C741 sumblock_0/xorgate_2/a_56_44# sumblock_0/xorgate_2/w_75_30# 0.1fF
+C742 m1_248_764# vdd 1.0fF
+C743 gnd carrygen_0/orgate_7/a_n63_n10# 0.4fF
+C744 vdd sumblock_0/xorgate_0/w_41_38# 0.1fF
+C745 carrygen_0/andgate_3/a_n61_61# m1_253_953# 0.3fF
+C746 carrygen_0/andgate_9/a_n61_61# m1_198_1746# 0.1fF
+C747 m1_248_764# sumblock_0/xorgate_2/w_n37_30# 0.1fF
+C748 S2 sumblock_0/xorgate_1/a_n64_32# 0.6fF
+C749 m1_248_764# m1_196_1935# 0.2fF
+C750 png_0/xorgate_2/inverter_0/w_n13_n7# png_0/xorgate_2/a_n64_32# 0.0fF
+C751 vdd carrygen_0/m1_1147_580# 0.3fF
+C752 carrygen_0/orgate_2/a_n63_n10# vdd 0.0fF
+C753 carrygen_0/orgate_0/a_n63_n10# carrygen_0/orgate_0/a_n59_77# 0.2fF
+C754 vdd png_0/xorgate_1/a_56_44# 0.2fF
+C755 m1_248_764# png_0/xorgate_1/a_n64_32# 0.6fF
+C756 S0 gnd 0.2fF
+C757 carrygen_0/andgate_6/a_n61_61# m1_253_1444# 0.3fF
+C758 m1_243_273# png_0/xorgate_0/a_56_n20# 0.1fF
+C759 S0 m1_243_273# 0.2fF
+C760 vdd sumblock_0/xorgate_3/inverter_1/w_n13_n7# 0.1fF
+C761 carrygen_0/orgate_2/w_n74_71# carrygen_0/orgate_2/a_n59_77# 0.0fF
+C762 gnd png_0/andgate_0/a_n61_61# 0.1fF
+C763 carrygen_0/andgate_3/inverter_0/w_n13_n7# carrygen_0/m1_174_337# 0.0fF
+C764 carrygen_0/orgate_1/a_n63_n10# carrygen_0/orgate_1/a_n59_77# 0.2fF
+C765 m1_243_273# m1_253_953# 0.2fF
+C766 png_0/xorgate_3/a_n56_44# m1_198_1746# 0.2fF
+C767 vdd png_0/andgate_2/w_n42_50# 0.1fF
+C768 vdd png_0/andgate_0/a_n61_61# 0.6fF
+C769 vdd carrygen_0/andgate_6/a_n61_61# 0.6fF
+C770 carrygen_0/orgate_3/w_n65_31# carrygen_0/orgate_3/a_n59_77# 0.0fF
+C771 sumblock_0/xorgate_3/inverter_0/w_n13_n7# m1_243_273# 0.0fF
+C772 carrygen_0/andgate_5/inverter_0/w_n13_n7# carrygen_0/m1_777_387# 0.0fF
+C773 carrygen_0/andgate_1/w_n42_50# m1_235_462# 0.1fF
+C774 carrygen_0/m1_174_525# carrygen_0/andgate_6/a_n61_61# 0.1fF
+C775 carrygen_0/orgate_0/inverter_0/w_n13_n7# vdd 0.1fF
+C776 vdd m1_253_1444# 0.4fF
+C777 carrygen_0/andgate_1/w_n76_50# vdd 0.1fF
+C778 carrygen_0/orgate_0/w_n65_31# carrygen_0/m1_174_38# 0.1fF
+C779 png_0/xorgate_3/w_n37_30# m1_198_1746# 0.0fF
+C780 carrygen_0/m1_947_392# vdd 0.3fF
+C781 carrygen_0/orgate_1/w_n74_71# carrygen_0/orgate_1/a_n59_77# 0.0fF
+C782 S1 gnd 0.2fF
+C783 carrygen_0/andgate_4/a_n58_n25# gnd 0.1fF
+C784 png_0/andgate_1/a_n61_61# m1_253_953# 0.1fF
+C785 gnd png_0/xorgate_1/a_48_n7# 0.2fF
+C786 carrygen_0/andgate_7/a_n61_61# carrygen_0/andgate_7/w_n76_50# 0.1fF
+C787 gnd png_0/xorgate_0/a_n56_n20# 0.1fF
+C788 png_0/andgate_1/a_n61_61# png_0/andgate_1/a_n58_n25# 0.1fF
+C789 sumblock_0/xorgate_1/w_41_38# sumblock_0/xorgate_1/a_56_44# 0.1fF
+C790 carrygen_0/andgate_5/w_n42_50# carrygen_0/m2_438_246# 0.1fF
+C791 carrygen_0/orgate_1/a_n63_n10# carrygen_0/m1_567_199# 0.1fF
+C792 png_0/xorgate_1/a_n64_32# png_0/xorgate_1/a_56_n20# 0.1fF
+C793 png_0/xorgate_1/w_75_30# png_0/xorgate_1/a_56_44# 0.1fF
+C794 vdd png_0/xorgate_1/a_48_n7# 0.2fF
+C795 vdd carrygen_0/m1_174_525# 0.2fF
+C796 gnd carrygen_0/andgate_7/a_n61_61# 0.1fF
+C797 carrygen_0/orgate_3/a_n63_n10# carrygen_0/orgate_3/w_n65_31# 0.0fF
+C798 carrygen_0/orgate_6/a_n63_n10# carrygen_0/orgate_6/a_n59_77# 0.2fF
+C799 m1_243_273# png_0/xorgate_0/a_n64_32# 0.6fF
+C800 sumblock_0/xorgate_3/a_n56_44# sumblock_0/xorgate_3/a_n64_32# 0.4fF
+C801 carrygen_0/orgate_8/w_n74_71# carrygen_0/orgate_8/a_n59_77# 0.0fF
+C802 vdd m1_196_1935# 0.2fF
+C803 png_0/andgate_1/a_n61_61# png_0/andgate_1/w_n76_50# 0.1fF
+C804 carrygen_0/orgate_7/a_n63_n10# carrygen_0/orgate_7/w_n65_31# 0.0fF
+C805 carrygen_0/andgate_2/w_n42_50# vdd 0.1fF
+C806 png_0/xorgate_1/w_n71_38# png_0/xorgate_1/a_n56_44# 0.1fF
+C807 carrygen_0/orgate_3/a_n63_n10# carrygen_0/orgate_3/inverter_0/w_n13_n7# 0.1fF
+C808 carrygen_0/andgate_1/a_n61_61# carrygen_0/andgate_1/a_n58_n25# 0.1fF
+C809 sumblock_0/xorgate_1/inverter_1/w_n13_n7# sumblock_0/xorgate_1/a_n64_32# 0.0fF
+C810 png_0/xorgate_2/a_n64_32# png_0/xorgate_2/w_41_38# 0.2fF
+C811 vdd sumblock_0/xorgate_1/inverter_1/w_n13_n7# 0.1fF
+C812 carrygen_0/orgate_8/a_n63_n10# carrygen_0/m1_567_529# 0.1fF
+C813 sumblock_0/xorgate_1/w_75_30# sumblock_0/xorgate_1/a_48_n7# 0.1fF
+C814 vdd carrygen_0/andgate_8/a_n61_61# 0.6fF
+C815 png_0/xorgate_3/inverter_1/w_n13_n7# png_0/xorgate_3/a_n64_32# 0.0fF
+C816 sumblock_0/xorgate_2/a_56_n20# sumblock_0/xorgate_2/a_48_n7# 0.0fF
+C817 m1_248_764# png_0/xorgate_1/a_56_44# 0.2fF
+C818 png_0/xorgate_0/a_56_n20# gnd 0.1fF
+C819 png_0/xorgate_0/a_n56_n20# gnd 0.3fF
+C820 png_0/xorgate_0/a_56_44# gnd 0.0fF
+C821 png_0/xorgate_0/a_n56_44# gnd 0.1fF
+C822 png_0/xorgate_0/w_75_30# gnd 0.9fF
+C823 png_0/xorgate_0/w_41_38# gnd 1.0fF
+C824 png_0/xorgate_0/w_n37_30# gnd 1.2fF
+C825 png_0/xorgate_0/w_n71_38# gnd 0.9fF
+C826 png_0/xorgate_0/a_n64_32# gnd 1.4fF
+C827 png_0/xorgate_0/inverter_1/w_n13_n7# gnd 1.0fF
+C828 png_0/xorgate_0/a_48_n7# gnd 0.8fF
+C829 png_0/xorgate_0/inverter_0/w_n13_n7# gnd 1.0fF
+C830 png_0/andgate_0/a_n58_n25# gnd 0.3fF
+C831 png_0/andgate_0/w_n42_50# gnd 1.1fF
+C832 png_0/andgate_0/w_n76_50# gnd 1.1fF
+C833 m1_235_462# gnd 7.0fF
+C834 png_0/andgate_0/a_n61_61# gnd 1.0fF
+C835 png_0/andgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C836 png_0/xorgate_1/a_56_n20# gnd 0.1fF
+C837 png_0/xorgate_1/a_n56_n20# gnd 0.3fF
+C838 png_0/xorgate_1/a_56_44# gnd 0.0fF
+C839 png_0/xorgate_1/a_n56_44# gnd 0.1fF
+C840 png_0/xorgate_1/w_75_30# gnd 0.9fF
+C841 png_0/xorgate_1/w_41_38# gnd 1.0fF
+C842 png_0/xorgate_1/w_n37_30# gnd 1.2fF
+C843 png_0/xorgate_1/w_n71_38# gnd 0.9fF
+C844 png_0/xorgate_1/a_n64_32# gnd 1.4fF
+C845 png_0/xorgate_1/inverter_1/w_n13_n7# gnd 1.0fF
+C846 png_0/xorgate_1/a_48_n7# gnd 0.8fF
+C847 png_0/xorgate_1/inverter_0/w_n13_n7# gnd 1.0fF
+C848 png_0/andgate_1/a_n58_n25# gnd 0.3fF
+C849 png_0/andgate_1/w_n42_50# gnd 1.1fF
+C850 png_0/andgate_1/w_n76_50# gnd 1.1fF
+C851 m1_253_953# gnd 8.9fF
+C852 png_0/andgate_1/a_n61_61# gnd 1.0fF
+C853 png_0/andgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C854 png_0/xorgate_2/a_56_n20# gnd 0.1fF
+C855 png_0/xorgate_2/a_n56_n20# gnd 0.3fF
+C856 png_0/xorgate_2/a_56_44# gnd 0.0fF
+C857 m1_252_1255# gnd 17.2fF
+C858 png_0/xorgate_2/a_n56_44# gnd 0.1fF
+C859 png_0/xorgate_2/w_75_30# gnd 0.9fF
+C860 png_0/xorgate_2/w_41_38# gnd 1.0fF
+C861 png_0/xorgate_2/w_n37_30# gnd 1.2fF
+C862 png_0/xorgate_2/w_n71_38# gnd 0.9fF
+C863 png_0/xorgate_2/a_n64_32# gnd 1.4fF
+C864 png_0/xorgate_2/inverter_1/w_n13_n7# gnd 1.0fF
+C865 png_0/xorgate_2/a_48_n7# gnd 0.8fF
+C866 png_0/xorgate_2/inverter_0/w_n13_n7# gnd 1.0fF
+C867 png_0/andgate_2/a_n58_n25# gnd 0.3fF
+C868 png_0/andgate_2/w_n42_50# gnd 1.1fF
+C869 png_0/andgate_2/w_n76_50# gnd 1.1fF
+C870 m1_253_1444# gnd 14.7fF
+C871 png_0/andgate_2/a_n61_61# gnd 1.0fF
+C872 png_0/andgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C873 png_0/xorgate_3/a_56_n20# gnd 0.1fF
+C874 png_0/xorgate_3/a_n56_n20# gnd 0.3fF
+C875 png_0/xorgate_3/a_56_44# gnd 0.0fF
+C876 m1_198_1746# gnd 24.0fF
+C877 png_0/xorgate_3/a_n56_44# gnd 0.1fF
+C878 png_0/xorgate_3/w_75_30# gnd 0.9fF
+C879 png_0/xorgate_3/w_41_38# gnd 1.0fF
+C880 png_0/xorgate_3/w_n37_30# gnd 1.2fF
+C881 png_0/xorgate_3/w_n71_38# gnd 0.9fF
+C882 png_0/xorgate_3/a_n64_32# gnd 1.4fF
+C883 png_0/xorgate_3/inverter_1/w_n13_n7# gnd 1.0fF
+C884 png_0/xorgate_3/a_48_n7# gnd 0.8fF
+C885 png_0/xorgate_3/inverter_0/w_n13_n7# gnd 1.0fF
+C886 png_0/andgate_3/a_n58_n25# gnd 0.3fF
+C887 png_0/andgate_3/w_n42_50# gnd 1.1fF
+C888 png_0/andgate_3/w_n76_50# gnd 1.1fF
+C889 gnd gnd 22.6fF
+C890 m1_196_1935# gnd 19.2fF
+C891 vdd gnd 17.8fF
+C892 png_0/andgate_3/a_n61_61# gnd 1.0fF
+C893 png_0/andgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C894 sumblock_0/xorgate_0/a_56_n20# gnd 0.1fF
+C895 sumblock_0/xorgate_0/a_n56_n20# gnd 0.3fF
+C896 sumblock_0/xorgate_0/a_56_44# gnd 0.0fF
+C897 S3 gnd 2.0fF
+C898 sumblock_0/xorgate_0/a_n56_44# gnd 0.1fF
+C899 sumblock_0/xorgate_0/w_75_30# gnd 0.9fF
+C900 sumblock_0/xorgate_0/w_41_38# gnd 1.0fF
+C901 sumblock_0/xorgate_0/w_n37_30# gnd 1.1fF
+C902 sumblock_0/xorgate_0/w_n71_38# gnd 0.9fF
+C903 sumblock_0/xorgate_0/a_n64_32# gnd 1.4fF
+C904 sumblock_0/xorgate_0/inverter_1/w_n13_n7# gnd 1.0fF
+C905 gnd gnd 14.4fF
+C906 sumblock_0/xorgate_0/a_48_n7# gnd 0.8fF
+C907 vdd gnd 9.1fF
+C908 sumblock_0/xorgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C909 sumblock_0/xorgate_1/a_56_n20# gnd 0.1fF
+C910 sumblock_0/xorgate_1/a_n56_n20# gnd 0.3fF
+C911 sumblock_0/xorgate_1/a_56_44# gnd 0.0fF
+C912 S2 gnd 1.9fF
+C913 sumblock_0/xorgate_1/a_n56_44# gnd 0.1fF
+C914 sumblock_0/xorgate_1/w_75_30# gnd 0.9fF
+C915 sumblock_0/xorgate_1/w_41_38# gnd 1.0fF
+C916 sumblock_0/xorgate_1/w_n37_30# gnd 1.1fF
+C917 sumblock_0/xorgate_1/w_n71_38# gnd 0.9fF
+C918 sumblock_0/xorgate_1/a_n64_32# gnd 1.4fF
+C919 sumblock_0/xorgate_1/inverter_1/w_n13_n7# gnd 1.0fF
+C920 sumblock_0/xorgate_1/a_48_n7# gnd 0.8fF
+C921 sumblock_0/xorgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C922 sumblock_0/xorgate_2/a_56_n20# gnd 0.1fF
+C923 sumblock_0/xorgate_2/a_n56_n20# gnd 0.3fF
+C924 sumblock_0/xorgate_2/a_56_44# gnd 0.0fF
+C925 S1 gnd 2.0fF
+C926 sumblock_0/xorgate_2/a_n56_44# gnd 0.1fF
+C927 sumblock_0/xorgate_2/w_75_30# gnd 0.9fF
+C928 sumblock_0/xorgate_2/w_41_38# gnd 1.0fF
+C929 sumblock_0/xorgate_2/w_n37_30# gnd 1.1fF
+C930 sumblock_0/xorgate_2/w_n71_38# gnd 0.9fF
+C931 sumblock_0/xorgate_2/a_n64_32# gnd 1.4fF
+C932 sumblock_0/xorgate_2/inverter_1/w_n13_n7# gnd 1.0fF
+C933 sumblock_0/xorgate_2/a_48_n7# gnd 0.8fF
+C934 m1_248_764# gnd 16.7fF
+C935 sumblock_0/xorgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C936 sumblock_0/xorgate_3/a_56_n20# gnd 0.1fF
+C937 sumblock_0/xorgate_3/a_n56_n20# gnd 0.1fF
+C938 sumblock_0/xorgate_3/a_56_44# gnd 0.0fF
+C939 S0 gnd 2.0fF
+C940 sumblock_0/xorgate_3/a_n56_44# gnd 0.0fF
+C941 sumblock_0/xorgate_3/w_75_30# gnd 0.9fF
+C942 sumblock_0/xorgate_3/w_41_38# gnd 0.9fF
+C943 sumblock_0/xorgate_3/w_n37_30# gnd 1.0fF
+C944 sumblock_0/xorgate_3/w_n71_38# gnd 0.9fF
+C945 sumblock_0/xorgate_3/a_n64_32# gnd 1.0fF
+C946 m1_243_273# gnd 18.0fF
+C947 sumblock_0/xorgate_3/inverter_1/w_n13_n7# gnd 0.9fF
+C948 sumblock_0/xorgate_3/a_48_n7# gnd 0.7fF
+C949 sumblock_0/xorgate_3/inverter_0/w_n13_n7# gnd 1.0fF
+C950 carrygen_0/andgate_6/a_n58_n25# gnd 0.1fF
+C951 carrygen_0/andgate_6/w_n42_50# gnd 1.0fF
+C952 carrygen_0/andgate_6/w_n76_50# gnd 1.0fF
+C953 carrygen_0/andgate_6/a_n61_61# gnd 0.6fF
+C954 carrygen_0/andgate_6/inverter_0/w_n13_n7# gnd 0.9fF
+C955 carrygen_0/andgate_7/a_n58_n25# gnd 0.1fF
+C956 carrygen_0/m1_174_337# gnd 5.6fF
+C957 carrygen_0/andgate_7/w_n42_50# gnd 1.0fF
+C958 carrygen_0/andgate_7/w_n76_50# gnd 1.0fF
+C959 carrygen_0/andgate_7/a_n61_61# gnd 0.6fF
+C960 carrygen_0/andgate_7/inverter_0/w_n13_n7# gnd 0.9fF
+C961 carrygen_0/m1_174_525# gnd 1.8fF
+C962 carrygen_0/orgate_6/a_n59_77# gnd 0.0fF
+C963 carrygen_0/m1_376_596# gnd 2.1fF
+C964 carrygen_0/orgate_6/w_n65_31# gnd 0.9fF
+C965 carrygen_0/orgate_6/w_n74_71# gnd 0.9fF
+C966 carrygen_0/orgate_6/a_n63_n10# gnd 0.6fF
+C967 carrygen_0/orgate_6/inverter_0/w_n13_n7# gnd 0.9fF
+C968 carrygen_0/andgate_8/a_n58_n25# gnd 0.1fF
+C969 carrygen_0/m2_438_434# gnd 7.1fF
+C970 carrygen_0/andgate_8/w_n42_50# gnd 1.0fF
+C971 carrygen_0/andgate_8/w_n76_50# gnd 1.0fF
+C972 carrygen_0/andgate_8/a_n61_61# gnd 0.6fF
+C973 carrygen_0/andgate_8/inverter_0/w_n13_n7# gnd 0.9fF
+C974 carrygen_0/andgate_9/a_n58_n25# gnd 0.1fF
+C975 carrygen_0/m1_777_387# gnd 4.9fF
+C976 carrygen_0/andgate_9/w_n42_50# gnd 1.0fF
+C977 carrygen_0/andgate_9/w_n76_50# gnd 1.0fF
+C978 carrygen_0/andgate_9/a_n61_61# gnd 0.6fF
+C979 carrygen_0/andgate_9/inverter_0/w_n13_n7# gnd 0.9fF
+C980 carrygen_0/m1_981_575# gnd 0.8fF
+C981 carrygen_0/orgate_7/a_n59_77# gnd 0.0fF
+C982 carrygen_0/m1_777_596# gnd 6.1fF
+C983 carrygen_0/orgate_7/w_n65_31# gnd 0.9fF
+C984 carrygen_0/orgate_7/w_n74_71# gnd 0.9fF
+C985 carrygen_0/orgate_7/a_n63_n10# gnd 0.6fF
+C986 carrygen_0/orgate_7/inverter_0/w_n13_n7# gnd 0.9fF
+C987 carrygen_0/m1_567_529# gnd 1.7fF
+C988 carrygen_0/orgate_8/a_n59_77# gnd 0.0fF
+C989 carrygen_0/m1_1147_580# gnd 2.1fF
+C990 carrygen_0/orgate_8/w_n65_31# gnd 0.9fF
+C991 carrygen_0/orgate_8/w_n74_71# gnd 0.9fF
+C992 carrygen_0/orgate_8/a_n63_n10# gnd 0.6fF
+C993 carrygen_0/orgate_8/inverter_0/w_n13_n7# gnd 0.9fF
+C994 carrygen_0/m1_1315_575# gnd 0.7fF
+C995 carrygen_0/orgate_9/a_n59_77# gnd 0.0fF
+C996 carrygen_0/orgate_9/w_n65_31# gnd 0.9fF
+C997 carrygen_0/orgate_9/w_n74_71# gnd 0.9fF
+C998 gnd gnd 45.8fF
+C999 vdd gnd 31.0fF
+C1000 carrygen_0/orgate_9/a_n63_n10# gnd 0.7fF
+C1001 carrygen_0/orgate_9/inverter_0/w_n13_n7# gnd 0.9fF
+C1002 carrygen_0/andgate_3/a_n58_n25# gnd 0.1fF
+C1003 carrygen_0/andgate_3/w_n42_50# gnd 1.0fF
+C1004 carrygen_0/andgate_3/w_n76_50# gnd 1.0fF
+C1005 carrygen_0/andgate_3/a_n61_61# gnd 0.6fF
+C1006 carrygen_0/andgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C1007 carrygen_0/andgate_4/a_n58_n25# gnd 0.1fF
+C1008 carrygen_0/m1_174_152# gnd 5.6fF
+C1009 carrygen_0/andgate_4/w_n42_50# gnd 1.0fF
+C1010 carrygen_0/andgate_4/w_n76_50# gnd 1.0fF
+C1011 carrygen_0/andgate_4/a_n61_61# gnd 0.6fF
+C1012 carrygen_0/andgate_4/inverter_0/w_n13_n7# gnd 0.9fF
+C1013 carrygen_0/orgate_3/a_n59_77# gnd 0.0fF
+C1014 carrygen_0/orgate_3/w_n65_31# gnd 0.9fF
+C1015 carrygen_0/orgate_3/w_n74_71# gnd 0.9fF
+C1016 carrygen_0/orgate_3/a_n63_n10# gnd 0.6fF
+C1017 carrygen_0/orgate_3/inverter_0/w_n13_n7# gnd 0.9fF
+C1018 carrygen_0/andgate_5/a_n58_n25# gnd 0.1fF
+C1019 carrygen_0/m2_438_246# gnd 5.8fF
+C1020 carrygen_0/andgate_5/w_n42_50# gnd 1.0fF
+C1021 carrygen_0/andgate_5/w_n76_50# gnd 1.0fF
+C1022 carrygen_0/andgate_5/a_n61_61# gnd 0.6fF
+C1023 carrygen_0/andgate_5/inverter_0/w_n13_n7# gnd 0.9fF
+C1024 carrygen_0/orgate_4/a_n59_77# gnd 0.0fF
+C1025 carrygen_0/orgate_4/w_n65_31# gnd 0.9fF
+C1026 carrygen_0/orgate_4/w_n74_71# gnd 0.9fF
+C1027 carrygen_0/orgate_4/a_n63_n10# gnd 0.6fF
+C1028 carrygen_0/orgate_4/inverter_0/w_n13_n7# gnd 0.9fF
+C1029 carrygen_0/m1_567_341# gnd 1.7fF
+C1030 carrygen_0/orgate_5/a_n59_77# gnd 0.0fF
+C1031 carrygen_0/m1_947_392# gnd 2.1fF
+C1032 carrygen_0/orgate_5/w_n65_31# gnd 0.9fF
+C1033 carrygen_0/orgate_5/w_n74_71# gnd 0.9fF
+C1034 carrygen_0/orgate_5/a_n63_n10# gnd 0.7fF
+C1035 carrygen_0/orgate_5/inverter_0/w_n13_n7# gnd 0.9fF
+C1036 carrygen_0/andgate_1/a_n58_n25# gnd 0.1fF
+C1037 carrygen_0/andgate_1/w_n42_50# gnd 1.0fF
+C1038 carrygen_0/andgate_1/w_n76_50# gnd 1.0fF
+C1039 carrygen_0/andgate_1/a_n61_61# gnd 0.6fF
+C1040 carrygen_0/andgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C1041 carrygen_0/andgate_2/a_n58_n25# gnd 0.1fF
+C1042 carrygen_0/m1_174_38# gnd 4.2fF
+C1043 carrygen_0/andgate_2/w_n42_50# gnd 1.0fF
+C1044 carrygen_0/andgate_2/w_n76_50# gnd 1.0fF
+C1045 carrygen_0/andgate_2/a_n61_61# gnd 0.6fF
+C1046 carrygen_0/andgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C1047 carrygen_0/orgate_1/a_n59_77# gnd 0.0fF
+C1048 carrygen_0/orgate_1/w_n65_31# gnd 0.9fF
+C1049 carrygen_0/orgate_1/w_n74_71# gnd 0.9fF
+C1050 carrygen_0/orgate_1/a_n63_n10# gnd 0.6fF
+C1051 carrygen_0/orgate_1/inverter_0/w_n13_n7# gnd 0.9fF
+C1052 carrygen_0/m1_567_199# gnd 0.7fF
+C1053 carrygen_0/orgate_2/a_n59_77# gnd 0.0fF
+C1054 carrygen_0/orgate_2/w_n65_31# gnd 0.9fF
+C1055 carrygen_0/orgate_2/w_n74_71# gnd 0.9fF
+C1056 carrygen_0/orgate_2/a_n63_n10# gnd 0.7fF
+C1057 carrygen_0/orgate_2/inverter_0/w_n13_n7# gnd 0.9fF
+C1058 carrygen_0/andgate_0/a_n58_n25# gnd 0.3fF
+C1059 carrygen_0/andgate_0/w_n42_50# gnd 1.1fF
+C1060 carrygen_0/andgate_0/w_n76_50# gnd 1.0fF
+C1061 carrygen_0/andgate_0/a_n61_61# gnd 0.9fF
+C1062 carrygen_0/andgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+C1063 carrygen_0/orgate_0/a_n59_77# gnd 0.0fF
+C1064 carrygen_0/orgate_0/w_n65_31# gnd 0.9fF
+C1065 carrygen_0/orgate_0/w_n74_71# gnd 0.9fF
+C1066 carrygen_0/orgate_0/a_n63_n10# gnd 0.7fF
+C1067 carrygen_0/orgate_0/inverter_0/w_n13_n7# gnd 0.9fF
+.tran 0.1n 100n
+
+.measure tran tpdcar4
++TRIG v(A0) val = 'SUPPLY/2' RISE = 1
++TARG v(Carout) val = 'SUPPLY/2' RISE = 1
+
+.measure tran tpds3
++TRIG v(A0) val = 'SUPPLY/2' RISE = 1
++TARG v(S3) val = 'SUPPLY/2' RISE = 1
+
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+
+*plot v(Car0)
+*plot v(Car1)
+*plot v(Car2)
+*plot v(Car3)
+plot v(S0)
+plot v(S1)
+plot v(S2)
+plot v(S3)
+plot v(Carout)
+.endc

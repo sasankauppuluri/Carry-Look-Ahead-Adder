@@ -1,0 +1,83 @@
+magic
+tech scmos
+timestamp 1618893311
+<< nwell >>
+rect -74 71 -46 103
+rect -65 31 -37 63
+<< ntransistor >>
+rect -65 -10 -63 0
+rect -31 -10 -29 0
+<< ptransistor >>
+rect -61 77 -59 97
+rect -52 37 -50 57
+<< ndiffusion >>
+rect -66 -10 -65 0
+rect -63 -10 -62 0
+rect -32 -10 -31 0
+rect -29 -10 -28 0
+<< pdiffusion >>
+rect -62 77 -61 97
+rect -59 77 -58 97
+rect -53 37 -52 57
+rect -50 37 -49 57
+<< ndcontact >>
+rect -71 -10 -66 0
+rect -62 -10 -57 0
+rect -37 -10 -32 0
+rect -28 -10 -23 0
+<< pdcontact >>
+rect -67 77 -62 97
+rect -58 77 -53 97
+rect -58 37 -53 57
+rect -49 37 -44 57
+<< polysilicon >>
+rect -61 97 -59 100
+rect -61 64 -59 77
+rect -52 57 -50 60
+rect -52 23 -50 37
+rect -65 0 -63 14
+rect -31 0 -29 14
+rect -65 -14 -63 -10
+rect -31 -14 -29 -10
+<< polycontact >>
+rect -67 65 -61 70
+rect -58 25 -52 30
+rect -71 9 -65 14
+rect -29 9 -23 14
+<< metal1 >>
+rect -74 102 10 108
+rect -67 97 -62 102
+rect -87 65 -78 70
+rect -73 65 -67 70
+rect -58 57 -53 77
+rect 5 60 10 102
+rect -80 25 -58 30
+rect -49 28 -44 37
+rect -80 23 -76 25
+rect -103 18 -76 23
+rect -80 14 -76 18
+rect -49 23 1 28
+rect 39 23 56 28
+rect -49 14 -44 23
+rect -80 9 -71 14
+rect -62 9 -32 14
+rect -23 9 -15 14
+rect -62 0 -57 9
+rect -37 6 -32 9
+rect -37 3 -23 6
+rect -28 0 -23 3
+rect -71 -15 -66 -10
+rect -37 -15 -32 -10
+rect 5 -15 8 3
+rect -71 -20 8 -15
+<< m2contact >>
+rect -78 65 -73 70
+rect -15 9 -10 14
+<< metal2 >>
+rect -73 65 -10 70
+rect -15 14 -10 65
+use inverter  inverter_0
+timestamp 1618833239
+transform 1 0 18 0 1 36
+box -18 -36 21 30
+<< end >>

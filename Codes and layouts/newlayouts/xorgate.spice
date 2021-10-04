@@ -1,0 +1,125 @@
+* SPICE3 file created from xorgate.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=0.09u
+
+Vdd vdd gnd 'SUPPLY'
+vin_a A 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+vin_b B 0 pulse  1.8 0 0ns 100ps 100ps 100ns 200ns
+
+M1 B_bar B vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=480 ps=208
+M2 B_bar B gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=240 ps=128
+M3 A_bar A vdd vdd CMOSP w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M4 A_bar A gnd gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M5 a_n56_44# A_bar vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M6 Y B a_n56_44# vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M7 a_56_44# A vdd vdd CMOSP w=20 l=2
++  ad=240 pd=104 as=0 ps=0
+M8 Y B_bar a_56_44# vdd CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M9 a_n56_n20# B gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M10 Y A a_n56_n20# gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M11 a_56_n20# B_bar gnd gnd CMOSN w=10 l=2
++  ad=120 pd=64 as=0 ps=0
+M12 Y A_bar a_56_n20# gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+C0 vdd a_n56_44# 0.1fF
+C1 A_bar a_56_44# 0.4fF
+C2 A vdd 0.1fF
+C3 A_bar vdd 0.2fF
+C4 vdd vdd 0.1fF
+C5 Y a_56_44# 0.2fF
+C6 B a_n56_n20# 0.0fF
+C7 A_bar vdd 0.1fF
+C8 vdd B 0.1fF
+C9 vdd A_bar 0.0fF
+C10 vdd Y 0.0fF
+C11 A a_n56_n20# 0.2fF
+C12 A_bar vdd 0.2fF
+C13 B_bar vdd 0.1fF
+C14 vdd A 0.0fF
+C15 vdd vdd 0.1fF
+C16 A_bar vdd 0.1fF
+C17 B A 1.2fF
+C18 vdd B_bar 0.0fF
+C19 B vdd 0.0fF
+C20 vdd Y 0.0fF
+C21 vdd a_56_44# 0.1fF
+C22 B_bar a_56_n20# 0.0fF
+C23 gnd a_n56_n20# 0.1fF
+C24 vdd A_bar 0.0fF
+C25 vdd A 0.1fF
+C26 B B_bar 0.1fF
+C27 Y a_n56_n20# 0.1fF
+C28 A_bar a_56_n20# 0.1fF
+C29 vdd a_56_44# 0.1fF
+C30 gnd a_56_n20# 0.1fF
+C31 A a_n56_44# 0.1fF
+C32 vdd a_n56_44# 0.2fF
+C33 B_bar A 0.1fF
+C34 B A_bar 0.0fF
+C35 vdd B_bar 0.2fF
+C36 B gnd 0.3fF
+C37 Y a_56_n20# 0.1fF
+C38 B Y 0.2fF
+C39 A A_bar 0.5fF
+C40 vdd A_bar 0.5fF
+C41 gnd A 0.4fF
+C42 A_bar a_n56_44# 0.4fF
+C43 A Y 0.2fF
+C44 B_bar A_bar 0.0fF
+C45 B_bar gnd 0.2fF
+C46 a_n56_44# Y 0.2fF
+C47 vdd a_56_44# 0.2fF
+C48 B_bar Y 0.2fF
+C49 vdd vdd 0.1fF
+C50 B vdd 0.1fF
+C51 gnd A_bar 0.1fF
+C52 vdd a_n56_44# 0.1fF
+C53 A_bar Y 0.6fF
+C54 gnd Y 0.0fF
+C55 A vdd 0.2fF
+C56 vdd A 0.1fF
+C57 vdd vdd 0.1fF
+C58 a_56_n20# gnd 0.1fF
+C59 a_n56_n20# gnd 0.1fF
+C60 a_56_44# gnd 0.0fF
+C61 Y gnd 1.6fF
+C62 a_n56_44# gnd 0.0fF
+C63 vdd gnd 0.9fF
+C64 vdd gnd 0.9fF
+C65 vdd gnd 0.9fF
+C66 vdd gnd 0.9fF
+C67 A_bar gnd 2.0fF
+C68 A gnd 2.2fF
+C69 vdd gnd 0.9fF
+C70 gnd gnd 1.3fF
+C71 B_bar gnd 0.7fF
+C72 vdd gnd 0.8fF
+C73 B gnd 1.8fF
+C74 vdd gnd 0.9fF
+
+.tran 0.1n 100n
+
+.control
+set hcopypscolor = 1
+set color0=white
+set color1=black
+
+run
+
+plot v(A)
+plot v(B)
+plot v(Y)
+.endc
